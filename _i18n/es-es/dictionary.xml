@@ -303,9 +303,6 @@
   <block id="32ddf7d830e3a5092074c4f9bb211736" category="paragraph">El tipo de máquina predeterminado para el agente de datos en Google Cloud es ahora n2-standard-4.</block>
   <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">Cambios de extremo de acceso saliente a Internet del conector</block>
   <block id="c433416a8f427b90caab6f6eed1f6323" category="paragraph">Debido a un cambio en la organización en niveles del cloud, debe cambiar los siguientes extremos de conector para que la operación de organización en niveles del cloud se realice correctamente:</block>
-  <block id="5a4346a01828d72104a6540080377b25" category="section-title">6 de noviembre de 2022</block>
-  <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">Arrastre y suelte para habilitar Cloud Tiering en Azure Blob, Google Cloud Storage y StorageGRID</block>
-  <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">Si el destino de Azure Blob, Google Cloud Storage o StorageGRID Tiering existe como entorno de trabajo en el lienzo, puede arrastrar su entorno de trabajo ONTAP local al destino para iniciar el asistente de configuración de la organización en niveles.</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">Conozca cuáles son las nuevas funciones que se incluyen en esta versión de Cloud Volumes ONTAP</block>
   <block id="a3c559e0541e9bb860178ce6fe414224" category="section-title">Cloud Volumes Service para GCP</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9 de septiembre de 2020</block>
@@ -573,4 +570,6 @@
   <block id="111e68f453d93697e376aa4b128f9a4c" category="paragraph"><block ref="ab8039366481dc33ac47cc2a37c277c6" category="inline-link-macro-rx"></block>.</block>
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
+  <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link-macro">Aprenda a gestionar las credenciales de usuario</block>
+  <block id="551a80734187b23f5368b6a5609f3de3" category="paragraph"><block ref="cf16e3f2aabf285f3de8d29b23130725" category="inline-link-macro-rx"></block>.</block>
 </blocks>

@@ -65,7 +65,7 @@ Para empezar, seleccione *Agregar entorno de trabajo*, seleccione *Amazon Web Se
 Al ir a *Configuración > credenciales*, puede ver las credenciales, actualizar las credenciales y eliminarlas. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.
 
 +
-551a80734187b23f5368b6a5609f3de3
+link:task-manage-user-credentials.html["Aprenda a gestionar las credenciales de usuario"].
 
 * Ahora puede cargar archivos adjuntos al crear un caso de soporte o al actualizar las notas del caso para un caso de soporte existente.
 +
@@ -850,6 +850,22 @@ El tipo de máquina predeterminado para el agente de datos en Google Cloud es ah
 
 
 
+=== 3 de abril de 2023
+
+
+
+==== 2e79231a13ecf62585403e20da2dea4a
+
+d4a0c23b533adffe42d63c23035edd5c
+
+
+
+==== 66a0b4752150538292b81c073ca0b83b
+
+10d9a166ad36cdda1e0585914ac18d5f
+
+
+
 === 5 de marzo de 2023
 
 
@@ -879,16 +895,6 @@ Debido a un cambio en la organización en niveles del cloud, debe cambiar los si
 | \https://*.cloudmanager.cloud.netapp.com | \https://*.api.bluexp.netapp.com 
 |===
 Vea la lista completa de puntos finales de la https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^], o. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure"^] de cloud híbrido.
-
-
-
-=== 6 de noviembre de 2022
-
-
-
-==== Arrastre y suelte para habilitar Cloud Tiering en Azure Blob, Google Cloud Storage y StorageGRID
-
-Si el destino de Azure Blob, Google Cloud Storage o StorageGRID Tiering existe como entorno de trabajo en el lienzo, puede arrastrar su entorno de trabajo ONTAP local al destino para iniciar el asistente de configuración de la organización en niveles.
 
 
 
