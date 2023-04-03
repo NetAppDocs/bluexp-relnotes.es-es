@@ -85,9 +85,6 @@
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Obtenga información acerca de las mejoras de Cloud Volumes ONTAP</block>
   <block id="e5fa209a01e6f968295b098866e0fcf5" category="paragraph"><block ref="e5fa209a01e6f968295b098866e0fcf5" category="inline-link-rx"></block></block>
   <block id="1f7138998459804601fc351f8d442e29" category="section-title">1 de enero de 2023</block>
-  <block id="e139aa454163ce195b3669d769c3f1c8" category="section-title">Conector 3.9.25</block>
-  <block id="ab010f0ae1d3cb2043f9513a1f81beea" category="paragraph">Esta versión del conector incluye mejoras y correcciones de errores de Cloud Volumes ONTAP.</block>
-  <block id="826d1d89ec2a521e40a7a91c2ee8f024" category="paragraph"><block ref="826d1d89ec2a521e40a7a91c2ee8f024" category="inline-link-rx"></block></block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">4 de diciembre de 2022</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">11 de abril de 2021</block>
   <block id="860941d67aa8a8a442ba4a65191838cf" category="section-title">Compatibilidad con plantillas de volúmenes</block>
@@ -113,8 +110,6 @@
   <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">gestión de la capacidad automática</block>
   <block id="380fe7c3627610af34c9936f46325923" category="paragraph">Ahora puede optar por activar <block ref="79658b4a46346ad9aa23a5f92d57dfaa" category="inline-link-macro-rx"></block> para añadir almacenamiento incremental basado en demanda. La administración automática de la capacidad sondea el clúster a intervalos regulares para evaluar la demanda y aumenta automáticamente la capacidad de almacenamiento en incrementos del 10% hasta el 80% de la capacidad máxima del clúster.</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 de septiembre de 2022</block>
-  <block id="3abe9a67eae0ad33b1c96ff4ae8b1eaa" category="inline-link-macro">Cambie la capacidad de almacenamiento y las IOPS</block>
-  <block id="4054992d1ab241cf4542bc8cd502d679" category="paragraph">Ahora puede hacerlo <block ref="57fbdd5ba152894391c55cce5d9fe8f8" category="inline-link-macro-rx"></block> En cualquier momento después de crear el entorno de trabajo FSX para ONTAP.</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 de julio de 2022</block>
   <block id="36a9eb77fcf21a931c3ba4a85dff781b" category="section-title">Plantilla de aplicación</block>
   <block id="983a4e7f5913304ec713a249baf7be47" category="section-title">3 de marzo de 2022</block>
@@ -311,28 +306,6 @@
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">6 de noviembre de 2022</block>
   <block id="8f4621192fd1fe94f1b365ae34c1e0ed" category="section-title">Arrastre y suelte para habilitar Cloud Tiering en Azure Blob, Google Cloud Storage y StorageGRID</block>
   <block id="6586247c64ea3f20421ae518b26fc973" category="paragraph">Si el destino de Azure Blob, Google Cloud Storage o StorageGRID Tiering existe como entorno de trabajo en el lienzo, puede arrastrar su entorno de trabajo ONTAP local al destino para iniciar el asistente de configuración de la organización en niveles.</block>
-  <block id="078640757da4b274abf89709c42d7741" category="paragraph">Los siguientes cambios se introdujeron con la versión 3.9.26 del conector.</block>
-  <block id="72c6f65b45015ee1135ff4bc2cce8860" category="section-title">Creación de grupos de colocación en AWS</block>
-  <block id="b743dbbfdeafb74e0c5a918472cb8000" category="paragraph">Ahora hay disponible una nueva configuración para la creación de grupos de colocación con las implementaciones de zona de disponibilidad única (AZ) de AWS ha. Ahora puede elegir pasar por alto las creaciones de grupos de colocación fallidas y permitir que las puestas en marcha de AWS ha Single AZ se completen correctamente.</block>
-  <block id="a461eabe3ab382f71ac2e2f6d1e640ac" category="inline-link-macro">Configurar la creación de grupos de colocación para AWS ha Single AZ</block>
-  <block id="f8574b4ca8450ebb66b430e6a34a7af0" category="paragraph">Para obtener información detallada sobre cómo configurar la configuración de creación de grupos de colocación, consulte <block ref="76b771ebcb3b2314cb6a5531c78c8c56" category="inline-link-macro-rx"></block>.</block>
-  <block id="6d236ccded1ae841f7032a1cfa719500" category="section-title">Actualización de configuración de zona DNS privada</block>
-  <block id="c07e7cfc7f9b172f2a6463f65a2a4b56" category="paragraph">Ahora hay disponible una nueva configuración para evitar crear un vínculo entre una zona DNS privada y una red virtual cuando se utilizan vínculos privados de Azure. La creación está habilitada de forma predeterminada.</block>
-  <block id="77bb2abfb8f3c95b3fdaf2c2e6814b89" category="inline-link-macro">Proporcione a BlueXP detalles acerca de su DNS privado de Azure</block>
-  <block id="b4f6cf785c09e40247b4fa3feac5c2a6" category="paragraph"><block ref="b4f6cf785c09e40247b4fa3feac5c2a6" category="inline-link-macro-rx"></block></block>
-  <block id="9790d5e9d3f702b3255ef268a7bcfc80" category="section-title">Almacenamiento WORM y organización en niveles de los datos</block>
-  <block id="3277463bf1ddcca922f85a2efd92c721" category="paragraph">Ahora puede habilitar la segmentación de datos y el almacenamiento WORM junto al crear un sistema Cloud Volumes ONTAP 9.8 o posterior. Habilitar la organización en niveles de datos con el almacenamiento WORM permite organizar los datos en niveles en un almacén de objetos en el cloud.</block>
-  <block id="2179dc7c2201ce007bdd7f0a37e78d5e" category="inline-link-macro">Más información sobre el almacenamiento WORM.</block>
-  <block id="fc76ca2a106ecf45415f92e5b6f34f21" category="paragraph"><block ref="fc76ca2a106ecf45415f92e5b6f34f21" category="inline-link-macro-rx"></block></block>
-  <block id="3c757e219167079b631dfcb5b1d0c339" category="paragraph">Los siguientes cambios se introdujeron con la versión 3.9.25 del conector.</block>
-  <block id="234213185a1ffd45429411672de5d3e7" category="section-title">Paquetes de licencias disponibles en Google Cloud</block>
-  <block id="54aeb573897a8b2a0c9627ff7030c996" category="paragraph">Los paquetes de licencias optimizados basados en capacidad de Edge Cache están disponibles para Cloud Volumes ONTAP en Google Cloud Marketplace como oferta de pago por uso o como contrato anual.</block>
-  <block id="0ff1cb70b28d71c56ee0165393cbd500" category="inline-link-macro">Licencias de Cloud Volumes ONTAP</block>
-  <block id="d1f7ea60f001f689d734c007e925b17e" category="paragraph">Consulte <block ref="0fb2e984675bc2d20107c292ded47d43" category="inline-link-macro-rx"></block>.</block>
-  <block id="f280b5a5c0eeaf41d31a8a2661b341cb" category="section-title">Configuración predeterminada de Cloud Volumes ONTAP</block>
-  <block id="fced3090ff990434831b838f07c6a3a7" category="paragraph">La licencia de gestión de claves de cifrado multi-tenant (MTEKM) ya no se incluye en las nuevas implementaciones de Cloud Volumes ONTAP.</block>
-  <block id="a1299d36f8821164c4414c1a5ab986dd" category="inline-link-macro">Configuración predeterminada de Cloud Volumes ONTAP</block>
-  <block id="a8e8ca53febeb9bd58edbc0647eb9a34" category="paragraph">Para obtener más información sobre las licencias de funciones de ONTAP instaladas automáticamente con Cloud Volumes ONTAP, consulte <block ref="79578e78303d1a240e8fa9c178a9de63" category="inline-link-macro-rx"></block>.</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">Conozca cuáles son las nuevas funciones que se incluyen en esta versión de Cloud Volumes ONTAP</block>
   <block id="a3c559e0541e9bb860178ce6fe414224" category="section-title">Cloud Volumes Service para GCP</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9 de septiembre de 2020</block>
@@ -394,19 +367,6 @@
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">06 de noviembre de 2022</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">definición de clases de almacenamiento</block>
   <block id="084fbbb062290ef487eac98d44edd278" category="paragraph">Cuando <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>, ahora puede habilitar la economía de clase de almacenamiento para el almacenamiento de bloques o sistemas de ficheros.</block>
-  <block id="d8d8980dd9fc5d0937a35fea8cb24808" category="paragraph">Ahora puede importar clústeres de OpenShift autogestionados a Cloud Manager.</block>
-  <block id="b77adae4ee23d10b92f9545417611303" category="inline-link-macro">Requisitos para clústeres de Kubernetes en OpenShift</block>
-  <block id="fd4ea134fa6bbf226ead48569ec25aaa" category="list-text"><block ref="fd4ea134fa6bbf226ead48569ec25aaa" category="inline-link-macro-rx"></block></block>
-  <block id="f82e729d73d970e1bd3789638aed5dca" category="inline-link-macro">Agregue un clúster OpenShift a Cloud Manager</block>
-  <block id="049c95d2615dd6bba6242ffae7eae5fe" category="list-text"><block ref="049c95d2615dd6bba6242ffae7eae5fe" category="inline-link-macro-rx"></block></block>
-  <block id="5b68f6193aeecc12614fe4ce8bedf31e" category="list-text">Usando el nuevo<block ref="370f6eb5f77041c4f839e5e74b5876d0" prefix=" " category="inline-code"></block> verbo en la clase de almacenamiento, backup y restauración de configuraciones YAML, Cloud Manager ahora puede supervisar los clústeres de Kubernetes en busca de cambios realizados en el back-end del clúster y habilitar automáticamente el backup para nuevos volúmenes persistentes si se configuró el backup automático en el clúster.</block>
-  <block id="b65741d409db3b7986653580cc3988b8" category="inline-link-macro">Requisitos para clústeres de Kubernetes en AWS</block>
-  <block id="36e8382aa83e74f8ba70303f62ce8d15" category="paragraph"><block ref="36e8382aa83e74f8ba70303f62ce8d15" category="inline-link-macro-rx"></block></block>
-  <block id="c5be663296cc453aa3076c0cfcedc102" category="inline-link-macro">Requisitos para clústeres de Kubernetes en Azure</block>
-  <block id="8a7acc1f3e4ade2ee389a4e59f39bf28" category="paragraph"><block ref="8a7acc1f3e4ade2ee389a4e59f39bf28" category="inline-link-macro-rx"></block></block>
-  <block id="b6511d823d5fc5c8c219b52663e32c20" category="inline-link-macro">Requisitos para los clústeres de Kubernetes en Google Cloud</block>
-  <block id="2bdb06b2a7060e3efbb60c6fdf551284" category="paragraph"><block ref="2bdb06b2a7060e3efbb60c6fdf551284" category="inline-link-macro-rx"></block></block>
-  <block id="19e7864b32363d7ba3bb16a024e95d79" category="list-text">Cuando <block ref="44765f3a3e8511cc80b0083ae1e5f436" category="inline-link-macro-rx"></block>, ahora puede especificar un tipo de sistema de archivos (fstype) para el almacenamiento de bloques.</block>
   <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="section-title">Supervisión</block>
   <block id="7e69e168ccaec126378a9fc9829b1a86" category="paragraph">El servicio de supervisión se retiró el 1 de noviembre de 2022. Ahora puede encontrar un enlace directo a Cloud Insights desde el menú de navegación seleccionando *Información &gt; Observabilidad*.</block>
   <block id="f2e4e4f7b0b864863bfac74f4383a826" category="section-title">Guarde las credenciales de ONTAP</block>
@@ -426,7 +386,6 @@
   <block id="440be74a67502f9c3d55890782329328" category="paragraph">Los siguientes cambios se introdujeron con la versión 3.9.22 del conector.</block>
   <block id="c8328d07fc05c4708c68f547ce6f5e77" category="section-title">Nueva página Overview</block>
   <block id="8e41db9b51f790909ef80a064153f722" category="paragraph">Hemos introducido una nueva página general para proporcionar detalles clave sobre un clúster de ONTAP en las instalaciones. Por ejemplo, ahora puede ver detalles como la eficiencia del almacenamiento, la distribución de la capacidad y la información del sistema.</block>
-  <block id="bcc757acad6812aeb9904ad6e30c0738" category="paragraph">También puede ver detalles sobre la integración con otros servicios cloud de NetApp que permiten la organización en niveles de datos, la replicación de datos y los backups.</block>
   <block id="fba766c98683be4af93f93b5d7909f1e" category="inline-image-macro">Captura de pantalla que muestra la página Descripción general de un clúster ONTAP en las instalaciones.</block>
   <block id="5277a2f54c2173b12f8eb86ae9da078e" category="paragraph"><block ref="5277a2f54c2173b12f8eb86ae9da078e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c76ff3fb4e35074fc6f04c1cb8ea02af" category="section-title">Página volúmenes rediseñados</block>
@@ -479,7 +438,6 @@
   <block id="dd9b32305d0c33f8845bee1cdfcfc85a" category="list-text">El conector ahora es compatible con un host que ejecuta Red Hat Enterprise Linux 8.7.</block>
   <block id="2a75ac250c22787b79b100a2a614a4e2" category="inline-link">Ver los requisitos del sistema para el conector</block>
   <block id="9954c00cefacf69f28fa1994e949ff83" category="paragraph"><block ref="1c471069dafa2d25f3a632cea0250222" category="inline-link-rx"></block>.</block>
-  <block id="9597dfcf8249ec8766cfb35fd11357f3" category="list-text">El conector ahora es compatible con cualquier entorno de nube que tenga un aislamiento completo de Internet. A continuación, puede usar la consola BlueXP que se ejecuta en el conector para implementar Cloud Volumes ONTAP en la misma ubicación y detectar clústeres de ONTAP en las instalaciones (si tiene una conexión desde su entorno de cloud a un entorno local). Ningún otro servicio BlueXP es compatible con este tipo de despliegue, excepto con la cartera digital.</block>
   <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">La región del cloud puede ser una región en la que haya agencias estadounidenses seguras como AWS C2S/SC2S, Azure IL6 o cualquier región comercial.</block>
   <block id="33b6f29ed1acfc0fbed883a6e1f44ef2" category="paragraph">Para empezar, instale manualmente el software conector, inicie sesión en la consola BlueXP que se ejecuta en el conector, agregue su licencia BYOL a la cartera digital y, a continuación, implemente Cloud Volumes ONTAP.</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">Instale el conector en una ubicación sin acceso a Internet</block>
@@ -526,10 +484,6 @@
   <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">Los archivos de registro de auditoría de la instalación se guardan ahora y se escriben en<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block>.</block>
   <block id="9a8e487c18ad9b8cacca43174094061d" category="section-title">Ahora puede agregar patrones personales desde la interfaz de usuario de detección de datos</block>
   <block id="eed8585d0b45afc4676b1c89f6f22a9a" category="paragraph">Los siguientes cambios se introdujeron con la versión 3.9.27 del conector.</block>
-  <block id="e2c7f196cec5020e2b840087f6a8e068" category="section-title">Compatibilidad con 16 TIB y 32 Tib en Azure</block>
-  <block id="bfb9ab5387a727da709a7377d950cee0" category="paragraph">Cloud Volumes ONTAP ahora admite tamaños de disco de 16 TIB y 32 TIB para puestas en marcha de alta disponibilidad que se ejecutan en discos gestionados en Azure.</block>
-  <block id="8f9e72f80a7dd402a28a4b46aca286f9" category="inline-link">Tamaños de disco compatibles en Azure</block>
-  <block id="9bc26ebd17008cdc39569edf382f0b5e" category="paragraph">Más información acerca de<block ref="e55b1d7df019ac083c7ffec036e8de25" category="inline-link-rx"></block>.</block>
   <block id="1bbedbfdc08c3ed9498540dc734fa96a" category="section-title">Licencia de MTEKM</block>
   <block id="3cc0e97defd245de4dee36cae1e4c485" category="paragraph">La licencia de administración de claves de cifrado multi-tenant (MTEKM) ahora se incluye con sistemas Cloud Volumes ONTAP nuevos y existentes que ejecutan la versión 9.12.1 GA o posterior.</block>
   <block id="c43a4aedaaa96e7a4c838a24978b6052" category="paragraph">La gestión de claves externas multi-tenant permite que las máquinas virtuales de almacenamiento individuales (SVM) mantengan sus propias claves a través de un servidor KMIP al usar el cifrado de volúmenes de NetApp.</block>
@@ -555,7 +509,6 @@
   <block id="9d811f8ab4335c82eeb7d1477874bc1c" category="inline-link-macro">Realizar backups de los datos de Cloud Volumes ONTAP en Amazon S3</block>
   <block id="a5e6246728060cb5f413df6fa5adbf0c" category="inline-link-macro">Realizar backups de los datos de Cloud Volumes ONTAP en Azure Blob</block>
   <block id="aef1b3252b7a5b85dab7066cccc19b52" category="paragraph">Ahora puede realizar backups de datos de sistemas Cloud Volumes ONTAP instalados en regiones comerciales de AWS y Azure en Amazon S3 o Azure Blob. Para ello, es necesario instalar el conector en un host Linux de la región comercial y que también se ponga en marcha el sistema Cloud Volumes ONTAP. Consulte <block ref="31e49e13e812c331f506a2a8e6b7ad22" category="inline-link-macro-rx"></block> y.. <block ref="ab5c78f08c8780b598ee1d4de19230ab" category="inline-link-macro-rx"></block>.</block>
-  <block id="463ed6b78b2c95e39ecc10ee3195e921" category="section-title">Job Monitor ofrece filtrado avanzado para encontrar trabajos de backup o restauración específicos</block>
   <block id="1cdf820a77c583c660d65df7b1ca03b8" category="inline-link">Consulte cómo utilizar los filtros avanzados</block>
   <block id="aa3492539222da5bc85fd5614f489f71" category="paragraph">La página Job Monitoring ha añadido un filtrado avanzado para poder buscar trabajos de backup y restauración en función del tiempo, la carga de trabajo (volúmenes, aplicaciones, máquinas virtuales o Kubernetes), Tipo de trabajo, estado, entorno de trabajo y máquina virtual de almacenamiento. También puede introducir texto libre para buscar cualquier recurso, por ejemplo, "Application_3". <block ref="f726054cf0d935cd51c2a5edb3b3fd0c" category="inline-link-rx"></block>.</block>
   <block id="a19f14c281dd654ce355a7e0b63146b5" category="section-title">Cifrado EBS para agentes de datos de AWS</block>
@@ -565,4 +518,59 @@
   <block id="5b420079bca1c870914caa221b31442e" category="section-title">Cloud Volumes ONTAP 9.13.0</block>
   <block id="ad598f033e541927e862b0c5e17319ec" category="paragraph">BlueXP ahora puede poner en marcha y gestionar Cloud Volumes ONTAP 9.13.0 en AWS, Azure y Google Cloud.</block>
   <block id="066405d152aeaf5c017e93048679ce43" category="paragraph"><block ref="0d69949c9de36f8752d49be7f0ec9aed" category="inline-link-rx"></block>.</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 de abril de 2023</block>
+  <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">Conector 3.9.28</block>
+  <block id="a08572617e25a61e8569807ac103ab07" category="list-text">Las notificaciones por correo electrónico ya son compatibles con Digital Wallet.</block>
+  <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">Si configura los ajustes de notificación, puede recibir notificaciones por correo electrónico cuando sus licencias de BYOL estén a punto de expirar (una notificación de "advertencia") o si ya han caducado (una notificación de "error").</block>
+  <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Aprenda a configurar notificaciones por correo electrónico</block>
+  <block id="e16804d7658f4d3132a1170b8cec7c7e" category="paragraph"><block ref="9ce9eb475c326d02a5c224ef8589bc0a" category="inline-link-rx"></block>.</block>
+  <block id="1ba259cc1a092c9c30c1a18ccc612c75" category="list-text">El conector ahora es compatible con la región de Google Cloud en Turín.</block>
+  <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">Consulte la lista completa de las regiones admitidas</block>
+  <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
+  <block id="e9c35e9b853bc286e0f3b1a7ee2e338a" category="list-text">Ahora puede detectar VMware vCenter Server en BlueXP.</block>
+  <block id="a5b1ab8743c3279fbcf5a93dcd6de23d" category="paragraph">Después de detectar una instancia de VMware vCenter Server que se ejecuta en AWS o en las instalaciones, puede abrir el entorno de trabajo para ver detalles sobre los almacenes de datos y las máquinas virtuales que están asociadas con el servidor.</block>
+  <block id="10cc8c1f48423a72bf1e617861999cae" category="paragraph">El único requisito es un conector que tiene una conexión a VMware vCenter Server que ejecuta la versión 7.0 o posterior.</block>
+  <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">Para empezar, seleccione *Agregar entorno de trabajo*, seleccione *Amazon Web Services* o *On-local* y, a continuación, seleccione *VMware vCenter Server*. Introduzca el nombre de dominio o la dirección IP del servidor y, a continuación, introduzca el nombre de usuario y la contraseña del usuario administrador.</block>
+  <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">Ahora puede gestionar las credenciales de usuario asociadas con su inicio de sesión de BlueXP: Credenciales de ONTAP y credenciales del sitio de soporte de NetApp (NSS).</block>
+  <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">Al ir a *Configuración &gt; credenciales*, puede ver las credenciales, actualizar las credenciales y eliminarlas. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.</block>
+  <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">Ahora puede cargar archivos adjuntos al crear un caso de soporte o al actualizar las notas del caso para un caso de soporte existente.</block>
+  <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">Descubra cómo crear y gestionar casos de soporte</block>
+  <block id="6d69140f9b878e098eb9bfcd623c9dbd" category="paragraph"><block ref="7f3b2cbcf14ed0f5a85962e6b9e3eba8" category="inline-link-rx"></block>.</block>
+  <block id="1765dff10197df4bf080f41e5537f2a5" category="list-text">Esta versión del conector también incluye mejoras de Cloud Volumes ONTAP y mejoras del clúster de ONTAP en las instalaciones.</block>
+  <block id="e19c064fcb68059e563bb5bfdd31cac1" category="list-text"><block ref="e19c064fcb68059e563bb5bfdd31cac1" category="inline-link-rx"></block></block>
+  <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">Obtenga información acerca de las mejoras del clúster en las instalaciones de ONTAP</block>
+  <block id="9e8ad418161e776fb398db9af34585c3" category="list-text"><block ref="9e8ad418161e776fb398db9af34585c3" category="inline-link-rx"></block></block>
+  <block id="a8709880418b83b1477f57ddb74c84e3" category="list-text">El conector ahora es compatible con cualquier entorno de nube que tenga un aislamiento completo de Internet. A continuación, puede usar la consola BlueXP que se ejecuta en el conector para implementar Cloud Volumes ONTAP en la misma ubicación y detectar clústeres de ONTAP en las instalaciones (si tiene una conexión desde su entorno de cloud a un entorno local). También se puede usar Cloud Backup para realizar backups de Cloud Volumes ONTAP Volumes en las regiones comerciales de AWS y Azure. Ningún otro servicio BlueXP es compatible con este tipo de despliegue, excepto con la cartera digital.</block>
+  <block id="1442489a4cf0ea56df2e53ec47c70ec8" category="section-title">Varias mejoras en el Monitor de trabajo</block>
+  <block id="bf2bb33000b51334f72c2e394ff56247" category="list-text">Tanto las operaciones de copia de seguridad y restauración iniciadas por el usuario desde la interfaz de usuario y la API de copia de seguridad en la nube, como los trabajos iniciados por el sistema, tales operaciones de copia de seguridad en curso, están ahora disponibles en la pestaña *Supervisión de trabajos* para sistemas Cloud Volumes ONTAP que ejecutan ONTAP 9.13.0 o superior. Las versiones anteriores de los sistemas Cloud Volumes ONTAP y los sistemas ONTAP en las instalaciones mostrarán solo los trabajos iniciados por el usuario en este momento.</block>
+  <block id="0eeac28a6eb03f47165f3c65b5e13cea" category="section-title">13 de marzo de 2023</block>
+  <block id="5eeac325d343b1bb90074e1be60dd1ae" category="section-title">Apoyo regional a China</block>
+  <block id="f3818f17dde36b1601ccfef8ceab6cbe" category="paragraph">A partir de la versión comercial de Cloud Volumes ONTAP 9.12.1, ahora el soporte de la región de China es compatible con Azure de la siguiente manera.</block>
+  <block id="49b72186e2fe2638cbb520201b58bc02" category="list-text">Cloud Volumes ONTAP es compatible con China Norte 3.</block>
+  <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">Los sistemas de un solo nodo son compatibles.</block>
+  <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">Se admiten las licencias adquiridas directamente en NetApp.</block>
+  <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Mapas de regiones globales para Cloud Volumes ONTAP</block>
+  <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">Para conocer la disponibilidad regional, consulte <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>.</block>
+  <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="section-title">Eficiencia económica</block>
+  <block id="88c49608e723add593f5becc8bd9a968" category="section-title">02 de abril de 2023</block>
+  <block id="6a96f2962c3be88d01a2e04f7bb4006f" category="paragraph">El nuevo servicio de eficiencia económica identifica los clústeres con una capacidad baja actual o prevista y proporciona recomendaciones sobre la organización en niveles de los datos o capacidad adicional para los sistemas AFF locales.</block>
+  <block id="7e0c2cf881384db7bfcfb883b67871a5" category="inline-link-macro">Obtenga más información sobre este nuevo servicio</block>
+  <block id="38532dd1586dac78ea99ce1216e1f352" category="paragraph"><block ref="6e51c6b9ced37d3ad7414d5e4d1ac63a" category="inline-link-macro-rx"></block>.</block>
+  <block id="44a722c1e42cdb4002c75bb29403670b" category="section-title">Una sola opción de descubrimiento desde la consola BlueXP</block>
+  <block id="7023e56782327af6f409e1889ae33345" category="paragraph">Cuando descubre un clúster ONTAP en las instalaciones desde la consola BlueXP, ahora verá una sola opción:</block>
+  <block id="d70ed695b081fff2505f285b0540727b" category="inline-image-macro">Una captura de pantalla que muestra la opción detectar ONTAP en las instalaciones disponible a la hora de crear un entorno de trabajo</block>
+  <block id="aea8878e3e5cb0f622cbe596cc98ef50" category="paragraph"><block ref="aea8878e3e5cb0f622cbe596cc98ef50" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3d85937cd401956877664b5f7128cc5d" category="paragraph">Anteriormente, había flujos separados para el descubrimiento directo y para el descubrimiento con un conector. Estas dos opciones siguen estando disponibles, pero se fusionan en un único flujo.</block>
+  <block id="251a667be8662557b7aba30c53380da3" category="paragraph">Al iniciar el proceso de detección, BlueXP detecta el clúster de la siguiente manera:</block>
+  <block id="02067bb3de9c60175abe8c4b7d81c3c2" category="list-text">Si tiene un conector activo que tiene una conexión a su clúster ONTAP, BlueXP utilizará ese conector para detectar y gestionar el clúster.</block>
+  <block id="1f98df6cf22b8e11ecbe762c7b523860" category="list-text">Si no tiene un conector o si su conector no tiene una conexión con el clúster ONTAP, BlueXP utilizará automáticamente la opción de detección y administración directa.</block>
+  <block id="873b328fabdfb8db13a38e03c836d37b" category="inline-link">Obtenga más información sobre las opciones de detección y gestión</block>
+  <block id="d74db5b2b9703b60c98aead9c3c3275e" category="paragraph"><block ref="9ba91f2cd50d4cdc6a75347f1fff1126" category="inline-link-rx"></block>.</block>
+  <block id="d35ea0fa6a3d81047f0a36a7dfac1c07" category="paragraph">También puede ver detalles sobre la integración con otros servicios de BlueXP que habilitan la organización en niveles de datos, la replicación de datos y los backups.</block>
+  <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">Resiliencia operativa</block>
+  <block id="1630a937eacb69072b241ed94c9fd786" category="paragraph">Mediante el nuevo servicio de resiliencia operativa y sus sugerencias automatizadas de solución de riesgos operativos DE TI, puede implementar soluciones correctivas sugeridas antes de que se produzca una interrupción o un fallo.</block>
+  <block id="ccdc113a6d04ad73b22b032c1ebd7c63" category="paragraph">La resiliencia operativa es una categoría de servicios que le ayudan a analizar las alertas y eventos para mantener el estado, el tiempo de actividad y el rendimiento de los servicios y las soluciones.</block>
+  <block id="111e68f453d93697e376aa4b128f9a4c" category="paragraph"><block ref="ab8039366481dc33ac47cc2a37c277c6" category="inline-link-macro-rx"></block>.</block>
+  <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
+  <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
 </blocks>
