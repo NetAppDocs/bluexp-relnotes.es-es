@@ -33,6 +33,26 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
+=== 4 de abril de 2023
+
+
+
+==== Modos de implementación
+
+BlueXP _modos de implementación_ le permiten utilizar BlueXP de forma que se ajuste a sus requisitos empresariales y de seguridad. Puede elegir entre tres modos:
+
+* Modo estándar
+* Modo restringido
+* Modo privado
+
+
+link:concept-modes.html["Obtenga más información sobre estos modos de implementación"].
+
+
+NOTE: La introducción del modo restringido sustituye a la opción de activar o desactivar la plataforma SaaS. Puede habilitar el modo restringido en el momento de crear una cuenta. No se puede habilitar ni deshabilitar más adelante.
+
+
+
 === 3 de abril de 2023
 
 
@@ -65,7 +85,7 @@ Para empezar, seleccione *Agregar entorno de trabajo*, seleccione *Amazon Web Se
 Al ir a *Configuración > credenciales*, puede ver las credenciales, actualizar las credenciales y eliminarlas. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.
 
 +
-link:task-manage-user-credentials.html["Aprenda a gestionar las credenciales de usuario"].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["Aprenda a gestionar las credenciales de usuario"].
 
 * Ahora puede cargar archivos adjuntos al crear un caso de soporte o al actualizar las notas del caso para un caso de soporte existente.
 +
@@ -120,54 +140,6 @@ https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Vea có
 * Esta versión del conector incluye mejoras de Cloud Volumes ONTAP.
 +
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Obtenga información acerca de las mejoras de Cloud Volumes ONTAP"^]
-
-
-
-
-
-=== 5 de febrero de 2023
-
-
-
-==== Conector 3.9.26
-
-* En la página *Iniciar sesión*, ahora se le pedirá que introduzca la dirección de correo electrónico asociada a su inicio de sesión. Después de hacer clic en *Siguiente*, BlueXP le solicita que realice la autenticación mediante el método de autenticación asociado a su inicio de sesión:
-+
-** La contraseña de sus credenciales de cloud de NetApp
-** Sus credenciales de identidad federadas
-** Sus credenciales del sitio de soporte de NetApp
-
-
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["Una captura de pantalla de la página de inicio de sesión de BlueXP en la que se le solicita que introduzca su dirección de correo electrónico."]
-
-* Si es nuevo en BlueXP y tiene credenciales actuales del sitio de soporte de NetApp (NSS), puede omitir la página de registro e introducir su dirección de correo electrónico directamente en la página de inicio de sesión. BlueXP te inscribirá como parte de este inicio de sesión inicial.
-* Al suscribirse a BlueXP desde el mercado de su proveedor de la nube, ahora tiene la opción de reemplazar la suscripción existente para una cuenta por la nueva suscripción.
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["Captura de pantalla que muestra la asignación de suscripción para una cuenta de BlueXP."]
-
-+
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Aprenda a asociar una suscripción a AWS"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Aprenda a asociar una suscripción a Azure"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Descubra cómo asociar una suscripción a Google Cloud"]
-
-
-* BlueXP le notificará ahora si su conector ha sido apagado durante 14 días o más.
-+
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Más información sobre las notificaciones de BlueXP"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["Descubra por qué los conectores deben seguir funcionando"]
-
-
-* Hemos actualizado la política de Connector para Google Cloud para incluir el permiso necesario para crear y gestionar máquinas virtuales de almacenamiento en pares de alta disponibilidad de Cloud Volumes ONTAP:
-+
-compute.instances.updateNetworkInterface
-
-+
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Vea los permisos de Google Cloud para Connector"].
-
-* Esta versión del conector incluye mejoras de Cloud Volumes ONTAP.
-+
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["Obtenga información acerca de las mejoras de Cloud Volumes ONTAP"^]
 
 
 
@@ -307,6 +279,37 @@ https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html["O
 
 
 
+=== 4 de abril de 2023
+
+
+
+==== Capacidad para realizar backups de datos en el cloud desde sistemas Cloud Volumes ONTAP en modo «restringido»
+
+Ahora puede realizar backups de los datos de los sistemas de Cloud Volumes ONTAP instalados en regiones comerciales de AWS, Azure y GCP en el modo "restringido". Esto requiere que primero instale el conector en la región comercial "restringida". Consulte https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Realizar backups de los datos de Cloud Volumes ONTAP en Amazon S3"] y.. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Realizar backups de los datos de Cloud Volumes ONTAP en Azure Blob"].
+
+
+
+==== Capacidad para realizar un backup de los volúmenes de ONTAP en las instalaciones en ONTAP S3 mediante la API
+
+f25c47eb7d9f3c638d89723bee6d2360
+
+
+
+==== Capacidad de cambiar el aspecto de redundancia de zona de su cuenta de almacenamiento de Azure de LRS a ZRS
+
+Cuando se crean backups desde sistemas Cloud Volumes ONTAP al almacenamiento de Azure, de forma predeterminada, Cloud Backup aprovisiona el contenedor Blob con redundancia local (LRS) para optimizar los costes. Puede cambiar esta configuración a redundancia de zona (ZRS) si desea que los datos se repliquen entre zonas diferentes. Consulte las instrucciones de Microsoft para https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal["cambiar el modo de replicar la cuenta de almacenamiento"^].
+
+
+
+==== Mejoras en el Monitor de trabajo
+
+* Tanto las operaciones de copia de seguridad y restauración iniciadas por el usuario desde la interfaz de usuario y la API de copia de seguridad en la nube, como los trabajos iniciados por el sistema, tales operaciones de copia de seguridad en curso, están ahora disponibles en la pestaña *Supervisión de trabajos* para sistemas ONTAP en las instalaciones que ejecutan ONTAP 9.13.1 o superior. Las versiones anteriores de ONTAP mostrarán únicamente los trabajos iniciados por el usuario.
+* Además de poder descargar un archivo CSV para generar informes de todos los trabajos, ahora puede descargar un archivo JSON para un solo trabajo y ver sus detalles. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["Leer más"].
+* Se han añadido dos nuevas alertas de trabajos de copia de seguridad: "Error de trabajo programado" y "el trabajo de restauración se completa pero con advertencias". https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["Revise todas las alertas que puede enviar Cloud Backup"].
+
+
+
+
 === 9 de marzo de 2023
 
 
@@ -319,7 +322,7 @@ Anteriormente, cuando restauró una carpeta, solo se restauran los archivos de e
 
 ==== Capacidad para realizar backups de datos de sistemas Cloud Volumes ONTAP en sitios oscuros
 
-Ahora puede realizar backups de datos de sistemas Cloud Volumes ONTAP instalados en regiones comerciales de AWS y Azure en Amazon S3 o Azure Blob. Para ello, es necesario instalar el conector en un host Linux de la región comercial y que también se ponga en marcha el sistema Cloud Volumes ONTAP. Consulte link:task-backup-to-s3.html["Realizar backups de los datos de Cloud Volumes ONTAP en Amazon S3"] y.. link:task-backup-to-azure.html["Realizar backups de los datos de Cloud Volumes ONTAP en Azure Blob"].
+Ahora puede realizar backups de datos de sistemas Cloud Volumes ONTAP instalados en regiones comerciales de AWS y Azure en Amazon S3 o Azure Blob. Para ello, es necesario instalar el conector en un host Linux de la región comercial y que también se ponga en marcha el sistema Cloud Volumes ONTAP. Consulte https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["Realizar backups de los datos de Cloud Volumes ONTAP en Amazon S3"] y.. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-azure.html["Realizar backups de los datos de Cloud Volumes ONTAP en Azure Blob"].
 
 
 
@@ -377,45 +380,29 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-
 
 
 
-=== 9 de enero de 2023
-
-
-
-==== Capacidad de mover archivos de backup antiguos a almacenamiento de archivado AWS S3 desde sistemas StorageGRID
-
-Ahora puede organizar en niveles archivos de backup antiguos de sistemas StorageGRID en almacenamiento de archivado en AWS S3. Esto le permite liberar espacio en sus sistemas de StorageGRID y ahorrar dinero gracias a una clase de almacenamiento económico para archivos de backup antiguos. Puede elegir entre organizar los backups en niveles en el almacenamiento de AWS S3 Glacier o S3 Glacier Deep Archive.
-
-Esta funcionalidad está disponible si su clúster local utiliza ONTAP 9.12.1 o posterior y su sistema StorageGRID utiliza 11.3 o posterior. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html#preparing-to-archive-older-backup-files-to-public-cloud-storage["Más información aquí"].
-
-
-
-==== Capacidad de seleccionar sus propias claves gestionadas por el cliente para el cifrado de datos en Google Cloud
-
-Al realizar un backup de datos de sus sistemas ONTAP en Google Cloud Storage, ahora puede seleccionar sus propias claves gestionadas por el cliente para el cifrado de datos en el asistente de activación en lugar de usar las claves de cifrado predeterminadas gestionadas por Google. Solo tiene que configurar primero sus claves de cifrado gestionadas por el cliente en Google y, a continuación, introducir los detalles al activar Cloud Backup.
-
-
-
-==== Ya no se necesita el rol de "administrador del almacenamiento" para que la cuenta de servicio cree backups en Google Cloud Storage
-
-En versiones anteriores, se necesitaba el rol de administrador de almacenamiento para la cuenta de servicio que permite que Cloud Backup acceda a los bloques de Google Cloud Storage. Ahora puede crear una función personalizada con un conjunto reducido de permisos que se asignarán a la cuenta de servicio. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-to-gcp.html#preparing-google-cloud-storage-for-backups["Descubra cómo preparar Google Cloud Storage para realizar backups"].
-
-
-
-==== Se ha agregado compatibilidad para restaurar datos mediante Buscar y restaurar en sitios sin acceso a Internet
-
-Si va a realizar un backup de datos de un clúster de ONTAP en las instalaciones a StorageGRID en un sitio sin acceso a Internet, también conocido como sitio oscuro o sitio sin conexión, ahora puede utilizar la opción Search & Restore para restaurar datos cuando sea necesario. Esta funcionalidad requiere que el conector BlueXP (versión 3.9.25 o superior) esté desplegado en el sitio sin conexión.
-
-https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-restore-backups-ontap.html#restoring-ontap-data-using-search-restore["Descubra cómo restaurar datos de ONTAP mediante la función de restauración de  de búsqueda"].https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Vea cómo instalar el conector en su sitio sin conexión"].
-
-
-
-==== Capacidad de descargar la página resultados de la supervisión de trabajos como un informe .csv
-
-Después de filtrar la página Supervisión de trabajos para mostrar los trabajos y las acciones que le interesan, ahora puede generar y descargar un archivo .csv de esos datos. A continuación, puede analizar la información o enviar el informe a otras personas de su organización. https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["Vea cómo generar un informe de supervisión de trabajos"].
-
-
-
 == Cloud Data SENSE
+
+
+
+=== 3 de abril de 2023 (versión 1.22)
+
+
+
+==== Nuevo informe de evaluación de detección de datos
+
+El informe de evaluación de detección de datos proporciona un análisis de alto nivel del entorno escaneado para resaltar los resultados obtenidos por el sistema y mostrar las áreas de preocupación y los posibles pasos para solucionarlos. El objetivo de este informe es dar a conocer las preocupaciones sobre la gobernanza de datos, las amenazas a la seguridad de los datos y los vacíos de cumplimiento de normativas en relación con los datos de su conjunto de datos. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-discovery-assessment-report["Descubra cómo generar y utilizar el Informe de evaluación de detección de datos"].
+
+
+
+==== Capacidad de poner en marcha la detección de datos en instancias pequeñas en el cloud
+
+Al implementar Data Sense en un conector BlueXP en un entorno AWS, ahora puede seleccionar entre dos tipos de instancia más pequeños que los que están disponibles con la instancia predeterminada. Si está analizando un entorno pequeño, esto puede ayudarle a ahorrar costes en la nube. Sin embargo, hay algunas restricciones al utilizar la instancia más pequeña. https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#using-a-smaller-instance-type["Vea los tipos de instancia y las limitaciones disponibles"].
+
+
+
+==== Ya está disponible una secuencia de comandos independiente para probar que su sistema Linux es apto para instalar Data Sense
+
+Si desea verificar que el sistema Linux cumple todos los requisitos previos independientemente de ejecutar la instalación de Data Sense, hay otro script que puede descargar que solo prueba los requisitos previos. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["Compruebe cómo su host Linux está listo para instalar Data Sense"].
 
 
 
@@ -514,35 +501,6 @@ El filtro "número de usuarios con acceso" ahora admite archivos almacenados en 
 ==== Se ha agregado un nuevo estado "éxito parcial" al panel Estado de acción
 
 El nuevo estado "éxito parcial" indica que una acción de detección de datos ha finalizado y que algunos elementos han fallado y algunos elementos han tenido éxito, por ejemplo, al mover o eliminar archivos 100. Además, se ha cambiado el nombre del estado "terminado" por "correcto". En el pasado, el estado "terminado" podría incluir acciones que se han realizado correctamente y que han fallado. Ahora el estado "éxito" significa que todas las acciones se han realizado correctamente en todos los elementos. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-view-compliance-actions.html["Consulte cómo ver el panel Estado de acciones"].
-
-
-
-=== 9 de enero de 2023 (versión 1.19)
-
-
-
-==== Capacidad para ver un gráfico de archivos que contienen datos confidenciales y que son excesivamente permisivos
-
-El panel de control de gobierno ha agregado un área nueva _sensible Data y permisos amplios_ que proporciona un mapa térmico de archivos que contienen datos confidenciales (incluidos datos personales confidenciales y confidenciales) y que son demasiado permisivos. Esto puede ayudarle a ver dónde puede tener algunos riesgos con datos confidenciales. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["Leer más"].
-
-
-
-==== Hay tres filtros nuevos disponibles en la página Investigación de datos
-
-Hay nuevos filtros disponibles para refinar los resultados que se muestran en la página Investigación de datos:
-
-* El filtro "número de usuarios con acceso" muestra qué archivos y carpetas están abiertos a un determinado número de usuarios. Puede elegir un intervalo de números para refinar los resultados, por ejemplo, para ver los archivos a los que pueden acceder 51-100 usuarios.
-* Los filtros "Hora de creación", "Hora descubierta", "última modificación" y "último acceso" ahora permiten crear un intervalo de fechas personalizado en lugar de sólo seleccionar un intervalo de días predefinido. Por ejemplo, puede buscar archivos con una "hora creada" "más de 6 meses" o con una fecha "última modificación" dentro de los "últimos 10 días".
-* El filtro "Ruta de acceso" le permite especificar rutas que desea excluir de los resultados de la consulta filtrada. Si introduce rutas de acceso para incluir y excluir determinados datos, detección de datos busca primero todos los archivos en las rutas de acceso incluidas, quita los archivos de las rutas de acceso excluidas y, a continuación, muestra los resultados.
-
-
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#filtering-data-in-the-data-investigation-page["Consulte la lista de todos los filtros que puede utilizar para investigar los datos"].
-
-
-
-==== El sentido de los datos puede identificar el número individual japonés
-
-Data Sense puede identificar y categorizar archivos que contengan el número individual japonés (también conocido como Mi número). Esto incluye tanto el número personal como el número de mi corporativo. https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["Vea todos los tipos de datos personales que Data Sense puede identificar en sus datos"].
 
 
 
@@ -1299,6 +1257,20 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 3 de abril de 2023
+
+
+
+==== Nuevas acciones recomendadas para proteger sus datos de ataques de ransomware
+
+* Una nueva acción recomendada para "realizar backups de archivos empresariales esenciales en orígenes de datos" identifica cómo proteger sus categorías más importantes de datos realizando backups de volúmenes con Cloud Backup. Esto es importante si debe recuperar cualquier dato debido a un ataque de ransomware. La recomendación le redirige a la interfaz de Cloud Backup para que pueda activar el backup en los volúmenes necesarios.
+* Una nueva acción recomendada para "activar configuraciones de ciberalmacenamiento para orígenes de datos" identifica si se habilitan o deshabilitan seis funcionalidades de ONTAP que ayudan a proteger datos. Debe habilitar estas funcionalidades en todos los sistemas ONTAP y Cloud Volumes ONTAP en las instalaciones.
+
+
+https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions["Consulte la lista de todas las acciones recomendadas"].
+
+
+
 === 7 de marzo de 2023
 
 
@@ -1326,16 +1298,6 @@ https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-crit
 ==== La protección contra ransomware se ha movido de la categoría Protección a la categoría Gobierno
 
 Ahora usted accede a este servicio desde el menú de navegación de la izquierda de BlueXP seleccionando *Gobierno > Protección contra Ransomware*.
-
-
-
-=== 9 de enero de 2023
-
-
-
-==== Se ha añadido soporte para recibir alertas de protección contra ransomware por correo electrónico y en el Centro de notificación
-
-La protección contra ransomware se ha integrado en el servicio de notificación de BlueXP. Puede mostrar notificaciones de protección contra ransomware haciendo clic en la campana de notificación de la barra de menús de BlueXP. También puede configurar BlueXP para que envíe notificaciones por correo electrónico como alertas, de forma que pueda ser informado de la actividad importante del sistema incluso cuando no haya iniciado sesión en el sistema. El correo electrónico puede enviarse a todos los destinatarios que tengan en cuenta las alertas de ransomware. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-monitor-ransomware-alerts.html["Vea cómo"].
 
 
 
