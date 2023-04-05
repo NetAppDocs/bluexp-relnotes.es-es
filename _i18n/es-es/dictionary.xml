@@ -50,8 +50,6 @@
   <block id="67d516de6d58e90ec46d8a36eecbf35a" category="doc">Cambios recientes en BlueXP</block>
   <block id="06ec635aca479394e3f10f59b57ce807" category="inline-link-macro">conjunto completo de notas de la versión</block>
   <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">Introducción de BlueXP</block>
-  <block id="78d1c9f9c86eecd86f5f568cfe0c0721" category="inline-link">Más información sobre BlueXP</block>
-  <block id="589a81f9a559c7792363bf5c658f7eb7" category="paragraph">Cloud Manager cambió su nombre a BlueXP el 1 de noviembre de 2022.<block ref="f8081012fbfe0608e8247bd5ec45b886" category="inline-link-rx"></block></block>
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">Funciones administrativas</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">En esta sección se describen las nuevas funciones relacionadas con las funciones de administración de BlueXP: Cuentas, conectores, credenciales de proveedores de nube y mucho más.</block>
   <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">5 de febrero de 2023</block>
@@ -302,8 +300,6 @@
   <block id="1f56bc157b53331171e2209738abd411" category="section-title">El servidor de administración de licencias se ha mejorado para funcionar en entornos muy restrictivos</block>
   <block id="706163f56e3d19088d2a54cd0451269e" category="paragraph">Durante la configuración de la licencia, el servidor de gestión de licencias (LMS) debe tener acceso a Internet para recopilar los datos de licencias de NetApp/Zuora. Una vez que la configuración es correcta, el LMS puede seguir trabajando en modo sin conexión y proporcionar capacidades de licencia a pesar de estar en entornos restrictivos.</block>
   <block id="1b66d26240c6a01df03ec7dc4a6d1a2b" category="section-title">La interfaz de usuario de Edge Sync en Optimus se ha mejorado para mostrar la lista de clientes conectados en un coordinador Edge</block>
-  <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">23 de junio de 2022 (versión 1.3.1)</block>
-  <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">El software Global File Cache Edge para la versión 1.3.1 está disponible en<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>. En esta versión se solucionan los problemas descritos en<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>.</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">06 de noviembre de 2022</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">definición de clases de almacenamiento</block>
@@ -584,4 +580,7 @@
   <block id="51ad14036a828a2a993258fe95046128" category="list-text">Una nueva acción recomendada para "activar configuraciones de ciberalmacenamiento para orígenes de datos" identifica si se habilitan o deshabilitan seis funcionalidades de ONTAP que ayudan a proteger datos. Debe habilitar estas funcionalidades en todos los sistemas ONTAP y Cloud Volumes ONTAP en las instalaciones.</block>
   <block id="dced9da708bc7f04e84ad156297f2b2a" category="inline-link">Consulte la lista de todas las acciones recomendadas</block>
   <block id="8f0f57a606909986a57f6c9a3dcb68ef" category="paragraph"><block ref="3c293b78d34033676deb7d5c4a97ca37" category="inline-link-rx"></block>.</block>
+  <block id="1d0a8122e5a250dbe5879cd7f8f5a495" category="inline-link">Más información sobre la introducción de BlueXP</block>
+  <block id="3214121f77d11d3720f824f6609986e1" category="paragraph">NetApp BlueXP se lanzó el 1 de noviembre de 2022. BlueXP amplía y mejora las funcionalidades que se proporcionaron a través de Cloud Manager.<block ref="f53c3e09f5dc895df05d3b248da7799e" category="inline-link-rx"></block></block>
+  <block id="f25c47eb7d9f3c638d89723bee6d2360" category="paragraph">La nueva funcionalidad de las API le permite realizar backups de sus snapshots de volumen en ONTAP S3 mediante BlueXP Cloud Backup. Esta funcionalidad solo está disponible actualmente para sistemas ONTAP en las instalaciones. Para obtener instrucciones detalladas, consulte el Blog<block ref="50f757899df464a10b489edfac75ae5d" category="inline-link-rx"></block>.</block>
 </blocks>
