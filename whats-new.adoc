@@ -46,7 +46,7 @@ BlueXP _modos de implementación_ le permiten utilizar BlueXP de forma que se aj
 * Modo privado
 
 
-link:concept-modes.html["Obtenga más información sobre estos modos de implementación"].
+10b9ce0cb6b2f607e0c7df6e246cfe67
 
 
 NOTE: La introducción del modo restringido sustituye a la opción de activar o desactivar la plataforma SaaS. Puede habilitar el modo restringido en el momento de crear una cuenta. No se puede habilitar ni deshabilitar más adelante.
@@ -1023,7 +1023,7 @@ Para obtener más información sobre la integración de Digital Advisor con Blue
 
 === 02 de abril de 2023
 
-El nuevo servicio de eficiencia económica identifica los clústeres con una capacidad baja actual o prevista y proporciona recomendaciones sobre la organización en niveles de los datos o capacidad adicional para los sistemas AFF locales.
+El nuevo servicio de eficiencia económica identifica clústeres con una capacidad baja actual o prevista y proporciona recomendaciones sobre organización en niveles de los datos o capacidad adicional para sistemas AFF en las instalaciones.
 
 link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.html["Obtenga más información sobre este nuevo servicio"].
 
@@ -1047,25 +1047,25 @@ Ahora puede descubrir sus sistemas de almacenamiento E-Series directamente desde
 
 
 
-=== e0feab0ee26165da9cddab198d1f1422
+=== 5 de abril de 2023 (versión 2.2)
 
 Esta versión proporciona las nuevas funciones que se enumeran a continuación. También soluciona los problemas descritos en https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["Problemas solucionados"]. Los paquetes de software actualizados están disponibles en https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["esta página"].
 
 
 
-==== b1bdb4b30cdf01fdd4fc306c24b3e449
+==== Compatibilidad con caché de archivos global en sistemas Cloud Volumes ONTAP implementados en Google Cloud
 
-a92c52030822934c670502facf8a8f31
+Hay disponible una nueva licencia "Edge Cache" cuando se implementa un sistema Cloud Volumes ONTAP en Google Cloud. Tiene derecho a poner en marcha un sistema perimetral de caché de archivos global por cada 3 TIB de capacidad adquirida en el sistema Cloud Volumes ONTAP.
 
-3a8f1f533494279acf2d044c11cf495a
-
-
-
-==== 89960279d43d6d504afb45e5a8dff137
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Obtenga más información acerca del paquete de licencia de Edge Cache."]
 
 
 
-==== 402a1502f5c39fb55ca79d59e3184a34
+==== El asistente de configuración y la interfaz de usuario de configuración GFC se han mejorado para realizar el registro de licencias de NetApp
+
+
+
+==== Optimus PSM mejorado para configurar la funcionalidad Edge Sync
 
 
 
@@ -1263,7 +1263,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-ontap-onprem/ma
 
 Mediante el nuevo servicio de resiliencia operativa y sus sugerencias automatizadas de solución de riesgos operativos DE TI, puede implementar soluciones correctivas sugeridas antes de que se produzca una interrupción o un fallo.
 
-La resiliencia operativa es una categoría de servicios que le ayudan a analizar las alertas y eventos para mantener el estado, el tiempo de actividad y el rendimiento de los servicios y las soluciones.
+La resiliencia operativa es un servicio que le ayuda a analizar las alertas y los eventos para mantener el estado, el tiempo de actividad y el rendimiento de los servicios y las soluciones.
 
 link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/intro.html["Obtenga más información sobre este nuevo servicio"].
 
