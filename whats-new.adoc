@@ -1000,6 +1000,58 @@ Para obtener más información sobre la integración de Digital Advisor con Blue
 
 
 
+== Cartera digital
+
+
+
+=== 3 de abril de 2023
+
+
+
+==== Notificaciones por correo electrónico
+
+Las notificaciones por correo electrónico ya son compatibles con Digital Wallet.
+
+Si configura los ajustes de notificación, puede recibir notificaciones por correo electrónico cuando sus licencias de BYOL estén a punto de expirar (una notificación de "advertencia") o si ya han caducado (una notificación de "error").
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Aprenda a configurar notificaciones por correo electrónico"^]
+
+
+
+==== Capacidad con licencia para suscripciones al mercado
+
+Al visualizar la gestión de licencias basada en la capacidad para Cloud Volumes ONTAP, la cartera digital ahora muestra la capacidad con licencia que compraste con las ofertas privadas del mercado.
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Aprenda a ver la capacidad consumida en su cuenta"].
+
+
+
+=== 6 de noviembre de 2022
+
+
+
+==== Suscripciones y contratos anuales
+
+Sus suscripciones a PAYGO y los contratos anuales para BlueXP ya están disponibles para su visualización y gestión desde Digital Wallet.
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["Obtenga información sobre cómo administrar sus suscripciones"].
+
+
+
+=== 18 de septiembre de 2022
+
+
+
+==== I/O y capacidad WORM optimizadas
+
+La cartera digital ahora muestra un resumen del paquete de licencias de I/o optimizadas y la capacidad WORM aprovisionada para los sistemas Cloud Volumes ONTAP de toda su cuenta.
+
+Estos detalles pueden ayudarle a comprender mejor la carga y si necesita adquirir capacidad adicional.
+
+https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Aprenda a ver la capacidad consumida en su cuenta"].
+
+
+
 == Eficiencia económica
 
 
