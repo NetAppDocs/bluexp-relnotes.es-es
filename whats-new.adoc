@@ -59,7 +59,7 @@ NOTE: La introducción del modo restringido sustituye a la opción de activar o 
 
 ==== Conector 3.9.28
 
-* d128bda2634e1051cc984231da065144
+* Las notificaciones por correo electrónico ahora son compatibles con la cartera digital de BlueXP.
 +
 Si configura los ajustes de notificación, puede recibir notificaciones por correo electrónico cuando sus licencias de BYOL estén a punto de expirar (una notificación de "advertencia") o si ya han caducado (una notificación de "error").
 
@@ -119,12 +119,12 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manag
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Ver los requisitos del sistema para el conector"].
 
-* d2792d178cbdf6c41f2b8f2ae64424ed
+* El conector ahora es compatible con cualquier entorno de nube que tenga un aislamiento completo de Internet. A continuación, puede usar la consola BlueXP que se ejecuta en el conector para implementar Cloud Volumes ONTAP en la misma ubicación y detectar clústeres de ONTAP en las instalaciones (si tiene una conexión desde su entorno de cloud a un entorno local). También puedes utilizar el backup y la recuperación de datos de BlueXP para realizar backups de volúmenes de Cloud Volumes ONTAP en las regiones comerciales de AWS y Azure. No hay otros servicios de BlueXP compatibles con este tipo de puesta en marcha, a excepción de la cartera digital de BlueXP.
 +
 La región del cloud puede ser una región en la que haya agencias estadounidenses seguras como AWS C2S/SC2S, Azure IL6 o cualquier región comercial.
 
 +
-75327cdc175eca204abf0a4aa66413b3
+Para empezar, instale manualmente el software Connector, inicie sesión en la consola BlueXP que se ejecuta en el conector, añada la licencia BYOL a la cartera digital de BlueXP y, después, implemente Cloud Volumes ONTAP.
 
 +
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Instale el conector en una ubicación sin acceso a Internet"^]
@@ -936,6 +936,8 @@ El asesor digital (anteriormente Active IQ) ya está totalmente integrado en Blu
 
 Cuando accede al asesor digital de BlueXP, se le solicitan sus credenciales del sitio de soporte de NetApp para que pueda ver los datos relacionados con sus sistemas. La cuenta de NSS con la que inicia sesión está asociada únicamente a su inicio de sesión de usuario. No está asociado a ningún otro usuario de su cuenta de NetApp.
 
+https://docs.netapp.com/us-en/active-iq/index.html["Obtén más información sobre el asesor digital de BlueXP"^]
+
 
 
 == Cartera digital
@@ -948,7 +950,7 @@ Cuando accede al asesor digital de BlueXP, se le solicitan sus credenciales del 
 
 ==== Notificaciones por correo electrónico
 
-d128bda2634e1051cc984231da065144
+Las notificaciones por correo electrónico ahora son compatibles con la cartera digital de BlueXP.
 
 Si configura los ajustes de notificación, puede recibir notificaciones por correo electrónico cuando sus licencias de BYOL estén a punto de expirar (una notificación de "advertencia") o si ya han caducado (una notificación de "error").
 
@@ -958,7 +960,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operatio
 
 ==== Capacidad con licencia para suscripciones al mercado
 
-016c818ed3128119f94a31cbec32bf1f
+Al visualizar la gestión de licencias basadas en la capacidad para Cloud Volumes ONTAP, la cartera digital de BlueXP ahora muestra la capacidad con licencia que compraste con las ofertas privadas del mercado.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Aprenda a ver la capacidad consumida en su cuenta"].
 
@@ -970,7 +972,7 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 ==== Suscripciones y contratos anuales
 
-b3e680bd6b6b80e2fd4f5bd19f3ad015
+Ya puedes ver y gestionar tus suscripciones PAYGO y contratos anuales de BlueXP desde la cartera digital de BlueXP.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["Obtenga información sobre cómo administrar sus suscripciones"].
 
@@ -982,17 +984,11 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.ht
 
 ==== I/O y capacidad WORM optimizadas
 
-dfc3d3012360c41f119ce032ebb3ed8b
+La cartera digital de BlueXP ahora muestra un resumen del paquete de licencias de I/O optimizado y la capacidad WORM aprovisionada para sistemas de Cloud Volumes ONTAP en toda tu cuenta.
 
 Estos detalles pueden ayudarle a comprender mejor la carga y si necesita adquirir capacidad adicional.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Aprenda a ver la capacidad consumida en su cuenta"].
-
-
-
-== Eficiencia económica
-
-https://docs.netapp.com/us-en/active-iq/index.html["Obtén más información sobre el asesor digital de BlueXP"^]
 
 
 
@@ -1324,7 +1320,7 @@ La compatibilidad existente para crear un entorno de trabajo de Cloud Volumes ON
 
 Con la nueva acción "Find Resource" puede identificar todos los volúmenes en los que desea habilitar Cloud Backup y, a continuación, utilizar la acción Cloud Backup para habilitar el backup en esos volúmenes.
 
-Actualmente admite volúmenes en sistemas Cloud Volumes ONTAP y ONTAP en las instalaciones. https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-cloud-backup["Vaya aquí para obtener más información"].
+Actualmente admite volúmenes en sistemas Cloud Volumes ONTAP y ONTAP en las instalaciones. https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery["Vaya aquí para obtener más información"].
 
 
 
