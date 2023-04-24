@@ -58,9 +58,6 @@
   <block id="e54595e40dfd177a2a9e671c794a3a4d" category="paragraph">Cloud Manager permite crear, eliminar y restaurar snapshots de volúmenes. También puede crear nuevos pools de capacidad y especificar sus niveles de servicio.</block>
   <block id="5054d68a0b2f03dece3eb72cfaa09427" category="list-text">Edite un volumen cambiando su tamaño y gestionando las etiquetas.</block>
   <block id="396a3c9fb559d38e68f68ea139b3539a" category="paragraph">La capacidad de crear y gestionar Azure NetApp Files directamente desde Cloud Manager sustituye la funcionalidad anterior de migración de datos.</block>
-  <block id="5a0c953dba56aa463b4468d70bfc3feb" category="section-title">01 de enero de 2023</block>
-  <block id="f99ecd5cff9b18879fcd5ee404af256f" category="inline-link-macro">gestión de la capacidad automática</block>
-  <block id="380fe7c3627610af34c9936f46325923" category="paragraph">Ahora puede optar por activar <block ref="79658b4a46346ad9aa23a5f92d57dfaa" category="inline-link-macro-rx"></block> para añadir almacenamiento incremental basado en demanda. La administración automática de la capacidad sondea el clúster a intervalos regulares para evaluar la demanda y aumenta automáticamente la capacidad de almacenamiento en incrementos del 10% hasta el 80% de la capacidad máxima del clúster.</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 de septiembre de 2022</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 de julio de 2022</block>
   <block id="983a4e7f5913304ec713a249baf7be47" category="section-title">3 de marzo de 2022</block>
@@ -320,26 +317,6 @@
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toda la documentación de BlueXP</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">Conozca los cambios más recientes en los servicios en la nube que forman parte de la plataforma BlueXP. Si quiere más información, consulte <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> por cada servicio individual.</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 de marzo de 2023</block>
-  <block id="ba5bb99eb6a04798c8ccd3f156db75a5" category="section-title">Conector 3.9.27</block>
-  <block id="ce47c670900f3fe8347a2fc95ff710d8" category="list-text">La búsqueda ya está disponible en la consola BlueXP. En este momento, puede utilizar la búsqueda para buscar servicios y características de BlueXP.</block>
-  <block id="73984711a5ba4c8d6f613d3ef2426680" category="inline-image-macro">Una captura de pantalla de la búsqueda BlueXP que está disponible en la parte superior de la consola.</block>
-  <block id="4be68bdee3a27bc0218c6188d192fc95" category="paragraph"><block ref="4be68bdee3a27bc0218c6188d192fc95" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="list-text">Puede ver y gestionar los casos de soporte activos y resueltos directamente desde BlueXP. Es posible gestionar los casos asociados con su cuenta de NSS y con su empresa.</block>
-  <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">Aprenda a gestionar sus casos de soporte</block>
-  <block id="796ced97a72330e5ce3c0935b7b09f45" category="paragraph"><block ref="622b6e7f4143df2aca06b538ee1d864e" category="inline-link-rx"></block>.</block>
-  <block id="dd9b32305d0c33f8845bee1cdfcfc85a" category="list-text">El conector ahora es compatible con un host que ejecuta Red Hat Enterprise Linux 8.7.</block>
-  <block id="2a75ac250c22787b79b100a2a614a4e2" category="inline-link">Ver los requisitos del sistema para el conector</block>
-  <block id="9954c00cefacf69f28fa1994e949ff83" category="paragraph"><block ref="1c471069dafa2d25f3a632cea0250222" category="inline-link-rx"></block>.</block>
-  <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">La región del cloud puede ser una región en la que haya agencias estadounidenses seguras como AWS C2S/SC2S, Azure IL6 o cualquier región comercial.</block>
-  <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">Instale el conector en una ubicación sin acceso a Internet</block>
-  <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
-  <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">Acceda a la consola BlueXP del conector</block>
-  <block id="b620510a7b9198825896459898b7bc08" category="list-text"><block ref="b620510a7b9198825896459898b7bc08" category="inline-link-rx"></block></block>
-  <block id="c09d91817b6017a3572898b867b22e36" category="inline-link">Añada una licencia sin asignar</block>
-  <block id="587a8286d2e3b61d9f250d807b34983c" category="list-text"><block ref="587a8286d2e3b61d9f250d807b34983c" category="inline-link-rx"></block></block>
-  <block id="a8ed015209d62d3ffd9042f8a01b9725" category="inline-link">Empiece a usar Cloud Volumes ONTAP</block>
-  <block id="d66686137674e9cdef6070dbe4ce01c6" category="list-text"><block ref="d66686137674e9cdef6070dbe4ce01c6" category="inline-link-rx"></block></block>
-  <block id="37e16775c1bede9551f227ccaca87974" category="paragraph"><block ref="37e16775c1bede9551f227ccaca87974" category="inline-link-rx"></block></block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">05 de marzo de 2023</block>
   <block id="3aea41413b60d0894823e739f01efcbb" category="paragraph">Se han realizado mejoras en la interfaz de usuario y se han actualizado las capturas de pantalla en la documentación.</block>
   <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">Ahora puede generar un informe de organización en niveles para sus volúmenes</block>
@@ -364,9 +341,6 @@
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">Posibilidad de añadir nuevos cubos desde BlueXP</block>
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">Descubra cómo añadir nuevos bloques de Amazon S3</block>
   <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">Has tenido la posibilidad de ver cubos de Amazon S3 en BlueXP Canvas durante mucho tiempo. Ahora puede agregar nuevos cubos y cambiar las propiedades de los cubos existentes directamente desde BlueXP.<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>.</block>
-  <block id="d564f41f7e0ffa3f9e8bc7a809230f94" category="list-text">El conector ahora le permite agregar y gestionar cubos de Amazon S3 desde BlueXP.</block>
-  <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">Vea cómo añadir nuevos bloques de Amazon S3 en su cuenta de AWS desde BlueXP</block>
-  <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>.</block>
   <block id="01e76ab0dacc58799dc14adbdc705ac7" category="section-title">9 de marzo de 2023</block>
   <block id="35203f05692d5cc102a5525bf4de9733" category="section-title">Las operaciones de restauración a nivel de carpeta ahora incluyen todas las subcarpetas y archivos</block>
   <block id="5463242c7cc34f92b5dbbf1ab6d87188" category="paragraph">Anteriormente, cuando restauró una carpeta, solo se restauran los archivos de esa carpeta, no se restauran ni las subcarpetas ni los archivos. Ahora, si utiliza ONTAP 9.13.0 o superior, se restauran todas las subcarpetas y los archivos de la carpeta seleccionada. Esto puede ahorrar mucho tiempo y dinero en casos en los que tiene varias carpetas anidadas en una carpeta de nivel superior.</block>
@@ -387,10 +361,6 @@
   <block id="1ba259cc1a092c9c30c1a18ccc612c75" category="list-text">El conector ahora es compatible con la región de Google Cloud en Turín.</block>
   <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">Consulte la lista completa de las regiones admitidas</block>
   <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
-  <block id="e9c35e9b853bc286e0f3b1a7ee2e338a" category="list-text">Ahora puede detectar VMware vCenter Server en BlueXP.</block>
-  <block id="a5b1ab8743c3279fbcf5a93dcd6de23d" category="paragraph">Después de detectar una instancia de VMware vCenter Server que se ejecuta en AWS o en las instalaciones, puede abrir el entorno de trabajo para ver detalles sobre los almacenes de datos y las máquinas virtuales que están asociadas con el servidor.</block>
-  <block id="10cc8c1f48423a72bf1e617861999cae" category="paragraph">El único requisito es un conector que tiene una conexión a VMware vCenter Server que ejecuta la versión 7.0 o posterior.</block>
-  <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">Para empezar, seleccione *Agregar entorno de trabajo*, seleccione *Amazon Web Services* o *On-local* y, a continuación, seleccione *VMware vCenter Server*. Introduzca el nombre de dominio o la dirección IP del servidor y, a continuación, introduzca el nombre de usuario y la contraseña del usuario administrador.</block>
   <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">Ahora puede gestionar las credenciales de usuario asociadas con su inicio de sesión de BlueXP: Credenciales de ONTAP y credenciales del sitio de soporte de NetApp (NSS).</block>
   <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">Al ir a *Configuración &gt; credenciales*, puede ver las credenciales, actualizar las credenciales y eliminarlas. Por ejemplo, si cambia la contraseña para estas credenciales, deberá actualizar la contraseña en BlueXP.</block>
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">Ahora puede cargar archivos adjuntos al crear un caso de soporte o al actualizar las notas del caso para un caso de soporte existente.</block>
@@ -426,8 +396,6 @@
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
   <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link-macro">Aprenda a gestionar las credenciales de usuario</block>
-  <block id="cabf1912632a0d24145c02f00dc7d6b2" category="inline-link-macro">Cree un FlexGroup en FSX para ONTAP</block>
-  <block id="9a2a26c33c1a0f6b14b7bb3a214dbaf0" category="list-text">Ahora puede hacerlo <block ref="5e895283a25d01b135da63bdfcfdf72e" category="inline-link-macro-rx"></block> volúmenes para distribuir datos de volúmenes en el clúster.</block>
   <block id="9af9b754c1d16f271c1e6f4b1b2c4f4d" category="list-text">El límite de IOPS se aumenta para permitir el aprovisionamiento manual o automático hasta 160,000.</block>
   <block id="c7326baf2ea51b61fafa4f4680d916c0" category="section-title">2 de abril de 2023</block>
   <block id="9c305cf5f9f8051acc945eda0fc8a1be" category="section-title">Compatibilidad adicional para las relaciones de Gen2 de Azure Data Lake Storage</block>
@@ -515,8 +483,6 @@
   <block id="36e33f823d687cad39366d44fd0b326d" category="section-title">Suscripciones y contratos anuales</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">Obtenga información sobre cómo administrar sus suscripciones</block>
   <block id="02a7eedc354fe91b04b9ff906dc9c760" category="paragraph"><block ref="dcb08a7187e62f8d5d6c3eba08ea6b8f" category="inline-link-rx"></block>.</block>
-  <block id="b269d65b4fd592fc59288f3c9c3917b9" category="section-title">I/O y capacidad WORM optimizadas</block>
-  <block id="c3304f9cf1f523f219fc4a936bde8242" category="paragraph">Estos detalles pueden ayudarle a comprender mejor la carga y si necesita adquirir capacidad adicional.</block>
   <block id="be062cdcabbb3055334e8f19b4bdf378" category="inline-link">Backup y recuperación</block>
   <block id="91c0e2f2075bec9e96bc977e9bd6d224" category="list-text"><block ref="91c0e2f2075bec9e96bc977e9bd6d224" category="inline-link-rx"></block></block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="inline-link">Clasificación</block>
@@ -604,10 +570,34 @@
   <block id="35083b11acbb58293019b38b8f232a5a" category="paragraph">Es posible descargar un informe en la página Tier Volumes para revisar el estado de organización en niveles de todos los volúmenes en los clústeres que se están gestionando. La organización en niveles de BlueXP genera un archivo .CSV que se puede revisar y enviar a otras personas de la empresa según sea necesario.<block ref="b6be70acd3f28aaa18a7e212c9bc7736" category="inline-link-rx"></block>.</block>
   <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">Debido a un cambio en la organización en niveles de BlueXP, tienes que cambiar los siguientes extremos de conector para que las operaciones de organización en niveles de BlueXP se realicen correctamente:</block>
   <block id="d128bda2634e1051cc984231da065144" category="list-text">Las notificaciones por correo electrónico ahora son compatibles con la cartera digital de BlueXP.</block>
-  <block id="d2792d178cbdf6c41f2b8f2ae64424ed" category="list-text">El conector ahora es compatible con cualquier entorno de nube que tenga un aislamiento completo de Internet. A continuación, puede usar la consola BlueXP que se ejecuta en el conector para implementar Cloud Volumes ONTAP en la misma ubicación y detectar clústeres de ONTAP en las instalaciones (si tiene una conexión desde su entorno de cloud a un entorno local). También puedes utilizar el backup y la recuperación de datos de BlueXP para realizar backups de volúmenes de Cloud Volumes ONTAP en las regiones comerciales de AWS y Azure. No hay otros servicios de BlueXP compatibles con este tipo de puesta en marcha, a excepción de la cartera digital de BlueXP.</block>
-  <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">Para empezar, instale manualmente el software Connector, inicie sesión en la consola BlueXP que se ejecuta en el conector, añada la licencia BYOL a la cartera digital de BlueXP y, después, implemente Cloud Volumes ONTAP.</block>
   <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Al visualizar la gestión de licencias basadas en la capacidad para Cloud Volumes ONTAP, la cartera digital de BlueXP ahora muestra la capacidad con licencia que compraste con las ofertas privadas del mercado.</block>
   <block id="b3e680bd6b6b80e2fd4f5bd19f3ad015" category="paragraph">Ya puedes ver y gestionar tus suscripciones PAYGO y contratos anuales de BlueXP desde la cartera digital de BlueXP.</block>
-  <block id="dfc3d3012360c41f119ce032ebb3ed8b" category="paragraph">La cartera digital de BlueXP ahora muestra un resumen del paquete de licencias de I/O optimizado y la capacidad WORM aprovisionada para sistemas de Cloud Volumes ONTAP en toda tu cuenta.</block>
   <block id="12c7b4f361520fac32769892a3adb104" category="paragraph">Actualmente admite volúmenes en sistemas Cloud Volumes ONTAP y ONTAP en las instalaciones.<block ref="cf92aa38511759ce0275086447e2bfa9" category="inline-link-rx"></block>.</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">7 de mayo de 2023</block>
+  <block id="d13015f8ae4fd0f7f263eba9f81f4caa" category="section-title">Conector 3.9.29</block>
+  <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">Ubuntu 22,04 es el nuevo sistema operativo para Connector cuando se pone en marcha un Connector desde BlueXP o desde el mercado de tu proveedor de nube.</block>
+  <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">También tiene la opción de instalar manualmente el conector en su propio host Linux que ejecuta Ubuntu 22,04.</block>
+  <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">Red Hat Enterprise Linux 8,6 y 8,7 ya no son compatibles con las nuevas implementaciones de Connector.</block>
+  <block id="2f5617aecec1df3805ada7f05da46bde" category="paragraph">Estas versiones no son compatibles con nuevas implementaciones porque Red Hat ya no es compatible con Docker, que es necesario para Connector. Si tiene un conector existente ejecutándose en RHEL 8,6 o 8,7, NetApp seguirá admitiendo su configuración.</block>
+  <block id="470821fb08a53bb45ecda66d23c58d6f" category="paragraph">Red Hat 7,6, 7,7, 7,8 y 7,9 siguen siendo compatibles con conectores nuevos y existentes.</block>
+  <block id="a2619f6db1e9fa217b857129c75384ab" category="list-text">El conector ahora es compatible en la región de Qatar en Google Cloud.</block>
+  <block id="368c64d1828dfb51f85a6ad8427db46c" category="list-text">El conector también es compatible con la región central de Suecia en Microsoft Azure.</block>
+  <block id="cff120b14e79d2501e83070f59bb2387" category="paragraph"><block ref="cff120b14e79d2501e83070f59bb2387" category="inline-link-rx"></block></block>
+  <block id="a018fc35c6be59c0e9c90d4bd464dc47" category="section-title">07 de mayo de 2023</block>
+  <block id="b3aad9775f9ce61fe67c9745594b96f0" category="inline-link-macro">generar un grupo de seguridad</block>
+  <block id="beee5e54063eb4d710db752896c928c8" category="inline-link-macro">requiere permisos adicionales</block>
+  <block id="85613cc2934a1e3d40c91656c94e331a" category="list-text">Al crear un entorno de trabajo, ahora puedes tener BlueXP <block ref="c4e69423da06cd62564882d11bcec12a" category="inline-link-macro-rx"></block> Esto permite el tráfico dentro de la VPC seleccionada solamente. Esta función <block ref="55b057d10246173e2440d2eae51abd9a" category="inline-link-macro-rx"></block>.</block>
+  <block id="34ec78fcc91ffb1e54cd85e4a0924332" category="inline-link-macro">agregar</block>
+  <block id="8f45a2644508b5282f57fe129f62d19a" category="inline-link-macro">modificar</block>
+  <block id="158f074c96189eb946118a12a17762b5" category="list-text">Usted puede opcionalmente <block ref="09047edca5075ad1c71cf5035a98ddf9" category="inline-link-macro-rx"></block> y.. <block ref="d0baf23f6aa987908b3cb85b94241056" category="inline-link-macro-rx"></block> etiquetas para categorizar volúmenes.</block>
+  <block id="060a6559f6065c5058aca6b22d897bce" category="section-title">Ofertas privadas de Google Cloud</block>
+  <block id="bfe876190faa5e7a4cd6d5029395b658" category="paragraph">La cartera digital de BlueXP ahora identifica las suscripciones a Google Cloud Marketplace que están asociadas a una oferta privada y muestra la fecha de finalización y la duración de la suscripción. Esta mejora le permite verificar que ha aceptado con éxito la oferta privada y validar sus términos.</block>
+  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">Desglose del uso de carga</block>
+  <block id="d0f5a029263e80e902caf444fa5e9080" category="paragraph">Ahora puede averiguar por qué se le cobra cuando está suscrito a licencias basadas en capacidad. Puede descargar los siguientes tipos de informes de uso desde la cartera digital de BlueXP. Los informes de uso proporcionan los detalles de capacidad de las suscripciones y cómo se le cobra por los recursos de sus suscripciones a Cloud Volumes ONTAP. Los informes descargables se pueden compartir fácilmente con otros.</block>
+  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Uso del paquete Cloud Volumes ONTAP</block>
+  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">Uso de alto nivel</block>
+  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">Uso de los equipos virtuales de almacenamiento</block>
+  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">Uso de volúmenes</block>
+  <block id="56a50532d8da2bebb09d6190c126140c" category="inline-link-macro">Gestione licencias basadas en capacidad</block>
+  <block id="8156321649d649dc3e16c2849d8aa212" category="paragraph">Para obtener más información, consulte <block ref="862b3811f42dd37621050f0605c0d301" category="inline-link-macro-rx"></block>.</block>
 </blocks>
