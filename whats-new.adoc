@@ -476,6 +476,50 @@ El nuevo estado «Correcto parcial» indica que una acción de clasificación de
 
 
 
+=== 7 de mayo de 2023
+
+Los siguientes cambios se introdujeron con la versión 3.9.29 del conector.
+
+
+
+==== La región de Qatar ahora es compatible con Google Cloud
+
+La región de Qatar ahora es compatible con Google Cloud para Cloud Volumes ONTAP y el conector para Cloud Volumes ONTAP 9.12.1 GA y posterior.
+
+
+
+==== La región central de Suecia ahora es compatible con Azure
+
+La región central de Suecia ahora es compatible con Azure para Cloud Volumes ONTAP y el conector para Cloud Volumes ONTAP 9.12.1 GA y posteriores.
+
+
+
+==== Compatibilidad con implementaciones de zonas de multidisponibilidad de alta disponibilidad en Azure Australia East
+
+La región Australia Este en Azure ahora es compatible con implementaciones de zonas de multidisponibilidad de alta disponibilidad para Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores.
+
+
+
+==== Desglose del uso de carga
+
+Ahora puede averiguar por qué se le cobra cuando está suscrito a licencias basadas en capacidad. Puede descargar los siguientes tipos de informes de uso desde la cartera digital en BlueXP. Los informes de uso proporcionan los detalles de capacidad de las suscripciones y cómo se le cobra por los recursos de sus suscripciones a Cloud Volumes ONTAP. Los informes descargables se pueden compartir fácilmente con otros.
+
+* Uso del paquete Cloud Volumes ONTAP
+* Uso de alto nivel
+* Uso de los equipos virtuales de almacenamiento
+* Uso de volúmenes
+
+
+Para obtener más información, consulte link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestione licencias basadas en capacidad"^].
+
+
+
+==== Ahora se muestra una notificación al acceder a BlueXP sin una suscripción a Marketplace
+
+Ahora se mostrará una notificación cada vez que accedas a Cloud Volumes ONTAP en BlueXP sin una suscripción a Marketplace. La notificación indica que se requiere una suscripción al mercado para este entorno de trabajo para cumplir con los términos y condiciones de Cloud Volumes ONTAP.
+
+
+
 === 4 de abril de 2023
 
 A partir de Cloud Volumes ONTAP 9.12.1 GA, las regiones de China ahora son compatibles con AWS de la siguiente manera.
@@ -504,7 +548,7 @@ La región de Turín ahora es compatible con Google Cloud for Cloud Volumes ONTA
 
 El monedero digital muestra ahora la capacidad con licencia que ha adquirido con las ofertas privadas del mercado.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Aprenda a ver la capacidad consumida en su cuenta"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Aprenda a ver la capacidad consumida en su cuenta"^].
 
 
 
@@ -532,23 +576,6 @@ NOTE: Actualmente, solo puede ver los volúmenes de FlexGroup existentes en Blue
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["Una captura de pantalla que muestra el texto sobre el icono de volumen FlexGroup bajo el icono volúmenes."]
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["Obtenga más información sobre cómo ver los volúmenes de FlexGroup que se han creado."^]
-
-
-
-=== 13 de marzo de 2023
-
-
-
-==== Apoyo regional a China
-
-A partir de la versión comercial de Cloud Volumes ONTAP 9.12.1, ahora el soporte de la región de China es compatible con Azure de la siguiente manera.
-
-* Cloud Volumes ONTAP es compatible con China Norte 3.
-* Los sistemas de un solo nodo son compatibles.
-* Se admiten las licencias adquiridas directamente en NetApp.
-
-
-Para conocer la disponibilidad regional, consulte link:https://bluexp.netapp.com/cloud-volumes-global-regions["Mapas de regiones globales para Cloud Volumes ONTAP"^].
 
 
 
