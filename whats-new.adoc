@@ -243,6 +243,42 @@ Has tenido la posibilidad de ver cubos de Amazon S3 en BlueXP Canvas durante muc
 
 
 
+=== 5 de junio de 2023
+
+
+
+==== Los volúmenes de FlexGroup pueden realizarse backups y protegerse mediante la protección frente a ransomware y bloqueo de datos
+
+Las políticas de backup para FlexGroup Volumes ahora pueden usar la protección DataLock y Ransomware cuando el clúster ejecuta ONTAP 9.13.1 o posterior.
+
+
+
+==== Nuevas funciones de generación de informes
+
+Ahora existe una pestaña Reports en la que se puede generar un informe de Backup Inventory, que incluye todos los backups de una cuenta, un entorno de trabajo o un inventario de SVM específico. También puede crear un informe de actividad de trabajo de protección de datos, que proporciona información sobre operaciones de Snapshot, backup, clonado y restauración que pueden ayudar con la supervisión de los acuerdos de nivel de servicio. Consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["Informe sobre la cobertura de protección de datos"].
+
+
+
+==== Mejoras en Job Monitor
+
+Ahora puede revisar _backup lifecycle_ como un tipo de trabajo en la página Job Monitor, lo que le ayudará a realizar un seguimiento de todo el ciclo de vida de la copia de seguridad. También puedes ver detalles de todas las operaciones en la línea de tiempo de BlueXP. Consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["Supervisar el estado de los trabajos de backup y restauración"].
+
+
+
+==== Alerta de notificación adicional para etiquetas de política no coincidentes
+
+Se ha agregado una nueva alerta de backup que indica que no se han creado los archivos de backup porque las etiquetas de políticas de Snapshot no coinciden. Si el _label_ definido en una política de backup no tiene un _label_ coincidente en la política de Snapshot, no se creará ningún archivo de backup. Deberá usar System Manager o la CLI de ONTAP para añadir la etiqueta faltante a la política de Snapshot del volumen.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["Revisa todas las alertas que pueden enviar el backup y la recuperación de BlueXP"].
+
+
+
+==== Copia de seguridad automática de los archivos críticos de backup y recuperación de BlueXP en sitios oscuros
+
+Cuando utilizas el backup y la recuperación de BlueXP en un sitio sin acceso a Internet, conocido como puesta en marcha en «modo privado», la información de backup y recuperación de BlueXP se almacena únicamente en el sistema Connector local. Esta nueva funcionalidad realiza backups automáticos de los datos críticos de backup y recuperación de BlueXP en un bloque de su sistema StorageGRID conectado para que pueda restaurar estos datos en un nuevo conector si es necesario. https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["Leer más"]
+
+
+
 === 8 de mayo de 2023
 
 
@@ -313,7 +349,7 @@ Los trabajos iniciados por el sistema, como las operaciones de copia de segurida
 
 ==== Capacidad para realizar backups de datos en el cloud desde sistemas Cloud Volumes ONTAP en modo «restringido»
 
-Ahora puede realizar un backup de los datos de sistemas de Cloud Volumes ONTAP instalados en AWS, Azure y regiones comerciales de GCP en «modo restringido». Esto requiere que primero instale el conector en la región comercial "restringida". https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"^]. Consulte https://docs.netapp.com/us-en/bluexp-backup-restore/task-backup-to-s3.html["Realizar backups de los datos de Cloud Volumes ONTAP en Amazon S3"] y.. https://docs.netapp.com/us-en/bluexp-backup-restore/task-backup-to-azure.html["Realizar backups de los datos de Cloud Volumes ONTAP en Azure Blob"].
+Ahora puede realizar un backup de los datos de sistemas de Cloud Volumes ONTAP instalados en AWS, Azure y regiones comerciales de GCP en «modo restringido». Esto requiere que primero instale el conector en la región comercial "restringida". https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"^]. Consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["Realizar backups de los datos de Cloud Volumes ONTAP en Amazon S3"] y.. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html["Realizar backups de los datos de Cloud Volumes ONTAP en Azure Blob"].
 
 
 
@@ -331,38 +367,48 @@ Al crear backups desde sistemas Cloud Volumes ONTAP en el almacenamiento de Azur
 
 ==== Mejoras en el Monitor de trabajo
 
-* Tanto las operaciones de backup y restauración iniciadas por el usuario que se inician desde la IU y la API de backup y recuperación de BlueXP, como los trabajos iniciados por el sistema, como las operaciones de backup en curso, ahora están disponibles en la pestaña *Supervisión de trabajos* para sistemas ONTAP en las instalaciones que ejecutan ONTAP 9.13.1 o posterior. Las versiones anteriores de ONTAP mostrarán únicamente los trabajos iniciados por el usuario.
+* Tanto las operaciones de backup y restauración iniciadas por el usuario desde la API e IU de backup y recuperación de BlueXP, como los trabajos iniciados por el sistema, como las operaciones de backup en curso, ahora están disponibles en la pestaña *Supervisión de trabajos* para sistemas Cloud Volumes ONTAP que ejecuten ONTAP 9.13.0 o posterior. Las versiones anteriores de ONTAP mostrarán únicamente los trabajos iniciados por el usuario.
 * Además de poder descargar un archivo CSV para generar informes de todos los trabajos, ahora puede descargar un archivo JSON para un solo trabajo y ver sus detalles. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report["Leer más"].
 * Se han añadido dos nuevas alertas de trabajos de copia de seguridad: "Error de trabajo programado" y "el trabajo de restauración se completa pero con advertencias". https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center["Revisa todas las alertas que pueden enviar el backup y la recuperación de BlueXP"].
 
 
 
 
-=== 9 de marzo de 2023
-
-
-
-==== Las operaciones de restauración a nivel de carpeta ahora incluyen todas las subcarpetas y archivos
-
-Anteriormente, cuando restauró una carpeta, solo se restauran los archivos de esa carpeta, no se restauran ni las subcarpetas ni los archivos. Ahora, si utiliza ONTAP 9.13.0 o superior, se restauran todas las subcarpetas y los archivos de la carpeta seleccionada. Esto puede ahorrar mucho tiempo y dinero en casos en los que tiene varias carpetas anidadas en una carpeta de nivel superior.
-
-
-
-==== Capacidad para realizar backups de datos de sistemas Cloud Volumes ONTAP en sitios oscuros
-
-Ahora puede realizar backups de datos de sistemas Cloud Volumes ONTAP instalados en regiones comerciales de AWS y Azure en Amazon S3 o Azure Blob. Para ello, es necesario instalar el conector en un host Linux de la región comercial y que también se ponga en marcha el sistema Cloud Volumes ONTAP. Consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["Realizar backups de los datos de Cloud Volumes ONTAP en Amazon S3"] y.. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html["Realizar backups de los datos de Cloud Volumes ONTAP en Azure Blob"].
-
-
-
-==== Varias mejoras en el Monitor de trabajo
-
-* La página Job Monitoring ha añadido un filtrado avanzado para poder buscar trabajos de backup y restauración en función del tiempo, la carga de trabajo (volúmenes, aplicaciones, máquinas virtuales o Kubernetes), Tipo de trabajo, estado, entorno de trabajo y máquina virtual de almacenamiento. También puede introducir texto libre para buscar cualquier recurso, por ejemplo, "Application_3".  https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs["Consulte cómo utilizar los filtros avanzados"].
-* Tanto las operaciones de backup y restauración iniciadas por el usuario desde la API e IU de backup y recuperación de BlueXP, como los trabajos iniciados por el sistema, como las operaciones de backup en curso, ahora están disponibles en la pestaña *Supervisión de trabajos* para sistemas Cloud Volumes ONTAP que ejecuten ONTAP 9.13.0 o posterior. Las versiones anteriores de los sistemas Cloud Volumes ONTAP y los sistemas ONTAP en las instalaciones mostrarán solo los trabajos iniciados por el usuario en este momento.
-
-
-
-
 == Clasificación
+
+
+
+=== 6 de junio de 2023 (versión 1,23)
+
+
+
+==== Ahora se admite el japonés al buscar nombres de sujetos de datos
+
+Ahora se pueden introducir nombres en japonés al buscar el nombre de un sujeto en respuesta a una solicitud de acceso a los datos del interesado (DSAR). Puede generar un https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request["Informe de solicitud de acceso de asunto de datos"] con la información resultante. También puede introducir nombres japoneses en la https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content["Filtro de sujeto de datos en la página Investigación de datos"] para identificar los archivos que contienen el nombre del sujeto.
+
+
+
+==== Ubuntu ahora es una distribución Linux compatible en la que puedes instalar la clasificación de BlueXP
+
+Ubuntu 22,04 ha sido calificado como un sistema operativo compatible para la clasificación BlueXP. Puede instalar la clasificación de BlueXP en un host Ubuntu Linux de su red o en un host Linux en el cloud. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Descubre cómo instalar la clasificación de BlueXP en un host con Ubuntu instalado"].
+
+
+
+==== Red Hat Enterprise Linux 8,6 y 8,7 ya no son compatibles con las nuevas instalaciones de clasificación de BlueXP
+
+Estas versiones no son compatibles con nuevas implementaciones porque Red Hat ya no es compatible con Docker, lo cual es un requisito previo. Si ya tienes un equipo de clasificación de BlueXP en RHEL 8,6 o 8,7, NetApp seguirá admitiendo tu configuración.
+
+
+
+==== La clasificación de BlueXP se puede configurar como un recopilador de FPolicy para recibir eventos de FPolicy de sistemas ONTAP
+
+Es posible habilitar los registros de auditoría de acceso a archivos para que se recopilen en el sistema de clasificación de BlueXP para los eventos de acceso a archivos detectados en volúmenes en tus entornos de trabajo. La clasificación de BlueXP puede capturar los siguientes tipos de eventos de FPolicy y los usuarios que realizaron las acciones en sus archivos: Crear, leer, escribir, eliminar, cambiar el nombre, Cambie el propietario/permisos y cambie SACL/DACL. https://docs.netapp.com/us-en/bluexp-classification/task-manage-file-access-events.html["Vea cómo supervisar y gestionar eventos de acceso a archivos"].
+
+
+
+==== Las licencias BYOL de Data Sense son ahora compatibles en sitios oscuros
+
+Ahora puedes cargar la licencia BYOL de Data Sense en la cartera digital de BlueXP en un sitio oscuro para que se te notifique cuando tu licencia esté baja. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Vea cómo obtener y cargar su licencia BYOL de Data Sense"].
 
 
 
@@ -441,7 +487,6 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 ==== Mejoras en la instalación
 
-* La clasificación de BlueXP se puede instalar en hosts Linux que ejecuten CentOS Stream 8.
 * El instalador de clasificación de BlueXP para sitios sin acceso a Internet (sitios oscuros) ahora realiza una comprobación previa para asegurarse de que se cumplen los requisitos de red y del sistema para que la instalación se realice correctamente.
 * Los archivos de registro de auditoría de la instalación se guardan ahora y se escriben en `/ops/netapp/install_logs`.
 
