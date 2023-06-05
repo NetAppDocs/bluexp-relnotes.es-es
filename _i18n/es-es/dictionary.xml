@@ -197,13 +197,6 @@
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Se ha eliminado la pestaña de licencias</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Se ha cambiado el nombre de las pestañas de organización en niveles y se ha actualizado el contenido</block>
   <block id="38d4d167f6dd9174c3535fc5c7ba4b76" category="section-title">4 de abril de 2023</block>
-  <block id="05cb21b1c0958252effc11eb9d437f38" category="section-title">Modos de implementación</block>
-  <block id="9e2110ccb138521e2ed734b9376c3f5b" category="paragraph">BlueXP _modos de implementación_ le permiten utilizar BlueXP de forma que se ajuste a sus requisitos empresariales y de seguridad. Puede elegir entre tres modos:</block>
-  <block id="53c512e9599c71e1a585d636a5229820" category="list-text">Modo estándar</block>
-  <block id="e429f30641aba9e1fc7f2090cc77ce40" category="list-text">Modo restringido</block>
-  <block id="44f51c4ac8fa1a6f53f07c0c2f751b69" category="list-text">Modo privado</block>
-  <block id="14862370498786066b8605b6924a2605" category="inline-link-macro">Obtenga más información sobre estos modos de implementación</block>
-  <block id="7196a94f4d2eb95bbda75c84fd8bbaa9" category="admonition">La introducción del modo restringido sustituye a la opción de activar o desactivar la plataforma SaaS. Puede habilitar el modo restringido en el momento de crear una cuenta. No se puede habilitar ni deshabilitar más adelante.</block>
   <block id="40c193dda1b0a4df68695abe150f234a" category="section-title">Capacidad para realizar backups de datos en el cloud desde sistemas Cloud Volumes ONTAP en modo «restringido»</block>
   <block id="57c3b4ba3c60295d45a2554606080eef" category="section-title">Capacidad para realizar un backup de los volúmenes de ONTAP en las instalaciones en ONTAP S3 mediante la API</block>
   <block id="720734599c08f49ea57d729ec9f12d53" category="section-title">Capacidad de cambiar el aspecto de redundancia de zona de su cuenta de almacenamiento de Azure de LRS a ZRS</block>
@@ -379,7 +372,6 @@
   <block id="367cb072fdec82ba883d66fadac7fc54" category="list-text"><block ref="367cb072fdec82ba883d66fadac7fc54" category="inline-link-rx"></block></block>
   <block id="98ffac9f61e6bf431d54a18e34b9a53d" category="paragraph">NetApp BlueXP se lanzó el 1 de noviembre de 2022. BlueXP amplía y mejora las funcionalidades que se proporcionaron a través de Cloud Manager.<block ref="c202e01c48134f154e0a38e5e6d1aed9" category="inline-link-rx"></block></block>
   <block id="4d5f6e2e2b72482865cac1c14f3d2d3d" category="paragraph"><block ref="4d5f6e2e2b72482865cac1c14f3d2d3d" category="inline-link-rx"></block></block>
-  <block id="0e243030d4d37c15e7b806556f21cdc3" category="paragraph"><block ref="07b6d38a8467f077daba3577bc2ba852" category="inline-link-rx"></block>.</block>
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
   <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>.</block>
@@ -548,4 +540,12 @@
   <block id="4573c689742769edc01e3f45205fd784" category="paragraph">Ahora puedes detectar los clústeres de ONTAP on-premises desde *Canvas &gt; Mi estado* mediante la selección de un clúster que BlueXP detectó previamente a partir de los clústeres de ONTAP asociados con la dirección de correo electrónico para tu inicio de sesión de BlueXP.</block>
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Aprenda a descubrir clústeres en la página Mi estado</block>
   <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
+  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">Conector 3.9.31</block>
+  <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">Ahora puede descubrir clústeres de ONTAP en las instalaciones desde la pestaña *Mi estado* (anteriormente *Mis oportunidades*)</block>
+  <block id="6bdb2baa8fe05cff12c22f9f6f8e9e7f" category="list-text">Si utiliza el conector en una región de gobierno de Azure, debe asegurarse de que el conector puede ponerse en contacto con el siguiente punto final:</block>
+  <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\https://occmclientinfragov.azurecr.us</block>
+  <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">Este punto final es necesario para instalar manualmente el conector y para actualizar el conector y sus componentes Docker.</block>
+  <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">Como resultado de este cambio, un conector en una región de Azure Government ya no contacta con el siguiente punto final:</block>
+  <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Tenga en cuenta que este punto final sigue siendo necesario para todas las demás configuraciones de modo restringido y para el modo estándar.</block>
 </blocks>

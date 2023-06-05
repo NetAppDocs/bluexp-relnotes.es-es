@@ -33,6 +33,36 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
+=== 2 de julio de 2023
+
+
+
+==== Conector 3.9.31
+
+* Ahora puede descubrir clústeres de ONTAP en las instalaciones desde la pestaña *Mi estado* (anteriormente *Mis oportunidades*)
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["Aprenda a descubrir clústeres en la página Mi estado"].
+
+* Si utiliza el conector en una región de gobierno de Azure, debe asegurarse de que el conector puede ponerse en contacto con el siguiente punto final:
++
+\https://occmclientinfragov.azurecr.us
+
++
+Este punto final es necesario para instalar manualmente el conector y para actualizar el conector y sus componentes Docker.
+
++
+Como resultado de este cambio, un conector en una región de Azure Government ya no contacta con el siguiente punto final:
+
++
+\https://cloudmanagerinfraprod.azurecr.io
+
++
+Tenga en cuenta que este punto final sigue siendo necesario para todas las demás configuraciones de modo restringido y para el modo estándar.
+
+
+
+
+
 === 4 de junio de 2023
 
 
@@ -116,26 +146,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Consulte la lista complet
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["Obtenga información acerca de las mejoras de Cloud Volumes ONTAP"^]
 
 
-
-
-
-=== 4 de abril de 2023
-
-
-
-==== Modos de implementación
-
-BlueXP _modos de implementación_ le permiten utilizar BlueXP de forma que se ajuste a sus requisitos empresariales y de seguridad. Puede elegir entre tres modos:
-
-* Modo estándar
-* Modo restringido
-* Modo privado
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Obtenga más información sobre estos modos de implementación"].
-
-
-NOTE: La introducción del modo restringido sustituye a la opción de activar o desactivar la plataforma SaaS. Puede habilitar el modo restringido en el momento de crear una cuenta. No se puede habilitar ni deshabilitar más adelante.
 
 
 
