@@ -57,20 +57,9 @@
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">31 de octubre de 2021</block>
   <block id="70c889b200c3ef8dbb491ca542d1d091" category="section-title">Ahora puede etiquetar las relaciones de sincronización para que pueda agruparlas o clasificarlas para un acceso sencillo</block>
   <block id="049ebb609707e4c76f578eb98777ffdc" category="inline-link">Obtenga más información sobre el etiquetado de recursos</block>
-  <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">6 de diciembre de 2022</block>
-  <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">Extremo antiguo</block>
-  <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">Nuevo extremo</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">\https://cloudmanager.cloud.netapp.com</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="cell">\https://api.bluexp.netapp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">\https://*.cloudmanager.cloud.netapp.com</block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="cell">\https://*.api.bluexp.netapp.com</block>
-  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="inline-link">AWS</block>
-  <block id="56ef2682280ac110060b881925a87b80" category="inline-link">Google Cloud</block>
-  <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link">Azure</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Leer más</block>
   <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">Obtenga más información sobre las relaciones de sincronización compatibles</block>
   <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">Notificaciones por correo electrónico</block>
-  <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">Cambios de extremo de acceso saliente a Internet del conector</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9 de septiembre de 2020</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">Compatibilidad con Cloud Volumes Service para Google Cloud</block>
   <block id="3831fedd132ba9d729ab12b97bb43833" category="paragraph">Ahora puede gestionar Cloud Volumes Service para Google Cloud directamente desde BlueXP:</block>
@@ -283,7 +272,6 @@
   <block id="7c446b3d2b5f39a022c6af3569a59a1f" category="paragraph">Se ha añadido una nueva página para Datos críticos para el negocio a la protección contra el ransomware de BlueXP. Esta página te permite ver todas las políticas que se han definido en la clasificación de BlueXP. Puede seleccionar las políticas que identifican los datos que son críticos para tu negocio, de modo que la consola de protección contra ransomware de BlueXP y otros paneles de ransomware reflejen los problemas potenciales basados en tus datos más importantes.</block>
   <block id="6b501182c10867e7258fc2278cf3d451" category="paragraph">Si no has activado ninguna de estas políticas para el servicio de protección contra ransomware de BlueXP, aparecerá una nueva acción recomendada llamada «Configure your business critical data» (Configurar tus datos críticos para el negocio).</block>
   <block id="e90b826155dae219948b9b2fca9feca3" category="section-title">La protección contra ransomware de BlueXP ha pasado de la categoría Protección a la categoría Gobernanza</block>
-  <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">Debido a un cambio en la organización en niveles de BlueXP, tienes que cambiar los siguientes extremos de conector para que las operaciones de organización en niveles de BlueXP se realicen correctamente:</block>
   <block id="d128bda2634e1051cc984231da065144" category="list-text">Las notificaciones por correo electrónico ahora son compatibles con la cartera digital de BlueXP.</block>
   <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Al visualizar la gestión de licencias basadas en la capacidad para Cloud Volumes ONTAP, la cartera digital de BlueXP ahora muestra la capacidad con licencia que compraste con las ofertas privadas del mercado.</block>
   <block id="b3e680bd6b6b80e2fd4f5bd19f3ad015" category="paragraph">Ya puedes ver y gestionar tus suscripciones PAYGO y contratos anuales de BlueXP desde la cartera digital de BlueXP.</block>
@@ -414,7 +402,6 @@
   <block id="c3f9f5f3154c847ae51038b02652e769" category="paragraph"><block ref="ebf81513d87da0002a3ac7ea6ee056cb" category="inline-link-rx"></block>.</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>.</block>
   <block id="af39bae06861b3074eed6e997f9a3ebf" category="paragraph">Es posible descargar un informe en la página Tier Volumes para revisar el estado de organización en niveles de todos los volúmenes en los clústeres que se están gestionando. La organización en niveles de BlueXP genera un archivo .CSV que se puede revisar y enviar a otras personas de la empresa según sea necesario.<block ref="aaab920374e84f87020f8ba8578ab877" category="inline-link-rx"></block>.</block>
-  <block id="fa2934d386823619966e2cc6e222496c" category="paragraph">Vea la lista completa de puntos finales de la<block ref="42eb7f749d4ba3adb326aa0a5756ba02" category="inline-link-rx"></block>,<block ref="96a9d4916fc49c8f082f1cb217b818c4" category="inline-link-rx"></block>, o.<block ref="4f16be4d60318c8ffb97ef574631956d" category="inline-link-rx"></block> de cloud híbrido.</block>
   <block id="2b3e8f910d66604cd77f93b333670468" category="inline-link">Almacenamiento de Azure Blob</block>
   <block id="a1182a2fefa3fdd8128a983a3d666611" category="list-text"><block ref="a1182a2fefa3fdd8128a983a3d666611" category="inline-link-rx"></block></block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="inline-link">Informes de migración</block>
@@ -548,4 +535,24 @@
   <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">Como resultado de este cambio, un conector en una región de Azure Government ya no contacta con el siguiente punto final:</block>
   <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
   <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Tenga en cuenta que este punto final sigue siendo necesario para todas las demás configuraciones de modo restringido y para el modo estándar.</block>
+  <block id="51276db22ab007bf8378ddc5150c089e" category="section-title">04 de julio de 2023</block>
+  <block id="91abdc8faafafce1c7b76b1ecb8b37a6" category="list-text">Sistemas SAP HANA</block>
+  <block id="bd8b9d76d990f261019903335a2c9e94" category="list-text">Admite la conexión y la restauración de copia de volúmenes sin datos y volúmenes globales sin datos que tienen protección secundaria Azure NetApp Files</block>
+  <block id="0ba30ac65d6a9a5888d4dc02307879d6" category="list-text">Admite la restauración de bases de datos de Oracle en Azure NetApp Files en una ubicación alternativa</block>
+  <block id="699e0e6ae8fec9f5e5e383a17f5ec630" category="list-text">Admite la catalogación de backups de bases de datos de Oracle en Azure NetApp Files</block>
+  <block id="02794f70b3a16972197aaf346fca198e" category="list-text">Permite poner el host de base de datos en modo de mantenimiento para realizar tareas de mantenimiento</block>
+  <block id="d7d2579b3be99740443be180188dedfc" category="list-text">Admite la restauración para cambiar la ubicación</block>
+  <block id="b0e856a98075908a96697bb21ab6fe32" category="list-text">Permite montar backups de base de datos de Oracle</block>
+  <block id="9e9fa16d2206e067234a9dad53361ff4" category="list-text">Admite el traslado de backups desde GCP al nivel de archivado</block>
+  <block id="e0d4183564323d306658a92b138bac87" category="section-title">Mejoras en el backup y recuperación de BlueXP para máquinas virtuales (híbridas)</block>
+  <block id="64870b941ab2700a64f496038bfb77a9" category="list-text">Admite la protección de almacenes de datos NFS y VMFS</block>
+  <block id="c54bd2b10766a492ae36855e868d61eb" category="list-text">Permite cancelar el registro del host del plugin de SnapCenter para VMware vSphere</block>
+  <block id="08c34207830d8869e05cd28a4543f5dc" category="list-text">Permite la actualización y la detección de almacenes de datos y backups más recientes</block>
+  <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 de julio de 2023</block>
+  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">Ahora puede ajustar el ancho de banda utilizado para cargar datos inactivos en el almacenamiento de objetos</block>
+  <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">Al activar la organización en niveles de BlueXP, ONTAP puede utilizar una cantidad ilimitada de ancho de banda de red para transferir los datos inactivos de los volúmenes del clúster al almacenamiento de objetos. Si observa que el tráfico por niveles afecta a las cargas de trabajo normales de usuario, puede limitar la cantidad de ancho de banda que se puede utilizar durante la transferencia.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
+  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">El evento de organización en niveles para el nivel bajo se muestra en el Centro de notificaciones</block>
+  <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">El evento de organización en niveles «Almacenar los datos adicionales del clúster &lt;name&gt; en el almacenamiento de objetos para aumentar la eficiencia del almacenamiento» aparece ahora como una notificación cuando un clúster está organizando en niveles menos del 20 % de sus datos inactivos, incluidos los clústeres que organizan en niveles ningún dato.</block>
+  <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">Calculadora de ahorro y coste total de propiedad de la organización en niveles de BlueXP</block>
+  <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">Esta notificación es una «recomendación» que pretende hacer que sus sistemas sean más eficientes y ahorrar costes de almacenamiento. Proporciona un enlace al<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> para ayudarle a calcular el ahorro de costes.</block>
 </blocks>
