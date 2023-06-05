@@ -497,44 +497,6 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 
 
-=== 5 de febrero de 2023 (versión 1.20)
-
-
-
-==== Posibilidad de enviar correos electrónicos de notificación basados en políticas a cualquier dirección de correo electrónico
-
-En versiones anteriores de la clasificación de BlueXP, puedes enviar alertas por correo electrónico a los usuarios de BlueXP en tu cuenta cuando ciertas Políticas críticas devuelvan resultados. Esta función le permite obtener notificaciones para proteger sus datos cuando no está en línea. Ahora también puede enviar alertas de correo electrónico desde Directivas a cualquier otro usuario - hasta 20 direcciones de correo electrónico - que no se encuentren en su cuenta de BlueXP.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["Obtenga más información sobre el envío de alertas por correo electrónico basadas en los resultados de la directiva"].
-
-
-
-==== Ahora puedes añadir patrones personales desde la interfaz de usuario de clasificación de BlueXP
-
-La clasificación de BlueXP ha tenido la capacidad de añadir «datos personales» personalizados que la clasificación de BlueXP identificará en futuros análisis durante algún tiempo. Sin embargo, tenía que iniciar sesión en el host Linux de clasificación de BlueXP y utilizar una línea de comandos para añadir los patrones personalizados. En esta versión, la capacidad de añadir patrones personales con un regex se encuentra en la interfaz de usuario de clasificación de BlueXP, lo que facilita la adición y edición de estos patrones personalizados.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["Obtén más información sobre cómo añadir patrones personalizados en la interfaz de usuario de clasificación de BlueXP"^].
-
-
-
-==== Capacidad para mover 15 millones de archivos con la clasificación de BlueXP
-
-Anteriormente, la clasificación de BlueXP podía mover un máximo de 100.000 archivos de origen a cualquier recurso compartido NFS. Ahora puede mover hasta 15 millones de archivos a la vez. https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["Más información sobre mover archivos de origen con la clasificación de BlueXP"].
-
-
-
-==== Capacidad para ver el número de usuarios que tienen acceso a archivos de SharePoint Online
-
-El filtro "número de usuarios con acceso" ahora admite archivos almacenados en repositorios en línea de SharePoint. Anteriormente, solo se admitía los ficheros con recursos compartidos CIFS. Tenga en cuenta que los grupos de SharePoint que no están basados en directorios activos no se contarán en este filtro en este momento.
-
-
-
-==== Se ha agregado un nuevo estado "éxito parcial" al panel Estado de acción
-
-El nuevo estado «Correcto parcial» indica que una acción de clasificación de BlueXP ha finalizado y que algunos elementos han fallado y algunos elementos se han realizado correctamente, por ejemplo, cuando mueve o elimina archivos 100. Además, se ha cambiado el nombre del estado "terminado" por "correcto". En el pasado, el estado "terminado" podría incluir acciones que se han realizado correctamente y que han fallado. Ahora el estado "éxito" significa que todas las acciones se han realizado correctamente en todos los elementos. https://docs.netapp.com/us-en/bluexp-classification/task-view-compliance-actions.html["Consulte cómo ver el panel Estado de acciones"].
-
-
-
 == Cloud Volumes ONTAP
 
 
