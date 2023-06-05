@@ -663,6 +663,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 11 de junio de 2023
+
+
+
+==== Respalde la cancelación automática por minutos
+
+Las sincronizaciones activas que no se hayan completado ahora se pueden anular después de quince minutos utilizando la función *Tiempo de espera de sincronización*.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Obtenga más información sobre la configuración de tiempo de espera de sincronización"].
+
+
+
+==== Copiar metadatos de tiempo de acceso
+
+En las relaciones que incluyen un sistema de archivos, la función *Copy for Objects* ahora copia los metadatos de tiempo de acceso.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Obtenga más información sobre la configuración Copiar para objetos"].
+
+
+
 === 8 de mayo de 2023
 
 
@@ -722,18 +742,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships
 Además de filtrar directorios por nombre, ahora puede filtrar directorios por su ruta completa.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Obtenga más información acerca del valor excluir directorios"].
-
-
-
-=== 7 de marzo de 2023
-
-
-
-==== Cifrado EBS para agentes de datos de AWS
-
-Ahora puede cifrar volúmenes de agentes de datos de AWS mediante una clave KMS desde su cuenta.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["Obtenga más información sobre cómo crear un agente de datos en AWS"].
 
 
 
