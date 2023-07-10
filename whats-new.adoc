@@ -287,9 +287,9 @@ A continuación, puede gestionar los clústeres más antiguos con la versión an
 
 
 
-==== Capacidad de crear sus buckets para el backup en el almacenamiento de objetos
+==== Capacidad de crear su contenedor de almacenamiento para backup en el almacenamiento de objetos
 
-Cuando cree archivos de backup en el almacenamiento de objetos, de forma predeterminada, el servicio de backup y recuperación creará los buckets en el almacenamiento de objetos para usted. Puede crear los cubos usted mismo si desea utilizar un nombre determinado o asignar propiedades especiales. Si desea crear su propio bucket, debe crearlo antes de iniciar el asistente de activación.
+Cuando cree archivos de backup en el almacenamiento de objetos, de forma predeterminada, el servicio de backup y recuperación creará los buckets en el almacenamiento de objetos para usted. Puede crear los cubos usted mismo si desea utilizar un nombre determinado o asignar propiedades especiales. Si desea crear su propio bucket, debe crearlo antes de iniciar el asistente de activación. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["Aprende a crear tus buckets de almacenamiento de objetos"].
 
 Actualmente, esta funcionalidad no es compatible al crear archivos de backup en sistemas StorageGRID.
 
@@ -405,6 +405,40 @@ Los trabajos iniciados por el sistema, como las operaciones de copia de segurida
 
 
 
+=== 17 de julio de 2023 (versión 1,24)
+
+
+
+==== Dos nuevos tipos de datos personales alemanes se identifican por la clasificación de BlueXP
+
+La clasificación de BlueXP puede identificar y categorizar los archivos que contengan los siguientes tipos de datos:
+
+* Identificación alemana (Personalausweisnummer)
+* Número de Seguro Social Alemán (Sozialversicherungsnummer)
+
+
+https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Consulta todos los tipos de datos personales que la clasificación de BlueXP puede identificar en tus datos"].
+
+
+
+==== Rocky Linux 9 ahora es una distribución Linux compatible en la que puedes instalar la clasificación de BlueXP
+
+Rocky Linux 9 (9,0, 9,1 y 9,2) se ha calificado como un sistema operativo compatible para la clasificación de BlueXP. Puede instalar la clasificación de BlueXP en un host Rocky Linux de su red o en un host Linux en el cloud cuando utilice la versión 1,24 del instalador. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Descubre cómo instalar la clasificación de BlueXP en un host con Rocky Linux instalado"].
+
+
+
+==== La clasificación de BlueXP es totalmente compatible con el modo restringido y el modo privado
+
+La clasificación de BlueXP ahora es totalmente compatible en sitios sin acceso a Internet (modo privado) y con acceso a Internet saliente limitado (modo restringido). https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Obtén más información sobre los modos de puesta en marcha de BlueXP para Connector"^].
+
+
+
+==== Capacidad de omitir versiones al actualizar una instalación en modo privado de la clasificación de BlueXP
+
+Ahora puedes actualizar a una versión más reciente de la clasificación de BlueXP incluso si no es secuencial. Esto significa que ya no es necesaria la limitación actual para actualizar la clasificación de BlueXP de una versión a la vez. Esta función es relevante a partir de la versión 1,24 en adelante.
+
+
+
 === 6 de junio de 2023 (versión 1,23)
 
 
@@ -458,65 +492,6 @@ Al implementar la clasificación de BlueXP desde un conector BlueXP en un entorn
 ==== El script independiente ya está disponible para calificar tu sistema Linux antes de instalar la clasificación de BlueXP
 
 Si desea verificar que su sistema Linux cumpla todos los requisitos previos independientemente de ejecutar la instalación de la clasificación de BlueXP, hay un script independiente que puede descargar y que solo prueba los requisitos previos. https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["Descubre cómo comprobar si tu host Linux está listo para instalar la clasificación de BlueXP"].
-
-
-
-=== 7 de marzo de 2023 (versión 1.21)
-
-
-
-==== Nueva funcionalidad para añadir tus propias categorías personalizadas desde la interfaz de usuario de clasificación de BlueXP
-
-Ahora, la clasificación de BlueXP te permite añadir tus propias categorías personalizadas de forma que la clasificación de BlueXP identifique los archivos que se adaptan a esas categorías. La clasificación de BlueXP tiene muchas https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-categories["categorías predefinidas"], por lo tanto, esta característica permite agregar categorías personalizadas para identificar dónde se encuentra la información que es única para la organización en los datos.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-categories["Leer más"^].
-
-
-
-==== Ahora puedes añadir palabras clave personalizadas desde la interfaz de usuario de clasificación de BlueXP
-
-La clasificación de BlueXP ha tenido la capacidad de añadir palabras clave personalizadas que la clasificación de BlueXP identificará en futuros análisis durante algún tiempo. Sin embargo, tienes que iniciar sesión en el host Linux de clasificación BlueXP y utilizar una interfaz de línea de comandos para añadir las palabras clave. En esta versión, la capacidad de añadir palabras clave personalizadas se encuentra en la interfaz de usuario de clasificación de BlueXP, por lo que es muy fácil añadir y editar estas palabras clave.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["Obtén más información sobre cómo añadir palabras clave personalizadas en la interfaz de usuario de clasificación de BlueXP"^].
-
-
-
-==== Posibilidad de que la clasificación de BlueXP *no* escanee los archivos cuando se cambie la “última hora de acceso”
-
-De forma predeterminada, si la clasificación de BlueXP no tiene permisos de «escritura» adecuados, el sistema no analizará los archivos de tus volúmenes, porque la clasificación de BlueXP no puede revertir la «última hora de acceso» a la marca de tiempo original. Sin embargo, si no le importa si la última hora de acceso se restablece a la hora original de sus archivos, puede anular este comportamiento en la página Configuration para que la clasificación de BlueXP analice los volúmenes con independencia de los permisos.
-
-Junto con esta funcionalidad, se ha añadido un nuevo filtro llamado «Scan Analysis Event» para que puedas ver los archivos que no se clasificaron porque la clasificación de BlueXP no pudo revertir el último acceso o los archivos clasificados aunque la clasificación de BlueXP no pudo revertir el último acceso.
-
-https://docs.netapp.com/us-en/bluexp-classification/reference-collected-metadata.html#last-access-time-timestamp["Obtén más información sobre la «marca de tiempo de último acceso» y los permisos que requiere la clasificación de BlueXP"].
-
-
-
-==== Existen tres nuevos tipos de datos personales identificados por la clasificación de BlueXP
-
-La clasificación de BlueXP puede identificar y categorizar los archivos que contengan los siguientes tipos de datos:
-
-* Número de tarjeta de identidad de Botswana (Omang)
-* Número de pasaporte de Botswana
-* Tarjeta de identidad de registro nacional de Singapur (NRIC)
-
-
-https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Consulta todos los tipos de datos personales que la clasificación de BlueXP puede identificar en tus datos"].
-
-
-
-==== Funcionalidad actualizada para directorios
-
-* La opción "Informe CSV claro" para Informes de investigación de datos ahora incluye información de los directorios.
-* El filtro de tiempo "último acceso" muestra ahora la última hora a la que se accedió tanto para archivos como para directorios.
-
-
-
-
-==== Mejoras en la instalación
-
-* El instalador de clasificación de BlueXP para sitios sin acceso a Internet (sitios oscuros) ahora realiza una comprobación previa para asegurarse de que se cumplen los requisitos de red y del sistema para que la instalación se realice correctamente.
-* Los archivos de registro de auditoría de la instalación se guardan ahora y se escriben en `/ops/netapp/install_logs`.
-
 
 
 
