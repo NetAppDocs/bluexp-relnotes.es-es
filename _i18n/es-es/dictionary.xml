@@ -58,7 +58,6 @@
   <block id="70c889b200c3ef8dbb491ca542d1d091" category="section-title">Ahora puede etiquetar las relaciones de sincronización para que pueda agruparlas o clasificarlas para un acceso sencillo</block>
   <block id="049ebb609707e4c76f578eb98777ffdc" category="inline-link">Obtenga más información sobre el etiquetado de recursos</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Leer más</block>
-  <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">Obtenga más información sobre las relaciones de sincronización compatibles</block>
   <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">Notificaciones por correo electrónico</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9 de septiembre de 2020</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">Compatibilidad con Cloud Volumes Service para Google Cloud</block>
@@ -173,12 +172,6 @@
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">Resiliencia operativa</block>
   <block id="7907a1fccb5b8aa9b8df8283d3705052" category="list-text"><block ref="7907a1fccb5b8aa9b8df8283d3705052" category="inline-link-rx"></block></block>
   <block id="92900172340dbf6ba4b3454580c7583b" category="list-text"><block ref="92900172340dbf6ba4b3454580c7583b" category="inline-link-rx"></block></block>
-  <block id="c7326baf2ea51b61fafa4f4680d916c0" category="section-title">2 de abril de 2023</block>
-  <block id="9c305cf5f9f8051acc945eda0fc8a1be" category="section-title">Compatibilidad adicional para las relaciones de Gen2 de Azure Data Lake Storage</block>
-  <block id="61babc330ca2ea0af752965dd3965d41" category="paragraph">Ahora puede crear relaciones de sincronización con Azure Data Lake Storage Gen2 como origen y destino con lo siguiente:</block>
-  <block id="a37b0a91d7c4d8ac6ce924a7f8e1ce5a" category="list-text">ONTAP en las instalaciones</block>
-  <block id="ad5a82acd30f0d971a29fdb4632bd7d4" category="section-title">Filtrar directorios por ruta completa</block>
-  <block id="b7395f4da221ab7779cce11224436fb3" category="paragraph">Además de filtrar directorios por nombre, ahora puede filtrar directorios por su ruta completa.</block>
   <block id="d1624b8f3b686e981a178c03616a370b" category="inline-link">Obtenga más información acerca del valor excluir directorios</block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">Aprenda a ver la capacidad consumida en su cuenta</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Desinstale Astra Trident</block>
@@ -361,7 +354,6 @@
   <block id="5b1faa5c627185bd8774ba759dbbcf1d" category="paragraph"><block ref="528a28b28e8f5d9df665a229e7a7fa63" category="inline-link-rx"></block>.</block>
   <block id="ce907128271b3f13161731af69efdb83" category="paragraph"><block ref="7d45213b584f83e1010772ef58d497ad" category="inline-link-rx"></block>.</block>
   <block id="791d072486b9f4524702996962f5cb1d" category="paragraph"><block ref="525fcee9e0cdf0ea236cb2377cb58f7b" category="inline-link-rx"></block>.</block>
-  <block id="4e0e0be812e0732ff08c371803f4157c" category="paragraph"><block ref="aabef2d7a8f8ee536d1fe9fe0f22b561" category="inline-link-rx"></block>.</block>
   <block id="10dc1eee3d75610cc244de50455508d3" category="paragraph">Esta versión proporciona las nuevas funciones que se enumeran a continuación. También soluciona los problemas descritos en<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>. Los paquetes de software actualizados están disponibles en<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Esta versión proporciona las nuevas funciones que se enumeran a continuación. También soluciona los problemas descritos en<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
@@ -546,4 +538,21 @@
   <block id="098acc7a6e2aef2e0ffd66cabdde369e" category="section-title">Capacidad de crear sus buckets para el backup en el almacenamiento de objetos</block>
   <block id="7882c4532e24f1cac41cc043cde436b7" category="paragraph">Cuando cree archivos de backup en el almacenamiento de objetos, de forma predeterminada, el servicio de backup y recuperación creará los buckets en el almacenamiento de objetos para usted. Puede crear los cubos usted mismo si desea utilizar un nombre determinado o asignar propiedades especiales. Si desea crear su propio bucket, debe crearlo antes de iniciar el asistente de activación.</block>
   <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">Actualmente, esta funcionalidad no es compatible al crear archivos de backup en sistemas StorageGRID.</block>
+  <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Google Cloud Storage</block>
+  <block id="68269a7fe7304a0e7d5a0232d5e7141b" category="list-text"><block ref="68269a7fe7304a0e7d5a0232d5e7141b" category="inline-link-rx"></block></block>
+  <block id="744c3e2d9eefd2af0d741a4bdf013531" category="section-title">9 de julio de 2023</block>
+  <block id="0d31f76acc0f0585c0ce6603aae95bf9" category="section-title">Elimine varias relaciones de sincronización a la vez</block>
+  <block id="86f4ab992201dfe7e7a91d9236676ea1" category="paragraph">Los usuarios ahora pueden eliminar más de una relación de sincronización a la vez en la interfaz de usuario.</block>
+  <block id="f56872f7cec9149a7ac802d7a22773f7" category="inline-link">Obtenga más información sobre cómo eliminar las relaciones de sincronización.</block>
+  <block id="8841a5cc4fff05bb6e2a277bb234a5e9" category="paragraph"><block ref="8841a5cc4fff05bb6e2a277bb234a5e9" category="inline-link-rx"></block></block>
+  <block id="0bf8da16e84dc021192c3cce07860470" category="section-title">Copiar sólo ACL</block>
+  <block id="dda93ca03de99accfa039adc8007a91c" category="paragraph">Los usuarios ahora tienen opciones adicionales para copiar la información de ACL en las relaciones CIF y NFS. Al crear o administrar una relación de sincronización, solo puede copiar archivos, copiar información de ACL o copiar archivos e información de ACL.</block>
+  <block id="75188372815d8c81aa145bb6bd881697" category="inline-link">Obtenga más información sobre la copia de ACL.</block>
+  <block id="f14be32be1b0e46b478529e782afc130" category="paragraph"><block ref="f14be32be1b0e46b478529e782afc130" category="inline-link-rx"></block></block>
+  <block id="c3605c10e6753f736b31bbe56975b312" category="section-title">Actualizado a Node.js 20</block>
+  <block id="62ace2991e0846010d9d30c14cb37645" category="paragraph">Copy and sync se ha actualizado a Node.js 20. Se actualizarán todos los agentes de datos disponibles. Los sistemas operativos incompatibles con esta actualización no se pueden instalar y los sistemas existentes incompatibles pueden experimentar problemas de rendimiento.</block>
+  <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">10 de julio de 2023</block>
+  <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">Capacidad para añadir nuevos bloques y gestionar bloques existentes desde BlueXP</block>
+  <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">Descubre cómo añadir nuevos buckets de Google Cloud Storage</block>
+  <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">Has tenido la capacidad de ver buckets de almacenamiento de Google Cloud en BlueXP Canvas durante bastante tiempo. Ahora puede agregar nuevos cubos y cambiar las propiedades de los cubos existentes directamente desde BlueXP.<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>.</block>
 </blocks>
