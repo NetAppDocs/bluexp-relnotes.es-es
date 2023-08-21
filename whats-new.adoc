@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery' 
 summary: Conozca los cambios más recientes en los servicios en la nube que forman parte de la plataforma BlueXP. Para obtener más información, consulte el conjunto completo de notas de la versión de cada servicio individual. 
 ---
 = Cambios recientes en BlueXP
@@ -795,6 +795,39 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html
 Al visualizar la gestión de licencias basadas en la capacidad para Cloud Volumes ONTAP, la cartera digital de BlueXP ahora muestra la capacidad con licencia que compraste con las ofertas privadas del mercado.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Aprenda a ver la capacidad consumida en su cuenta"].
+
+
+
+== Recuperación tras siniestros
+
+
+
+=== 1 de agosto de 2023
+
+La versión beta de recuperación ante desastres de BlueXP es un servicio de recuperación ante desastres basado en la nube que automatiza los flujos de trabajo de recuperación ante desastres. Inicialmente, con la beta de recuperación ante desastres de BlueXP, puedes proteger las cargas de trabajo de VMware basadas en NFS que ejecutan el almacenamiento NetApp en VMware Cloud (VMC) en AWS con Amazon FSx for ONTAP.
+
+
+NOTE: Con esta oferta beta, NetApp se reserva el derecho de modificar los detalles, el contenido y la línea de tiempo de la oferta antes de la disponibilidad general.
+
+Esta versión incluye las siguientes actualizaciones:
+
+* *Actualización de grupos de recursos para orden de arranque*: Cuando crea un plan de recuperación ante desastres o replicación, puede agregar máquinas virtuales a grupos de recursos funcionales. Los grupos de recursos permiten poner un conjunto de máquinas virtuales dependientes en grupos lógicos que cumplan sus requisitos. Por ejemplo, los grupos pueden contener un orden de inicio que se puede ejecutar tras la recuperación. Con esta versión, cada grupo de recursos puede incluir una o más máquinas virtuales. Las máquinas virtuales se encenderán según la secuencia en la que las incluya en el plan. Consulte link:../use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["Seleccione aplicaciones para replicar y asignar grupos de recursos"].
+* *Verificación de replicación*: Después de crear el plan de recuperación ante desastres o replicación, identificar la recurrencia en el asistente e iniciar una replicación en un sitio de recuperación ante desastres, cada 30 minutos de recuperación ante desastres de BlueXP verifica que la replicación se produzca realmente de acuerdo con el plan. Puede supervisar el progreso en la página Job Monitor. Consulte link:../use/replicate.html["Replicar aplicaciones en otro sitio"].
+* *El plan de replicación muestra los horarios de transferencia del objetivo de punto de recuperación (RPO)*: Cuando creas un plan de recuperación ante desastres o replicación, seleccionas las VM. En esta versión, ahora puede ver el SnapMirror asociado con cada uno de los volúmenes que estén asociados con el almacén de datos o la máquina virtual. También se pueden ver las programaciones de transferencia de RPO asociadas con la programación de SnapMirror. El RPO ayuda a determinar si la programación de backup es suficiente para recuperarse después de un desastre. Consulte link:../use/drplan-create.html["Cree un plan de replicación"].
+* *Actualización de Job Monitor*: La página Job Monitor ahora incluye una opción Refresh para que pueda obtener un estado actualizado de las operaciones. Consulte link:../use/monitor-jobs.html["Supervisar los trabajos de recuperación ante desastres"].
+
+
+link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Obtén más información sobre la recuperación ante desastres de BlueXP"].
+
+
+
+=== 18 de mayo de 2023
+
+Esta es el lanzamiento inicial de la recuperación ante desastres de BlueXP.
+
+La recuperación de desastres de BlueXP es un servicio de recuperación ante desastres basado en la nube que automatiza los flujos de trabajo de recuperación ante desastres. Inicialmente, con la versión beta de recuperación ante desastres de BlueXP, puedes proteger las cargas de trabajo de VMware basadas en NFS que ejecutan el almacenamiento NetApp en VMware Cloud (VMC) en AWS con Amazon FSx for ONTAP.
+
+link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Obtén más información sobre la recuperación ante desastres de BlueXP"].
 
 
 
