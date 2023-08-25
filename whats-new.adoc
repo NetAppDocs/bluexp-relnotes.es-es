@@ -33,7 +33,22 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
-=== 30 de julio
+=== 10 de septiembre de 2023
+
+
+
+==== Conector 3.9.33
+
+* Cuando creas un conector en AWS desde BlueXP, ahora puedes buscar dentro del campo Par de claves para encontrar más fácilmente el par de claves que quieres usar con la instancia de Connector.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Una captura de pantalla de la opción de búsqueda en el campo Par de claves que aparece en la página Red al crear un conector en AWS desde BlueXP."]
+
+* Esta actualización también incluye correcciones de errores.
+
+
+
+
+=== 30 de julio de 2023
 
 
 
@@ -414,6 +429,22 @@ Cuando utilizas el backup y la recuperación de BlueXP en un sitio sin acceso a 
 
 
 
+=== 5 de septiembre (versión 1,25)
+
+
+
+==== Aplique etiquetas a un máximo de 100.000 elementos desde la página de resultados de la investigación
+
+En el pasado, sólo se podían aplicar etiquetas a una sola página a la vez en la página de resultados de la investigación (20 elementos). Ahora puede seleccionar *todos* elementos en las páginas de resultados de la investigación y aplicar etiquetas a todos los elementos - hasta 100.000 elementos a la vez.  https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["Descubra cómo"].
+
+
+
+==== Identifique archivos duplicados con un tamaño de archivo mínimo de 1 MB
+
+Clasificación de BlueXP utilizada para identificar los archivos duplicados solo cuando los archivos tenían 50 MB o más. Ahora se pueden identificar los archivos duplicados que comienzan con 1 MB. Puedes usar los filtros de página de investigación “Tamaño de archivo” junto con “Duplicados” para ver qué archivos de un determinado tamaño están duplicados en tu entorno.
+
+
+
 === 17 de julio de 2023 (versión 1,24)
 
 
@@ -487,28 +518,6 @@ Es posible habilitar los registros de auditoría de acceso a archivos para que s
 ==== Las licencias BYOL de Data Sense son ahora compatibles en sitios oscuros
 
 Ahora puedes cargar la licencia BYOL de Data Sense en la cartera digital de BlueXP en un sitio oscuro para que se te notifique cuando tu licencia esté baja. https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["Vea cómo obtener y cargar su licencia BYOL de Data Sense"].
-
-
-
-=== 3 de abril de 2023 (versión 1.22)
-
-
-
-==== Nuevo informe de evaluación de detección de datos
-
-El informe de evaluación de detección de datos proporciona un análisis de alto nivel del entorno escaneado para resaltar los resultados obtenidos por el sistema y mostrar las áreas de preocupación y los posibles pasos para solucionarlos. El objetivo de este informe es dar a conocer las preocupaciones sobre la gobernanza de datos, las amenazas a la seguridad de los datos y los vacíos de cumplimiento de normativas en relación con los datos de su conjunto de datos. https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-discovery-assessment-report["Descubra cómo generar y utilizar el Informe de evaluación de detección de datos"].
-
-
-
-==== Capacidad de poner en marcha la clasificación de BlueXP en instancias más pequeñas en el cloud
-
-Al implementar la clasificación de BlueXP desde un conector BlueXP en un entorno AWS, ahora puedes elegir entre dos tipos de instancia menores de los que hay disponibles con la instancia predeterminada. Si está analizando un entorno pequeño, esto puede ayudarle a ahorrar costes en la nube. Sin embargo, hay algunas restricciones al utilizar la instancia más pequeña. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["Vea los tipos de instancia y las limitaciones disponibles"].
-
-
-
-==== El script independiente ya está disponible para calificar tu sistema Linux antes de instalar la clasificación de BlueXP
-
-Si desea verificar que su sistema Linux cumpla todos los requisitos previos independientemente de ejecutar la instalación de la clasificación de BlueXP, hay un script independiente que puede descargar y que solo prueba los requisitos previos. https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["Descubre cómo comprobar si tu host Linux está listo para instalar la clasificación de BlueXP"].
 
 
 
@@ -633,6 +642,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 == Copiar y sincronizar
+
+
+
+=== 3 de septiembre de 2023
+
+
+
+==== Excluir archivos por regex
+
+Los usuarios ahora tienen la opción de excluir archivos usando regex.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["Obtenga más información sobre la función *Excluir extensiones de archivo*."]
+
+
+
+==== Agregue S3 claves al crear un agente de datos de Azure
+
+Los usuarios ahora pueden agregar claves de acceso y claves secretas de AWS S3 al crear un agente de datos de Azure.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker["Obtén más información sobre cómo crear un agente de datos en Azure."]
 
 
 
@@ -991,6 +1020,12 @@ Cuando link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage
 
 
 == Informes de migración
+
+
+
+=== 03 de septiembre de 2023
+
+El servicio actualizado de informes de migración de BlueXP proporciona actualizaciones a los datos de los informes. Los informes ahora incluyen la capacidad asignada.
 
 
 
