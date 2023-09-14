@@ -24,7 +24,6 @@
   <block id="560c5ee7b92d80b3ef198362d8323824" category="section-title">Introducción de BlueXP</block>
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">Funciones administrativas</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">En esta sección se describen las nuevas funciones relacionadas con las funciones de administración de BlueXP: Cuentas, conectores, credenciales de proveedores de nube y mucho más.</block>
-  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">5 de febrero de 2023</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Obtenga información acerca de las mejoras de Cloud Volumes ONTAP</block>
   <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">11 de abril de 2021</block>
   <block id="860941d67aa8a8a442ba4a65191838cf" category="section-title">Compatibilidad con plantillas de volúmenes</block>
@@ -92,9 +91,6 @@
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">06 de noviembre de 2022</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">definición de clases de almacenamiento</block>
-  <block id="de7ceda1f3ad5462ebeba9b4e49bf946" category="section-title">Capacidad de definir las políticas que identifican los datos que considera como críticos para el negocio</block>
-  <block id="5bba5081ab3b5a554fbba4b798a66e4f" category="inline-link">Obtenga más información acerca de la página datos críticos para el negocio</block>
-  <block id="c1d1220273fe79d481c41539bea31710" category="paragraph">Ahora usted accede a este servicio desde el menú de navegación de la izquierda de BlueXP seleccionando *Gobierno &gt; Protección contra Ransomware*.</block>
   <block id="638be56d4cf930b576e6dc1300c7c33b" category="section-title">18 de septiembre de 2022</block>
   <block id="168c5915eb40be2beb0ac04f286489ba" category="section-title">FSX para ONTAP a Cloud Volumes ONTAP</block>
   <block id="6aa89747141f6b258796889b4e964d01" category="paragraph">Ahora puede replicar datos de un sistema de archivos Amazon FSX para ONTAP en Cloud Volumes ONTAP.</block>
@@ -120,8 +116,6 @@
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">05 de marzo de 2023</block>
   <block id="3aea41413b60d0894823e739f01efcbb" category="paragraph">Se han realizado mejoras en la interfaz de usuario y se han actualizado las capturas de pantalla en la documentación.</block>
   <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">Kubernetes en BlueXP ahora es compatible con Astra Trident 23.01.</block>
-  <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">7 de marzo de 2023</block>
-  <block id="b20988b483bceb3fb63077025a07d023" category="section-title">Se ha agregado un nuevo panel de recuperación de Ransomware para ayudar a recuperar su sistema de un ataque</block>
   <block id="d79294e72dc3584cc12c98a7a931315d" category="inline-link">Almacenamiento Amazon S3</block>
   <block id="e27ba65d55db98b6fd6764580355edcf" category="list-text"><block ref="e27ba65d55db98b6fd6764580355edcf" category="inline-link-rx"></block></block>
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">Posibilidad de añadir nuevos cubos desde BlueXP</block>
@@ -140,9 +134,6 @@
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Desinstale Astra Trident</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Se ha eliminado la pestaña de licencias</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Se ha cambiado el nombre de las pestañas de organización en niveles y se ha actualizado el contenido</block>
-  <block id="e86989a1de71c911aa1dff7be51112bd" category="section-title">Nuevas acciones recomendadas para proteger sus datos de ataques de ransomware</block>
-  <block id="51ad14036a828a2a993258fe95046128" category="list-text">Una nueva acción recomendada para "activar configuraciones de ciberalmacenamiento para orígenes de datos" identifica si se habilitan o deshabilitan seis funcionalidades de ONTAP que ayudan a proteger datos. Debe habilitar estas funcionalidades en todos los sistemas ONTAP y Cloud Volumes ONTAP en las instalaciones.</block>
-  <block id="dced9da708bc7f04e84ad156297f2b2a" category="inline-link">Consulte la lista de todas las acciones recomendadas</block>
   <block id="1d0a8122e5a250dbe5879cd7f8f5a495" category="inline-link">Más información sobre la introducción de BlueXP</block>
   <block id="e0feab0ee26165da9cddab198d1f1422" category="section-title">5 de abril de 2023 (versión 2.2)</block>
   <block id="b1bdb4b30cdf01fdd4fc306c24b3e449" category="section-title">Compatibilidad con caché de archivos global en sistemas Cloud Volumes ONTAP implementados en Google Cloud</block>
@@ -161,7 +152,6 @@
   <block id="5b942e8f71976a7f4120006aa3ac54cc" category="inline-link">Operaciones de cloud</block>
   <block id="e216b7a924341f796bca310d1d812baf" category="inline-link">Copiar y sincronizar</block>
   <block id="ba695b3cf8b635f89946173735838948" category="inline-link">Almacenamiento en caché en el edge</block>
-  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="inline-link">Protección contra ransomware</block>
   <block id="282baca6aef56652f503adce6afa9f07" category="inline-link">Reparación</block>
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">Organización en niveles</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">La clasificación de BlueXP puede identificar y categorizar los archivos que contengan los siguientes tipos de datos:</block>
@@ -173,10 +163,6 @@
   <block id="0a6c67d82675687d876fd5170168f147" category="paragraph">Mediante el nuevo servicio de resiliencia operativa de BlueXP y sus sugerencias automatizadas para la corrección de los riesgos operativos TECNOLÓGICOS, puedes implementar soluciones sugeridas antes de que se produzca una interrupción o un fallo.</block>
   <block id="070849913b65c4cb130cf632f0ac2008" category="inline-link-macro">Obtenga más información sobre la resiliencia operativa de BlueXP</block>
   <block id="6bea546ba36c0c8c8bed5d22ed6af63d" category="paragraph"><block ref="d51dda3e944cc19bf96c07e1874304d0" category="inline-link-macro-rx"></block>.</block>
-  <block id="150cb71e13e48b4b0921998f73ade4b5" category="list-text">Una nueva acción recomendada para «Realizar backup de archivos críticos para el negocio en orígenes de datos» identifica cómo proteger tus categorías de datos más importantes mediante el backup y la recuperación de volúmenes con BlueXP. Esto es importante si debe recuperar cualquier dato debido a un ataque de ransomware. La recomendación te redirige a la interfaz de backup y recuperación de BlueXP para que puedas habilitar el backup en los volúmenes necesarios.</block>
-  <block id="7c446b3d2b5f39a022c6af3569a59a1f" category="paragraph">Se ha añadido una nueva página para Datos críticos para el negocio a la protección contra el ransomware de BlueXP. Esta página te permite ver todas las políticas que se han definido en la clasificación de BlueXP. Puede seleccionar las políticas que identifican los datos que son críticos para tu negocio, de modo que la consola de protección contra ransomware de BlueXP y otros paneles de ransomware reflejen los problemas potenciales basados en tus datos más importantes.</block>
-  <block id="6b501182c10867e7258fc2278cf3d451" category="paragraph">Si no has activado ninguna de estas políticas para el servicio de protección contra ransomware de BlueXP, aparecerá una nueva acción recomendada llamada «Configure your business critical data» (Configurar tus datos críticos para el negocio).</block>
-  <block id="e90b826155dae219948b9b2fca9feca3" category="section-title">La protección contra ransomware de BlueXP ha pasado de la categoría Protección a la categoría Gobernanza</block>
   <block id="d128bda2634e1051cc984231da065144" category="list-text">Las notificaciones por correo electrónico ahora son compatibles con la cartera digital de BlueXP.</block>
   <block id="016c818ed3128119f94a31cbec32bf1f" category="paragraph">Al visualizar la gestión de licencias basadas en la capacidad para Cloud Volumes ONTAP, la cartera digital de BlueXP ahora muestra la capacidad con licencia que compraste con las ofertas privadas del mercado.</block>
   <block id="71bff2737bdd059023a4784358e71a64" category="section-title">7 de mayo de 2023</block>
@@ -212,7 +198,6 @@
   <block id="ed6f4d59069b65b41bfb3cfba797ee42" category="list-text"><block ref="ed6f4d59069b65b41bfb3cfba797ee42" category="inline-link-rx"></block></block>
   <block id="35ab587d29d669683f08424c60051957" category="list-text"><block ref="35ab587d29d669683f08424c60051957" category="inline-link-rx"></block></block>
   <block id="d5bd7276f5a8c8218f75aba64cdfdeb0" category="list-text"><block ref="d5bd7276f5a8c8218f75aba64cdfdeb0" category="inline-link-rx"></block></block>
-  <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
   <block id="b58c4ddee0575cfc72a18936b05df78a" category="list-text"><block ref="b58c4ddee0575cfc72a18936b05df78a" category="inline-link-rx"></block></block>
   <block id="c821df2021ac7a846f6554ac1ed76719" category="list-text"><block ref="c821df2021ac7a846f6554ac1ed76719" category="inline-link-rx"></block></block>
   <block id="367cb072fdec82ba883d66fadac7fc54" category="list-text"><block ref="367cb072fdec82ba883d66fadac7fc54" category="inline-link-rx"></block></block>
@@ -227,9 +212,6 @@
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Esta versión proporciona las nuevas funciones que se enumeran a continuación. También soluciona los problemas descritos en<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
   <block id="4e4ff5b7850bf0aae4966bf2353d2764" category="list-text">Ahora puede hacerlo <block ref="79330a9a9d35860d426f0d48c9f654a7" category="inline-link-macro-rx"></block> Que se instaló con el operador Trident o BlueXP.</block>
   <block id="08dbc554156c2764d1696fe55d768aed" category="paragraph">Cuando <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>, ahora puede habilitar la economía de clase de almacenamiento para el almacenamiento de bloques o sistemas de ficheros.</block>
-  <block id="6b5123d10bcaa20aedf265862fd00988" category="paragraph"><block ref="b8d5a3f5bf3c3f09de7cacb30a8225fd" category="inline-link-rx"></block>.</block>
-  <block id="d773758b323d5c30c9e4ae45fd81b118" category="paragraph">El Panel de recuperación de ransomware proporciona opciones para recuperar datos que pueden haber sido infectados por ransomware. Esto le ayuda a hacer que sus sistemas vuelvan a estar en funcionamiento muy rápidamente. En este momento, la acción de recuperación le permite reemplazar un volumen dañado por una copia de SnapVault que no se vio afectada por el ransomware.<block ref="1cfef95f6383739a4e12630b10e7eb2d" category="inline-link-rx"></block>.</block>
-  <block id="044a391323ce6d62701fd93c1d831b1c" category="paragraph"><block ref="6ae4b2bca0be046d4e2b16ecc9229d9a" category="inline-link-rx"></block>.</block>
   <block id="6036aba79be1763af24e9806bf6aa269" category="paragraph">Mediante la acción "Buscar recursos existentes" puede identificar el entorno de trabajo y, a continuación, utilizar otras acciones de plantilla, como la creación de un volumen, para realizar fácilmente acciones en entornos de trabajo existentes.<block ref="1cc8e92b4ee69f285158646e972eb8d0" category="inline-link-rx"></block>.</block>
   <block id="4bf671cced86fd4534b1e46341c4d33e" category="paragraph">La compatibilidad existente para crear un entorno de trabajo de Cloud Volumes ONTAP en AWS se ha ampliado para incluir la creación de un sistema de alta disponibilidad además de un sistema de un único nodo.<block ref="4e312d070157c43d2c155d9ef416aea0" category="inline-link-rx"></block>.</block>
   <block id="3ce8031a2a5efd8807d29dc5391ac03a" category="paragraph">Actualmente admite volúmenes en sistemas Cloud Volumes ONTAP y ONTAP en las instalaciones.<block ref="71acbc1e86413ca32a85c458baf53529" category="inline-link-rx"></block>.</block>
@@ -323,10 +305,6 @@
   <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">La pestaña **Mis oportunidades** ahora es **Mi estado**. La documentación se actualiza para reflejar el nuevo nombre.</block>
   <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 de julio de 2023</block>
   <block id="a6d6a466484f2718bba09926e0dfb2c7" category="paragraph">Los siguientes cambios se introdujeron con la versión 3.9.31 del conector.</block>
-  <block id="0888a7f5d81ff73f5ec9fa719b091bdc" category="section-title">Compatibilidad con implementaciones de zonas de disponibilidad múltiple de alta disponibilidad en Azure</block>
-  <block id="4df3cde02df4d7a411534f5e0a1565bc" category="paragraph">El Japón Este y Corea Central en Azure ahora admiten implementaciones de zonas de disponibilidad múltiple de alta disponibilidad para Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores.</block>
-  <block id="1453deb356953584c888fcae0040c1c6" category="inline-link">Mapa de regiones globales en Azure</block>
-  <block id="9e8ed8cdd45e3d9bd3f546720545d06a" category="paragraph">Para obtener una lista de todas las regiones que admiten varias zonas de disponibilidad, consulte<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">Conozca cuáles son las nuevas funciones que se incluyen en esta versión de Cloud Volumes ONTAP</block>
   <block id="11f4fef53a39b0e83d4fdb9f922e768e" category="section-title">Detección de clúster desde Mi estado</block>
   <block id="4573c689742769edc01e3f45205fd784" category="paragraph">Ahora puedes detectar los clústeres de ONTAP on-premises desde *Canvas &gt; Mi estado* mediante la selección de un clúster que BlueXP detectó previamente a partir de los clústeres de ONTAP asociados con la dirección de correo electrónico para tu inicio de sesión de BlueXP.</block>
@@ -504,36 +482,6 @@
   <block id="414c40dd827c6738286ee0b333e39456" category="inline-link">Aprende a crear tus buckets de almacenamiento de objetos</block>
   <block id="debda728f2e9b255111b127aed9dc8fd" category="paragraph">Cuando cree archivos de backup en el almacenamiento de objetos, de forma predeterminada, el servicio de backup y recuperación creará los buckets en el almacenamiento de objetos para usted. Puede crear los cubos usted mismo si desea utilizar un nombre determinado o asignar propiedades especiales. Si desea crear su propio bucket, debe crearlo antes de iniciar el asistente de activación.<block ref="2d2a00fa0eeaa888f8c689ec67e16ffe" category="inline-link-rx"></block>.</block>
   <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">Actualmente, esta funcionalidad no es compatible al crear archivos de backup en sistemas StorageGRID.</block>
-  <block id="51276db22ab007bf8378ddc5150c089e" category="section-title">04 de julio de 2023</block>
-  <block id="197747cde80c31576877de78be696240" category="section-title">Mejoras en el backup y recuperación de datos de BlueXP para aplicaciones (nativas en la nube)</block>
-  <block id="91abdc8faafafce1c7b76b1ecb8b37a6" category="list-text">Sistemas SAP HANA</block>
-  <block id="bd8b9d76d990f261019903335a2c9e94" category="list-text">Admite la conexión y la restauración de copia de volúmenes sin datos y volúmenes globales sin datos que tienen protección secundaria Azure NetApp Files</block>
-  <block id="5ffbe0deb5b41148dc58e63a20df8411" category="list-text">Bases de datos de Oracle</block>
-  <block id="0ba30ac65d6a9a5888d4dc02307879d6" category="list-text">Admite la restauración de bases de datos de Oracle en Azure NetApp Files en una ubicación alternativa</block>
-  <block id="699e0e6ae8fec9f5e5e383a17f5ec630" category="list-text">Admite la catalogación de backups de bases de datos de Oracle en Azure NetApp Files</block>
-  <block id="02794f70b3a16972197aaf346fca198e" category="list-text">Permite poner el host de base de datos en modo de mantenimiento para realizar tareas de mantenimiento</block>
-  <block id="a1501619265b99c9d02aefcdb1128d6d" category="section-title">Mejoras en el backup y la recuperación de BlueXP para aplicaciones (híbrida)</block>
-  <block id="d7d2579b3be99740443be180188dedfc" category="list-text">Admite la restauración para cambiar la ubicación</block>
-  <block id="b0e856a98075908a96697bb21ab6fe32" category="list-text">Permite montar backups de base de datos de Oracle</block>
-  <block id="9e9fa16d2206e067234a9dad53361ff4" category="list-text">Admite el traslado de backups desde GCP al nivel de archivado</block>
-  <block id="e0d4183564323d306658a92b138bac87" category="section-title">Mejoras en el backup y recuperación de BlueXP para máquinas virtuales (híbridas)</block>
-  <block id="64870b941ab2700a64f496038bfb77a9" category="list-text">Admite la protección de almacenes de datos NFS y VMFS</block>
-  <block id="c54bd2b10766a492ae36855e868d61eb" category="list-text">Permite cancelar el registro del host del plugin de SnapCenter para VMware vSphere</block>
-  <block id="08c34207830d8869e05cd28a4543f5dc" category="list-text">Permite la actualización y la detección de almacenes de datos y backups más recientes</block>
-  <block id="47cb625c2251a650ce99bc5010f839ac" category="section-title">Los volúmenes de FlexGroup pueden realizarse backups y protegerse mediante la protección frente a ransomware y bloqueo de datos</block>
-  <block id="ea9b647c4b660963890b981cadc4c22f" category="paragraph">Las políticas de backup para FlexGroup Volumes ahora pueden usar la protección DataLock y Ransomware cuando el clúster ejecuta ONTAP 9.13.1 o posterior.</block>
-  <block id="f6477043c28067a4e579493c6cbb2e5f" category="section-title">Nuevas funciones de generación de informes</block>
-  <block id="7423bbe1d34880696cfb7dd51492349f" category="inline-link">Informe sobre la cobertura de protección de datos</block>
-  <block id="90c3582e59f2cb06c1d746e0f983ffde" category="paragraph">Ahora existe una pestaña Reports en la que se puede generar un informe de Backup Inventory, que incluye todos los backups de una cuenta, un entorno de trabajo o un inventario de SVM específico. También puede crear un informe de actividad de trabajo de protección de datos, que proporciona información sobre operaciones de Snapshot, backup, clonado y restauración que pueden ayudar con la supervisión de los acuerdos de nivel de servicio. Consulte<block ref="76fbdf5883fabf4a66bc2a9d2bdc8b58" category="inline-link-rx"></block>.</block>
-  <block id="5cc0a3c2b0d184efdd93deba5120c0b4" category="section-title">Mejoras en Job Monitor</block>
-  <block id="8931c68a06f64c8d4063f2e9132e3258" category="inline-link">Supervisar el estado de los trabajos de backup y restauración</block>
-  <block id="c17e5b19576d968cb68cb76a1904afca" category="paragraph">Ahora puede revisar _backup lifecycle_ como un tipo de trabajo en la página Job Monitor, lo que le ayudará a realizar un seguimiento de todo el ciclo de vida de la copia de seguridad. También puedes ver detalles de todas las operaciones en la línea de tiempo de BlueXP. Consulte<block ref="757859ff46183d1407cb40e64e39a313" category="inline-link-rx"></block>.</block>
-  <block id="e5d5b752cdb14505ba3ec9b2bd2be013" category="section-title">Alerta de notificación adicional para etiquetas de política no coincidentes</block>
-  <block id="92c58fc811dad1461929803e5f5d9205" category="paragraph">Se ha agregado una nueva alerta de backup que indica que no se han creado los archivos de backup porque las etiquetas de políticas de Snapshot no coinciden. Si el _label_ definido en una política de backup no tiene un _label_ coincidente en la política de Snapshot, no se creará ningún archivo de backup. Deberá usar System Manager o la CLI de ONTAP para añadir la etiqueta faltante a la política de Snapshot del volumen.</block>
-  <block id="4788963de19a5204a352f3308b0395d8" category="inline-link">Revisa todas las alertas que pueden enviar el backup y la recuperación de BlueXP</block>
-  <block id="809c5429fbc9708f2c659ca056b2c098" category="paragraph"><block ref="1fa18ad5aa31d9e300f41aa2d9a59bdd" category="inline-link-rx"></block>.</block>
-  <block id="5a4b2cac486281ad2280371043da8170" category="section-title">Copia de seguridad automática de los archivos críticos de backup y recuperación de BlueXP en sitios oscuros</block>
-  <block id="7109418f2cd9c52748bb2a769336a1d0" category="paragraph">Cuando utilizas el backup y la recuperación de BlueXP en un sitio sin acceso a Internet, conocido como puesta en marcha en «modo privado», la información de backup y recuperación de BlueXP se almacena únicamente en el sistema Connector local. Esta nueva funcionalidad realiza backups automáticos de los datos críticos de backup y recuperación de BlueXP en un bloque de su sistema StorageGRID conectado para que pueda restaurar estos datos en un nuevo conector si es necesario.<block ref="7987fffb3d9d5da865ce1f589e4bd463" category="inline-link-rx"></block></block>
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">Obtén más información sobre las API de clasificación de BlueXP</block>
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>.</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="inline-link">Recuperación tras siniestros</block>
@@ -589,4 +537,24 @@
   <block id="0aa08047034186671d34875b5617b057" category="paragraph"><block ref="0aa08047034186671d34875b5617b057" category="inline-link-rx"></block></block>
   <block id="d687b97df8e082fb1a95e853c70aa1c2" category="section-title">03 de septiembre de 2023</block>
   <block id="a0c145fadd8b464775a61d2f1a2e0474" category="paragraph">El servicio actualizado de informes de migración de BlueXP proporciona actualizaciones a los datos de los informes. Los informes ahora incluyen la capacidad asignada.</block>
+  <block id="63ded913a4470920f93edd534ec90156" category="section-title">11 de septiembre de 2023</block>
+  <block id="101143ec501ddd03e76bf93ad136c2de" category="section-title">Gestión de nuevas políticas para datos de ONTAP</block>
+  <block id="d3744875712ea1e210c10ab00d139b5b" category="paragraph">Esta versión incluye la capacidad dentro de la interfaz de usuario de crear políticas Snapshot personalizadas, políticas de replicación y políticas para backups en el almacenamiento de objetos para los datos de ONTAP.</block>
+  <block id="99a56480b438dfe7afa3558f8c8e61d0" category="inline-link">Obtenga más información sobre las políticas</block>
+  <block id="53a26cd89d8676b12d682e92f9b49a79" category="paragraph"><block ref="99a3bdb35a901d86516bb48e573064a3" category="inline-link-rx"></block>.</block>
+  <block id="90bd868a90cdf44166755a0fdec24b6e" category="section-title">Soporte para restaurar archivos y carpetas a partir de volúmenes en el almacenamiento de objetos ONTAP S3</block>
+  <block id="efec702225db296adcaac3abb0665451" category="paragraph">Anteriormente, no era posible restaurar archivos y carpetas con la función «Examinar y restaurar» cuando se realizaban backups de volúmenes en el almacenamiento de objetos de ONTAP S3. Esta versión elimina esa restricción.</block>
+  <block id="38da59f967f6f913365cf5cefb459344" category="inline-link">Obtenga más información sobre la restauración de datos</block>
+  <block id="7b3040066d7e59383891bdcb2977076f" category="paragraph"><block ref="bfc7bc1f2f7fff3212c093c1fc6b6317" category="inline-link-rx"></block>.</block>
+  <block id="52cc7bb26d5185a2c3b92b71a3d6e319" category="section-title">Compatibilidad adicional para realizar backups y restaurar volúmenes de SnapLock</block>
+  <block id="4cb4cd292be9258bfc850d1aa644d9f6" category="paragraph">Ahora, los backups y la recuperación de datos pueden realizar backups de los volúmenes de FlexVol y FlexGroup que se configuren mediante los modos de protección SnapLock Compliance o SnapLock Enterprise. Los clústeres deben ejecutar ONTAP 9,14 o superior para esta compatibilidad. El backup de los volúmenes de FlexVol con el modo SnapLock Enterprise se admite desde la versión 9.11.1 de ONTAP. Las versiones anteriores de ONTAP no ofrecen compatibilidad para realizar backups de volúmenes de protección de SnapLock.</block>
+  <block id="115e674b1dc0942f53bc91e279bbd7eb" category="inline-link">Obtenga más información sobre la protección de datos de ONTAP</block>
+  <block id="5ea7c922bf64f9c4520ccdf833e34e39" category="paragraph"><block ref="287ce1c3ffcd9fd04ac3fb9608fef690" category="inline-link-rx"></block>.</block>
+  <block id="3e34162a2379c48e3eaf3f3857b029c0" category="paragraph">Los siguientes cambios se introdujeron con la versión 3.9.33 del conector.</block>
+  <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">Compatibilidad con máquinas virtuales de la serie Lsv3 en Azure</block>
+  <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">Los tipos de instancia L48s_v3 y L64s_v3 ahora son compatibles con Cloud Volumes ONTAP en Azure para implementaciones de parejas de nodos únicos y alta disponibilidad con discos gestionados compartidos en zonas de disponibilidad única y múltiple, a partir de la versión 9.13.1. Estos tipos de instancias admiten Flash Cache.</block>
+  <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">Vea las configuraciones compatibles para Cloud Volumes ONTAP en Azure</block>
+  <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">Echa un vistazo a los límites de almacenamiento para Cloud Volumes ONTAP en Azure</block>
+  <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
+<block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
 </blocks>
