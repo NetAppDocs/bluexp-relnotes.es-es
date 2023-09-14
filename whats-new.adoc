@@ -385,9 +385,15 @@ Actualmente, esta funcionalidad no es compatible al crear archivos de backup en 
 
 
 
+==== Implementaciones pequeñas y medianas no disponibles temporalmente
+
+Cuando implementas una instancia de clasificación de BlueXP en AWS, la opción de seleccionar *Desplegar > Configuración* y elegir una instancia pequeña o mediana no estará disponible en este momento. Aún puede implementar la instancia utilizando el tamaño de instancia grande seleccionando *Desplegar > Desplegar*.
+
+
+
 ==== Aplique etiquetas a un máximo de 100.000 elementos desde la página de resultados de la investigación
 
-En el pasado, sólo se podían aplicar etiquetas a una sola página a la vez en la página de resultados de la investigación (20 elementos). Ahora puede seleccionar *todos* elementos en las páginas de resultados de la investigación y aplicar etiquetas a todos los elementos - hasta 100.000 elementos a la vez.  https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["Descubra cómo"].
+En el pasado, sólo se podían aplicar etiquetas a una sola página a la vez en la página de resultados de la investigación (20 elementos). Ahora puede seleccionar *todos* elementos en las páginas de resultados de la investigación y aplicar etiquetas a todos los elementos - hasta 100.000 elementos a la vez. https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["Descubra cómo"].
 
 
 
@@ -410,12 +416,6 @@ La clasificación de BlueXP puede identificar y categorizar los archivos que con
 
 
 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Consulta todos los tipos de datos personales que la clasificación de BlueXP puede identificar en tus datos"].
-
-
-
-==== Rocky Linux 9 ahora es una distribución Linux compatible en la que puedes instalar la clasificación de BlueXP
-
-Rocky Linux 9 (9,0, 9,1 y 9,2) se ha calificado como un sistema operativo compatible para la clasificación de BlueXP. Puede instalar la clasificación de BlueXP en un host Rocky Linux de su red o en un host Linux en el cloud cuando utilice la versión 1,24 del instalador. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Descubre cómo instalar la clasificación de BlueXP en un host con Rocky Linux instalado"].
 
 
 

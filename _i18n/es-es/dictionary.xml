@@ -346,9 +346,6 @@
   <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">Dos nuevos tipos de datos personales alemanes se identifican por la clasificación de BlueXP</block>
   <block id="e2f64dc02ab3f9d3b659d24b9503b545" category="list-text">Identificación alemana (Personalausweisnummer)</block>
   <block id="ac01084f4d5a1af5de639eaf04ad94ff" category="list-text">Número de Seguro Social Alemán (Sozialversicherungsnummer)</block>
-  <block id="f6731e0bd9f7a8a40f83ba1c622ffe25" category="section-title">Rocky Linux 9 ahora es una distribución Linux compatible en la que puedes instalar la clasificación de BlueXP</block>
-  <block id="76264cc2bc8d3793465d31c38655f588" category="inline-link">Descubre cómo instalar la clasificación de BlueXP en un host con Rocky Linux instalado</block>
-  <block id="059df2e0abacded1764d0222f6ab3b42" category="paragraph">Rocky Linux 9 (9,0, 9,1 y 9,2) se ha calificado como un sistema operativo compatible para la clasificación de BlueXP. Puede instalar la clasificación de BlueXP en un host Rocky Linux de su red o en un host Linux en el cloud cuando utilice la versión 1,24 del instalador.<block ref="b549f731e0826bdc1659ea47e9a6f422" category="inline-link-rx"></block>.</block>
   <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">La clasificación de BlueXP es totalmente compatible con el modo restringido y el modo privado</block>
   <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">Obtén más información sobre los modos de puesta en marcha de BlueXP para Connector</block>
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">La clasificación de BlueXP ahora es totalmente compatible en sitios sin acceso a Internet (modo privado) y con acceso a Internet saliente limitado (modo restringido).<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>.</block>
@@ -524,7 +521,6 @@
   <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">5 de septiembre (versión 1,25)</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">Aplique etiquetas a un máximo de 100.000 elementos desde la página de resultados de la investigación</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">Descubra cómo</block>
-  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">En el pasado, sólo se podían aplicar etiquetas a una sola página a la vez en la página de resultados de la investigación (20 elementos). Ahora puede seleccionar *todos* elementos en las páginas de resultados de la investigación y aplicar etiquetas a todos los elementos - hasta 100.000 elementos a la vez. <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">Identifique archivos duplicados con un tamaño de archivo mínimo de 1 MB</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">Clasificación de BlueXP utilizada para identificar los archivos duplicados solo cuando los archivos tenían 50 MB o más. Ahora se pueden identificar los archivos duplicados que comienzan con 1 MB. Puedes usar los filtros de página de investigación “Tamaño de archivo” junto con “Duplicados” para ver qué archivos de un determinado tamaño están duplicados en tu entorno.</block>
   <block id="18cf4605db6670514e116119da7de0a0" category="section-title">3 de septiembre de 2023</block>
@@ -557,4 +553,7 @@
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">Echa un vistazo a los límites de almacenamiento para Cloud Volumes ONTAP en Azure</block>
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
+  <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">Implementaciones pequeñas y medianas no disponibles temporalmente</block>
+  <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">Cuando implementas una instancia de clasificación de BlueXP en AWS, la opción de seleccionar *Desplegar &gt; Configuración* y elegir una instancia pequeña o mediana no estará disponible en este momento. Aún puede implementar la instancia utilizando el tamaño de instancia grande seleccionando *Desplegar &gt; Desplegar*.</block>
+  <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">En el pasado, sólo se podían aplicar etiquetas a una sola página a la vez en la página de resultados de la investigación (20 elementos). Ahora puede seleccionar *todos* elementos en las páginas de resultados de la investigación y aplicar etiquetas a todos los elementos - hasta 100.000 elementos a la vez.<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
 </blocks>
