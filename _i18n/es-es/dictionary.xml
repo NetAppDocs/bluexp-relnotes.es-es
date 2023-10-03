@@ -110,7 +110,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidad de NetApp</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blogs de BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toda la documentación de BlueXP</block>
   <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">Conozca los cambios más recientes en los servicios en la nube que forman parte de la plataforma BlueXP. Si quiere más información, consulte <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> por cada servicio individual.</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">5 de marzo de 2023</block>
   <block id="eea1e3b9ecdd5e32692761a0a78b9463" category="section-title">05 de marzo de 2023</block>
@@ -271,25 +270,9 @@
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">Con el almacenamiento en caché de volúmenes de BlueXP, dispones de capacidades de almacenamiento en caché para la nube, específicamente para Amazon FSx para NetApp ONTAP, Cloud Volumes ONTAP y on-premises como entornos de trabajo.</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">Obtén más información sobre el almacenamiento en caché de volúmenes de BlueXP</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>.</block>
-  <block id="96828273826a07fdc4f42f4998e536b2" category="section-title">6 de junio de 2023 (versión 1,23)</block>
-  <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="section-title">Ahora se admite el japonés al buscar nombres de sujetos de datos</block>
-  <block id="3a3337f232548d40f54052862077499b" category="inline-link">Informe de solicitud de acceso de asunto de datos</block>
-  <block id="931c126009c96d8f8ce9770df003478d" category="inline-link">Filtro de sujeto de datos en la página Investigación de datos</block>
-  <block id="8b33a4571db736cc278b213820df9c13" category="paragraph">Ahora se pueden introducir nombres en japonés al buscar el nombre de un sujeto en respuesta a una solicitud de acceso a los datos del interesado (DSAR). Puede generar un<block ref="8ff27ad1e3f1d885a2f0c0f257501bb1" category="inline-link-rx"></block> con la información resultante. También puede introducir nombres japoneses en la<block ref="615fae5bff7ec48fe0ed5c47e50f199a" category="inline-link-rx"></block> para identificar los archivos que contienen el nombre del sujeto.</block>
-  <block id="988e5d1ef231d33d94784c928261f0aa" category="section-title">Ubuntu ahora es una distribución Linux compatible en la que puedes instalar la clasificación de BlueXP</block>
-  <block id="bf62ea0cc2aa2f5ecb7f712ffcdafc64" category="inline-link">Descubre cómo instalar la clasificación de BlueXP en un host con Ubuntu instalado</block>
-  <block id="eba7ad27f2a236389ef88102ad7e8e2e" category="section-title">Red Hat Enterprise Linux 8,6 y 8,7 ya no son compatibles con las nuevas instalaciones de clasificación de BlueXP</block>
-  <block id="5b1dc8e5b7717b205bb516bc41f51da7" category="paragraph">Estas versiones no son compatibles con nuevas implementaciones porque Red Hat ya no es compatible con Docker, lo cual es un requisito previo. Si ya tienes un equipo de clasificación de BlueXP en RHEL 8,6 o 8,7, NetApp seguirá admitiendo tu configuración.</block>
-  <block id="b5ba343fa4469021dbdf64181a67e909" category="section-title">La clasificación de BlueXP se puede configurar como un recopilador de FPolicy para recibir eventos de FPolicy de sistemas ONTAP</block>
-  <block id="88b2049c35386070297462047bca71cf" category="inline-link">Vea cómo supervisar y gestionar eventos de acceso a archivos</block>
-  <block id="1c6f2c46440d2da9ff124f2379388cf8" category="paragraph">Es posible habilitar los registros de auditoría de acceso a archivos para que se recopilen en el sistema de clasificación de BlueXP para los eventos de acceso a archivos detectados en volúmenes en tus entornos de trabajo. La clasificación de BlueXP puede capturar los siguientes tipos de eventos de FPolicy y los usuarios que realizaron las acciones en sus archivos: Crear, leer, escribir, eliminar, cambiar el nombre, Cambie el propietario/permisos y cambie SACL/DACL.<block ref="e525234fcf42827b85ebd3e0f842cd71" category="inline-link-rx"></block>.</block>
-  <block id="e1161f065b10936afc930fd3d9d0c76f" category="section-title">Las licencias BYOL de Data Sense son ahora compatibles en sitios oscuros</block>
-  <block id="1ab65443ec0af7e5e1aee32a3cf59dcc" category="inline-link">Vea cómo obtener y cargar su licencia BYOL de Data Sense</block>
-  <block id="645f5675426bc396b45b524635e93bc7" category="paragraph">Ahora puedes cargar la licencia BYOL de Data Sense en la cartera digital de BlueXP en un sitio oscuro para que se te notifique cuando tu licencia esté baja.<block ref="bd823f9b4dce457c0ea2a8dcca6e749f" category="inline-link-rx"></block>.</block>
   <block id="26e3ab611e399c831d813cdff5745975" category="list-text">Ahora, Connector te permite añadir y gestionar cuentas de almacenamiento de Azure desde BlueXP.</block>
   <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">Descubre cómo añadir nuevas cuentas de almacenamiento de Azure a tus suscripciones de Azure desde BlueXP</block>
   <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>.</block>
-  <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22,04 ha sido calificado como un sistema operativo compatible para la clasificación BlueXP. Puede instalar la clasificación de BlueXP en un host Ubuntu Linux de su red o en un host Linux en el cloud cuando utilice la versión 1,23 del instalador.<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>.</block>
   <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">11 de junio de 2023</block>
   <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">Respalde la cancelación automática por minutos</block>
   <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">Las sincronizaciones activas que no se hayan completado ahora se pueden anular después de quince minutos utilizando la función *Tiempo de espera de sincronización*.</block>
@@ -558,4 +541,10 @@
   <block id="9622c46ac664d07f743905654edd5f26" category="section-title">Plan de actualización</block>
   <block id="bd3f220b24dc61548511364f320ec8ea" category="inline-link-macro">Actualice la versión de ONTAP con el plan de actualización</block>
   <block id="62418fbf78b58ba84b3c5a6987815772" category="paragraph">El plan de actualización se ha optimizado para eliminar los pasos de actualización redundantes, modificar la información y las advertencias, y simplificar el plan de interrupción. Los pasos comunes en todos los nodos de un clúster se consolidan y están disponibles en la sección Información general. Para ver el plan mejorado, genere el plan de actualización siguiendo los pasos mencionados en <block ref="90927e731c81adade70cb7e4c40b43bd" category="inline-link-macro-rx"></block>.</block>
+  <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">4 de octubre (versión 1,26)</block>
+  <block id="620a73262e6956695319caae21506289" category="section-title">Compatibilidad con instalaciones locales que usen RHEL versión 9</block>
+  <block id="97e778415712a740a3bb71e9070c88c5" category="paragraph">Red Hat Enterprise Linux, las versiones 8 y 9 no son compatibles con el motor Docker, que se requiere para la instalación de la clasificación de BlueXP. Ahora admitimos la instalación en RHEL 9,0, 9,1 y 9,2 con Podman versión 4 o posterior como infraestructura de contenedores. Si tu entorno requiere el uso de las versiones más recientes de RHEL, ahora puedes instalar la clasificación de BlueXP (versión 1,26 o posterior) cuando utilizas Podman.</block>
+  <block id="081ac57be4c35d4de4fc43c105089d8f" category="paragraph">En este momento, no admitimos instalaciones de sitios oscuros ni entornos de escaneo distribuidos (con nodos de escáner maestro y remoto).</block>
+  <block id="db5b005cbaaba7a23899858892848a77" category="section-title">Los resultados de la página Investigación ahora muestran el tamaño total además del número total de elementos</block>
+  <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">Los resultados filtrados en la página de investigación ahora muestran el tamaño total de los elementos además del número total de archivos. Esto puede ayudar al mover archivos, eliminar archivos y más.</block>
 </blocks>
