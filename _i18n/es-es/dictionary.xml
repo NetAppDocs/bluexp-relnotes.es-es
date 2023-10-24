@@ -538,5 +538,15 @@
   <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">La región de Arabia Saudita ahora es compatible con Google Cloud para Cloud Volumes ONTAP y el conector para Cloud Volumes ONTAP 9.12.1 GA y posteriores.</block>
   <block id="2bc724993144e8002899059117620062" category="inline-link">Mapa de regiones globales en Google Cloud</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Para ver una lista de todas las regiones, consulte<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
-  <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Las siguientes regiones de Azure admiten ahora implementaciones de zonas de disponibilidad múltiple de alta disponibilidad para Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores:</block>
+  <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">10 de noviembre de 2023</block>
+  <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">El siguiente cambio se introdujo con la versión 3.9.35 del conector.</block>
+  <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">La región de Berlín ahora es compatible en Google Cloud</block>
+  <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">La región de Berlín ahora es compatible con Google Cloud para Cloud Volumes ONTAP 9.12.1 GA y posterior.</block>
+  <block id="bbb4cf526641d95bbb8ab8bada56fa79" category="section-title">La región de Tel Aviv ahora es compatible con AWS</block>
+  <block id="04afad264aa486baec91a1ade145665a" category="paragraph">La región de Tel Aviv ahora es compatible con AWS para Cloud Volumes ONTAP 9.12.1 GA y posterior.</block>
+  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Mapa de regiones globales en AWS</block>
+  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Para ver una lista de todas las regiones, consulte<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
+  <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">El siguiente cambio se introdujo con la versión 3.9.34 del conector.</block>
+  <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">08 de noviembre de 2023</block>
+  <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Esta versión de la eficiencia económica de BlueXP incluye una nueva opción para realizar una evaluación de sus activos e identificar si se recomienda una actualización tecnológica. El servicio incluye una nueva opción de actualización tecnológica en la navegación izquierda, nuevas páginas en las que puede realizar una evaluación de sus activos y cargas de trabajo actuales, y un informe que le ofrece recomendaciones.</block>
 </blocks>

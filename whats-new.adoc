@@ -372,9 +372,37 @@ Clasificación de BlueXP utilizada para identificar los archivos duplicados solo
 
 
 
+=== 10 de noviembre de 2023
+
+El siguiente cambio se introdujo con la versión 3.9.35 del conector.
+
+
+
+==== La región de Berlín ahora es compatible en Google Cloud
+
+La región de Berlín ahora es compatible con Google Cloud para Cloud Volumes ONTAP 9.12.1 GA y posterior.
+
+Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Google Cloud"^].
+
+
+
+=== 8 de noviembre de 2023
+
+El siguiente cambio se introdujo con la versión 3.9.35 del conector.
+
+
+
+==== La región de Tel Aviv ahora es compatible con AWS
+
+La región de Tel Aviv ahora es compatible con AWS para Cloud Volumes ONTAP 9.12.1 GA y posterior.
+
+Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en AWS"^].
+
+
+
 === 1 de noviembre de 2023
 
-Los siguientes cambios se introdujeron con la versión 3.9.34 del conector.
+El siguiente cambio se introdujo con la versión 3.9.34 del conector.
 
 
 
@@ -383,44 +411,6 @@ Los siguientes cambios se introdujeron con la versión 3.9.34 del conector.
 La región de Arabia Saudita ahora es compatible con Google Cloud para Cloud Volumes ONTAP y el conector para Cloud Volumes ONTAP 9.12.1 GA y posteriores.
 
 Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Google Cloud"^].
-
-
-
-=== 23 de octubre de 2023
-
-Los siguientes cambios se introdujeron con la versión 3.9.34 del conector.
-
-
-
-==== Se admiten nuevas regiones para implementaciones de zonas de disponibilidad múltiple de alta disponibilidad en Azure
-
-Las siguientes regiones de Azure admiten ahora implementaciones de zonas de disponibilidad múltiple de alta disponibilidad para Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores:
-
-* Australia Oriental
-* Asia Oriental
-* Francia Central
-* Europa del Norte
-* Qatar Central
-* Suecia Central
-* Europa Occidental
-* Oeste de EE.UU. 2
-
-
-Para obtener una lista de todas las regiones que admiten varias zonas de disponibilidad, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Azure"^].
-
-
-
-=== 6 de octubre de 2023
-
-Los siguientes cambios se introdujeron con la versión 3.9.34 del conector.
-
-
-
-==== Cloud Volumes ONTAP 9.14.0
-
-BlueXP ahora puede poner en marcha y gestionar el lanzamiento de disponibilidad general de Cloud Volumes ONTAP 9.14.0 en AWS, Azure y Google Cloud.
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Conozca cuáles son las nuevas funciones que se incluyen en esta versión de Cloud Volumes ONTAP"^].
 
 
 
@@ -785,6 +775,12 @@ Ahora puedes detectar tus sistemas E-Series directamente en BlueXP. El descubrim
 
 
 == Eficiencia económica
+
+
+
+=== 08 de noviembre de 2023
+
+Esta versión de la eficiencia económica de BlueXP incluye una nueva opción para realizar una evaluación de sus activos e identificar si se recomienda una actualización tecnológica. El servicio incluye una nueva opción de actualización tecnológica en la navegación izquierda, nuevas páginas en las que puede realizar una evaluación de sus activos y cargas de trabajo actuales, y un informe que le ofrece recomendaciones.
 
 
 
