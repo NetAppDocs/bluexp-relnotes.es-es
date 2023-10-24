@@ -1,0 +1,33 @@
+= Gestión de nuevas políticas para datos de ONTAP
+:allow-uri-read: 
+
+
+
+
+=== Gestión de nuevas políticas para datos de ONTAP
+
+Esta versión incluye la capacidad dentro de la interfaz de usuario de crear políticas Snapshot personalizadas, políticas de replicación y políticas para backups en el almacenamiento de objetos para los datos de ONTAP.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Obtenga más información sobre las políticas"].
+
+
+
+=== Soporte para restaurar archivos y carpetas a partir de volúmenes en el almacenamiento de objetos ONTAP S3
+
+Anteriormente, no era posible restaurar archivos y carpetas con la función «Examinar y restaurar» cuando se realizaban backups de volúmenes en el almacenamiento de objetos de ONTAP S3. Esta versión elimina esa restricción.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Obtenga más información sobre la restauración de datos"].
+
+
+
+=== Capacidad de archivar los datos de backup de forma inmediata, en lugar de escribir primero en almacenamiento estándar
+
+Ahora puede enviar sus archivos de copia de seguridad inmediatamente al almacenamiento de archivado, en lugar de escribir los datos en el almacenamiento en la nube estándar. Esto puede ser especialmente útil para los usuarios que rara vez necesitan acceder a los datos de backups en la nube o los usuarios que están sustituyendo una copia de seguridad en un entorno de cinta.
+
+
+
+=== Compatibilidad adicional para realizar backups y restaurar volúmenes de SnapLock
+
+Ahora, los backups y la recuperación de datos pueden realizar backups de los volúmenes de FlexVol y FlexGroup que se configuren mediante los modos de protección SnapLock Compliance o SnapLock Enterprise. Los clústeres deben ejecutar ONTAP 9,14 o superior para esta compatibilidad. El backup de los volúmenes de FlexVol con el modo SnapLock Enterprise se admite desde la versión 9.11.1 de ONTAP. Las versiones anteriores de ONTAP no ofrecen compatibilidad para realizar backups de volúmenes de protección de SnapLock.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Obtenga más información sobre la protección de datos de ONTAP"].

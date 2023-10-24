@@ -1,0 +1,21 @@
+= creación de políticas de copia de seguridad de 3-2-1 durante la activación de la copia de seguridad
+:allow-uri-read: 
+
+
+
+
+=== creación de políticas de copia de seguridad de 3-2-1 durante la activación de la copia de seguridad
+
+Anteriormente, había que crear políticas personalizadas antes de iniciar una snapshot, replicación o backup. Ahora, puedes crear una política durante el proceso de activación de backup con la interfaz de usuario de backup y recuperación de BlueXP.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Obtenga más información sobre las políticas"].
+
+
+
+=== Soporte para la restauración rápida bajo demanda de volúmenes ONTAP
+
+Ahora, el backup y la recuperación de datos de BlueXP permite realizar una «restauración rápida» de un volumen desde el almacenamiento en cloud a un sistema Cloud Volumes ONTAP. La restauración rápida es ideal para situaciones de recuperación ante desastres en las que se necesita proporcionar acceso a un volumen lo antes posible. Una restauración rápida restaura los metadatos del archivo de backup a un volumen en lugar de restaurar todo el archivo de backup.
+
+El sistema de destino de Cloud Volumes ONTAP debe ejecutar ONTAP versión 9.13.0 o posterior. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Obtenga más información sobre la restauración de datos"].
+
+El monitor de tareas de backup y recuperación de BlueXP también muestra información sobre el progreso de los trabajos de restauración rápidos.

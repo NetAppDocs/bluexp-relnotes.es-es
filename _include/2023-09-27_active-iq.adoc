@@ -1,0 +1,7 @@
+= 
+:allow-uri-read: 
+
+
+* Puede acceder a la página Upgrade Advisor para su lista de comprobaciones predeterminada mediante el link:https://activeiq.netapp.com/redirect/upgrade-advisor["Asesor de actualizaciones"^] enlace.
+* El plan de actualización está optimizado para eliminar los pasos de actualización redundantes y simplificar el plan de inversión. Los pasos comunes en todos los nodos de un clúster se consolidan y están disponibles en la sección de información general del plan de actualización. link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Aprenda a generar y ver el plan de actualización"].
+

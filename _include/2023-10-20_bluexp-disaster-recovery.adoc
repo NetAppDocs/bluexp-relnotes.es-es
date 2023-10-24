@@ -1,0 +1,12 @@
+= 
+:allow-uri-read: 
+
+
+Esta versión preliminar de la recuperación ante desastres de BlueXP incluye las siguientes actualizaciones.
+
+Ahora, con la recuperación ante desastres de BlueXP, puedes proteger tus cargas de trabajo de VMware basadas en NFS on-premises frente a desastres en otro entorno de VMware basado en NFS en las instalaciones además del cloud público. La recuperación de desastres de BlueXP orquesta la finalización de los planes de recuperación ante desastres.
+
+
+NOTE: Con esta oferta de vista previa, NetApp se reserva el derecho de modificar los detalles, el contenido y la línea de tiempo de la oferta antes de la disponibilidad general.
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Obtén más información sobre la recuperación ante desastres de BlueXP"].

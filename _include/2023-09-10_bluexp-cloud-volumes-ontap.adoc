@@ -1,0 +1,14 @@
+= Compatibilidad con máquinas virtuales de la serie Lsv3 en Azure
+:allow-uri-read: 
+
+
+Los siguientes cambios se introdujeron con la versión 3.9.33 del conector.
+
+
+
+=== Compatibilidad con máquinas virtuales de la serie Lsv3 en Azure
+
+Los tipos de instancia L48s_v3 y L64s_v3 ahora son compatibles con Cloud Volumes ONTAP en Azure para implementaciones de parejas de nodos únicos y alta disponibilidad con discos gestionados compartidos en zonas de disponibilidad única y múltiple, a partir de la versión 9.13.1. Estos tipos de instancias admiten Flash Cache.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Vea las configuraciones compatibles para Cloud Volumes ONTAP en Azure"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Echa un vistazo a los límites de almacenamiento para Cloud Volumes ONTAP en Azure"^]

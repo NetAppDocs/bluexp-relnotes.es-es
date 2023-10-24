@@ -1,0 +1,31 @@
+= Utilice grupos de seguridad de Azure existentes al crear un agente de datos
+:allow-uri-read: 
+
+
+
+
+=== Utilice grupos de seguridad de Azure existentes al crear un agente de datos
+
+Los usuarios ahora tienen la opción de usar grupos de seguridad de Azure existentes al crear un agente de datos.
+
+La cuenta de servicio utilizada al crear el broker de datos debe tener los siguientes permisos:
+
+* «Microsoft.Network/networkSecurityGroups/securityRules/read"
+* «Microsoft.Network/networkSecurityGroups/read"
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html["Obtén más información sobre cómo crear un agente de datos en Azure."]
+
+
+
+=== Cifrar datos al sincronizar con Google Storage
+
+Los usuarios ahora tienen la opción de especificar una clave de cifrado gestionada por el cliente al crear una relación de sincronización con un depósito de Google Storage como destino. Puede introducir manualmente la clave o elegir entre una lista de las claves en una sola región.
+
+La cuenta de servicio utilizada al crear el broker de datos debe tener los siguientes permisos:
+
+* Cloudkms.cryptoKeys.list
+* Cloudkms.keyrings.list
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements["Obtén más información sobre los requisitos del bucket de Google Cloud Storage."]

@@ -1,0 +1,7 @@
+= 
+:allow-uri-read: 
+
+
+Ahora los clientes pueden crear sistemas de archivos de Amazon FSx para NetApp ONTAP en tres nuevas regiones de AWS: Europa (Zúrich), Europa (España) y Asia Pacífico (Hyderabad).
+
+Consulte link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud["Amazon FSx para NetApp ONTAP ya está disponible en tres regiones adicionales"^] para obtener todos los detalles.

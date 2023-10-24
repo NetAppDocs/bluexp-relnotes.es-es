@@ -1,0 +1,37 @@
+= Mejoras en el backup y recuperación de datos de BlueXP para aplicaciones (nativas en la nube)
+:allow-uri-read: 
+
+
+
+
+=== Mejoras en el backup y recuperación de datos de BlueXP para aplicaciones (nativas en la nube)
+
+* Base de datos de Microsoft SQL Server
++
+** Admite el backup, la restauración y la recuperación de bases de datos de Microsoft SQL Server que residen en Amazon FSx para NetApp ONTAP
+** Todas las operaciones solo se admiten mediante las API de REST.
+
+
+* Sistemas SAP HANA
++
+** Durante la actualización del sistema, el montaje y el desmontaje automáticos de los volúmenes se ejecutan usando flujos de trabajo en lugar de scripts
+** Admite adición, eliminación, edición, eliminación, mantenimiento, y actualice el host del plugin mediante la interfaz de usuario
+
+
+
+
+
+
+=== Mejoras en el backup y la recuperación de BlueXP para aplicaciones (híbrida)
+
+* Admite el bloqueo de datos y la protección contra ransomware
+* Admite el movimiento de backups desde StorageGRID al nivel de archivado
+* Admite el backup de datos de aplicaciones MongoDB, MySQL y PostgreSQL desde sistemas ONTAP en las instalaciones en Amazon Web Services, Microsoft Azure, Google Cloud Platform y StorageGRID. Puede restaurar los datos cuando sea necesario.
+
+
+
+
+=== Mejoras en el backup y recuperación de datos de BlueXP para máquinas virtuales
+
+* Compatibilidad con el modelo de implementación de proxy de conector
+
