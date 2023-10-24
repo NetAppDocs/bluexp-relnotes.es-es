@@ -1,10 +1,6 @@
-= Conector 3.9.32
+= 
 :allow-uri-read: 
 
-
-
-
-=== Conector 3.9.32
 
 * Ahora puedes usar la API del servicio de auditoría de BlueXP para exportar registros de auditoría.
 +

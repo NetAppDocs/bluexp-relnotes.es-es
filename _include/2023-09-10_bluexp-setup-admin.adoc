@@ -1,10 +1,6 @@
-= Conector 3.9.33
+= 
 :allow-uri-read: 
 
-
-
-
-=== Conector 3.9.33
 
 * Cuando creas un conector en AWS desde BlueXP, ahora puedes buscar dentro del campo Par de claves para encontrar más fácilmente el par de claves que quieres usar con la instancia de Connector.
 +

@@ -1,9 +1,5 @@
-= Conector 3.9.34
+= 
 :allow-uri-read: 
 
-
-
-
-=== Conector 3.9.34
 
 Esta versión incluye mejoras y correcciones de errores menores.
