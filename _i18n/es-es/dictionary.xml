@@ -549,4 +549,9 @@
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">El siguiente cambio se introdujo con la versión 3.9.34 del conector.</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">08 de noviembre de 2023</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Esta versión de la eficiencia económica de BlueXP incluye una nueva opción para realizar una evaluación de sus activos e identificar si se recomienda una actualización tecnológica. El servicio incluye una nueva opción de actualización tecnológica en la navegación izquierda, nuevas páginas en las que puede realizar una evaluación de sus activos y cargas de trabajo actuales, y un informe que le ofrece recomendaciones.</block>
+  <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">Soporte para los trabajos programados en Job Monitor</block>
+  <block id="314b40130d46a229c3a19dc5e2e23aa4" category="paragraph">El Job Monitor de backup y recuperación de BlueXP supervisaba previamente trabajos de backup y restauración programados de volumen a almacén de objetos, pero no trabajos de Snapshot, replicación, backup y restauración locales que se habían programado a través de la interfaz de usuario o la API.</block>
+  <block id="04c6b318fe9c7f19ae925a90e52c6569" category="paragraph">El supervisor de tareas de backup y recuperación de BlueXP ahora incluye trabajos programados para copias Snapshot locales, replicaciones y backups en el almacenamiento de objetos.</block>
+  <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">13 de noviembre de 2023</block>
+  <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">Ahora puede crear informes para los volúmenes que usan el protocolo SMB/CIFS.</block>
 </blocks>
