@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: release-notes-index.html 
 keywords: release notes 
-summary: Vea el conjunto completo de notas de la versión de cada servicio individual. 
+summary: Consulta el conjunto completo de notas de la versión para cada servicio individual de BlueXP. 
 ---
 = Índice de notas de la versión
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Vea el conjunto completo de notas de la versión de cada servicio indiv
 
 
 [role="lead"]
-Vea el conjunto completo de notas de la versión de cada servicio individual.
+Consulta el conjunto completo de notas de la versión para cada servicio individual de BlueXP.
 
 
 
