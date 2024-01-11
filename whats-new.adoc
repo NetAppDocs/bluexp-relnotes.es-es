@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
 summary: Conozca los cambios más recientes en los servicios en la nube que forman parte de la plataforma BlueXP. Para obtener más información, consulte el conjunto completo de notas de la versión de cada servicio individual. 
 ---
 = Cambios recientes en BlueXP
@@ -30,6 +30,20 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
+=== 11 de enero de 2024
+
+
+
+==== Conector 3.9.36
+
+Esta versión incluye mejoras menores, correcciones de errores y soporte para Connector en las siguientes regiones de nube:
+
+* La región de Israel (Tel Aviv) en AWS
+* La región de Arabia Saudita en Google Cloud
+
+
+
+
 === 5 de diciembre de 2023
 
 
@@ -54,16 +68,6 @@ Esta nueva versión está disponible para descargar desde el sitio de soporte de
 ==== Conector 3.9.35
 
 Esta versión incluye mejoras de seguridad y correcciones de errores menores.
-
-
-
-=== 6 de octubre de 2023
-
-
-
-==== Conector 3.9.34
-
-Esta versión incluye mejoras y correcciones de errores menores.
 
 
 
@@ -177,6 +181,39 @@ Has tenido la posibilidad de ver cubos de Amazon S3 en BlueXP Canvas durante muc
 
 
 
+=== 15 de diciembre de 2023
+
+
+
+==== Informes disponibles para las copias Snapshot locales y de replicación
+
+Anteriormente, se podían generar informes solo con copias de backup. Ahora puede crear informes sobre copias Snapshot locales y replicar también copias Snapshot.
+
+Con estos informes, puede hacer lo siguiente:
+
+* Asegúrese de que los datos críticos estén protegidos según la política de su organización.
+* Asegúrese de que los backups se ejecuten sin problemas para un grupo de volúmenes.
+* Ofrecen pruebas de protección de sus datos de producción.
+
+
+Consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["Informe sobre la cobertura de protección de datos"].
+
+
+
+==== Etiquetado personalizado disponible en los volúmenes para ordenarlos y filtrarlos
+
+Ahora puede agregar etiquetas personalizadas a volúmenes a partir de ONTAP 9.13.1 para que pueda agrupar volúmenes dentro de entornos de trabajo y entre entornos. Si hace esto, podrá ordenar los volúmenes en las páginas de interfaz de usuario de backup y recuperación de BlueXP y filtrar en informes.
+
+
+
+==== Backups de catálogo retenidos durante 30 días
+
+Anteriormente, se conservaban Catalog.zip backups durante 7 días. Ahora, se retienen durante 30 días.
+
+Consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["Restaura los datos de backup y recuperación de BlueXP en sitios oscuros"].
+
+
+
 === 23 de octubre de 2023
 
 
@@ -196,6 +233,14 @@ Ahora, el backup y la recuperación de datos de BlueXP permite realizar una «re
 El sistema de destino de Cloud Volumes ONTAP debe ejecutar ONTAP versión 9.13.0 o posterior. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Obtenga más información sobre la restauración de datos"].
 
 El monitor de tareas de backup y recuperación de BlueXP también muestra información sobre el progreso de los trabajos de restauración rápidos.
+
+
+
+==== Aumentó la retención de los backups de datos de ONTAP en las instalaciones a buckets de StorageGRID
+
+Ahora StorageGRID puede retener hasta 30 backups de datos de ONTAP on-premises a partir de backup y recuperación de BlueXP en un único bucket. Anteriormente, un máximo era de 7 backups en un bloque.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Obtenga más información acerca de la realización de backups de datos de ONTAP en las instalaciones en StorageGRID"].
 
 
 
@@ -247,87 +292,23 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
-=== 11 de septiembre de 2023
-
-
-
-==== Gestión de nuevas políticas para datos de ONTAP
-
-Esta versión incluye la capacidad dentro de la interfaz de usuario de crear políticas Snapshot personalizadas, políticas de replicación y políticas para backups en el almacenamiento de objetos para los datos de ONTAP.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Obtenga más información sobre las políticas"].
-
-
-
-==== Soporte para restaurar archivos y carpetas a partir de volúmenes en el almacenamiento de objetos ONTAP S3
-
-Anteriormente, no era posible restaurar archivos y carpetas con la función «Examinar y restaurar» cuando se realizaban backups de volúmenes en el almacenamiento de objetos de ONTAP S3. Esta versión elimina esa restricción.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Obtenga más información sobre la restauración de datos"].
-
-
-
-==== Capacidad de archivar los datos de backup de forma inmediata, en lugar de escribir primero en almacenamiento estándar
-
-Ahora puede enviar sus archivos de copia de seguridad inmediatamente al almacenamiento de archivado, en lugar de escribir los datos en el almacenamiento en la nube estándar. Esto puede ser especialmente útil para los usuarios que rara vez necesitan acceder a los datos de backups en la nube o los usuarios que están sustituyendo una copia de seguridad en un entorno de cinta.
-
-
-
-==== Compatibilidad adicional para realizar backups y restaurar volúmenes de SnapLock
-
-Ahora, los backups y la recuperación de datos pueden realizar backups de los volúmenes de FlexVol y FlexGroup que se configuren mediante los modos de protección SnapLock Compliance o SnapLock Enterprise. Los clústeres deben ejecutar ONTAP 9,14 o superior para esta compatibilidad. El backup de los volúmenes de FlexVol con el modo SnapLock Enterprise se admite desde la versión 9.11.1 de ONTAP. Las versiones anteriores de ONTAP no ofrecen compatibilidad para realizar backups de volúmenes de protección de SnapLock.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Obtenga más información sobre la protección de datos de ONTAP"].
-
-
-
-=== 1 de agosto de 2023
-
-[IMPORTANT]
-====
-* Debido a una mejora importante de la seguridad, su conector ahora requiere acceso saliente a Internet a un punto final adicional para administrar los recursos de copia de seguridad y recuperación dentro de su entorno de nube pública. Si este punto final no se ha agregado a la lista de permitidos en su firewall, verá un error en la interfaz de usuario sobre el servicio no disponible o el error al determinar el estado del servicio:
-+
-\https://netapp-cloud-account.auth0.com
-
-* Ahora es necesaria una suscripción PAYGO de backup y recuperación cuando utilice el paquete «CVO Professional» que le permite agrupar el backup y la recuperación de datos de Cloud Volumes ONTAP y BlueXP. Esto no era necesario en el pasado. No se incurrirá en cargos en la suscripción de backup y recuperación para los sistemas Cloud Volumes ONTAP que cumplan los requisitos, pero esto es necesario para configurar el backup en cualquier volumen nuevo.
-
-
-====
-
-
-==== Se ha añadido soporte para realizar backups de volúmenes en buckets en sistemas ONTAP configurados con S3
-
-Ahora puede usar un sistema ONTAP configurado para el servicio de almacenamiento simple (S3) para realizar backups de volúmenes en el almacenamiento de objetos. Esto es compatible con los sistemas ONTAP tanto en las instalaciones como con los sistemas Cloud Volumes ONTAP. Esta configuración es compatible con implementaciones de cloud y en ubicaciones locales sin acceso a Internet (una puesta en marcha de modo «privado»).
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["Leer más"].
-
-
-
-==== Ahora puede incluir Snapshots existentes de un volumen protegido en sus archivos de respaldo
-
-Anteriormente, había tenido la capacidad de incluir copias Snapshot existentes de volúmenes de lectura y escritura en su archivo de backup inicial a un almacenamiento de objetos (en lugar de empezar con la copia Snapshot más reciente). En el archivo de backup no se incluyeron las copias Snapshot existentes de volúmenes de solo lectura (volúmenes de protección de datos). Ahora puede optar por incluir copias Snapshot más antiguas en el archivo de backup para volúmenes «DP».
-
-El asistente de copia de seguridad muestra un aviso al final de los pasos de copia de seguridad, donde puede seleccionar estas copias de Snapshot existentes.
-
-
-
-==== El backup y la recuperación de BlueXP ya no admiten el backup automático de volúmenes añadidos en el futuro
-
-Anteriormente, podía marcar una casilla en el asistente de backup para aplicar la política de backup seleccionada a todos los futuros volúmenes añadidos al clúster. Esta función se ha eliminado en función de los comentarios del usuario y la falta de uso de esta función. Debe habilitar manualmente los backups de los nuevos volúmenes que se hayan agregado al clúster.
-
-
-
-==== La página Control de trabajos se ha actualizado con nuevas funciones
-
-La página Job Monitoring ahora proporciona más información relacionada con la estrategia de copia de seguridad 3-2-1. El servicio también proporciona notificaciones de alerta adicionales relacionadas con la estrategia de backup.
-
-El filtro de tipo de ciclo de vida de la copia de seguridad ha cambiado a «Retención». Use este filtro para realizar un seguimiento del ciclo de vida del backup e identificar la caducidad de todas las copias de backup. El tipo de trabajo «Retención» captura todos los trabajos de eliminación de Snapshot iniciados en un volumen protegido por el backup y la recuperación de BlueXP.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["Obtenga más información sobre el supervisor de trabajos actualizado"].
-
-
-
 == Clasificación
+
+
+
+=== 10 de enero (versión 1,27)
+
+
+
+==== Los resultados de la página de investigación ahora muestran el tamaño total además del número total de elementos
+
+Los resultados filtrados en la página de investigación ahora muestran el tamaño total de los elementos además del número total de archivos. Esto puede ayudar al mover archivos, eliminar archivos y más.
+
+
+
+==== Configurar IDs de grupo adicionales como abiertos para la organización
+
+Ahora puedes configurar los ID de grupo en NFS para que se consideren «abiertos a la organización» directamente en la clasificación de BlueXP si no se habían establecido inicialmente con ese permiso. Descubra cómo https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["Agregar ID de grupo adicionales como abiertos a la organización"].
 
 
 
@@ -381,6 +362,24 @@ Clasificación de BlueXP utilizada para identificar los archivos duplicados solo
 
 
 
+=== 8 de enero de 2024
+
+
+
+==== Nuevas máquinas virtuales para varias zonas de disponibilidad de Azure
+
+A partir de Cloud Volumes ONTAP 9.13.1, los siguientes tipos de máquinas virtuales admiten varias zonas de disponibilidad de Azure para implementaciones de pares de alta disponibilidad nuevas y existentes:
+
+* L16s_v3
+* L32s_v3
+* L48s_v3
+* L64s_v3
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configuraciones compatibles en Azure"^]
+
+
+
 === 6 de diciembre de 2023
 
 
@@ -424,20 +423,6 @@ Las siguientes regiones admiten ahora implementaciones de zonas de disponibilida
 
 
 Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Azure"^].
-
-
-
-=== 10 de noviembre de 2023
-
-El siguiente cambio se introdujo con la versión 3.9.35 del conector.
-
-
-
-==== La región de Berlín ahora es compatible en Google Cloud
-
-La región de Berlín ahora es compatible con Google Cloud para Cloud Volumes ONTAP 9.12.1 GA y posterior.
-
-Para ver una lista de todas las regiones, consulte https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Google Cloud"^].
 
 
 
@@ -577,6 +562,16 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#googl
 
 
 
+=== 03 de enero de 2024
+
+
+
+=== Asesor de actualizaciones
+
+Upgrade Advisor se ha mejorado para ofrecer planes de actualización automatizados y no disruptivos para un solo clúster y varios clústeres. Puede ver la recomendación de actualización solo para un solo clúster, lo que incluye un resumen de riesgos, un informe de comprobación previo a la actualización e información sobre nuevas funciones y mejoras. link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["Aprenda a ver la recomendación de actualización y a generar un plan de actualización."]
+
+
+
 === 16 de noviembre de 2023
 
 
@@ -602,18 +597,6 @@ Ahora puede crear un máximo de 100 listas de comprobaciones.
 ==== Widget de planificación
 
 Los recuentos de recomendaciones de actualización tecnológica se incluyen en el widget de planificación del panel de nivel de cliente. Estas recomendaciones ayudan a planificar actividades de actualización tecnológica de hardware cuando el hardware se queda sin soporte o está cerca del final del soporte.
-
-
-
-=== 27 de septiembre de 2023
-
-
-
-==== Asesor de actualizaciones
-
-* Puede acceder a la página Upgrade Advisor para su lista de comprobaciones predeterminada mediante el link:https://activeiq.netapp.com/redirect/upgrade-advisor["Asesor de actualizaciones"^] enlace.
-* El plan de actualización está optimizado para eliminar los pasos de actualización redundantes y simplificar el plan de inversión. Los pasos comunes en todos los nodos de un clúster se consolidan y están disponibles en la sección de información general del plan de actualización. link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Aprenda a generar y ver el plan de actualización"].
-
 
 
 
