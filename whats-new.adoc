@@ -18,12 +18,6 @@ Conozca los cambios más recientes en los servicios en la nube que forman parte 
 
 
 
-== Introducción de BlueXP
-
-NetApp BlueXP se lanzó el 1 de noviembre de 2022. BlueXP amplía y mejora las funcionalidades que se proporcionaron a través de Cloud Manager. https://docs.netapp.com/us-en/bluexp-family/concept-overview.html["Más información sobre la introducción de BlueXP"^]
-
-
-
 == Funciones administrativas
 
 En esta sección se describen las nuevas funciones relacionadas con las funciones de administración de BlueXP: Cuentas, conectores, credenciales de proveedores de nube y mucho más.
@@ -333,28 +327,6 @@ Ahora puede configurar los ID de grupo en NFS para que se consideren «abiertos 
 Red Hat Enterprise Linux, las versiones 8 y 9 no son compatibles con el motor Docker; se requería para la instalación de la clasificación de BlueXP. Ahora admitimos la instalación de clasificación de BlueXP en RHEL 9,0, 9,1 y 9,2 mediante Podman versión 4 o posterior como infraestructura de contenedores. Si tu entorno requiere el uso de las versiones más recientes de RHEL, ahora puedes instalar la clasificación de BlueXP (versión 1,26 o posterior) cuando utilizas Podman.
 
 En este momento, no admitimos instalaciones de sitios oscuros ni entornos de análisis distribuidos (con nodos de escáner maestro y remoto) cuando se usa RHEL 9.x.
-
-
-
-=== 5 de septiembre (versión 1,25)
-
-
-
-==== Implementaciones pequeñas y medianas no disponibles temporalmente
-
-Cuando implementas una instancia de clasificación de BlueXP en AWS, la opción de seleccionar *Desplegar > Configuración* y elegir una instancia pequeña o mediana no estará disponible en este momento. Aún puede implementar la instancia utilizando el tamaño de instancia grande seleccionando *Desplegar > Desplegar*.
-
-
-
-==== Aplique etiquetas a un máximo de 100.000 elementos desde la página de resultados de la investigación
-
-En el pasado, sólo se podían aplicar etiquetas a una sola página a la vez en la página de resultados de la investigación (20 elementos). Ahora puede seleccionar *todos* elementos en las páginas de resultados de la investigación y aplicar etiquetas a todos los elementos - hasta 100.000 elementos a la vez. https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assigning-tags-to-files["Descubra cómo"].
-
-
-
-==== Identifique archivos duplicados con un tamaño de archivo mínimo de 1 MB
-
-Clasificación de BlueXP utilizada para identificar los archivos duplicados solo cuando los archivos tenían 50 MB o más. Ahora se pueden identificar los archivos duplicados que comienzan con 1 MB. Puedes usar los filtros de página de investigación “Tamaño de archivo” junto con “Duplicados” para ver qué archivos de un determinado tamaño están duplicados en tu entorno.
 
 
 
