@@ -474,9 +474,6 @@
   <block id="7a1d90df184c04b8d0dc0ca260e46e67" category="list-text">*Actualización de Job Monitor*: La página Job Monitor ahora incluye una opción Refresh para que pueda obtener un estado actualizado de las operaciones. Consulte <block ref="701085704c7bdf4268d7fbe3111fe8b9" category="inline-link-rx"></block>.</block>
   <block id="8060a341461a61edc489285d4c464062" category="paragraph">Ahora puedes detectar tus sistemas E-Series directamente en BlueXP. El descubrimiento de sistemas E-Series le ofrece una visión completa de los datos en su multicloud híbrido.</block>
   <block id="75cbcf1dd82ddd4349696999b639377f" category="paragraph"><block ref="75cbcf1dd82ddd4349696999b639377f" category="inline-link-macro-rx"></block></block>
-  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">8 de noviembre de 2023</block>
-  <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">Conector 3.9.35</block>
-  <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">Esta versión incluye mejoras de seguridad y correcciones de errores menores.</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">08 de noviembre de 2023</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Esta versión de la eficiencia económica de BlueXP incluye una nueva opción para realizar una evaluación de sus activos e identificar si se recomienda una actualización tecnológica. El servicio incluye una nueva opción de actualización tecnológica en la navegación izquierda, nuevas páginas en las que puede realizar una evaluación de sus activos y cargas de trabajo actuales, y un informe que le ofrece recomendaciones.</block>
   <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">Soporte para los trabajos programados en Job Monitor</block>
@@ -485,16 +482,6 @@
   <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">13 de noviembre de 2023</block>
   <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">Ahora puede crear informes para los volúmenes que usan el protocolo SMB/CIFS.</block>
   <block id="563cbb5befcc35d67fb204c94be0bffb" category="summary">Consulta el conjunto completo de notas de la versión para cada servicio individual de BlueXP.</block>
-  <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">5 de diciembre de 2023</block>
-  <block id="1771e2f4014c6ccd829b84cf9e8c7d27" category="section-title">Liberación en modo privado</block>
-  <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">Ya está disponible una nueva versión del modo privado para BlueXP. Esta versión incluye la versión 3.9.35 del conector y versiones de los servicios de BlueXP compatibles con el modo privado a partir de octubre de 2023.</block>
-  <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">Esta nueva versión está disponible para descargar desde el sitio de soporte de NetApp.</block>
-  <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">Obtén más información sobre los servicios de BlueXP que se incluyen en el modo privado</block>
-  <block id="d51183b71ba843f2f97d0b54a084f7e8" category="list-text"><block ref="d51183b71ba843f2f97d0b54a084f7e8" category="inline-link-rx"></block></block>
-  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">Descubre cómo empezar a utilizar BlueXP en modo privado</block>
-  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
-  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Aprenda a actualizar el conector cuando use el modo privado</block>
-  <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
   <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">26 de noviembre de 2023</block>
   <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Soporte de clase de almacenamiento de datos fríos para Azure Blob</block>
   <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">El nivel de almacenamiento de datos fríos de Azure Blob ahora está disponible al crear una relación de sincronización.</block>
@@ -666,7 +653,6 @@
   <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">Para los conectores existentes, IMDSv1 sigue siendo compatible, pero puede configurar manualmente IMDSv2 en la instancia EC2 si lo prefiere.</block>
   <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Para Cloud Volumes ONTAP, IMDSv1 se habilita de forma predeterminada en las instancias nuevas y existentes. Puede configurar manualmente IMDSv2 en las instancias EC2 si lo prefiere.</block>
   <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">Aprenda a configurar IMDSv2 en instancias existentes</block>
-  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>.</block>
   <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">Actualización de permisos de AWS</block>
   <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">Hemos actualizado la política de Connector para AWS para incluir el permiso «EC2:DescribeAvailabilityZones». Este permiso es necesario para una próxima versión. Actualizaremos las notas de la versión con más detalles cuando esa versión esté disponible.</block>
   <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">Ver los permisos de AWS para el conector</block>
@@ -681,4 +667,5 @@
   <block id="6505788c29b47651fe2e94f0607a2ef7" category="section-title">El soporte de instancias extra grandes ya está cualificado</block>
   <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">Si necesitas la clasificación de BlueXP para analizar más de 250 millones de archivos, puedes utilizar una instancia de Extra Large en la puesta en marcha de la nube o en la instalación on-premises. Este tipo de sistema puede escanear hasta 500 millones de archivos.</block>
   <block id="1b4f4b549e0860b1392190bfc2a23f81" category="paragraph"><block ref="1eef614f77c6908f78f84cb1847e2ab8" category="inline-link-rx"></block>.</block>
+  <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>.</block>
 </blocks>

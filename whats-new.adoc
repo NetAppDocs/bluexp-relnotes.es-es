@@ -48,7 +48,7 @@ El servicio de metadatos de instancia (IMDS) se activa de la siguiente forma en 
 * Para Cloud Volumes ONTAP, IMDSv1 se habilita de forma predeterminada en las instancias nuevas y existentes. Puede configurar manualmente IMDSv2 en las instancias EC2 si lo prefiere.
 
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Aprenda a configurar IMDSv2 en instancias existentes"].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["Aprenda a configurar IMDSv2 en instancias existentes"].
 
 
 
@@ -105,33 +105,6 @@ Esta versión incluye mejoras menores, correcciones de errores y soporte para Co
 * La región de Israel (Tel Aviv) en AWS
 * La región de Arabia Saudita en Google Cloud
 
-
-
-
-=== 5 de diciembre de 2023
-
-
-
-==== Liberación en modo privado
-
-Ya está disponible una nueva versión del modo privado para BlueXP. Esta versión incluye la versión 3.9.35 del conector y versiones de los servicios de BlueXP compatibles con el modo privado a partir de octubre de 2023.
-
-Esta nueva versión está disponible para descargar desde el sitio de soporte de NetApp.
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["Obtén más información sobre los servicios de BlueXP que se incluyen en el modo privado"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Descubre cómo empezar a utilizar BlueXP en modo privado"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Aprenda a actualizar el conector cuando use el modo privado"]
-
-
-
-
-=== 8 de noviembre de 2023
-
-
-
-==== Conector 3.9.35
-
-Esta versión incluye mejoras de seguridad y correcciones de errores menores.
 
 
 
