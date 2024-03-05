@@ -24,6 +24,48 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
+=== 26 de marzo de 2024
+
+
+
+==== Versión en modo privado (3,9.38)
+
+Ya está disponible una nueva versión del modo privado para BlueXP. Esta versión incluye las siguientes versiones de los servicios de BlueXP que son compatibles con el modo privado.
+
+[cols="2*"]
+|===
+| Servicio | Versión incluida 
+
+
+| Conector | 3.9.38 
+
+
+| Backup y recuperación | 12 de marzo de 2024 
+
+
+| Clasificación | 4 de marzo de 2024 
+
+
+| Gestión de Cloud Volumes ONTAP | 8 de marzo de 2024 
+
+
+| Cartera digital | 30 de julio de 2023 
+
+
+| Gestión de clústeres de ONTAP en las instalaciones | 30 de julio de 2023 
+
+
+| Replicación | 18 de septiembre de 2022 
+|===
+Esta nueva versión está disponible para descargar desde el sitio de soporte de NetApp.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Aprende sobre el modo privado"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Descubre cómo empezar a utilizar BlueXP en modo privado"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Aprenda a actualizar el conector cuando use el modo privado"]
+
+
+
+
 === 8 de marzo de 2024
 
 
@@ -91,20 +133,6 @@ Si usas las credenciales de la nube de NetApp para iniciar sesión en BlueXP, ah
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["Una captura de pantalla que muestra la capacidad de editar su nombre en Configuración de usuario."]
 
 No se puede editar su nombre si inicia sesión con una conexión federada o con su cuenta del sitio de soporte de NetApp.
-
-
-
-=== 11 de enero de 2024
-
-
-
-==== Conector 3.9.36
-
-Esta versión incluye mejoras menores, correcciones de errores y soporte para Connector en las siguientes regiones de nube:
-
-* La región de Israel (Tel Aviv) en AWS
-* La región de Arabia Saudita en Google Cloud
-
 
 
 
@@ -215,6 +243,30 @@ Has tenido la posibilidad de ver cubos de Amazon S3 en BlueXP Canvas durante muc
 
 
 == Backup y recuperación
+
+
+
+=== 12 de marzo de 2024
+
+
+
+==== Capacidad para realizar «Restauraciones rápidas» desde backups en el cloud a volúmenes de ONTAP en las instalaciones
+
+Ahora puede realizar una restauración _rápida_ de un volumen desde un almacenamiento en cloud a un volumen de destino de ONTAP en las instalaciones. Antes, podía realizar una restauración rápida solo en un sistema Cloud Volumes ONTAP. La restauración rápida es ideal para situaciones de recuperación ante desastres en las que se necesita proporcionar acceso a un volumen lo antes posible. Una restauración rápida es mucho más rápida que la restauración de volúmenes completos; restaura los metadatos desde una snapshot de la nube a un volumen de destino de ONTAP. La fuente podría ser AWS S3, Azure Blob, Google Cloud Services o NetApp StorageGRID.
+
+El sistema de destino local de ONTAP debe ejecutar ONTAP versión 9.14.1 o posterior.
+
+Puede hacerlo mediante el proceso Examinar y Restaurar, no mediante el proceso Buscar y Restaurar.
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Restaurar datos de ONTAP de archivos de backup"].
+
+
+
+==== Capacidad de restaurar archivos y carpetas desde copias de Snapshot y replicación
+
+Anteriormente, solo podía restaurar archivos y carpetas desde copias de backup en AWS, Azure y Google Cloud Services. Ahora puede restaurar archivos y carpetas desde copias Snapshot locales y desde copias de replicación.
+
+Puede realizar esta función mediante el proceso de búsqueda y restauración, no mediante el proceso de exploración y restauración.
 
 
 
@@ -510,6 +562,34 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creati
 
 
 
+=== 15 de marzo de 2024
+
+
+
+==== Bienestar
+
+* El flujo de trabajo de bienestar ahora incluye el widget de sostenibilidad, que proporciona el recuento de acciones recomendadas en los niveles de cliente, lista de seguimiento, sitio y grupo. Puede hacer clic en el número de acciones para obtener una vista detallada de estas acciones recomendadas en el panel de control de Sustainability. Para obtener más información, consulte link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["Analice la sostenibilidad de sus sistemas de almacenamiento"].
+* Las vulnerabilidades de seguridad y los widgets de defensa contra ransomware del flujo de trabajo de bienestar se combinan en un único widget, que ahora se denomina seguridad y defensa contra ransomware.
+
+
+
+
+==== Consola de comprobación del estado
+
+La cronología de casos técnicos se mejora para ver el historial completo de casos de 6 o 12 meses.
+
+
+
+=== 29 de febrero de 2024
+
+
+
+==== Lista de observación
+
+Ahora puedes crear una lista de seguimiento basada en los números de suscripción de Keystone y buscar una suscripción de Keystone utilizando los tres primeros caracteres de un número de suscripción o un nombre de lista de seguimiento.
+
+
+
 === 08 de febrero de 2024
 
 
@@ -523,44 +603,6 @@ Ahora puede acceder a las métricas de Sustainability de su panel de control pre
 ==== ClusterViewer
 
 Ahora puede ver la información de RPM de disco en la sección Resumen de disco, que está disponible en el separador Almacenamiento y en los informes de ClusterViewer.
-
-
-
-=== 03 de enero de 2024
-
-
-
-==== Asesor de actualizaciones
-
-Upgrade Advisor se ha mejorado para ofrecer planes de actualización automatizados y no disruptivos para un solo clúster y varios clústeres. Puede ver la recomendación de actualización solo para un solo clúster, lo que incluye un resumen de riesgos, un informe de comprobación previo a la actualización e información sobre nuevas funciones y mejoras. link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["Aprenda a ver la recomendación de actualización y a generar un plan de actualización."]
-
-
-
-=== 16 de noviembre de 2023
-
-
-
-==== Lista de observación
-
-Ahora puede crear un máximo de 100 listas de comprobaciones.
-
-
-
-==== Widget de planificación
-
-* Las recomendaciones de actualizaciones tecnológicas ahora están disponibles en las consolas de lista, sitio y grupo.
-* Ahora puede ver posibles candidatos a actualizaciones tecnológicas si el recuento de recomendaciones de actualizaciones tecnológicas es cero.
-
-
-
-
-=== 04 de octubre de 2023
-
-
-
-==== Widget de planificación
-
-Los recuentos de recomendaciones de actualización tecnológica se incluyen en el widget de planificación del panel de nivel de cliente. Estas recomendaciones ayudan a planificar actividades de actualización tecnológica de hardware cuando el hardware se queda sin soporte o está cerca del final del soporte.
 
 
 
@@ -747,6 +789,20 @@ Ahora puedes detectar tus sistemas E-Series directamente en BlueXP. El descubrim
 
 
 == Eficiencia económica
+
+
+
+=== 14 de marzo de 2024
+
+Si tienes activos implementados y quieres determinar si es necesario actualizar una tecnología, puedes utilizar las opciones de actualización de la tecnología de eficiencia económica de BlueXP. Puede revisar una breve evaluación de sus cargas de trabajo actuales y recibir recomendaciones, o bien si envió registros de AutoSupport a NetApp en los últimos 90 días, el servicio ahora puede proporcionar una simulación de cargas de trabajo para ver el rendimiento de las cargas de trabajo en hardware nuevo.
+
+También puede agregar una carga de trabajo y excluir las cargas de trabajo existentes de la simulación.
+
+Anteriormente, solo podía realizar una evaluación de sus activos e identificar si se recomienda una actualización tecnológica.
+
+Ahora la función forma parte de la opción Tech Refresh de la barra de navegación izquierda.
+
+Obtenga más información sobre la link:../use/tech-refresh.html["Evaluar una actualización tecnológica"].
 
 
 
