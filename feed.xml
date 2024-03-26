@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bluexp-relnotes | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/es-es/bluexp-relnotes/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/es-es/bluexp-relnotes</link>
+    <description>The latest updates from NetApp Documentation</description>
+    <language>es-es</language>
+    <ttl>60</ttl>
+    <pubDate>Tue, 26 Mar 2024 16:39:51 +0000</pubDate>
+    <lastBuildDate>Tue, 26 Mar 2024 16:39:51 +0000</lastBuildDate>
+    
+    
+    
+    <item>
+      <title>Cambios recientes en BlueXP (26 Mar 2024)</title>
+      <pubDate>Tue, 26 Mar 2024 16:37:01 +0000</pubDate>
+      <link>https://docs.netapp.com/es-es/bluexp-relnotes/whats-new.html?time=1711471021</link>
+      <guid isPermaLink="false">Tue, 26 Mar 2024 16:37:01 +0000</guid>
+      <description><![CDATA[ Conozca los cambios más recientes en los servicios en la nube que forman parte de la plataforma BlueXP. Para obtener más información, consulte el conjunto completo de notas de la versión de cada servicio individual. ]]></description>
+    </item>
+    
+    
+  </channel>
+</rss>
