@@ -526,15 +526,6 @@
   <block id="708880d509c52585ca0500cd17ef2166" category="list-text">E32ds_v5</block>
   <block id="843cc0b63b36e79d0bdf4097a1b84b6a" category="list-text">E48ds_v5</block>
   <block id="6ec5cb856eb24c85cf7368cdfd11627f" category="list-text">E64ds_v5</block>
-  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">15 de febrero de 2024</block>
-  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">Conector 3.9.37</block>
-  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.</block>
-  <block id="937efe0b961bcb892e05e19e0c147973" category="paragraph">En este momento, la versión 3.9.37 está disponible para modo estándar y modo restringido.</block>
-  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">Editar nombre</block>
-  <block id="c42458c54134318669b685ee8730a478" category="paragraph">Si usas las credenciales de la nube de NetApp para iniciar sesión en BlueXP, ahora puedes editar tu nombre en *Configuración de usuario*.</block>
-  <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">Una captura de pantalla que muestra la capacidad de editar su nombre en Configuración de usuario.</block>
-  <block id="daf15a33710ed6188d035a01c084bee9" category="paragraph"><block ref="daf15a33710ed6188d035a01c084bee9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4a784443543a41df794122c52fae1df7" category="paragraph">No se puede editar su nombre si inicia sesión con una conexión federada o con su cuenta del sitio de soporte de NetApp.</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">4 de marzo de 2024 (versión 1,29)</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Ahora puede excluir los datos de escaneo que residen en ciertos directorios de origen de datos</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Si desea que la clasificación de BlueXP excluya los datos de análisis que residen en determinados directorios de orígenes de datos, puede añadir estos nombres de directorio a un archivo de configuración que procese la clasificación de BlueXP. Esta función le permite evitar el escaneo de directorios que no son necesarios, o que daría lugar a la devolución de resultados de datos personales falsos positivos.</block>
@@ -613,7 +604,6 @@
   <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
   <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">El servicio de metadatos de instancia (IMDS) se activa de la siguiente forma en las instancias EC2:</block>
   <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Guiones Terraform</block>
-  <block id="0b18bb2eadaff9912e9bbefb3accbc90" category="list-text">Para nuevas puestas en marcha de Connector de BlueXP, de AWS Marketplace o mediante<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>, IMDSv2 está activado por defecto en la instancia EC2.</block>
   <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">Si inicia una nueva instancia de EC2 en AWS y, a continuación, instala manualmente el software Connector, también se habilita IMDSv2 de forma predeterminada.</block>
   <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">Para los conectores existentes, IMDSv1 sigue siendo compatible, pero puede configurar manualmente IMDSv2 en la instancia EC2 si lo prefiere.</block>
   <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Para Cloud Volumes ONTAP, IMDSv1 se habilita de forma predeterminada en las instancias nuevas y existentes. Puede configurar manualmente IMDSv2 en las instancias EC2 si lo prefiere.</block>
@@ -704,4 +694,10 @@
   <block id="83c0915932deaf70b0873b6eb47c3a28" category="section-title">28 de marzo de 2024</block>
   <block id="888059a12fa3532d54872d17517e780c" category="inline-link-macro">Descubra cómo ver las recomendaciones de actualización y generar un plan de actualización.</block>
   <block id="9d10674ae163e749f65c1eeb852cdf2b" category="paragraph">La versión anterior de Upgrade Advisor ya no está disponible. Puede utilizar la versión mejorada de Upgrade Advisor para generar planes de actualización para un solo clúster y de varios clústeres. <block ref="b6cac2681a05b9a8dd19bf0553cd1066" category="inline-link-macro-rx"></block></block>
+  <block id="779956d8a8a5dbf08bbf655892abfefb" category="section-title">11 de abril de 2024</block>
+  <block id="b0672ad18e27e61949a210d3369455e0" category="section-title">Actualización de Docker Engine</block>
+  <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">Hemos actualizado los requisitos de Docker Engine para especificar la versión máxima admitida en el conector, que es 25,0.5. La versión mínima admitida sigue siendo la 19,3.1.</block>
+  <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">Ver requisitos del host de Connector</block>
+  <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>.</block>
+  <block id="91c7ed7e9c640df79f6bf153c6642ae5" category="list-text">Para nuevas puestas en marcha de Connector de BlueXP o mediante<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>, IMDSv2 está activado por defecto en la instancia EC2.</block>
 </blocks>
