@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, kubernetes, reports, ontap clusters' 
 summary: Conozca los cambios más recientes en los servicios en la nube que forman parte de la plataforma BlueXP. Para obtener más información, consulte el conjunto completo de notas de la versión de cada servicio individual. 
 ---
 = Cambios recientes en BlueXP
@@ -351,6 +351,40 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
+=== 1 de abril de 2024 (Versión 1,30)
+
+
+
+==== Compatibilidad añadida para la clasificación de BlueXP de RHEL v8,8 y v9,3
+
+Esta versión es compatible con Red Hat Enterprise Linux v8,8 y v9,3, además de la versión 9.x admitida anteriormente, que requiere Podman, en lugar del motor Docker. Esto es aplicable a cualquier instalación manual en las instalaciones de la clasificación de BlueXP.
+
+Los siguientes sistemas operativos deben utilizar el motor de contenedor Podman y requieren la versión de clasificación de BlueXP 1,30 o posterior: Red Hat Enterprise Linux versiones 8,8, 9,0, 9,1, 9,2 y 9,3.
+
+Más información acerca de https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["Información general sobre las puestas en marcha de clasificación de BlueXP"].
+
+
+
+==== Se quitó la opción para activar la recogida del registro de auditoría
+
+Se deshabilitó la opción para activar la recogida de registros de auditoría.
+
+
+
+==== Velocidad de escaneo mejorada
+
+Se ha mejorado el rendimiento de escaneo en nodos de escáner secundarios. Puede agregar más nodos de escáner si necesita potencia de procesamiento adicional para sus escaneos. Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Instala la clasificación de BlueXP en un host que tenga acceso a Internet"].
+
+
+
+==== Actualizaciones automáticas
+
+Si implementaste la clasificación de BlueXP en un sistema con acceso a Internet, el sistema se actualizará automáticamente. Anteriormente, la actualización se produjo después de un tiempo específico transcurrido desde la última actividad del usuario. Con esta versión, la clasificación de BlueXP se actualiza automáticamente si la hora local es entre las 1:00 y las 5:00:00. Si la hora local está fuera de estas horas, la actualización se produce después de que transcurra un tiempo específico desde la última actividad del usuario. Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Instale en un host Linux con acceso a Internet"].
+
+Si implementaste la clasificación de BlueXP sin acceso a Internet, tendrás que actualizar manualmente. Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["Instala la clasificación BlueXP en un host Linux sin acceso a Internet"].
+
+
+
 === 4 de marzo de 2024 (versión 1,29)
 
 
@@ -384,19 +418,6 @@ Los resultados filtrados en la página de investigación ahora muestran el tama�
 ==== Configurar IDs de grupo adicionales como abiertos para la organización
 
 Ahora puede configurar los ID de grupo en NFS para que se consideren «abiertos a la organización» directamente desde la clasificación de BlueXP si el grupo no se había establecido inicialmente con ese permiso. Todos los archivos y carpetas que tengan estos ID de grupo adjuntos se mostrarán como abiertos a la organización en la página Detalles de la investigación. Descubra cómo https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["Agregar ID de grupo adicionales como abiertos a la organización"].
-
-
-
-=== 14 de diciembre de 2023 (versión 1.26.6)
-
-Esta versión incluye algunas mejoras menores.
-
-La versión también eliminó temporalmente las siguientes opciones:
-
-* Se deshabilitó la opción para activar la recogida de registros de auditoría. Consulte link:task-manage-file-access-events.html["Supervise y gestione eventos de acceso a archivos"].
-* Durante la investigación de directorios, la opción de calcular el número de datos de información personal identificable (PII) por directorios no está disponible. Consulte link:task-investigate-data.html#filter-data-by-sensitivity-and-content["Investigue los datos almacenados en su organización"].
-* Se ha desactivado la opción de integrar datos mediante etiquetas de Azure Information Protection (AIP). Consulte link:task-org-private-data.html["Organice sus datos privados"].
-
 
 
 
@@ -500,6 +521,18 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 8 de abril de 2024
+
+
+
+==== Compatibilidad con RHEL 8,9
+
+El agente de datos ahora se admite en hosts que ejecutan Red Hat Enterprise Linux 8,9.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-host-requirements["Vea los requisitos del host Linux"].
+
+
+
 === 11 de febrero de 2024
 
 
@@ -538,27 +571,17 @@ Todos los nuevos agentes de datos utilizarán ahora la versión del nodo 21,2.0.
 
 
 
-=== 3 de septiembre de 2023
-
-
-
-==== Excluir archivos por regex
-
-Los usuarios ahora tienen la opción de excluir archivos usando regex.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["Obtenga más información sobre la función *Excluir extensiones de archivo*."]
-
-
-
-==== Agregue S3 claves al crear un agente de datos de Azure
-
-Los usuarios ahora pueden agregar claves de acceso y claves secretas de AWS S3 al crear un agente de datos de Azure.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#creating-the-data-broker["Obtén más información sobre cómo crear un agente de datos en Azure."]
-
-
-
 == Asesor digital
+
+
+
+=== 28 de marzo de 2024
+
+
+
+==== Asesor de actualizaciones
+
+La versión anterior de Upgrade Advisor ya no está disponible. Puede utilizar la versión mejorada de Upgrade Advisor para generar planes de actualización para un solo clúster y de varios clústeres. link:https://docs.netapp.com/us-en/active-iq/upgrade_advisor_overview.html["Descubra cómo ver las recomendaciones de actualización y generar un plan de actualización."]
 
 
 
@@ -587,22 +610,6 @@ La cronología de casos técnicos se mejora para ver el historial completo de ca
 ==== Lista de observación
 
 Ahora puedes crear una lista de seguimiento basada en los números de suscripción de Keystone y buscar una suscripción de Keystone utilizando los tres primeros caracteres de un número de suscripción o un nombre de lista de seguimiento.
-
-
-
-=== 08 de febrero de 2024
-
-
-
-==== Panel de sostenibilidad
-
-Ahora puede acceder a las métricas de Sustainability de su panel de control predeterminado o lista de comprobaciones directamente mediante la link:https://activeiq.netapp.com/redirect/sustainability["Panel de control de sostenibilidad"^] enlace.
-
-
-
-==== ClusterViewer
-
-Ahora puede ver la información de RPM de disco en la sección Resumen de disco, que está disponible en el separador Almacenamiento y en los informes de ClusterViewer.
 
 
 
