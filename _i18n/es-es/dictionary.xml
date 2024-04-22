@@ -42,17 +42,6 @@
   <block id="396a3c9fb559d38e68f68ea139b3539a" category="paragraph">La capacidad de crear y gestionar Azure NetApp Files directamente desde Cloud Manager sustituye la funcionalidad anterior de migración de datos.</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 de septiembre de 2022</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 de julio de 2022</block>
-  <block id="983a4e7f5913304ec713a249baf7be47" category="section-title">3 de marzo de 2022</block>
-  <block id="400480e0d45c783abec0a0fffbb005a6" category="section-title">Ahora puede crear una plantilla para buscar entornos de trabajo específicos</block>
-  <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link">Vaya aquí para obtener más información</block>
-  <block id="411448f8702bbfa858b0a2ba2ee94014" category="section-title">Capacidad de crear un entorno de trabajo de alta disponibilidad de Cloud Volumes ONTAP en AWS</block>
-  <block id="6eed6fdcaa0bf2c22f0c8e78ff686d29" category="inline-link">Vea cómo crear una plantilla para un entorno de trabajo de Cloud Volumes ONTAP</block>
-  <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">9 de febrero de 2022</block>
-  <block id="f1f7e50301c1e57e30e795fa8928ee8f" category="section-title">Ahora puede crear una plantilla para buscar volúmenes existentes específicos y, a continuación, activar Cloud Backup</block>
-  <block id="98b343467576e58f6658965bc67f83c1" category="paragraph">Con la nueva acción "Find Resource" puede identificar todos los volúmenes en los que desea habilitar Cloud Backup y, a continuación, utilizar la acción Cloud Backup para habilitar el backup en esos volúmenes.</block>
-  <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">31 de octubre de 2021</block>
-  <block id="70c889b200c3ef8dbb491ca542d1d091" category="section-title">Ahora puede etiquetar las relaciones de sincronización para que pueda agruparlas o clasificarlas para un acceso sencillo</block>
-  <block id="049ebb609707e4c76f578eb98777ffdc" category="inline-link">Obtenga más información sobre el etiquetado de recursos</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Leer más</block>
   <block id="a67ce68ccac082ad54a552bdbcb6ecd7" category="section-title">Notificaciones por correo electrónico</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9 de septiembre de 2020</block>
@@ -182,7 +171,6 @@
   <block id="ed6f4d59069b65b41bfb3cfba797ee42" category="list-text"><block ref="ed6f4d59069b65b41bfb3cfba797ee42" category="inline-link-rx"></block></block>
   <block id="35ab587d29d669683f08424c60051957" category="list-text"><block ref="35ab587d29d669683f08424c60051957" category="inline-link-rx"></block></block>
   <block id="d5bd7276f5a8c8218f75aba64cdfdeb0" category="list-text"><block ref="d5bd7276f5a8c8218f75aba64cdfdeb0" category="inline-link-rx"></block></block>
-  <block id="b58c4ddee0575cfc72a18936b05df78a" category="list-text"><block ref="b58c4ddee0575cfc72a18936b05df78a" category="inline-link-rx"></block></block>
   <block id="c821df2021ac7a846f6554ac1ed76719" category="list-text"><block ref="c821df2021ac7a846f6554ac1ed76719" category="inline-link-rx"></block></block>
   <block id="367cb072fdec82ba883d66fadac7fc54" category="list-text"><block ref="367cb072fdec82ba883d66fadac7fc54" category="inline-link-rx"></block></block>
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
@@ -194,10 +182,6 @@
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Esta versión proporciona las nuevas funciones que se enumeran a continuación. También soluciona los problemas descritos en<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
   <block id="4e4ff5b7850bf0aae4966bf2353d2764" category="list-text">Ahora puede hacerlo <block ref="79330a9a9d35860d426f0d48c9f654a7" category="inline-link-macro-rx"></block> Que se instaló con el operador Trident o BlueXP.</block>
   <block id="08dbc554156c2764d1696fe55d768aed" category="paragraph">Cuando <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>, ahora puede habilitar la economía de clase de almacenamiento para el almacenamiento de bloques o sistemas de ficheros.</block>
-  <block id="6036aba79be1763af24e9806bf6aa269" category="paragraph">Mediante la acción "Buscar recursos existentes" puede identificar el entorno de trabajo y, a continuación, utilizar otras acciones de plantilla, como la creación de un volumen, para realizar fácilmente acciones en entornos de trabajo existentes.<block ref="1cc8e92b4ee69f285158646e972eb8d0" category="inline-link-rx"></block>.</block>
-  <block id="4bf671cced86fd4534b1e46341c4d33e" category="paragraph">La compatibilidad existente para crear un entorno de trabajo de Cloud Volumes ONTAP en AWS se ha ampliado para incluir la creación de un sistema de alta disponibilidad además de un sistema de un único nodo.<block ref="4e312d070157c43d2c155d9ef416aea0" category="inline-link-rx"></block>.</block>
-  <block id="3ce8031a2a5efd8807d29dc5391ac03a" category="paragraph">Actualmente admite volúmenes en sistemas Cloud Volumes ONTAP y ONTAP en las instalaciones.<block ref="71acbc1e86413ca32a85c458baf53529" category="inline-link-rx"></block>.</block>
-  <block id="c3f9f5f3154c847ae51038b02652e769" category="paragraph"><block ref="ebf81513d87da0002a3ac7ea6ee056cb" category="inline-link-rx"></block>.</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>.</block>
   <block id="2b3e8f910d66604cd77f93b333670468" category="inline-link">Almacenamiento de Azure Blob</block>
   <block id="a1182a2fefa3fdd8128a983a3d666611" category="list-text"><block ref="a1182a2fefa3fdd8128a983a3d666611" category="inline-link-rx"></block></block>
@@ -403,7 +387,6 @@
   <block id="f32be3299de249a0d2ea856582aaf567" category="list-text">Puede acceder a la página Upgrade Advisor para su lista de comprobaciones predeterminada mediante el <block ref="2a9dc4897c9bae502dc40fd9fb7b1c92" category="inline-link-macro-rx"></block> enlace.</block>
   <block id="d733f1a5970e5ea99d583388ac25e9cf" category="inline-link-macro">Aprenda a generar y ver el plan de actualización</block>
   <block id="b01f37f1151c1eda43d977dc266311ad" category="list-text">El plan de actualización está optimizado para eliminar los pasos de actualización redundantes y simplificar el plan de inversión. Los pasos comunes en todos los nodos de un clúster se consolidan y están disponibles en la sección de información general del plan de actualización. <block ref="818a7808067ecc2956de5a6af27e7278" category="inline-link-macro-rx"></block>.</block>
-  <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">23 de octubre de 2023</block>
   <block id="f1d5b892646c28fdb747b890f0787976" category="section-title">creación de políticas de copia de seguridad de 3-2-1 durante la activación de la copia de seguridad</block>
   <block id="1a169799fb63ccdda2e672c25d0ab2d2" category="paragraph">Anteriormente, había que crear políticas personalizadas antes de iniciar una snapshot, replicación o backup. Ahora, puedes crear una política durante el proceso de activación de backup con la interfaz de usuario de backup y recuperación de BlueXP.</block>
   <block id="09aac1469e7bc1d8f162de80ea67cdc3" category="section-title">Soporte para la restauración rápida bajo demanda de volúmenes ONTAP</block>
@@ -473,9 +456,6 @@
   <block id="75cbcf1dd82ddd4349696999b639377f" category="paragraph"><block ref="75cbcf1dd82ddd4349696999b639377f" category="inline-link-macro-rx"></block></block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">08 de noviembre de 2023</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Esta versión de la eficiencia económica de BlueXP incluye una nueva opción para realizar una evaluación de sus activos e identificar si se recomienda una actualización tecnológica. El servicio incluye una nueva opción de actualización tecnológica en la navegación izquierda, nuevas páginas en las que puede realizar una evaluación de sus activos y cargas de trabajo actuales, y un informe que le ofrece recomendaciones.</block>
-  <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">Soporte para los trabajos programados en Job Monitor</block>
-  <block id="314b40130d46a229c3a19dc5e2e23aa4" category="paragraph">El Job Monitor de backup y recuperación de BlueXP supervisaba previamente trabajos de backup y restauración programados de volumen a almacén de objetos, pero no trabajos de Snapshot, replicación, backup y restauración locales que se habían programado a través de la interfaz de usuario o la API.</block>
-  <block id="04c6b318fe9c7f19ae925a90e52c6569" category="paragraph">El supervisor de tareas de backup y recuperación de BlueXP ahora incluye trabajos programados para copias Snapshot locales, replicaciones y backups en el almacenamiento de objetos.</block>
   <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">13 de noviembre de 2023</block>
   <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">Ahora puede crear informes para los volúmenes que usan el protocolo SMB/CIFS.</block>
   <block id="563cbb5befcc35d67fb204c94be0bffb" category="summary">Consulta el conjunto completo de notas de la versión para cada servicio individual de BlueXP.</block>
@@ -492,21 +472,6 @@
   <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">Todos los nuevos agentes de datos utilizarán ahora la versión del nodo 21,2.0. Los agentes de datos que no son compatibles con esta actualización, como CentOS 7,0 y Ubuntu Server 18,0, ya no funcionarán con la copia y sincronización de BlueXP.</block>
   <block id="e057979f7791f37ec4a8704baa00923d" category="section-title">Lista de observación</block>
   <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">11 de enero de 2024</block>
-  <block id="8017dc46d55f13a6a86439ecb091248d" category="section-title">15 de diciembre de 2023</block>
-  <block id="7ab0753b80059fbad40a2fd72c4592ce" category="section-title">Informes disponibles para las copias Snapshot locales y de replicación</block>
-  <block id="9e6cfaae073aa85c2c955e17e29074a8" category="paragraph">Anteriormente, se podían generar informes solo con copias de backup. Ahora puede crear informes sobre copias Snapshot locales y replicar también copias Snapshot.</block>
-  <block id="df4821b02d035c9862b3a2ae32691ed8" category="paragraph">Con estos informes, puede hacer lo siguiente:</block>
-  <block id="bb80777a047b566ac3b10e32c370ca6a" category="list-text">Asegúrese de que los datos críticos estén protegidos según la política de su organización.</block>
-  <block id="4af8855be3acb3531c504c5560e50187" category="list-text">Asegúrese de que los backups se ejecuten sin problemas para un grupo de volúmenes.</block>
-  <block id="21c3f5d157e063b8c2a027ddc88be774" category="list-text">Ofrecen pruebas de protección de sus datos de producción.</block>
-  <block id="7423bbe1d34880696cfb7dd51492349f" category="inline-link">Informe sobre la cobertura de protección de datos</block>
-  <block id="eb6103dddc4e26822e765e4e36dce6cb" category="paragraph">Consulte<block ref="76fbdf5883fabf4a66bc2a9d2bdc8b58" category="inline-link-rx"></block>.</block>
-  <block id="e24cbc73c28ff71b40798b880015fb21" category="section-title">Etiquetado personalizado disponible en los volúmenes para ordenarlos y filtrarlos</block>
-  <block id="080dddcbfae67093013a7e013a7a9bff" category="paragraph">Ahora puede agregar etiquetas personalizadas a volúmenes a partir de ONTAP 9.13.1 para que pueda agrupar volúmenes dentro de entornos de trabajo y entre entornos. Si hace esto, podrá ordenar los volúmenes en las páginas de interfaz de usuario de backup y recuperación de BlueXP y filtrar en informes.</block>
-  <block id="6bc380f29d7a62cc8a2bd6b0b4dc9ccd" category="section-title">Backups de catálogo retenidos durante 30 días</block>
-  <block id="2a7d8d5d92a8e8110b2bc2ab71c0c002" category="paragraph">Anteriormente, se conservaban Catalog.zip backups durante 7 días. Ahora, se retienen durante 30 días.</block>
-  <block id="16f6196e265bdbd3f9da022848c51d8a" category="inline-link">Restaura los datos de backup y recuperación de BlueXP en sitios oscuros</block>
-  <block id="89b2c6f6be45f8f05d713b7bae69cd15" category="paragraph">Consulte<block ref="5596168e45150b1d53148898addeba07" category="inline-link-rx"></block>.</block>
   <block id="be8658cdca9524eb49f00560785f3ab7" category="section-title">Los resultados de la página de investigación ahora muestran el tamaño total además del número total de elementos</block>
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">Los resultados filtrados en la página de investigación ahora muestran el tamaño total de los elementos además del número total de archivos. Esto puede ayudar al mover archivos, eliminar archivos y más.</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">Configurar IDs de grupo adicionales como abiertos para la organización</block>
@@ -596,33 +561,9 @@
   <block id="c615da36d364061ce672b091d8aa7d3b" category="list-text"><block ref="c615da36d364061ce672b091d8aa7d3b" category="inline-link-rx"></block></block>
   <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
   <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">8 de marzo de 2024</block>
-  <block id="00d14f718aca7db50368d8fc7008b41a" category="section-title">Conector 3.9.38</block>
-  <block id="d39d3f642c13ecde9b0fc02889aa6386" category="paragraph">En este momento, la versión 3.9.38 está disponible para modo estándar y modo restringido. Esta versión incluye compatibilidad con IMDSv2 en AWS y una actualización de permisos de AWS.</block>
-  <block id="b8048e9aa508d6c9379607c39c84e904" category="section-title">Compatibilidad con IMDSv2</block>
-  <block id="727615b8adbd72d276572a4469f7c09d" category="paragraph">BlueXP ahora es compatible con el servicio de metadatos de la instancia de Amazon EC2 versión 2 (IMDSv2) con la instancia de conector y con las instancias de Cloud Volumes ONTAP. IMDSv2 proporciona protección mejorada contra vulnerabilidades. Anteriormente, solo IMDSv1 era compatible.</block>
-  <block id="824e7fae55f361d08bb9bd5bdf494ff0" category="inline-link">Obtenga más información sobre IMDSv2 en el blog de seguridad de AWS</block>
-  <block id="8035ec6377ab933cc4bc2a70b5416a29" category="paragraph"><block ref="8035ec6377ab933cc4bc2a70b5416a29" category="inline-link-rx"></block></block>
-  <block id="89f5243637c4f72512944130a95ee3e5" category="paragraph">El servicio de metadatos de instancia (IMDS) se activa de la siguiente forma en las instancias EC2:</block>
-  <block id="baebea4bbd59d6c8efcae96586b2e199" category="inline-link">Guiones Terraform</block>
-  <block id="0319f9ec57f9eeb8250ac949896c30fd" category="list-text">Si inicia una nueva instancia de EC2 en AWS y, a continuación, instala manualmente el software Connector, también se habilita IMDSv2 de forma predeterminada.</block>
-  <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">Para los conectores existentes, IMDSv1 sigue siendo compatible, pero puede configurar manualmente IMDSv2 en la instancia EC2 si lo prefiere.</block>
-  <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Para Cloud Volumes ONTAP, IMDSv1 se habilita de forma predeterminada en las instancias nuevas y existentes. Puede configurar manualmente IMDSv2 en las instancias EC2 si lo prefiere.</block>
-  <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">Aprenda a configurar IMDSv2 en instancias existentes</block>
-  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">Actualización de permisos de AWS</block>
-  <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">Hemos actualizado la política de Connector para AWS para incluir el permiso «EC2:DescribeAvailabilityZones». Este permiso es necesario para una próxima versión. Actualizaremos las notas de la versión con más detalles cuando esa versión esté disponible.</block>
-  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">Ver los permisos de AWS para el conector</block>
-  <block id="bad85d32b5f3e46e956809c13b502817" category="paragraph"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>.</block>
-  <block id="9796f4649a0c963c7b6019196c7f14f0" category="section-title">Configuración de proxy y configuración de Cloud Volumes ONTAP</block>
-  <block id="1697d0f8a0936757a7bb28b4fa2eacd1" category="paragraph">La configuración del servidor proxy para el conector ahora está disponible en la página *Administrar conectores* (modo estándar) o en la página *Editar conectores* (modo restringido y modo privado).</block>
-  <block id="50770490f832c2b93de5aff17e5102b5" category="inline-link">Aprenda a configurar Connector para usar un servidor proxy</block>
-  <block id="d58ba1e11f305c91632d6e86e3515966" category="paragraph"><block ref="f2fec40748e9e912170fdd2984d9b989" category="inline-link-rx"></block>.</block>
-  <block id="d560347c8aaf0de44ab17132b9923b1c" category="paragraph">Además, cambiamos el nombre de la página *Configuración del conector* a *Configuración de Cloud Volumes ONTAP*.</block>
-  <block id="79c73187c699b08002880f70fb88a0a8" category="inline-image-macro">Una captura de pantalla que muestra la opción Configuración de Cloud Volumes ONTAP que está disponible en el menú Configuración.</block>
-  <block id="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="paragraph"><block ref="1a1ed66dc9bfcad0fc9c0c7fa6b4f0ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6505788c29b47651fe2e94f0607a2ef7" category="section-title">El soporte de instancias extra grandes ya está cualificado</block>
   <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">Si necesitas la clasificación de BlueXP para analizar más de 250 millones de archivos, puedes utilizar una instancia de Extra Large en la puesta en marcha de la nube o en la instalación on-premises. Este tipo de sistema puede escanear hasta 500 millones de archivos.</block>
   <block id="1b4f4b549e0860b1392190bfc2a23f81" category="paragraph"><block ref="1eef614f77c6908f78f84cb1847e2ab8" category="inline-link-rx"></block>.</block>
-  <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>.</block>
   <block id="1582ce9c3a0b0079717e0b0c6edf2347" category="section-title">Compatibilidad con Amazon Instant Metadata Service v2</block>
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">En AWS, Cloud Volumes ONTAP, Mediator y Connector ahora admiten el servicio de metadatos instantáneos de Amazon v2 (IMDSv2) para todas las funciones. IMDSv2 proporciona protección mejorada contra vulnerabilidades. Anteriormente, solo IMDSv1 era compatible.</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">Documentación de configuración y administración de BlueXP para gestionar los conectores existentes</block>
@@ -699,5 +640,27 @@
   <block id="0427fd4cf4edaa5749da5792252fcd70" category="paragraph">Hemos actualizado los requisitos de Docker Engine para especificar la versión máxima admitida en el conector, que es 25,0.5. La versión mínima admitida sigue siendo la 19,3.1.</block>
   <block id="a7d713b0c0233ee2a3bbb328d82ba606" category="inline-link">Ver requisitos del host de Connector</block>
   <block id="10f6464912ab27695ba4f7df57c14783" category="paragraph"><block ref="19b43e2419dde639b2fba3d57b5bca52" category="inline-link-rx"></block>.</block>
-  <block id="91c7ed7e9c640df79f6bf153c6642ae5" category="list-text">Para nuevas puestas en marcha de Connector de BlueXP o mediante<block ref="d5789cbcfe02eb67db017173bcddbe49" category="inline-link-rx"></block>, IMDSv2 está activado por defecto en la instancia EC2.</block>
+  <block id="9d5b3307d5a7d5905623bf21ab049bdd" category="section-title">22 de abril de 2024</block>
+  <block id="1389c5e279a667948337a56d97caf570" category="section-title">Conector 3.9.39</block>
+  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.</block>
+  <block id="103f00dbabbbaa84ff4ad44e1ae8f0e0" category="paragraph">En este momento, la versión 3.9.39 está disponible para modo estándar y modo restringido.</block>
+  <block id="dcaa3e92176845b160207f9f0d80aef3" category="section-title">Permisos de AWS para crear un conector</block>
+  <block id="492d5f07c90a7db03029f9a6c5532ce3" category="paragraph">Ahora se necesitan dos permisos adicionales para crear un conector en AWS desde BlueXP:</block>
+  <block id="d563c67cb5d34e4276aadadd838867f8" category="paragraph">Estos permisos son necesarios para habilitar IMDSv2 en la instancia EC2 para el conector.</block>
+  <block id="99c957a89e85bd737f02914924c399b3" category="paragraph">Hemos incluido estos permisos en la política que se muestra en la interfaz de usuario de BlueXP al crear un Connector y en la misma política que se proporciona en la documentación.</block>
+  <block id="679562c52996a8e2a4db9524251394f4" category="admonition">Esta directiva sólo contiene los permisos necesarios para iniciar la instancia de Connector en AWS desde BlueXP. No es la misma política que se asigna a la instancia de Connector.</block>
+  <block id="1c51e24c3b44b362001f3c1a6c51b065" category="inline-link">Aprenda a configurar permisos de AWS para crear un conector desde AWS</block>
+  <block id="16a785388c44f1116fdb34f01d8816bb" category="paragraph"><block ref="53bbefe6872cea40f97befa74964b71d" category="inline-link-rx"></block>.</block>
+  <block id="22c5942eb497ecdc45ab31895da620cb" category="section-title">04 de abril de 2024</block>
+  <block id="58ca11ae6c2b33188443fbfd95e6b93d" category="section-title">Capacidad de habilitar o deshabilitar los análisis de ransomware</block>
+  <block id="6dc490eff019755a2978212c0ff0515d" category="paragraph">Anteriormente, cuando habilitó la detección de ransomware en una política de backup, los análisis se realizaban automáticamente cuando se creó el primer backup y cuando restauró un backup. Anteriormente, el servicio analizaba todas las copias snapshot y no podía desactivar las exploraciones.</block>
+  <block id="d48498af5a5419c6130b506ce86226aa" category="paragraph">Con este lanzamiento, ahora puede habilitar o deshabilitar los análisis de ransomware en la última copia de Snapshot usando la opción de la página Configuración avanzada. Si la activa, las exploraciones se realizan semanalmente de forma predeterminada.</block>
+  <block id="d7e0995e5e0ecfb32470e10070175d63" category="paragraph">Consulte la siguiente información para obtener más detalles:</block>
+  <block id="cb79697c10a273ae05f814fdc378a3b6" category="inline-link">Gestionar la configuración de copia de seguridad</block>
+  <block id="b9efb0b81ee5dede04d703accaa3ac50" category="list-text"><block ref="b9efb0b81ee5dede04d703accaa3ac50" category="inline-link-rx"></block></block>
+  <block id="6b28ac02ff2a9de6b423b9f57d6a4d09" category="inline-link">Gestione políticas para volúmenes de ONTAP</block>
+  <block id="4987d2d58127a881e304bbe4ce3b5f7b" category="list-text"><block ref="4987d2d58127a881e304bbe4ce3b5f7b" category="inline-link-rx"></block></block>
+  <block id="17c54e9ba828968f120b82b8cd07abfa" category="inline-link">Configuración de políticas de backup en objeto</block>
+  <block id="9e59a4332ff7e195837a4721f8adaf92" category="list-text"><block ref="9e59a4332ff7e195837a4721f8adaf92" category="inline-link-rx"></block></block>
+  <block id="4df3ea515a84d83efad2c0e3bc03c438" category="paragraph">El servicio de corrección de BlueXP se eliminó el 22 de abril de 2024.</block>
 </blocks>

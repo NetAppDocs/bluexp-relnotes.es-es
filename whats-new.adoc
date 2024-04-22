@@ -24,6 +24,38 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
+=== 22 de abril de 2024
+
+
+
+==== Conector 3.9.39
+
+Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.
+
+En este momento, la versión 3.9.39 está disponible para modo estándar y modo restringido.
+
+
+
+==== Permisos de AWS para crear un conector
+
+Ahora se necesitan dos permisos adicionales para crear un conector en AWS desde BlueXP:
+
+[source, json]
+----
+"ec2:DescribeLaunchTemplates",
+"ec2:CreateLaunchTemplate",
+----
+Estos permisos son necesarios para habilitar IMDSv2 en la instancia EC2 para el conector.
+
+Hemos incluido estos permisos en la política que se muestra en la interfaz de usuario de BlueXP al crear un Connector y en la misma política que se proporciona en la documentación.
+
+
+NOTE: Esta directiva sólo contiene los permisos necesarios para iniciar la instancia de Connector en AWS desde BlueXP. No es la misma política que se asigna a la instancia de Connector.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["Aprenda a configurar permisos de AWS para crear un conector desde AWS"].
+
+
+
 === 11 de abril de 2024
 
 
@@ -75,54 +107,6 @@ Esta nueva versión está disponible para descargar desde el sitio de soporte de
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Descubre cómo empezar a utilizar BlueXP en modo privado"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Aprenda a actualizar el conector cuando use el modo privado"]
 
-
-
-
-=== 8 de marzo de 2024
-
-
-
-==== Conector 3.9.38
-
-En este momento, la versión 3.9.38 está disponible para modo estándar y modo restringido. Esta versión incluye compatibilidad con IMDSv2 en AWS y una actualización de permisos de AWS.
-
-
-
-===== Compatibilidad con IMDSv2
-
-BlueXP ahora es compatible con el servicio de metadatos de la instancia de Amazon EC2 versión 2 (IMDSv2) con la instancia de conector y con las instancias de Cloud Volumes ONTAP. IMDSv2 proporciona protección mejorada contra vulnerabilidades. Anteriormente, solo IMDSv1 era compatible.
-
-https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["Obtenga más información sobre IMDSv2 en el blog de seguridad de AWS"^]
-
-El servicio de metadatos de instancia (IMDS) se activa de la siguiente forma en las instancias EC2:
-
-* Para nuevas puestas en marcha de Connector de BlueXP o mediante https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Guiones Terraform"^], IMDSv2 está activado por defecto en la instancia EC2.
-* Si inicia una nueva instancia de EC2 en AWS y, a continuación, instala manualmente el software Connector, también se habilita IMDSv2 de forma predeterminada.
-* Para los conectores existentes, IMDSv1 sigue siendo compatible, pero puede configurar manualmente IMDSv2 en la instancia EC2 si lo prefiere.
-* Para Cloud Volumes ONTAP, IMDSv1 se habilita de forma predeterminada en las instancias nuevas y existentes. Puede configurar manualmente IMDSv2 en las instancias EC2 si lo prefiere.
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["Aprenda a configurar IMDSv2 en instancias existentes"].
-
-
-
-===== Actualización de permisos de AWS
-
-Hemos actualizado la política de Connector para AWS para incluir el permiso «EC2:DescribeAvailabilityZones». Este permiso es necesario para una próxima versión. Actualizaremos las notas de la versión con más detalles cuando esa versión esté disponible.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Ver los permisos de AWS para el conector"].
-
-
-
-==== Configuración de proxy y configuración de Cloud Volumes ONTAP
-
-La configuración del servidor proxy para el conector ahora está disponible en la página *Administrar conectores* (modo estándar) o en la página *Editar conectores* (modo restringido y modo privado).
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["Aprenda a configurar Connector para usar un servidor proxy"].
-
-Además, cambiamos el nombre de la página *Configuración del conector* a *Configuración de Cloud Volumes ONTAP*.
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["Una captura de pantalla que muestra la opción Configuración de Cloud Volumes ONTAP que está disponible en el menú Configuración."]
 
 
 
@@ -236,6 +220,25 @@ Has tenido la posibilidad de ver cubos de Amazon S3 en BlueXP Canvas durante muc
 
 
 
+=== 04 de abril de 2024
+
+
+
+==== Capacidad de habilitar o deshabilitar los análisis de ransomware
+
+Anteriormente, cuando habilitó la detección de ransomware en una política de backup, los análisis se realizaban automáticamente cuando se creó el primer backup y cuando restauró un backup. Anteriormente, el servicio analizaba todas las copias snapshot y no podía desactivar las exploraciones.
+
+Con este lanzamiento, ahora puede habilitar o deshabilitar los análisis de ransomware en la última copia de Snapshot usando la opción de la página Configuración avanzada. Si la activa, las exploraciones se realizan semanalmente de forma predeterminada.
+
+Consulte la siguiente información para obtener más detalles:
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backup-settings-ontap.html["Gestionar la configuración de copia de seguridad"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Gestione políticas para volúmenes de ONTAP"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-cloud-backup-policies.html["Configuración de políticas de backup en objeto"]
+
+
+
+
 === 12 de marzo de 2024
 
 
@@ -269,71 +272,6 @@ Puede realizar esta función mediante el proceso de búsqueda y restauración, n
 * Soporte para la restauración de máquinas virtuales a una ubicación alternativa
 * Compatibilidad con almacenes de datos desprotegidos
 
-
-
-
-=== 15 de diciembre de 2023
-
-
-
-==== Informes disponibles para las copias Snapshot locales y de replicación
-
-Anteriormente, se podían generar informes solo con copias de backup. Ahora puede crear informes sobre copias Snapshot locales y replicar también copias Snapshot.
-
-Con estos informes, puede hacer lo siguiente:
-
-* Asegúrese de que los datos críticos estén protegidos según la política de su organización.
-* Asegúrese de que los backups se ejecuten sin problemas para un grupo de volúmenes.
-* Ofrecen pruebas de protección de sus datos de producción.
-
-
-Consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html["Informe sobre la cobertura de protección de datos"].
-
-
-
-==== Etiquetado personalizado disponible en los volúmenes para ordenarlos y filtrarlos
-
-Ahora puede agregar etiquetas personalizadas a volúmenes a partir de ONTAP 9.13.1 para que pueda agrupar volúmenes dentro de entornos de trabajo y entre entornos. Si hace esto, podrá ordenar los volúmenes en las páginas de interfaz de usuario de backup y recuperación de BlueXP y filtrar en informes.
-
-
-
-==== Backups de catálogo retenidos durante 30 días
-
-Anteriormente, se conservaban Catalog.zip backups durante 7 días. Ahora, se retienen durante 30 días.
-
-Consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html["Restaura los datos de backup y recuperación de BlueXP en sitios oscuros"].
-
-
-
-=== 23 de octubre de 2023
-
-
-
-==== creación de políticas de copia de seguridad de 3-2-1 durante la activación de la copia de seguridad
-
-Anteriormente, había que crear políticas personalizadas antes de iniciar una snapshot, replicación o backup. Ahora, puedes crear una política durante el proceso de activación de backup con la interfaz de usuario de backup y recuperación de BlueXP.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Obtenga más información sobre las políticas"].
-
-
-
-==== Soporte para la restauración rápida bajo demanda de volúmenes ONTAP
-
-Ahora, el backup y la recuperación de datos de BlueXP permite realizar una «restauración rápida» de un volumen desde el almacenamiento en cloud a un sistema Cloud Volumes ONTAP. La restauración rápida es ideal para situaciones de recuperación ante desastres en las que se necesita proporcionar acceso a un volumen lo antes posible. Una restauración rápida restaura los metadatos del archivo de backup a un volumen en lugar de restaurar todo el archivo de backup.
-
-El sistema de destino de Cloud Volumes ONTAP debe ejecutar ONTAP versión 9.13.0 o posterior. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Obtenga más información sobre la restauración de datos"].
-
-El monitor de tareas de backup y recuperación de BlueXP también muestra información sobre el progreso de los trabajos de restauración rápidos.
-
-
-
-==== Soporte para los trabajos programados en Job Monitor
-
-El Job Monitor de backup y recuperación de BlueXP supervisaba previamente trabajos de backup y restauración programados de volumen a almacén de objetos, pero no trabajos de Snapshot, replicación, backup y restauración locales que se habían programado a través de la interfaz de usuario o la API.
-
-El supervisor de tareas de backup y recuperación de BlueXP ahora incluye trabajos programados para copias Snapshot locales, replicaciones y backups en el almacenamiento de objetos.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["Obtenga más información sobre el supervisor de trabajos actualizado"].
 
 
 
@@ -1054,43 +992,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 
 == Reparación
 
-
-
-=== 3 de marzo de 2022
-
-
-
-==== Ahora puede crear una plantilla para buscar entornos de trabajo específicos
-
-Mediante la acción "Buscar recursos existentes" puede identificar el entorno de trabajo y, a continuación, utilizar otras acciones de plantilla, como la creación de un volumen, para realizar fácilmente acciones en entornos de trabajo existentes. https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates["Vaya aquí para obtener más información"].
-
-
-
-==== Capacidad de crear un entorno de trabajo de alta disponibilidad de Cloud Volumes ONTAP en AWS
-
-La compatibilidad existente para crear un entorno de trabajo de Cloud Volumes ONTAP en AWS se ha ampliado para incluir la creación de un sistema de alta disponibilidad además de un sistema de un único nodo. https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment["Vea cómo crear una plantilla para un entorno de trabajo de Cloud Volumes ONTAP"].
-
-
-
-=== 9 de febrero de 2022
-
-
-
-==== Ahora puede crear una plantilla para buscar volúmenes existentes específicos y, a continuación, activar Cloud Backup
-
-Con la nueva acción "Find Resource" puede identificar todos los volúmenes en los que desea habilitar Cloud Backup y, a continuación, utilizar la acción Cloud Backup para habilitar el backup en esos volúmenes.
-
-Actualmente admite volúmenes en sistemas Cloud Volumes ONTAP y ONTAP en las instalaciones. https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html#find-existing-volumes-and-activate-bluexp-backup-and-recovery["Vaya aquí para obtener más información"].
-
-
-
-=== 31 de octubre de 2021
-
-
-
-==== Ahora puede etiquetar las relaciones de sincronización para que pueda agruparlas o clasificarlas para un acceso sencillo
-
-https://docs.netapp.com/us-en/bluexp-remediation/concept-tagging.html["Obtenga más información sobre el etiquetado de recursos"].
+El servicio de corrección de BlueXP se eliminó el 22 de abril de 2024.
 
 
 
