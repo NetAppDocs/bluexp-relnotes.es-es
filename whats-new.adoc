@@ -85,7 +85,7 @@ En este momento, la versión 3.9.40 está disponible para modo estándar y modo 
 
 ===== Compatibilidad con RHEL 8 y 9
 
-El conector ahora es compatible con los hosts que ejecutan las siguientes versiones de Red Hat Enterprise Linux con instalaciones de conector _new_:
+El conector ahora es compatible con los hosts que ejecutan las siguientes versiones de Red Hat Enterprise Linux con instalaciones de conector _new_ cuando se utiliza BlueXP en modo estándar o restringido:
 
 * 8,6 a 8,9
 * 9,1 a 9,3
@@ -345,6 +345,48 @@ Puede realizar esta función mediante el proceso de búsqueda y restauración, n
 
 
 
+=== 5 de junio de 2024 (Versión 1,32)
+
+Esta versión incluye las siguientes actualizaciones.
+
+
+
+==== Las exploraciones de asignación recopilan metadatos
+
+Los siguientes metadatos se extraen de los archivos durante las exploraciones de mapeo y se muestran en los paneles de control de gobierno, cumplimiento e investigación:
+
+* Entorno de trabajo
+* Tipo de entorno de trabajo
+* Repositorio de almacenamiento
+* Tipo de archivo
+* Capacidad utilizada
+* Número de archivos
+* Tamaño de archivo
+* Creación de archivos
+* Último acceso al archivo
+* Última modificación del archivo
+* Hora de detección de archivo
+* Extracción de permisos
+
+
+
+
+==== Datos adicionales en consolas
+
+Esta versión actualiza los datos que aparecen en los paneles de control de gobierno, cumplimiento e investigación durante las exploraciones de mapeo.
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["¿Cuál es la diferencia entre las exploraciones de mapeo y clasificación"]
+
+
+
+==== Nueva columna de estado de asignación en la página Configuración
+
+Esta versión muestra ahora una nueva columna de estado de asignación en la página Configuración. La nueva columna ayuda a identificar si la asignación está en ejecución, en cola, en pausa o más.
+
+Para obtener una explicación de los estados, consulte https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["Cambiar la configuración de exploración"].
+
+
+
 === 15 de mayo de 2024 (Versión 1,31)
 
 
@@ -390,26 +432,6 @@ Se ha mejorado el rendimiento de escaneo en nodos de escáner secundarios. Puede
 Si implementaste la clasificación de BlueXP en un sistema con acceso a Internet, el sistema se actualizará automáticamente. Anteriormente, la actualización se produjo después de un tiempo específico transcurrido desde la última actividad del usuario. Con esta versión, la clasificación de BlueXP se actualiza automáticamente si la hora local es entre las 1:00 y las 5:00:00. Si la hora local está fuera de estas horas, la actualización se produce después de que transcurra un tiempo específico desde la última actividad del usuario. Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Instale en un host Linux con acceso a Internet"].
 
 Si implementaste la clasificación de BlueXP sin acceso a Internet, tendrás que actualizar manualmente. Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["Instala la clasificación BlueXP en un host Linux sin acceso a Internet"].
-
-
-
-=== 4 de marzo de 2024 (versión 1,29)
-
-
-
-==== Ahora puede excluir los datos de escaneo que residen en ciertos directorios de origen de datos
-
-Si desea que la clasificación de BlueXP excluya los datos de análisis que residen en determinados directorios de orígenes de datos, puede añadir estos nombres de directorio a un archivo de configuración que procese la clasificación de BlueXP. Esta función le permite evitar el escaneo de directorios que no son necesarios, o que daría lugar a la devolución de resultados de datos personales falsos positivos.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html["Leer más"].
-
-
-
-==== El soporte de instancias extra grandes ya está cualificado
-
-Si necesitas la clasificación de BlueXP para analizar más de 250 millones de archivos, puedes utilizar una instancia de Extra Large en la puesta en marcha de la nube o en la instalación on-premises. Este tipo de sistema puede escanear hasta 500 millones de archivos.
-
-https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["Leer más"].
 
 
 
@@ -563,6 +585,16 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 == Asesor digital
+
+
+
+=== 15 de mayo de 2024
+
+
+
+==== Panel de sostenibilidad
+
+Ahora, la sostenibilidad es compatible con los sistemas E-Series y StorageGRID. Puede ver una lista de acciones recomendadas e indicadores ambientales que muestran proyecciones de energía, uso directo de carbono y calor desde el panel de control de Sustainability para estos sistemas. Para obtener más información, consulte link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Información general del panel de sostenibilidad"^].
 
 
 
