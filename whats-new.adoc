@@ -482,6 +482,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 2 de junio de 2024
+
+El servicio de copia y sincronización de BlueXP se actualizó para solucionar algunos errores. El agente de datos también se actualizó para aplicar actualizaciones de seguridad. La nueva versión de Data Broker es 1,0.52.
+
+
+
 === 8 de abril de 2024
 
 
@@ -503,32 +509,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-
 Los usuarios ahora tienen la opción de filtrar directorios usando regex.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["Obtenga más información sobre la función *Excluir directorios*."]
-
-
-
-=== 26 de noviembre de 2023
-
-
-
-==== Soporte de clase de almacenamiento de datos fríos para Azure Blob
-
-El nivel de almacenamiento de datos fríos de Azure Blob ahora está disponible al crear una relación de sincronización.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html["Obtenga más información sobre la creación de una relación de sincronización."]
-
-
-
-==== Soporte para la región de Tel Aviv en agentes de datos de AWS
-
-Tel Aviv es ahora una región compatible al crear un agente de datos en AWS.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["Obtenga más información sobre cómo crear un agente de datos en AWS"].
-
-
-
-==== Actualizar a la versión del nodo para los agentes de datos
-
-Todos los nuevos agentes de datos utilizarán ahora la versión del nodo 21,2.0. Los agentes de datos que no son compatibles con esta actualización, como CentOS 7,0 y Ubuntu Server 18,0, ya no funcionarán con la copia y sincronización de BlueXP.
 
 
 
@@ -783,6 +763,16 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 
 
 
+=== 31 de mayo de 2024
+
+NetApp ha anunciado el fin de la disponibilidad (EOA) de la caché de archivos global de NetApp a 31 de mayo de 2024. El fin de disponibilidad afecta a todos los productos de Global File Cache de NetApp, incluidas las suscripciones de software Global File Cache independientes y los paquetes de soluciones de Global File Cache con NetApp Cloud Volumes ONTAP, conocido como Cloud Volumes Edge Cache de NetApp.
+
+NetApp continuará ofreciendo soporte a estos productos para el cliente existente durante un mínimo de 3 años. https://mysupport.netapp.com/info/communications/CPC-00578.html["Consulte los detalles sobre el fin de la disponibilidad de Global File Cache de NetApp"^].
+
+Además, se eliminó la capacidad para habilitar, poner en marcha y gestionar los componentes de Global File Cache desde la interfaz de usuario de BlueXP.
+
+
+
 === 6 de mayo de 2024 (versión 2,4)
 
 Esta versión corrige algunos problemas menores. El paquete de software actualizado está disponible en https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["esta página"].
@@ -792,28 +782,6 @@ Esta versión corrige algunos problemas menores. El paquete de software actualiz
 === 1 de agosto de 2023 (versión 2,3)
 
 En esta versión se solucionan los problemas descritos en https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Problemas solucionados"]. Los paquetes de software actualizados están disponibles en https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["esta página"].
-
-
-
-=== 5 de abril de 2023 (versión 2.2)
-
-Esta versión proporciona las nuevas funciones que se enumeran a continuación. También soluciona los problemas descritos en https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Problemas solucionados"].
-
-
-
-==== Compatibilidad con caché de archivos global en sistemas Cloud Volumes ONTAP implementados en Google Cloud
-
-Hay disponible una nueva licencia "Edge Cache" cuando se implementa un sistema Cloud Volumes ONTAP en Google Cloud. Tiene derecho a poner en marcha un sistema perimetral de caché de archivos global por cada 3 TIB de capacidad adquirida en el sistema Cloud Volumes ONTAP.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Obtenga más información acerca del paquete de licencia de Edge Cache."]
-
-
-
-==== El asistente de configuración y la interfaz de usuario de configuración GFC se han mejorado para realizar el registro de licencias de NetApp
-
-
-
-==== Optimus PSM mejorado para configurar la funcionalidad Edge Sync
 
 
 

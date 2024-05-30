@@ -55,7 +55,6 @@
   <block id="532b36a42fa02f3df85b0e70d519a9ac" category="section-title">Compatibilidad con E-Series</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">Problemas solucionados</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">esta página</block>
-  <block id="6a749e3d1bafd02cdf9a303ba6375e66" category="inline-link">Obtenga más información acerca del paquete de licencia de Edge Cache.</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="88268cce7d1b83c765c3f7010df80df5" category="section-title">06 de noviembre de 2022</block>
   <block id="eb3b05e2bcc0acdca8f3706dc6168810" category="inline-link-macro">definición de clases de almacenamiento</block>
@@ -91,11 +90,6 @@
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Desinstale Astra Trident</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Se ha eliminado la pestaña de licencias</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Se ha cambiado el nombre de las pestañas de organización en niveles y se ha actualizado el contenido</block>
-  <block id="e0feab0ee26165da9cddab198d1f1422" category="section-title">5 de abril de 2023 (versión 2.2)</block>
-  <block id="b1bdb4b30cdf01fdd4fc306c24b3e449" category="section-title">Compatibilidad con caché de archivos global en sistemas Cloud Volumes ONTAP implementados en Google Cloud</block>
-  <block id="a92c52030822934c670502facf8a8f31" category="paragraph">Hay disponible una nueva licencia "Edge Cache" cuando se implementa un sistema Cloud Volumes ONTAP en Google Cloud. Tiene derecho a poner en marcha un sistema perimetral de caché de archivos global por cada 3 TIB de capacidad adquirida en el sistema Cloud Volumes ONTAP.</block>
-  <block id="89960279d43d6d504afb45e5a8dff137" category="section-title">El asistente de configuración y la interfaz de usuario de configuración GFC se han mejorado para realizar el registro de licencias de NetApp</block>
-  <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Optimus PSM mejorado para configurar la funcionalidad Edge Sync</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">La resiliencia operativa es un servicio que le ayuda a analizar las alertas y los eventos para mantener el estado, el tiempo de actividad y el rendimiento de los servicios y las soluciones.</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">En estas notas de la versión, se describen las mejoras recientes en los servicios de cloud que forman parte de BlueXP. Los vínculos están disponibles para el conjunto completo de notas de la versión de cada servicio individual.</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">Configuración y administración</block>
@@ -151,8 +145,6 @@
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>.</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>.</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
-  <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Esta versión proporciona las nuevas funciones que se enumeran a continuación. También soluciona los problemas descritos en<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
   <block id="4e4ff5b7850bf0aae4966bf2353d2764" category="list-text">Ahora puede hacerlo <block ref="79330a9a9d35860d426f0d48c9f654a7" category="inline-link-macro-rx"></block> Que se instaló con el operador Trident o BlueXP.</block>
   <block id="08dbc554156c2764d1696fe55d768aed" category="paragraph">Cuando <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>, ahora puede habilitar la economía de clase de almacenamiento para el almacenamiento de bloques o sistemas de ficheros.</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>.</block>
@@ -431,17 +423,6 @@
   <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">13 de noviembre de 2023</block>
   <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">Ahora puede crear informes para los volúmenes que usan el protocolo SMB/CIFS.</block>
   <block id="563cbb5befcc35d67fb204c94be0bffb" category="summary">Consulta el conjunto completo de notas de la versión para cada servicio individual de BlueXP.</block>
-  <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">26 de noviembre de 2023</block>
-  <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Soporte de clase de almacenamiento de datos fríos para Azure Blob</block>
-  <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">El nivel de almacenamiento de datos fríos de Azure Blob ahora está disponible al crear una relación de sincronización.</block>
-  <block id="6e90305f3ad22c32d20c662a0bb06726" category="inline-link">Obtenga más información sobre la creación de una relación de sincronización.</block>
-  <block id="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="paragraph"><block ref="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="inline-link-rx"></block></block>
-  <block id="e35f035cdd0e53d6ac8e57e89c9a3994" category="section-title">Soporte para la región de Tel Aviv en agentes de datos de AWS</block>
-  <block id="bc601240bd77a257f82ad29245da02ee" category="paragraph">Tel Aviv es ahora una región compatible al crear un agente de datos en AWS.</block>
-  <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">Obtenga más información sobre cómo crear un agente de datos en AWS</block>
-  <block id="48938ec2ae208dc89827f9e55c8f1c41" category="paragraph"><block ref="42f00e873b388cac01d84d3ba1605497" category="inline-link-rx"></block>.</block>
-  <block id="e24f754057dce2d0f9791240fec7d494" category="section-title">Actualizar a la versión del nodo para los agentes de datos</block>
-  <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">Todos los nuevos agentes de datos utilizarán ahora la versión del nodo 21,2.0. Los agentes de datos que no son compatibles con esta actualización, como CentOS 7,0 y Ubuntu Server 18,0, ya no funcionarán con la copia y sincronización de BlueXP.</block>
   <block id="e057979f7791f37ec4a8704baa00923d" category="section-title">Lista de observación</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">4 de marzo de 2024 (versión 1,29)</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Ahora puede excluir los datos de escaneo que residen en ciertos directorios de origen de datos</block>
@@ -698,4 +679,11 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Comunidad de NetApp</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blogs de BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Seminarios web sobre el cloud</block>
+  <block id="6849ea484f5664c887acc6f1ff990dfd" category="section-title">2 de junio de 2024</block>
+  <block id="cfa477f3b89d95c12ff30d6390b89dd9" category="paragraph">El servicio de copia y sincronización de BlueXP se actualizó para solucionar algunos errores. El agente de datos también se actualizó para aplicar actualizaciones de seguridad. La nueva versión de Data Broker es 1,0.52.</block>
+  <block id="fc31bdab270f34f9dbc1c826f879ec7a" category="section-title">31 de mayo de 2024</block>
+  <block id="a38c9755f3e363e5fcc012f982f27744" category="paragraph">NetApp ha anunciado el fin de la disponibilidad (EOA) de la caché de archivos global de NetApp a 31 de mayo de 2024. El fin de disponibilidad afecta a todos los productos de Global File Cache de NetApp, incluidas las suscripciones de software Global File Cache independientes y los paquetes de soluciones de Global File Cache con NetApp Cloud Volumes ONTAP, conocido como Cloud Volumes Edge Cache de NetApp.</block>
+  <block id="fe85d677b887f84abb319ef4415495b6" category="inline-link">Consulte los detalles sobre el fin de la disponibilidad de Global File Cache de NetApp</block>
+  <block id="84037427a2c8d669a1e7b95e23492189" category="paragraph">NetApp continuará ofreciendo soporte a estos productos para el cliente existente durante un mínimo de 3 años.<block ref="c260bd0a32453373dfa997871e7c7312" category="inline-link-rx"></block>.</block>
+  <block id="ce6cf9ea6138c79aab74ff110d376b23" category="paragraph">Además, se eliminó la capacidad para habilitar, poner en marcha y gestionar los componentes de Global File Cache desde la interfaz de usuario de BlueXP.</block>
 </blocks>
