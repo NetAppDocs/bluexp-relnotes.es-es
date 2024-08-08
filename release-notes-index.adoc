@@ -39,8 +39,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["Configuración 
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service para Google Cloud"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/whats-new.html["Sistemas E-Series"^]
 * https://docs.netapp.com/us-en/bluexp-google-cloud-storage/whats-new.html["Google Cloud Storage"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/whats-new.html["Clústeres de Kubernetes"^]
-* https://docs.netapp.com/us-en/bluexp-reports/release-notes/whats-new.html["Informes de migración"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html["Clústeres de ONTAP en las instalaciones"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/whats-new.html["StorageGRID"^]
 
@@ -56,7 +54,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["Configuración 
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["Cartera digital"^]
 * https://docs.netapp.com/us-en/bluexp-disaster-recovery/release-notes/dr-whats-new.html["Recuperación tras siniestros"^]
 * https://docs.netapp.com/us-en/bluexp-economic-efficiency/release-notes/whats-new.html["Eficiencia económica"^]
-* https://docs.netapp.com/us-en/bluexp-edge-caching/whats-new.html["Almacenamiento en caché en el edge"^]
 * https://docs.netapp.com/us-en/bluexp-operational-resiliency/release-notes/whats-new.html["Resiliencia operativa"^]
 * https://docs.netapp.com/us-en/bluexp-ransomware-protection/whats-new.html["Protección contra ransomware"^]
 * https://docs.netapp.com/us-en/bluexp-replication/whats-new.html["Replicación"^]
