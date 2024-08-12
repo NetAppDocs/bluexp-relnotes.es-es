@@ -711,8 +711,6 @@
   <block id="262115d0d4a65fe9bcd074ab5666018a" category="paragraph">Hemos actualizado el conector para admitir la versión Cloud Volumes ONTAP 9.15.1.</block>
   <block id="ede74fed38968a6f0c0dcebc3102b859" category="paragraph">La compatibilidad con esta versión incluye una actualización de la política de Connector para Azure. La política ahora incluye los siguientes permisos:</block>
   <block id="c78a856f5972910d86f9b588fe9783e6" category="paragraph">Estos permisos son necesarios para la compatibilidad de Cloud Volumes ONTAP con conjuntos de escalas de máquinas virtuales. Si tiene conectores existentes y desea utilizar esta nueva función, deberá agregar estos permisos a los roles personalizados asociados a sus credenciales de Azure.</block>
-  <block id="33deee49118b5c8f42cddf68ea82eb12" category="inline-link">Obtenga más información sobre la compatibilidad de Cloud Volumes ONTAP con conjuntos de escala de máquinas virtuales</block>
-  <block id="d68b9311c71dab46bbfe2456fb69212b" category="list-text"><block ref="d68b9311c71dab46bbfe2456fb69212b" category="inline-link-rx"></block></block>
   <block id="21952e368aec0a06297b408b56d39588" category="inline-link">Ver los permisos de Azure para Connector</block>
   <block id="aee78f717e27d8af727663a423980af9" category="list-text"><block ref="30ea7e04713feb92caddbe86eeb922d8" category="inline-link-rx"></block>.</block>
   <block id="bfe1024d3c9f1a02aa5dd1d7e5dccb34" category="section-title">22 de agosto de 2024</block>
@@ -724,4 +722,11 @@
   <block id="fc1d748db1b5b488ce7af7d17ea15d55" category="inline-link-macro">Compatibilidad con versiones de software</block>
   <block id="846815401f996d92d6775164d37e6015" category="inline-link-macro">Actualizar los sistemas de almacenamiento Data ONTAP funcionando en 7-Mode</block>
   <block id="bebf3b3af19cc5d4d44b97e70e8b3ffb" category="paragraph">El informe *7-Mode Upgrade Advisor Plans* ya no está disponible ya que los sistemas 7-Mode han llegado al final del soporte limitado. Para obtener más información, consulte <block ref="20732c2f8b67b7236a6509e096709359" category="inline-link-macro-rx"></block>. Más información sobre <block ref="ee2cd00409c56591f09249cc9e682f11" category="inline-link-macro-rx"></block>.</block>
+  <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">Obtenga más información sobre la versión 9.15.1 de Cloud Volumes ONTAP</block>
+  <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
+  <block id="caf47538a5b97cacf4aba3098b6f9924" category="section-title">23 de agosto de 2024</block>
+  <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">La región oeste de Canadá ahora es compatible con AWS</block>
+  <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">La región Oeste de Canadá ahora es compatible con AWS para Cloud Volumes ONTAP 9.12.1 GA y posterior.</block>
+  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Mapa de regiones globales en AWS</block>
+  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Para obtener una lista de todas las regiones, consulte la<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
 </blocks>
