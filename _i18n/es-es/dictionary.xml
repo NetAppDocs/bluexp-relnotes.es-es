@@ -748,4 +748,11 @@
   <block id="98f1cb1ebd09ccf6e678d5bae1920213" category="list-text">*Control de acceso basado en roles*: Ahora puedes limitar el acceso a actividades específicas con control de acceso basado en roles (RBAC). La protección contra ransomware de BlueXP  usa dos roles de BlueXP : Administrador de cuentas de BlueXP  y administrador sin cuenta (visor).</block>
   <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">Control de acceso basado en roles Privileges</block>
   <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">Para obtener más información sobre las acciones que puede realizar cada rol, consulte<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>.</block>
+  <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">Soporte para Docker Engine 26 con nuevas instalaciones</block>
+  <block id="5c968eab53d6065ccf63e9766935cb7b" category="paragraph">A partir de la versión 3.9.44 del conector, Docker Engine 26 ahora es compatible con instalaciones de conector _new_ en hosts Ubuntu.</block>
+  <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">Si tiene un conector existente creado antes de la versión 3.9.44, Docker Engine 25.0.5 sigue siendo la versión máxima admitida en los hosts Ubuntu.</block>
+  <block id="c64c773fbe16e4df6ae417c106a467ef" category="inline-link">Obtenga más información sobre los requisitos de Docker Engine</block>
+  <block id="395f31b2f1bc9cb3993acbb14cf4fb1f" category="paragraph"><block ref="724b4d6e1bb3e6bea768572a2ce7c10e" category="inline-link-rx"></block>.</block>
+  <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">16 de septiembre de 2024</block>
+  <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">Actualizamos el servicio de copia y sincronización de BlueXP y el agente de datos para solucionar algunos errores. La nueva versión de Data Broker es 1,0.55.</block>
 </blocks>
