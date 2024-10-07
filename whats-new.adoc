@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts' 
 summary: Conozca los cambios más recientes en los servicios en la nube que forman parte de la plataforma BlueXP. 
 ---
 = Cambios recientes en BlueXP
@@ -250,6 +250,65 @@ Hemos actualizado las políticas de AWS y Azure para el conector para eliminar p
 
 
 
+== Alertas
+
+
+
+=== 7 de octubre de 2024
+
+Esta versión inicial de alertas de BlueXP  incluye las siguientes funciones:
+
+* *Página de la lista de alertas de BlueXP *: Puede identificar rápidamente los clústeres de ONTAP que tienen baja capacidad o bajo rendimiento, medir el alcance de la disponibilidad e identificar los riesgos de seguridad. Es posible ver alertas relacionadas con la capacidad, el rendimiento, la protección, la disponibilidad, la seguridad y la configuración.
+* *Detalles de alertas*: Puedes profundizar en detalles de alerta y encontrar recomendaciones.
+* *Ver detalles del clúster vinculados a System Manager*: Con las alertas de BlueXP , puede ver las alertas asociadas con su entorno de almacenamiento de ONTAP y profundizar en los detalles vinculados a System Manager de NetApp.
+
+
+https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["Más información sobre las alertas de BlueXP"].
+
+
+
+== Amazon FSX para ONTAP
+
+
+
+=== 30 de julio de 2023
+
+Ahora los clientes pueden crear sistemas de archivos de Amazon FSx para NetApp ONTAP en tres nuevas regiones de AWS: Europa (Zúrich), Europa (España) y Asia Pacífico (Hyderabad).
+
+Consulte link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud["Amazon FSx para NetApp ONTAP ya está disponible en tres regiones adicionales"^] para obtener todos los detalles.
+
+
+
+=== 02 de julio de 2023
+
+* Ahora puede hacerlo link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Añadir una máquina virtual de almacenamiento"] Al sistema de archivos de Amazon FSx para NetApp ONTAP mediante BlueXP.
+* La pestaña **Mis oportunidades** ahora es **Mi estado**. La documentación se actualiza para reflejar el nuevo nombre.
+
+
+
+
+=== 04 de junio de 2023
+
+* Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["crear un entorno de trabajo"], puede especificar la hora de inicio de la ventana de mantenimiento semanal de 30 minutos para asegurarse de que el mantenimiento no entra en conflicto con las actividades empresariales críticas.
+* Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["creación de un volumen"], Puede habilitar la optimización de datos mediante la creación de una FlexGroup para distribuir datos entre volúmenes.
+
+
+
+
+== Almacenamiento Amazon S3
+
+
+
+=== 5 de marzo de 2023
+
+
+
+==== Posibilidad de añadir nuevos cubos desde BlueXP
+
+Has tenido la posibilidad de ver cubos de Amazon S3 en BlueXP Canvas durante mucho tiempo. Ahora puede agregar nuevos cubos y cambiar las propiedades de los cubos existentes directamente desde BlueXP. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Descubra cómo añadir nuevos bloques de Amazon S3"^].
+
+
+
 == Almacenamiento de Azure Blob
 
 
@@ -310,48 +369,6 @@ Un nuevo servicio de plantillas de aplicaciones le permite configurar una planti
 
 
 
-== Amazon FSX para ONTAP
-
-
-
-=== 30 de julio de 2023
-
-Ahora los clientes pueden crear sistemas de archivos de Amazon FSx para NetApp ONTAP en tres nuevas regiones de AWS: Europa (Zúrich), Europa (España) y Asia Pacífico (Hyderabad).
-
-Consulte link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud["Amazon FSx para NetApp ONTAP ya está disponible en tres regiones adicionales"^] para obtener todos los detalles.
-
-
-
-=== 02 de julio de 2023
-
-* Ahora puede hacerlo link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Añadir una máquina virtual de almacenamiento"] Al sistema de archivos de Amazon FSx para NetApp ONTAP mediante BlueXP.
-* La pestaña **Mis oportunidades** ahora es **Mi estado**. La documentación se actualiza para reflejar el nuevo nombre.
-
-
-
-
-=== 04 de junio de 2023
-
-* Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["crear un entorno de trabajo"], puede especificar la hora de inicio de la ventana de mantenimiento semanal de 30 minutos para asegurarse de que el mantenimiento no entra en conflicto con las actividades empresariales críticas.
-* Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["creación de un volumen"], Puede habilitar la optimización de datos mediante la creación de una FlexGroup para distribuir datos entre volúmenes.
-
-
-
-
-== Almacenamiento Amazon S3
-
-
-
-=== 5 de marzo de 2023
-
-
-
-==== Posibilidad de añadir nuevos cubos desde BlueXP
-
-Has tenido la posibilidad de ver cubos de Amazon S3 en BlueXP Canvas durante mucho tiempo. Ahora puede agregar nuevos cubos y cambiar las propiedades de los cubos existentes directamente desde BlueXP. https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Descubra cómo añadir nuevos bloques de Amazon S3"^].
-
-
-
 == Backup y recuperación
 
 
@@ -401,8 +418,6 @@ Para obtener más información sobre DataLock y consejos sobre cómo mitigar los
 El servicio Roles Anywhere de Amazon Web Services (AWS) Identity and Access Management (IAM) le permite utilizar roles de IAM y credenciales a corto plazo para sus cargas de trabajo _outside_ de AWS para acceder a las API de AWS de forma segura, de la misma manera que utiliza roles de IAM para cargas de trabajo _on_ AWS. Cuando utiliza la infraestructura de claves privadas de IAM Roles Anywhere y los tokens de AWS, no necesita claves de acceso de AWS ni claves secretas a largo plazo. Esto le permite rotar las credenciales con mayor frecuencia, lo que mejora la seguridad.
 
 Con esta versión, el soporte para el servicio AWS IAM Roles Anywhere es una vista previa de la tecnología.
-
-Esto se aplica a la copia de seguridad link:task-backup-to-s3.html["Backups de Cloud Volumes ONTAP en AWS"] y link:task-backup-onprem-to-aws.html["Realizar backups de los datos de ONTAP locales en AWS"].
 
 Consulte https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-July-2024-Release/ba-p/453993["Backup y recuperación de BlueXP Lanzamiento de julio de 2024"].
 
@@ -514,13 +529,25 @@ Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-cl
 
 
 
+=== 7 de octubre de 2024
+
+
+
+==== Experiencia de usuario mejorada en la selección de versiones para la actualización
+
+A partir de esta versión, cuando intente actualizar Cloud Volumes ONTAP mediante la notificación de BlueXP , recibirá orientación sobre las versiones predeterminadas, más recientes y compatibles que debe utilizar. Además, ahora puede seleccionar el parche más reciente o la versión principal compatible con su instancia de Cloud Volumes ONTAP, o introducir manualmente una versión para la actualización.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Actualice el software Cloud Volumes ONTAP"^]
+
+
+
 === 9 de septiembre de 2024
 
 
 
 ==== Las funcionalidades WORM y ARP ya no se pueden cargar
 
-Las funciones de seguridad y protección de datos incorporadas de WORM (escritura única lectura múltiple) y ARP (protección autónoma contra ransomware) se ofrecerán con licencias de Cloud Volumes ONTAP sin coste adicional. El nuevo modelo de precios se aplica a las suscripciones BYOL y PAYGO/MARKET nuevas y existentes de AWS, Azure y Google Cloud. Tanto las licencias basadas en la capacidad como las basadas en nodos contendrán ARP y WORM para todas las configuraciones, incluidos los pares de nodo único y de alta disponibilidad (HA), sin coste adicional.
+Las funciones de seguridad y protección de datos incorporadas de WORM (escritura única lectura múltiple) y ARP (protección autónoma contra ransomware) se ofrecerán con licencias de Cloud Volumes ONTAP sin coste adicional. El nuevo modelo de precios se aplica a las suscripciones BYOL y PAYGO/MARKET nuevas y existentes de AWS, Azure y Google Cloud. Tanto las licencias basadas en capacidad como las basadas en nodos contendrán ARP y WORM para todas las configuraciones, incluidos los pares de nodo único y de alta disponibilidad (HA), sin coste adicional.
 
 La simplificación de los precios le ofrece estos beneficios:
 
@@ -546,18 +573,6 @@ Obtenga más información sobre estas funciones:
 La región Oeste de Canadá ahora es compatible con AWS para Cloud Volumes ONTAP 9.12.1 GA y posterior.
 
 Para obtener una lista de todas las regiones, consulte la https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en AWS"^].
-
-
-
-=== 22 de agosto de 2024
-
-
-
-==== Cloud Volumes ONTAP 9.15.1 GA
-
-BlueXP ahora puede poner en marcha y gestionar el lanzamiento de disponibilidad general de Cloud Volumes ONTAP 9.15.1 en AWS, Azure y Google Cloud.
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Conozca cuáles son las nuevas funciones que se incluyen en esta versión de Cloud Volumes ONTAP"^].
 
 
 
