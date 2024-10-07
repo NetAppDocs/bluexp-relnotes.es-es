@@ -970,7 +970,7 @@ El servicio de informes de migración de BlueXP  se eliminó el 7 de agosto de 
 
 ==== Compatibilidad con los sistemas ASA R2
 
-Ahora puede descubrir los sistemas NetApp ASA R2 en BlueXP  al utilizar BlueXP  en modo estándar o privado. Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.
+Ahora puede detectar los sistemas NetApp ASA R2 en BlueXP  cuando se utiliza BlueXP  en modo estándar o restringido. Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.
 
 No hay otras opciones de gestión disponibles con los sistemas ASA R2. No se puede utilizar la vista estándar y no se pueden habilitar los servicios de BlueXP.
 
@@ -1217,7 +1217,7 @@ Ahora puede descubrir sus sistemas StorageGRID directamente desde BlueXP. El des
 
 
 
-==== Use un prefijo personalizado para el nombre del bloque donde se almacenan los datos almacenados en niveles
+==== Utilice un prefijo personalizado para el nombre del depósito
 
 Anteriormente, era necesario utilizar el prefijo predeterminado «fabric-pool» al definir el nombre del bucket, por ejemplo, _fabric-pool-bucket1_. Ahora puede utilizar un prefijo personalizado al asignar un nombre a su cubo. Esta funcionalidad solo está disponible cuando se organizan los datos en niveles en Amazon S3. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["Leer más"].
 
@@ -1233,13 +1233,13 @@ Si utiliza varios conectores para gestionar todos los sistemas de almacenamiento
 
 
 
-==== Ahora puede ajustar el ancho de banda utilizado para cargar datos inactivos en el almacenamiento de objetos
+==== Ajuste el ancho de banda para transferir datos inactivos
 
 Al activar la organización en niveles de BlueXP, ONTAP puede utilizar una cantidad ilimitada de ancho de banda de red para transferir los datos inactivos de los volúmenes del clúster al almacenamiento de objetos. Si observa que el tráfico por niveles afecta a las cargas de trabajo normales de usuario, puede limitar la cantidad de ancho de banda que se puede utilizar durante la transferencia. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["Leer más"].
 
 
 
-==== El evento de organización en niveles para el nivel bajo se muestra en el Centro de notificaciones
+==== Evento de organización en niveles que se muestra en el Centro de notificaciones
 
 El evento de organización en niveles «Almacenar los datos adicionales del clúster <name> en el almacenamiento de objetos para aumentar la eficiencia del almacenamiento» aparece ahora como una notificación cuando un clúster está organizando en niveles menos del 20 % de sus datos inactivos, incluidos los clústeres que organizan en niveles ningún dato.
 
@@ -1257,7 +1257,7 @@ La pestaña Licencias se ha eliminado de la interfaz de organización en niveles
 
 
 
-==== Se ha cambiado el nombre de las pestañas de organización en niveles y se ha actualizado el contenido
+==== Se ha cambiado el nombre de las pestañas de organización en niveles y se han actualizado
 
 Se ha cambiado el nombre de la pestaña «Consola de clústeres» a «Clusters» y la pestaña «On-Prem Overview» se ha cambiado a «On-premises Dashboard». Estas páginas han añadido información que le ayudará a evaluar si puede optimizar el espacio de almacenamiento con una configuración adicional de organización en niveles.
 

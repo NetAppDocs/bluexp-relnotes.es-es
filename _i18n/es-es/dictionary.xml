@@ -78,7 +78,6 @@
   <block id="efc0c4f71709b261c273fb935757cfae" category="section-title">Resiliencia operativa</block>
   <block id="207aaa44f72ba634c18fcc9bae44d655" category="inline-link">Aprenda a ver la capacidad consumida en su cuenta</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">Se ha eliminado la pestaña de licencias</block>
-  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Se ha cambiado el nombre de las pestañas de organización en niveles y se ha actualizado el contenido</block>
   <block id="ae74e3db3615f676968300b7cc6e8ae1" category="paragraph">La resiliencia operativa es un servicio que le ayuda a analizar las alertas y los eventos para mantener el estado, el tiempo de actividad y el rendimiento de los servicios y las soluciones.</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">En estas notas de la versión, se describen las mejoras recientes en los servicios de cloud que forman parte de BlueXP. Los vínculos están disponibles para el conjunto completo de notas de la versión de cada servicio individual.</block>
   <block id="bb50e2459e4e016aa4b14a56adb2358f" category="inline-link">Configuración y administración</block>
@@ -163,9 +162,7 @@
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Aprenda a descubrir clústeres en la página Mi estado</block>
   <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 de julio de 2023</block>
-  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">Ahora puede ajustar el ancho de banda utilizado para cargar datos inactivos en el almacenamiento de objetos</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">Al activar la organización en niveles de BlueXP, ONTAP puede utilizar una cantidad ilimitada de ancho de banda de red para transferir los datos inactivos de los volúmenes del clúster al almacenamiento de objetos. Si observa que el tráfico por niveles afecta a las cargas de trabajo normales de usuario, puede limitar la cantidad de ancho de banda que se puede utilizar durante la transferencia.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
-  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">El evento de organización en niveles para el nivel bajo se muestra en el Centro de notificaciones</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">El evento de organización en niveles «Almacenar los datos adicionales del clúster &lt;name&gt; en el almacenamiento de objetos para aumentar la eficiencia del almacenamiento» aparece ahora como una notificación cuando un clúster está organizando en niveles menos del 20 % de sus datos inactivos, incluidos los clústeres que organizan en niveles ningún dato.</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">Calculadora de ahorro y coste total de propiedad de la organización en niveles de BlueXP</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">Esta notificación es una «recomendación» que pretende hacer que sus sistemas sean más eficientes y ahorrar costes de almacenamiento. Proporciona un enlace al<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> para ayudarle a calcular el ahorro de costes.</block>
@@ -756,8 +753,12 @@
   <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">Más información sobre<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>.</block>
   <block id="7062dd46798946172bc9078744756dfc" category="section-title">Rendimiento de escaneo mejorado</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">Esta versión mejora el rendimiento de escaneo.</block>
-  <block id="d26c29507d869d48f4861c9b4bae1f6e" category="paragraph">Ahora puede descubrir los sistemas NetApp ASA R2 en BlueXP  al utilizar BlueXP  en modo estándar o privado. Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.</block>
   <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="paragraph">La detección de sistemas ASA R2 no es compatible cuando se usa BlueXP  en el modo privado.</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">Obtenga más información sobre los modos de implementación de BlueXP</block>
   <block id="d3342e15149bfef7fd9289d7025e506e" category="list-text"><block ref="d3342e15149bfef7fd9289d7025e506e" category="inline-link-rx"></block></block>
+  <block id="0c02bcea354671c5372f06a37c547a7d" category="paragraph">Ahora puede detectar los sistemas NetApp ASA R2 en BlueXP  cuando se utiliza BlueXP  en modo estándar o restringido. Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.</block>
+  <block id="101e8e97885c05702335faecd0fb3f50" category="section-title">Utilice un prefijo personalizado para el nombre del depósito</block>
+  <block id="a4e53922ceec159164a3765ff05e1458" category="section-title">Ajuste el ancho de banda para transferir datos inactivos</block>
+  <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">Evento de organización en niveles que se muestra en el Centro de notificaciones</block>
+  <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">Se ha cambiado el nombre de las pestañas de organización en niveles y se han actualizado</block>
 </blocks>
