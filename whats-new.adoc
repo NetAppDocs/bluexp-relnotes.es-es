@@ -24,6 +24,16 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
+=== 10 de octubre de 2024
+
+
+
+==== Parche del conector 3.9.45
+
+Este parche incluye correcciones de errores.
+
+
+
 === 7 de octubre de 2024
 
 
@@ -174,78 +184,6 @@ Para obtener más información sobre el modo privado, incluido el modo de actual
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Aprende sobre el modo privado"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Descubre cómo empezar a utilizar BlueXP en modo privado"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Aprenda a actualizar el conector cuando use el modo privado"]
-
-
-
-
-=== 9 de septiembre de 2024
-
-
-
-==== Conector 3.9.44
-
-Esta versión incluye soporte para Docker Engine 26, una mejora de los certificados SSL y correcciones de errores.
-
-La versión 3.9.44 está disponible para modo estándar y modo restringido.
-
-
-
-===== Soporte para Docker Engine 26 con nuevas instalaciones
-
-A partir de la versión 3.9.44 del conector, Docker Engine 26 ahora es compatible con instalaciones de conector _new_ en hosts Ubuntu.
-
-Si tiene un conector existente creado antes de la versión 3.9.44, Docker Engine 25.0.5 sigue siendo la versión máxima admitida en los hosts Ubuntu.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Obtenga más información sobre los requisitos de Docker Engine"].
-
-
-
-===== Certificado SSL actualizado para el acceso a la interfaz de usuario local
-
-Cuando se utiliza BlueXP  en modo restringido o en modo privado, se puede acceder a la interfaz de usuario desde la máquina virtual de Connector que se implementa en la región de nube o en las instalaciones. De forma predeterminada, BlueXP  utiliza un certificado SSL autofirmado para proporcionar acceso HTTPS seguro a la consola basada en web que se ejecuta en el conector.
-
-En esta versión, realizamos cambios en el certificado SSL para conectores nuevos y existentes:
-
-* El nombre común para el certificado ahora coincide con el nombre de host corto
-* El nombre alternativo del asunto del certificado es el nombre de dominio completo (FQDN) de la máquina host
-
-
-
-
-==== Compatibilidad con RHEL 9,4
-
-BlueXP  ahora admite la instalación del conector en un host de Red Hat Enterprise Linux 9,4 cuando se utiliza BlueXP  en modo estándar o restringido.
-
-La compatibilidad con RHEL 9,4 comienza con la versión 3.9.40 del conector.
-
-La lista actualizada de versiones de RHEL compatibles para el modo estándar y el modo restringido ahora incluye lo siguiente:
-
-* 8,6 a 8,10
-* 9,1 a 9,4
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Obtenga más información sobre la compatibilidad con RHEL 8 y 9 con Connector"].
-
-
-
-==== Soporte para Podman 4.9.4 con todas las versiones de RHEL
-
-Podman 4.9.4 ahora es compatible con todas las versiones compatibles de Red Hat Enterprise Linux. La versión 4.9.4 solo era compatible con RHEL 8,10.
-
-La lista actualizada de versiones compatibles de Podman incluye 4.6.1 y 4.9.4 con hosts de Red Hat Enterprise Linux.
-
-Podman es necesario para los hosts RHEL a partir de la versión 3.9.40 de Connector.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Obtenga más información sobre la compatibilidad con RHEL 8 y 9 con Connector"].
-
-
-
-==== Permisos de AWS y Azure actualizados
-
-Hemos actualizado las políticas de AWS y Azure para el conector para eliminar permisos que ya no son necesarios. Los permisos estaban relacionados con el almacenamiento en caché perimetral de BlueXP , la detección y la gestión de clústeres de Kubernetes, que ya no se admiten a partir de agosto de 2024.
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html#change-log["Conozca lo que cambió en la política de AWS"].
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#change-log["Descubra lo que cambió en la política de Azure"].
 
 
 
@@ -454,6 +392,28 @@ Los siguientes procedimientos incluyen nuevas instrucciones de Podman:
 
 
 == Clasificación
+
+
+
+=== 10 de octubre de 2024 (Versión 1,36)
+
+Esta versión de clasificación de BlueXP  incluye las siguientes actualizaciones.
+
+
+
+==== Compatibilidad con RHEL 9,4
+
+Esta versión es compatible con Red Hat Enterprise Linux v9,4 además de las versiones compatibles anteriormente. Esto se aplica a cualquier instalación manual en las instalaciones de la clasificación BlueXP , incluidas las puestas en marcha de sitios oscuros.
+
+Los siguientes sistemas operativos requieren el uso del motor de contenedores Podman y requieren la versión de clasificación BlueXP  1,30 o superior: Red Hat Enterprise Linux versión 8,8, 9,0, 9,1, 9,2, 9,3 y 9,4.
+
+Más información sobre https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["Información general sobre las puestas en marcha de clasificación de BlueXP"].
+
+
+
+==== Rendimiento de escaneo mejorado
+
+Esta versión mejora el rendimiento de escaneo.
 
 
 
