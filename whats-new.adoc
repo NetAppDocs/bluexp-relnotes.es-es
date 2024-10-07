@@ -970,11 +970,15 @@ El servicio de informes de migración de BlueXP  se eliminó el 7 de agosto de 
 
 ==== Compatibilidad con los sistemas ASA R2
 
-Ahora puede descubrir los sistemas NetApp ASA R2 en BlueXP . Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.
+Ahora puede descubrir los sistemas NetApp ASA R2 en BlueXP  al utilizar BlueXP  en modo estándar o privado. Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.
 
 No hay otras opciones de gestión disponibles con los sistemas ASA R2. No se puede utilizar la vista estándar y no se pueden habilitar los servicios de BlueXP.
 
-https://docs.netapp.com/us-en/asa-r2/index.html["Obtenga más información sobre los sistemas R2 de ASA"^]
+La detección de sistemas ASA R2 no es compatible cuando se usa BlueXP  en el modo privado.
+
+* https://docs.netapp.com/us-en/asa-r2/index.html["Obtenga más información sobre los sistemas R2 de ASA"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Obtenga más información sobre los modos de implementación de BlueXP"^]
+
 
 
 

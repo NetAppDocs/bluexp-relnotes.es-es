@@ -723,7 +723,6 @@
   <block id="6a9f822bb587b015bf3224364464cbed" category="section-title">Ofertas de soporte</block>
   <block id="65077e068c20e8afeca74c12711e893e" category="paragraph">La oferta de servicios NetApp SupportEdge Basic ahora incluye todas las funciones del asesor digital disponibles en SupportEdge Advisor y SupportEdge Expert, excepto en la topología de pila completa (VMware), que no ofrece visibilidad de la supervisión de pila completa de VMware, incluso si está activada.</block>
   <block id="1e095c69621645fccc8f12cd7f35f6fc" category="section-title">Compatibilidad con los sistemas ASA R2</block>
-  <block id="effcb34ce55a7b0374e99feabbc3c970" category="paragraph">Ahora puede descubrir los sistemas NetApp ASA R2 en BlueXP . Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.</block>
   <block id="d5861f4539296095cd7c9fdfd0c5a2c9" category="paragraph">No hay otras opciones de gestión disponibles con los sistemas ASA R2. No se puede utilizar la vista estándar y no se pueden habilitar los servicios de BlueXP.</block>
   <block id="989977a18a476a92018e04dd60ec37c1" category="inline-link">Obtenga más información sobre los sistemas R2 de ASA</block>
   <block id="a7c7539e11570decc041c60258667032" category="paragraph"><block ref="a7c7539e11570decc041c60258667032" category="inline-link-rx"></block></block>
@@ -757,4 +756,8 @@
   <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">Más información sobre<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>.</block>
   <block id="7062dd46798946172bc9078744756dfc" category="section-title">Rendimiento de escaneo mejorado</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">Esta versión mejora el rendimiento de escaneo.</block>
+  <block id="d26c29507d869d48f4861c9b4bae1f6e" category="paragraph">Ahora puede descubrir los sistemas NetApp ASA R2 en BlueXP  al utilizar BlueXP  en modo estándar o privado. Después de detectar un sistema NetApp ASA R2 y abrir el entorno de trabajo, se le pasará directamente a System Manager.</block>
+  <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="paragraph">La detección de sistemas ASA R2 no es compatible cuando se usa BlueXP  en el modo privado.</block>
+  <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">Obtenga más información sobre los modos de implementación de BlueXP</block>
+  <block id="d3342e15149bfef7fd9289d7025e506e" category="list-text"><block ref="d3342e15149bfef7fd9289d7025e506e" category="inline-link-rx"></block></block>
 </blocks>
