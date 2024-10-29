@@ -5,9 +5,6 @@
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link">Azure NetApp Files</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link">Amazon FSX para ONTAP</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
-  <block id="f7d121e2a54c62002dd74f6b9dac8069" category="inline-link">Notas de la versión de Cloud Volumes ONTAP</block>
-  <block id="ca138f4890a80dcb981add74fa328598" category="list-text"><block ref="ca138f4890a80dcb981add74fa328598" category="inline-link-rx"></block></block>
-  <block id="5bffab86d093605978b7c1efd3c0d337" category="inline-link">Notas de la versión para la gestión de Cloud Volumes ONTAP en BlueXP</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link">Cloud Volumes Service para Google Cloud</block>
   <block id="6b068f0a943d421535c7d8d412ee3522" category="inline-link">Sistemas E-Series</block>
   <block id="d0f1687c68ee0f0d9bac765716d18923" category="inline-link">Clústeres de ONTAP en las instalaciones</block>
@@ -115,7 +112,6 @@
   <block id="b2bc6f51638406715d089920f0b12029" category="paragraph"><block ref="b2bc6f51638406715d089920f0b12029" category="inline-link-rx"></block></block>
   <block id="0ce55dbe491d96365e2c6abd492cbf95" category="list-text"><block ref="0ce55dbe491d96365e2c6abd492cbf95" category="inline-link-rx"></block></block>
   <block id="dd4e767d5e7ac992c0ec2ecf41b2b08c" category="list-text"><block ref="dd4e767d5e7ac992c0ec2ecf41b2b08c" category="inline-link-rx"></block></block>
-  <block id="1f3e69b8c3c594d1f0dafae12df4c312" category="list-text"><block ref="1f3e69b8c3c594d1f0dafae12df4c312" category="inline-link-rx"></block></block>
   <block id="18c372e7815b508eb4ff2301938c4f7b" category="list-text"><block ref="18c372e7815b508eb4ff2301938c4f7b" category="inline-link-rx"></block></block>
   <block id="b46ed1f8a8d612b4083a72f6247afc99" category="list-text"><block ref="b46ed1f8a8d612b4083a72f6247afc99" category="inline-link-rx"></block></block>
   <block id="6631ed7abd96469c08f3809e6a47378b" category="list-text"><block ref="6631ed7abd96469c08f3809e6a47378b" category="inline-link-rx"></block></block>
@@ -597,11 +593,6 @@
   <block id="fc1d748db1b5b488ce7af7d17ea15d55" category="inline-link-macro">Compatibilidad con versiones de software</block>
   <block id="846815401f996d92d6775164d37e6015" category="inline-link-macro">Actualizar los sistemas de almacenamiento Data ONTAP funcionando en 7-Mode</block>
   <block id="bebf3b3af19cc5d4d44b97e70e8b3ffb" category="paragraph">El informe *7-Mode Upgrade Advisor Plans* ya no está disponible ya que los sistemas 7-Mode han llegado al final del soporte limitado. Para obtener más información, consulte <block ref="20732c2f8b67b7236a6509e096709359" category="inline-link-macro-rx"></block>. Más información sobre <block ref="ee2cd00409c56591f09249cc9e682f11" category="inline-link-macro-rx"></block>.</block>
-  <block id="caf47538a5b97cacf4aba3098b6f9924" category="section-title">23 de agosto de 2024</block>
-  <block id="2c8ad7deb621eae9ecb23ccf84d9c22c" category="section-title">La región oeste de Canadá ahora es compatible con AWS</block>
-  <block id="184c928c73aa00c7569ba55c0b9e0064" category="paragraph">La región Oeste de Canadá ahora es compatible con AWS para Cloud Volumes ONTAP 9.12.1 GA y posterior.</block>
-  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Mapa de regiones globales en AWS</block>
-  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Para obtener una lista de todas las regiones, consulte la<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">9 de septiembre de 2024</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">Compatibilidad con RHEL 9,4</block>
   <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2 de septiembre de 2024 (Versión 1,35)</block>
@@ -726,9 +717,7 @@
   <block id="df583ae7ba964fd4806b55904da81813" category="inline-link">Alertas</block>
   <block id="4f721f83f0a49dae4f329f77ae2221d5" category="list-text"><block ref="4f721f83f0a49dae4f329f77ae2221d5" category="inline-link-rx"></block></block>
   <block id="32981b0c6558eec412787b4c28c9f7a5" category="paragraph">Esta versión inicial de alertas de BlueXP  incluye las siguientes funciones:</block>
-  <block id="d75b9d6acc7b490b5df3a8425ace3e5a" category="list-text">*Página de la lista de alertas de BlueXP *: Puede identificar rápidamente los clústeres de ONTAP que tienen baja capacidad o bajo rendimiento, medir el alcance de la disponibilidad e identificar los riesgos de seguridad. Es posible ver alertas relacionadas con la capacidad, el rendimiento, la protección, la disponibilidad, la seguridad y la configuración.</block>
   <block id="335c0f5b63e966d180738ce07c85dc3f" category="list-text">*Detalles de alertas*: Puedes profundizar en detalles de alerta y encontrar recomendaciones.</block>
-  <block id="963a0580f34d0876630a188f398484de" category="list-text">*Ver detalles del clúster vinculados a System Manager*: Con las alertas de BlueXP , puede ver las alertas asociadas con su entorno de almacenamiento de ONTAP y profundizar en los detalles vinculados a System Manager de NetApp.</block>
   <block id="d0f2765e5de3103a5c432ec160dff29f" category="inline-link">Más información sobre las alertas de BlueXP</block>
   <block id="52db2fc7f4de1af0e1245bc3f891ce57" category="paragraph"><block ref="094e829cc75a913d98050fa15a3d0c12" category="inline-link-rx"></block>.</block>
   <block id="1b658f77da3dfa84be0559359889c6d1" category="section-title">Experiencia de usuario mejorada en la selección de versiones para la actualización</block>
@@ -761,4 +750,29 @@
   <block id="a4e53922ceec159164a3765ff05e1458" category="section-title">Ajuste el ancho de banda para transferir datos inactivos</block>
   <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">Evento de organización en niveles que se muestra en el Centro de notificaciones</block>
   <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">Se ha cambiado el nombre de las pestañas de organización en niveles y se han actualizado</block>
+  <block id="d5cf0012c1559cd0fc39cf41bafb6cd2" category="list-text"><block ref="d5cf0012c1559cd0fc39cf41bafb6cd2" category="inline-link-rx"></block></block>
+  <block id="85c278d276efbdfebd873e93e881e42d" category="inline-link">Gestión de Cloud Volumes ONTAP en BlueXP </block>
+  <block id="a34dda22ffea87f7068da01b5dd851c0" category="list-text"><block ref="a34dda22ffea87f7068da01b5dd851c0" category="inline-link-rx"></block></block>
+  <block id="d7a02621d52c29a3c5f7895e817cba5b" category="inline-link">Catálogo de automatización</block>
+  <block id="4201d45b889a30d645c44cd087e150b0" category="list-text"><block ref="4201d45b889a30d645c44cd087e150b0" category="inline-link-rx"></block></block>
+  <block id="4cdceaadddc0af73837f8fb074294edc" category="list-text"><block ref="4cdceaadddc0af73837f8fb074294edc" category="inline-link-rx"></block></block>
+  <block id="f728ea34fcbb13e7fd98fc40d7498dfc" category="paragraph">Tenga en cuenta las siguientes limitaciones:</block>
+  <block id="3ad7f37470dd6a33dee8070e9cccbeb4" category="list-text">Gestión de sistemas Cloud Volumes ONTAP No es compatible con conectores que tienen SELinux activado en el sistema operativo.</block>
+  <block id="221e1ce85a4c0e9e170e711608695972" category="list-text">*Página de la lista de alertas de BlueXP *: Puede identificar rápidamente los clústeres de ONTAP que tienen baja capacidad o bajo rendimiento, medir el alcance de la disponibilidad e identificar los riesgos de seguridad. Es posible ver alertas relacionadas con la capacidad, el rendimiento, la protección, la disponibilidad, la seguridad y la configuración.</block>
+  <block id="584c54dd31b512867535ecfbc6397a6f" category="list-text">*Ver detalles del clúster vinculados a System Manager*: Con las alertas de BlueXP , puede ver las alertas asociadas con su entorno de almacenamiento de ONTAP y profundizar en los detalles vinculados a System Manager de ONTAP.</block>
+  <block id="479422755a82da93d381b0baab5f8fe7" category="section-title">Apoyo para tres regiones adicionales</block>
+  <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">Añadir una máquina virtual de almacenamiento</block>
+  <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**Mi pestaña de Oportunidades** es ahora **Mi estado**</block>
+  <block id="c0fde7a894f20194ba5123471f8cf7e7" category="section-title">Hora de inicio de la ventana de mantenimiento</block>
+  <block id="12ad4af5f024e558448bad702ec7ef28" category="section-title">Distribución de datos de volúmenes mediante FlexGroups</block>
+  <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">25 de octubre de 2024</block>
+  <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">Máquinas de la serie N1 no disponibles para la selección en BlueXP</block>
+  <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">Las máquinas de la serie n1 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 sólo se conservarán y admitirán en sistemas antiguos existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9,8. Le recomendamos que cambie a los tipos de máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9,8 y posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.</block>
+  <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="inline-link">Configuraciones compatibles en Google Cloud</block>
+  <block id="e55067e1e9c0716bdbc0866b4393aa68" category="paragraph"><block ref="55218e2079fe45aad8bd65bcb61a1a9f" category="inline-link-rx"></block>.</block>
+  <block id="e8ae21b110baed89680dca18585c158c" category="section-title">Compatibilidad con las zonas locales para Amazon Web Services en modo privado</block>
+  <block id="b32702079d81c2fd1e39448319edfa06" category="paragraph">BlueXP  ahora es compatible con AWS Local Zones para puestas en marcha de alta disponibilidad de Cloud Volumes ONTAP (HA) en el modo privado. El soporte que antes estaba limitado solo al modo estándar ahora se ha ampliado para incluir el modo privado.</block>
+  <block id="648169096ce56c8569ce36a4abebe9c7" category="admonition">Las zonas locales de AWS no se admiten cuando se utiliza BlueXP  en modo restringido.</block>
+  <block id="e0b08acf0828bf4594a0b9bd6411df1b" category="inline-link-macro">Zonas locales de AWS</block>
+  <block id="b75accaa363606f733ab4203f45f8193" category="paragraph">Para obtener más información sobre las zonas locales de AWS con implementaciones de alta disponibilidad, consulte <block ref="6830ae69d7be576a68a954338edafef9" category="inline-link-macro-rx"></block>.</block>
 </blocks>
