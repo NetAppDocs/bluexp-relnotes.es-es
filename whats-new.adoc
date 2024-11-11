@@ -24,6 +24,26 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
+=== 11 de noviembre de 2024
+
+
+
+==== Conector 3.9.46
+
+Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.
+
+En este momento, la versión 3.9.46 está disponible para modo estándar y modo restringido.
+
+
+
+==== ID de proyectos de IAM
+
+Ahora puede ver el ID de un proyecto desde la administración de acceso e identidad de BlueXP . Es posible que necesite usar el ID al realizar una llamada a la API.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["Aprenda a obtener el ID de un proyecto"].
+
+
+
 === 10 de octubre de 2024
 
 
@@ -122,61 +142,6 @@ https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_s
 
 
 
-=== 30 de septiembre de 2024
-
-
-
-==== Versión en modo privado (3,9.44)
-
-Ya está disponible para descargar una nueva versión de modo privado desde el sitio de soporte de NetApp.
-
-Esta versión incluye las siguientes versiones de los componentes y servicios de BlueXP  compatibles con el modo privado.
-
-[cols="2*"]
-|===
-| Servicio | Versión incluida 
-
-
-| Conector | 3.9.44 
-
-
-| Backup y recuperación | 27 de septiembre de 2024 
-
-
-| Clasificación | 15 de mayo de 2024 (versión 1,31) 
-
-
-| Gestión de Cloud Volumes ONTAP | 9 de septiembre de 2024 
-
-
-| Cartera digital | 30 de julio de 2023 
-
-
-| Gestión de clústeres de ONTAP en las instalaciones | 22 de abril de 2024 
-
-
-| Replicación | 18 de septiembre de 2022 
-|===
-Para el conector, la versión del modo privado 3.9.44 incluye las actualizaciones introducidas en las versiones de agosto de 2024 y septiembre de 2024. Sobre todo, la compatibilidad con Red Hat Enterprise Linux 9,4.
-
-Para obtener más información sobre las versiones de estos componentes y servicios de BlueXP , consulte las notas de la versión de cada servicio de BlueXP :
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#9-september-2024["Novedades de la versión de septiembre de 2024 de Connector"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#8-august-2024["Novedades de la versión de agosto de 2024 de Connector"]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Novedades de la funcionalidad de backup y recuperación de datos de BlueXP "^]
-* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Novedades de la clasificación BlueXP "^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Novedades de la gestión de Cloud Volumes ONTAP en BlueXP "^]
-
-
-Para obtener más información sobre el modo privado, incluido el modo de actualización, consulte lo siguiente:
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Aprende sobre el modo privado"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Descubre cómo empezar a utilizar BlueXP en modo privado"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Aprenda a actualizar el conector cuando use el modo privado"]
-
-
-
-
 == Alertas
 
 
@@ -209,6 +174,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["Más informaci�
 
 
 
+=== 11 de noviembre de 2024
+
+
+
+==== FSX para ONTAP se integra con el almacenamiento en la fábrica de cargas de trabajo de BlueXP
+
+FSX para tareas de gestión del sistema de archivos ONTAP como añadir volúmenes, ampliar la capacidad del sistema de archivos y gestionar las máquinas virtuales de almacenamiento ahora se gestionan en la fábrica de cargas de trabajo de BlueXP , un nuevo servicio que ofrece NetApp y Amazon FSx para NetApp ONTAP. Puede utilizar sus credenciales y permisos existentes igual que antes. La diferencia es que ahora puede hacer más desde la fábrica de cargas de trabajo de BlueXP  para gestionar sus sistemas de archivos. Cuando abres un entorno de trabajo de FSx para ONTAP desde el Canvas de BlueXP , pasarás directamente a la fábrica de cargas de trabajo de BlueXP .
+
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["Obtén más información sobre las características de FSx para ONTAP en la fábrica de cargas de trabajo de BlueXP"^]
+
+
+
 === 30 de julio de 2023
 
 
@@ -234,22 +211,6 @@ Ahora puede hacerlo link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/u
 ==== **Mi pestaña de Oportunidades** es ahora **Mi estado**
 
 La pestaña **Mis oportunidades** ahora es **Mi estado**. La documentación se actualiza para reflejar el nuevo nombre.
-
-
-
-=== 04 de junio de 2023
-
-
-
-==== Hora de inicio de la ventana de mantenimiento
-
-Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["crear un entorno de trabajo"], puede especificar la hora de inicio de la ventana de mantenimiento semanal de 30 minutos para asegurarse de que el mantenimiento no entra en conflicto con las actividades empresariales críticas.
-
-
-
-==== Distribución de datos de volúmenes mediante FlexGroups
-
-Cuando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["creación de un volumen"], Puede habilitar la optimización de datos mediante la creación de una FlexGroup para distribuir datos entre volúmenes.
 
 
 
@@ -328,6 +289,32 @@ Un nuevo servicio de plantillas de aplicaciones le permite configurar una planti
 
 
 == Backup y recuperación
+
+
+
+=== 6 de noviembre de 2024
+
+
+
+==== Modos de protección SnapLock Compliance y SnapLock Enterprise
+
+Ahora, el backup y la recuperación de datos de BlueXP  puede realizar backups de volúmenes en las instalaciones tanto de FlexVol como de FlexGroup configurados mediante modos de protección SnapLock Compliance o SnapLock Enterprise. Los clústeres deben ejecutar ONTAP 9,14 o superior para esta compatibilidad. El backup de los volúmenes de FlexVol con el modo SnapLock Enterprise se admite desde la versión 9.11.1 de ONTAP. Las versiones anteriores de ONTAP no ofrecen compatibilidad para realizar backups de volúmenes de protección de SnapLock.
+
+Consulte la lista completa de los volúmenes compatibles en la https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Descubre el backup y la recuperación de BlueXP"].
+
+
+
+==== Indización del proceso de búsqueda y restauración en la página de volúmenes
+
+Para poder utilizar Search & Restore, debe habilitar "Indexing" en cada entorno de trabajo de origen desde el que desea restaurar datos de volumen. Esto permite que el catálogo indexado realice un seguimiento de los archivos de copia de seguridad de cada volumen. Ahora, la página Volúmenes muestra el estado de indexación:
+
+* Indexado: Los volúmenes se han indexado.
+* En curso
+* No indexado
+* Indización en pausa
+* Error
+* Deshabilitado
+
 
 
 
@@ -1241,3 +1228,19 @@ El almacenamiento en caché de volúmenes, una función del software ONTAP 9, es
 Con el almacenamiento en caché de volúmenes de BlueXP, dispones de capacidades de almacenamiento en caché para la nube, específicamente para Amazon FSx para NetApp ONTAP, Cloud Volumes ONTAP y on-premises como entornos de trabajo.
 
 link:https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html["Obtén más información sobre el almacenamiento en caché de volúmenes de BlueXP"].
+
+
+
+== Fábrica de cargas de trabajo
+
+
+
+=== 11 de noviembre de 2024
+
+
+
+==== Integración de la fábrica de cargas de trabajo en la consola de BlueXP
+
+Ahora puede utilizar la fábrica de carga de trabajo de la link:https://console.bluexp.netapp.com["Consola BlueXP"^]. La experiencia de la consola de BlueXP  proporciona la misma funcionalidad que la consola de la carga de trabajo de fábrica.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Aprende a acceder a la fábrica de cargas de trabajo desde la consola de BlueXP"]
