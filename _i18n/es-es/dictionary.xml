@@ -130,8 +130,6 @@
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">Obtén más información sobre el almacenamiento en caché de volúmenes de BlueXP</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>.</block>
   <block id="942e802a236d6542c0c6f797428d8abb" category="section-title">02 de julio de 2023</block>
-  <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">Añadir una máquina virtual de almacenamiento</block>
-  <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">Ahora puede hacerlo <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> Al sistema de archivos de Amazon FSx para NetApp ONTAP mediante BlueXP.</block>
   <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">La pestaña **Mis oportunidades** ahora es **Mi estado**. La documentación se actualiza para reflejar el nuevo nombre.</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">Conozca cuáles son las nuevas funciones que se incluyen en esta versión de Cloud Volumes ONTAP</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 de julio de 2023</block>
@@ -753,4 +751,5 @@
   <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">Antes, podía habilitar el ALMACENAMIENTO WORM al crear un entorno de trabajo Cloud Volumes ONTAP en BlueXP . Ahora, BlueXP  le ofrece la opción de HABILITAR WORM en un entorno de trabajo aunque no se haya habilitado WORM durante su creación. Después de habilitarla, no se puede deshabilitar WORM.</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Habilitar WORM en un entorno de trabajo Cloud Volumes ONTAP</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
+  <block id="2cce67162f5e7dda1e726a6c1514801d" category="paragraph">Ahora puedes añadir una máquina virtual de almacenamiento al sistema de archivos de Amazon FSx para NetApp ONTAP mediante BlueXP .</block>
 </blocks>

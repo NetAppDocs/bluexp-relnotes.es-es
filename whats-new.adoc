@@ -208,7 +208,7 @@ Consulte link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-neta
 
 ==== Añadir una máquina virtual de almacenamiento
 
-Ahora puede hacerlo link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Añadir una máquina virtual de almacenamiento"] Al sistema de archivos de Amazon FSx para NetApp ONTAP mediante BlueXP.
+Ahora puedes añadir una máquina virtual de almacenamiento al sistema de archivos de Amazon FSx para NetApp ONTAP mediante BlueXP .
 
 
 
