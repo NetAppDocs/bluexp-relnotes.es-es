@@ -296,32 +296,6 @@ Un nuevo servicio de plantillas de aplicaciones le permite configurar una planti
 
 
 
-=== 6 de noviembre de 2024
-
-
-
-==== Modos de protección SnapLock Compliance y SnapLock Enterprise
-
-Ahora, el backup y la recuperación de datos de BlueXP  puede realizar backups de volúmenes en las instalaciones tanto de FlexVol como de FlexGroup configurados mediante modos de protección SnapLock Compliance o SnapLock Enterprise. Los clústeres deben ejecutar ONTAP 9,14 o superior para esta compatibilidad. El backup de los volúmenes de FlexVol con el modo SnapLock Enterprise se admite desde la versión 9.11.1 de ONTAP. Las versiones anteriores de ONTAP no ofrecen compatibilidad para realizar backups de volúmenes de protección de SnapLock.
-
-Consulte la lista completa de los volúmenes compatibles en la https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Descubre el backup y la recuperación de BlueXP"].
-
-
-
-==== Indización del proceso de búsqueda y restauración en la página de volúmenes
-
-Para poder utilizar Search & Restore, debe habilitar "Indexing" en cada entorno de trabajo de origen desde el que desea restaurar datos de volumen. Esto permite que el catálogo indexado realice un seguimiento de los archivos de copia de seguridad de cada volumen. Ahora, la página Volúmenes muestra el estado de indexación:
-
-* Indexado: Los volúmenes se han indexado.
-* En curso
-* No indexado
-* Indización en pausa
-* Error
-* Deshabilitado
-
-
-
-
 === 27 de septiembre de 2024
 
 
@@ -483,7 +457,7 @@ La opción para implementar sistemas Cloud Volumes ONTAP mediante licencias basa
 
 NetApp reconoce los siguientes requisitos de licencia exclusivos en cumplimiento de obligaciones contractuales y necesidades operativas, y seguirá ofreciendo soporte a las licencias basadas en nodos en estas situaciones:
 
-* Clientes de USPS
+* Clientes del sector público de EE. UU
 * Se implementa en modo privado
 * Implementaciones en la región de China de Cloud Volumes ONTAP en AWS
 * Si tiene un nodo válido y no caducado, con su propia licencia (licencia BYOL)
@@ -606,6 +580,16 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 27 de octubre de 2024
+
+
+
+==== Corrección de errores
+
+Actualizamos el servicio de copia y sincronización de BlueXP y el agente de datos para solucionar algunos errores. La nueva versión de Data Broker es 1,0.56.
+
+
+
 === 16 de septiembre de 2024
 
 
@@ -623,16 +607,6 @@ Actualizamos el servicio de copia y sincronización de BlueXP y el agente de dat
 ==== Corrección de errores
 
 Actualizamos el servicio de copia y sincronización de BlueXP y el agente de datos para solucionar algunos errores. La nueva versión de Data Broker es 1,0.54.
-
-
-
-=== 14 de julio de 2024
-
-
-
-==== Corrección de errores
-
-Actualizamos el servicio de copia y sincronización de BlueXP y el agente de datos para solucionar algunos errores. La nueva versión de Data Broker es 1,0.53.
 
 
 
@@ -1024,73 +998,99 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 === 7 de noviembre de 2024
 
-Esta versión de protección contra ransomware de BlueXP  incluye las siguientes actualizaciones.
 
-* *Habilitar clasificación de datos y escaneo para información de identificación personal (PII)*: Con esta versión, puede habilitar la clasificación BlueXP , un componente principal de la familia BlueXP , para escanear y clasificar datos en sus cargas de trabajo de uso compartido de archivos. La clasificación de datos te ayuda a identificar si tus datos incluyen información personal o privada, lo que puede aumentar los riesgos de seguridad. Este proceso también afecta la importancia de la carga de trabajo y le ayuda a asegurarse de que las cargas de trabajo se protegen con el nivel de protección adecuado.
-+
+
+==== Habilitar la clasificación de datos y el escaneo para información de identificación personal (PII)
+
+Con este lanzamiento, puedes habilitar la clasificación BlueXP , un componente fundamental de la familia BlueXP , para analizar y clasificar datos en las cargas de trabajo de tus recursos compartidos de archivos. La clasificación de datos te ayuda a identificar si tus datos incluyen información personal o privada, lo que puede aumentar los riesgos de seguridad. Este proceso también afecta la importancia de la carga de trabajo y le ayuda a asegurarse de que las cargas de trabajo se protegen con el nivel de protección adecuado.
+
 El análisis de los datos PII en la protección frente al ransomware de BlueXP  está generalmente disponible para los clientes que implementaron la clasificación BlueX. La clasificación de BlueXP  está disponible como parte de la plataforma BlueXP  sin coste adicional y se puede implementar on-premises o en la nube del cliente.
 
-+
 La clasificación de BlueXP  también puede implementarse como modelo SaaS como parte de una vista previa tecnológica. Para habilitar las funciones de Vista previa, use la opción de protección contra ransomware de BlueXP  *Configuración*. Si habilita Vista previa, aparecerá una etiqueta de “Vista previa” junto a la columna *Exposición de privacidad* en la página Protección junto con otras ubicaciones.
 
-+
 Consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configura las opciones de protección contra ransomware de BlueXP"].
 
-+
 Para iniciar el escaneo, en la página Protección, haga clic en *Identificar exposición* en la columna Exposición de privacidad.
 
-+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["Busque datos confidenciales de identificación personal con la clasificación BlueXP"].
 
-* *Prueba las próximas funciones de Preview antes de que sean lanzadas*: Ahora puedes probar algunas características etiquetadas como “Preview” antes de que sean lanzadas. Para ello, utilice la opción *Ajustes* para mostrar estas características, que están etiquetadas con una etiqueta de “Vista previa”.
-+
+
+
+==== Pruebe las siguientes funciones de Vista previa antes de que se publiquen
+
+Ahora puede probar algunas características etiquetadas como “Vista previa” antes de que se liberen. Para ello, utilice la opción *Ajustes* para mostrar estas características, que están etiquetadas con una etiqueta de “Vista previa”.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Obtén más información sobre cómo configurar las opciones de protección frente al ransomware de BlueXP"].
 
-* *Integración de SIEM con Microsoft Sentinel*: Ahora puede enviar datos a su sistema de gestión de eventos y seguridad (SIEM) para el análisis y detección de amenazas mediante Microsoft Sentinel. Anteriormente, podía seleccionar AWS Security Hub o Splunk Cloud como su SIEM.
-+
+
+
+==== Integración de SIEM con Microsoft Sentinel
+
+Ahora puede enviar datos a su sistema de gestión de eventos y seguridad (SIEM) para analizar y detectar amenazas con Microsoft Sentinel. Anteriormente, podía seleccionar AWS Security Hub o Splunk Cloud como su SIEM.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Obtén más información sobre cómo configurar las opciones de protección frente al ransomware de BlueXP"].
 
 
 
-* *Prueba gratuita ahora 30 días*: Con esta versión, las nuevas implementaciones de protección contra ransomware de BlueXP  ahora tienen 30 días para una prueba gratuita. Anteriormente, la protección frente a ransomware de BlueXP  proporcionaba 90 días como prueba gratuita. Si ya está en la prueba gratuita de 90 días, esa oferta continúa durante los 90 días.
-* *Restaurar la carga de trabajo de la aplicación a nivel de archivo para Podman*: Antes de restaurar una carga de trabajo de la aplicación a nivel de archivo, ahora puede ver una lista de archivos que podrían haber sido afectados por un ataque e identificar aquellos que desea restaurar. Anteriormente, si los conectores BlueXP  de una organización (anteriormente una cuenta) utilizaban Podman, esta función estaba desactivada. Ahora está habilitado para Podman. Puede dejar que la protección contra ransomware de BlueXP elija los archivos que desea restaurar, puede cargar un archivo CSV que enumere todos los archivos afectados por una alerta, o puede identificar manualmente los archivos que desea restaurar.
-+
+==== Prueba gratuita ahora 30 días
+
+Con este lanzamiento, las nuevas puestas en marcha de protección contra ransomware de BlueXP  ahora tienen 30 días para una prueba gratuita. Anteriormente, la protección frente a ransomware de BlueXP  proporcionaba 90 días como prueba gratuita. Si ya está en la prueba gratuita de 90 días, esa oferta continúa durante los 90 días.
+
+
+
+==== Restaure la carga de trabajo de la aplicación en el nivel de archivo para Podman
+
+Antes de restaurar una carga de trabajo de una aplicación en el nivel de archivos, ahora puede ver una lista de archivos que pueden haberse visto afectados por un ataque e identificar aquellos que desea restaurar. Anteriormente, si los conectores BlueXP  de una organización (anteriormente una cuenta) utilizaban Podman, esta función estaba desactivada. Ahora está habilitado para Podman. Puede dejar que la protección contra ransomware de BlueXP elija los archivos que desea restaurar, puede cargar un archivo CSV que enumere todos los archivos afectados por una alerta, o puede identificar manualmente los archivos que desea restaurar.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Obtén más información sobre cómo recuperarte de un ataque de ransomware"].
-
-
 
 
 
 === 30 de septiembre de 2024
 
-Esta versión de la protección contra ransomware de BlueXP  incluye la siguiente actualización.
 
-* * Agrupación personalizada de cargas de trabajo de archivos compartidos*: Con esta versión, ahora puede agrupar los recursos compartidos de archivos en grupos para facilitar la protección de su patrimonio de datos. El servicio puede proteger todos los volúmenes de un grupo a la vez. Anteriormente, era necesario proteger cada volumen por separado. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Obtén más información sobre la agrupación de cargas de trabajo de recursos compartidos de archivos en estrategias de protección frente al ransomware"].
 
+==== Agrupamiento personalizado de cargas de trabajo compartidas de archivos
+
+Con esta versión, ahora puede agrupar los recursos compartidos de archivos en grupos para facilitar la protección de su conjunto de datos. El servicio puede proteger todos los volúmenes de un grupo a la vez. Anteriormente, era necesario proteger cada volumen por separado.
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Obtén más información sobre la agrupación de cargas de trabajo de recursos compartidos de archivos en estrategias de protección frente al ransomware"].
 
 
 
 === 2 de septiembre de 2024
 
-Esta versión de protección contra ransomware de BlueXP  incluye las siguientes actualizaciones.
 
-* *Evaluación de riesgos de seguridad del asesor digital*: La protección contra ransomware de BlueXP  ahora recopila información sobre riesgos de seguridad altos y críticos relacionados con un clúster del asesor digital de NetApp. Si se encuentra algún riesgo, la protección contra ransomware de BlueXP  proporciona una recomendación en el panel de *Acciones recomendadas* del panel de control: “Solucionar una vulnerabilidad de seguridad conocida en la <name> del clúster”. En la recomendación del panel, al hacer clic en *Revisar y corregir*, se sugiere revisar el asesor digital y un artículo de vulnerabilidad y exposición común (CVE) para resolver el riesgo de seguridad. Si existen varios riesgos de seguridad, revise la información en Digital Advisor.
-+
+
+==== Evaluación de riesgos de seguridad del asesor digital
+
+La protección frente al ransomware de BlueXP  ahora recopila información sobre riesgos de seguridad críticos y elevados que afectan a un clúster del asesor digital de NetApp. Si se encuentra algún riesgo, la protección contra ransomware de BlueXP  proporciona una recomendación en el panel de *Acciones recomendadas* del panel de control: “Solucionar una vulnerabilidad de seguridad conocida en la <name> del clúster”. En la recomendación del panel, al hacer clic en *Revisar y corregir*, se sugiere revisar el asesor digital y un artículo de vulnerabilidad y exposición común (CVE) para resolver el riesgo de seguridad. Si existen varios riesgos de seguridad, revise la información en Digital Advisor.
+
 Consulte https://docs.netapp.com/us-en/active-iq/index.html["Documentación de Digital Advisor"^].
 
-* *Copia de seguridad en Google Cloud Platform*: Con esta versión, puedes configurar un destino de copia de seguridad en un bucket de Google Cloud Platform. Antes, solo se podían añadir destinos de backup a NetApp StorageGRID, Amazon Web Services y Microsoft Azure.
-+
+
+
+==== Backup en Google Cloud Platform
+
+Con esta versión, puede establecer un destino de backup en un bucket de Google Cloud Platform. Antes, solo se podían añadir destinos de backup a NetApp StorageGRID, Amazon Web Services y Microsoft Azure.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Obtén más información sobre cómo configurar las opciones de protección frente al ransomware de BlueXP"].
 
-* *Soporte para Google Cloud Platform*: El servicio ahora es compatible con Cloud Volumes ONTAP para Google Cloud Platform para la protección del almacenamiento. Anteriormente, el servicio solo era compatible con Cloud Volumes ONTAP para Amazon Web Services y Microsoft Azure junto con NAS en las instalaciones.
-+
+
+
+==== Compatibilidad con Google Cloud Platform
+
+El servicio ahora es compatible con Cloud Volumes ONTAP para Google Cloud Platform para la protección del almacenamiento. Anteriormente, el servicio solo era compatible con Cloud Volumes ONTAP para Amazon Web Services y Microsoft Azure junto con NAS en las instalaciones.
+
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["Obtenga más información sobre la protección frente al ransomware de BlueXP  y las fuentes de datos compatibles, destinos de backup y entornos de trabajo"].
 
-* *Control de acceso basado en roles*: Ahora puedes limitar el acceso a actividades específicas con control de acceso basado en roles (RBAC). La protección contra ransomware de BlueXP  usa dos roles de BlueXP : Administrador de cuentas de BlueXP  y administrador sin cuenta (visor).
-+
+
+
+==== Control de acceso basado en roles
+
+Ahora puede limitar el acceso a actividades específicas con el control de acceso basado en roles (RBAC). La protección contra ransomware de BlueXP  usa dos roles de BlueXP : Administrador de cuentas de BlueXP  y administrador sin cuenta (visor).
+
 Para obtener más información sobre las acciones que puede realizar cada rol, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["Control de acceso basado en roles Privileges"].
-
-
 
 
 
