@@ -18,11 +18,6 @@
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">Funciones administrativas</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">En esta sección se describen las nuevas funciones relacionadas con las funciones de administración de BlueXP: Cuentas, conectores, credenciales de proveedores de nube y mucho más.</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Obtenga información acerca de las mejoras de Cloud Volumes ONTAP</block>
-  <block id="29c251ed5a57bbffe470654ccbbe714c" category="section-title">11 de abril de 2021</block>
-  <block id="860941d67aa8a8a442ba4a65191838cf" category="section-title">Compatibilidad con plantillas de volúmenes</block>
-  <block id="28c1b76e8b0c8f418301bc750b4e9f0e" category="paragraph">Un nuevo servicio de plantillas de aplicaciones le permite configurar una plantilla de volumen para Azure NetApp Files. La plantilla debería facilitar el trabajo porque ciertos parámetros de volumen ya se definirán en la plantilla, como el pool de capacidad, el tamaño, el protocolo, el vnet y la subred donde debería residir el volumen, entre otros. Cuando ya hay un parámetro predefinido, puede saltar al siguiente parámetro de volumen.</block>
-  <block id="65d2e55c231c87b516e734e63f823cf5" category="inline-link">Obtenga más información sobre las plantillas de aplicaciones y sobre cómo utilizarlas en su entorno</block>
-  <block id="1636ba950a663744d701c73060d64523" category="inline-link">Aprenda a crear un volumen de Azure NetApp Files a partir de una plantilla</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 de septiembre de 2022</block>
   <block id="3f10ba55f7b5ee2ce092504fcea72477" category="section-title">31 de julio de 2022</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Leer más</block>
@@ -110,8 +105,6 @@
   <block id="35ab587d29d669683f08424c60051957" category="list-text"><block ref="35ab587d29d669683f08424c60051957" category="inline-link-rx"></block></block>
   <block id="c821df2021ac7a846f6554ac1ed76719" category="list-text"><block ref="c821df2021ac7a846f6554ac1ed76719" category="inline-link-rx"></block></block>
   <block id="367cb072fdec82ba883d66fadac7fc54" category="list-text"><block ref="367cb072fdec82ba883d66fadac7fc54" category="inline-link-rx"></block></block>
-  <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
-  <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>.</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>.</block>
@@ -129,8 +122,6 @@
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">Con el almacenamiento en caché de volúmenes de BlueXP, dispones de capacidades de almacenamiento en caché para la nube, específicamente para Amazon FSx para NetApp ONTAP, Cloud Volumes ONTAP y on-premises como entornos de trabajo.</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">Obtén más información sobre el almacenamiento en caché de volúmenes de BlueXP</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>.</block>
-  <block id="942e802a236d6542c0c6f797428d8abb" category="section-title">02 de julio de 2023</block>
-  <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">La pestaña **Mis oportunidades** ahora es **Mi estado**. La documentación se actualiza para reflejar el nuevo nombre.</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">Conozca cuáles son las nuevas funciones que se incluyen en esta versión de Cloud Volumes ONTAP</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 de julio de 2023</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">Al activar la organización en niveles de BlueXP, ONTAP puede utilizar una cantidad ilimitada de ancho de banda de red para transferir los datos inactivos de los volúmenes del clúster al almacenamiento de objetos. Si observa que el tráfico por niveles afecta a las cargas de trabajo normales de usuario, puede limitar la cantidad de ancho de banda que se puede utilizar durante la transferencia.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
@@ -452,22 +443,10 @@
   <block id="8e28797de414b72e6beab6ed5932133f" category="inline-link-macro">Actualizaciones de software de BlueXP</block>
   <block id="a5cfb1c769f5b79bb515811f8e2d3256" category="section-title">11 de agosto de 2024</block>
   <block id="91c579c47837abf6f4d04e29b24b1d72" category="paragraph">Actualizamos el servicio de copia y sincronización de BlueXP y el agente de datos para solucionar algunos errores. La nueva versión de Data Broker es 1,0.54.</block>
-  <block id="788b77f1903c86b79d6ab3fa3aeac01e" category="section-title">21 de agosto de 2024</block>
-  <block id="c91c7b93c28cd18741b71f727ee81ee3" category="section-title">Leídos</block>
-  <block id="fc1d748db1b5b488ce7af7d17ea15d55" category="inline-link-macro">Compatibilidad con versiones de software</block>
-  <block id="846815401f996d92d6775164d37e6015" category="inline-link-macro">Actualizar los sistemas de almacenamiento Data ONTAP funcionando en 7-Mode</block>
-  <block id="bebf3b3af19cc5d4d44b97e70e8b3ffb" category="paragraph">El informe *7-Mode Upgrade Advisor Plans* ya no está disponible ya que los sistemas 7-Mode han llegado al final del soporte limitado. Para obtener más información, consulte <block ref="20732c2f8b67b7236a6509e096709359" category="inline-link-macro-rx"></block>. Más información sobre <block ref="ee2cd00409c56591f09249cc9e682f11" category="inline-link-macro-rx"></block>.</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">Compatibilidad con RHEL 9,4</block>
   <block id="ec6210d470db7cd7b6f5408f088e1c02" category="paragraph">Algunas de las funciones de eficiencia económica de BlueXP  se han desactivado temporalmente:</block>
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">Renovación tecnológica</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">Añadir capacidad</block>
-  <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2 de septiembre de 2024</block>
-  <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link">Documentación de Digital Advisor</block>
-  <block id="9a42efab941e78c35ff03d2f3de7f294" category="paragraph">Consulte<block ref="5d1aa2fae9958ef5ced45eec5d13d250" category="inline-link-rx"></block>.</block>
-  <block id="571e1080641fe631491306478d4572a1" category="inline-link">Obtenga más información sobre la protección frente al ransomware de BlueXP  y las fuentes de datos compatibles, destinos de backup y entornos de trabajo</block>
-  <block id="5c6a145c454aef23e256b2459f8c4c75" category="paragraph"><block ref="e1153028bb0f55bf33080551a5d7f6f3" category="inline-link-rx"></block>.</block>
-  <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">Control de acceso basado en roles Privileges</block>
-  <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">Para obtener más información sobre las acciones que puede realizar cada rol, consulte<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>.</block>
   <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">16 de septiembre de 2024</block>
   <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">Actualizamos el servicio de copia y sincronización de BlueXP y el agente de datos para solucionar algunos errores. La nueva versión de Data Broker es 1,0.55.</block>
   <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">30 de septiembre de 2024</block>
@@ -521,8 +500,6 @@
   <block id="4201d45b889a30d645c44cd087e150b0" category="list-text"><block ref="4201d45b889a30d645c44cd087e150b0" category="inline-link-rx"></block></block>
   <block id="4cdceaadddc0af73837f8fb074294edc" category="list-text"><block ref="4cdceaadddc0af73837f8fb074294edc" category="inline-link-rx"></block></block>
   <block id="479422755a82da93d381b0baab5f8fe7" category="section-title">Apoyo para tres regiones adicionales</block>
-  <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">Añadir una máquina virtual de almacenamiento</block>
-  <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**Mi pestaña de Oportunidades** es ahora **Mi estado**</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">25 de octubre de 2024</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">Las máquinas de la serie n1 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Google Cloud. Las máquinas de la serie n1 sólo se conservarán y admitirán en sistemas antiguos existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles con Google Cloud a partir de la versión 9,8. Le recomendamos que cambie a los tipos de máquinas de la serie n2 que sean compatibles con Cloud Volumes ONTAP 9,8 y posteriores. Sin embargo, las máquinas de la serie n1 estarán disponibles para nuevas implementaciones realizadas a través de la API.</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="inline-link">Configuraciones compatibles en Google Cloud</block>
@@ -637,7 +614,6 @@
   <block id="f87269f0bcffd4dd379148db58c41b11" category="section-title">Habilitación PARA WORM tras poner en marcha Cloud Volumes ONTAP</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Habilitar WORM en un entorno de trabajo Cloud Volumes ONTAP</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
-  <block id="2cce67162f5e7dda1e726a6c1514801d" category="paragraph">Ahora puedes añadir una máquina virtual de almacenamiento al sistema de archivos de Amazon FSx para NetApp ONTAP mediante BlueXP .</block>
   <block id="500984bae07aedc6c662b31a3039d462" category="list-text">Clientes del sector público de EE. UU</block>
   <block id="b6eaf938209a57174cf0c8478fbb177d" category="section-title">27 de octubre de 2024</block>
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">Actualizamos el servicio de copia y sincronización de BlueXP y el agente de datos para solucionar algunos errores. La nueva versión de Data Broker es 1,0.56.</block>
@@ -652,44 +628,8 @@
   <block id="4d330e714e6183f0c61932d7c00a8ff3" category="section-title">Agrupamiento personalizado de cargas de trabajo compartidas de archivos</block>
   <block id="52a2bb712de6112a9a5d29a047f3a073" category="paragraph">Con esta versión, ahora puede agrupar los recursos compartidos de archivos en grupos para facilitar la protección de su conjunto de datos. El servicio puede proteger todos los volúmenes de un grupo a la vez. Anteriormente, era necesario proteger cada volumen por separado.</block>
   <block id="9a2ed93898be76fbc237cf9fca13d650" category="paragraph"><block ref="8790005620a6e0339d9d5a6985b6f062" category="inline-link-rx"></block>.</block>
-  <block id="997bcd377ced78770953e6e3775b8ef8" category="section-title">Evaluación de riesgos de seguridad del asesor digital</block>
-  <block id="ca38b24749c1b379aa526166d650709c" category="paragraph">La protección frente al ransomware de BlueXP  ahora recopila información sobre riesgos de seguridad críticos y elevados que afectan a un clúster del asesor digital de NetApp. Si se encuentra algún riesgo, la protección contra ransomware de BlueXP  proporciona una recomendación en el panel de *Acciones recomendadas* del panel de control: “Solucionar una vulnerabilidad de seguridad conocida en la &lt;name&gt; del clúster”. En la recomendación del panel, al hacer clic en *Revisar y corregir*, se sugiere revisar el asesor digital y un artículo de vulnerabilidad y exposición común (CVE) para resolver el riesgo de seguridad. Si existen varios riesgos de seguridad, revise la información en Digital Advisor.</block>
-  <block id="d6e1df3f33358ae7e917c338cf462ca0" category="section-title">Backup en Google Cloud Platform</block>
-  <block id="a789dfb53f35524e96878624b0f44be1" category="paragraph">Con esta versión, puede establecer un destino de backup en un bucket de Google Cloud Platform. Antes, solo se podían añadir destinos de backup a NetApp StorageGRID, Amazon Web Services y Microsoft Azure.</block>
-  <block id="be2bdfb658850d167c76f763879faa2f" category="section-title">Compatibilidad con Google Cloud Platform</block>
-  <block id="1a5bbf622fa944b888ced1dd36e43b20" category="paragraph">El servicio ahora es compatible con Cloud Volumes ONTAP para Google Cloud Platform para la protección del almacenamiento. Anteriormente, el servicio solo era compatible con Cloud Volumes ONTAP para Amazon Web Services y Microsoft Azure junto con NAS en las instalaciones.</block>
-  <block id="01ab8fe0565c01eb93456b579d969d66" category="section-title">Control de acceso basado en roles</block>
-  <block id="1431c64521322df79808c76466af3b70" category="paragraph">Ahora puede limitar el acceso a actividades específicas con el control de acceso basado en roles (RBAC). La protección contra ransomware de BlueXP  usa dos roles de BlueXP : Administrador de cuentas de BlueXP  y administrador sin cuenta (visor).</block>
   <block id="d415b73567ff8e090cdf21c20afeaa64" category="section-title">26 de noviembre de 2024</block>
-  <block id="64a7a8a4f820d38dc5cedd70930717c0" category="section-title">Versión en modo privado (3,9.46)</block>
-  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">Sitio de soporte de NetApp</block>
-  <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">Ya está disponible una nueva versión de modo privado para descargar desde el<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
-  <block id="579c9c5aad40c47e8203472b55439941" category="paragraph">La versión 3.9.46 incluye actualizaciones de los siguientes componentes y servicios de BlueXP .</block>
-  <block id="394b364c6ed61ed167a4f14316ef5ffc" category="cell">Componente o servicio</block>
-  <block id="2f9dd95401f68032a97298d35b87f433" category="cell">Versión incluida en esta versión</block>
-  <block id="5431c829b8b64da3908e102d64527909" category="cell">Cambios desde la versión anterior del modo privado</block>
-  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">Conector</block>
-  <block id="3d93fe525e5005a3aa89376ce36eaf7d" category="cell">3.9.46</block>
-  <block id="2e6f33758bf126679d5a0225c22673d3" category="cell">Mejoras de seguridad menores y correcciones de errores</block>
   <block id="008c6d012aabba0e44e2b94f8259635c" category="cell">22 de noviembre de 2024</block>
-  <block id="57d300ca1fdd6058fd2a0882b05ba831" category="inline-link">Novedades en la página de backup y recuperación de BlueXP </block>
-  <block id="cc73bd495467f0768e5ab6fbca8c9fc3" category="cell">Vaya a<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de noviembre de 2024</block>
-  <block id="d9865720c88f775c3c7aa2407f42807e" category="cell">4 de noviembre de 2024 (versión 1,37)</block>
-  <block id="79d6fb7fcd1197d45638c77f96548314" category="inline-link">Novedades en la página de clasificación de BlueXP </block>
-  <block id="3634786b3e46e41488029a1f5adcfb51" category="cell">Vaya a<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> y consulte los cambios incluidos en las versiones de 1,32 a 1,37</block>
-  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Gestión de Cloud Volumes ONTAP</block>
-  <block id="5cee96e11788b0260fca227a2882f413" category="inline-link">Novedades de la página de gestión de Cloud Volumes ONTAP</block>
-  <block id="2b06273c345679e8396f450bec75502c" category="cell">Vaya a<block ref="90e3b44730452fe495e75ab6e2b7eb58" category="inline-link-rx"></block> y consulte los cambios incluidos en las versiones de octubre de 2024 y noviembre de 2024</block>
-  <block id="900dd8f50d2294930a102034524e26b7" category="cell">Gestión de clústeres de ONTAP en las instalaciones</block>
-  <block id="4f2f9aa2e4b010fbcd8cded5bf523370" category="inline-link">Novedades de la página de gestión de clústeres de ONTAP en las instalaciones</block>
-  <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">Vaya a<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de noviembre de 2024</block>
-  <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">Aunque la cartera digital de BlueXP  y la replicación de BlueXP  también se incluyen en el modo privado, no hay cambios en la versión anterior del modo privado.</block>
-  <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">Para obtener más información sobre el modo privado, incluido el modo de actualización, consulte lo siguiente:</block>
-  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">Aprende sobre el modo privado</block>
-  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
-  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">Descubre cómo empezar a utilizar BlueXP en modo privado</block>
-  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
-  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Aprenda a actualizar el conector cuando use el modo privado</block>
   <block id="3c97d3b45dd14b2958c1e0e304230aa0" category="paragraph">Esta versión de copia de seguridad y recuperación de BlueXP  incluye las siguientes actualizaciones.</block>
   <block id="517624d736bd2a385ee8cda71584112f" category="section-title">Modos de protección SnapLock Compliance y SnapLock Enterprise</block>
   <block id="139da935670a9f985194d3241917c359" category="paragraph">Ahora, el backup y la recuperación de datos de BlueXP  puede realizar backups de volúmenes en las instalaciones tanto de FlexVol como de FlexGroup configurados mediante modos de protección SnapLock Compliance o SnapLock Enterprise. Los clústeres deben ejecutar ONTAP 9,14 o superior para esta compatibilidad. El backup de los volúmenes de FlexVol con el modo SnapLock Enterprise se admite desde la versión 9.11.1 de ONTAP. Las versiones anteriores de ONTAP no ofrecen compatibilidad para realizar backups de volúmenes de protección de SnapLock.</block>
@@ -703,7 +643,6 @@
   <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">Indización en pausa</block>
   <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">Error</block>
   <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">Deshabilitado</block>
-  <block id="ff98fd719f758a17955852024475db39" category="paragraph">Para compromisos anuales o a más largo plazo, NetApp recomienda que se ponga en contacto con su representante de NetApp antes de la fecha de fin de disponibilidad o de la fecha de vencimiento de la licencia, para garantizar que se cumplen los requisitos previos de la transición. Si no tiene un contrato a largo plazo para un nodo de Cloud Volumes ONTAP y lo ejecuta con una suscripción de pago por uso bajo demanda (PAYGO), es importante planificar la conversión antes de la fecha de EOS. Tanto para contratos a largo plazo como para suscripciones PAYGO, puede utilizar la herramienta de conversión de licencias de BlueXP  para una conversión sin problemas.</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">Ahora es posible activar el almacenamiento WORM (escritura única y lectura múltiple) en un sistema Cloud Volumes ONTAP existente utilizando BlueXP . Esta funcionalidad le proporciona la flexibilidad de habilitar WORM en un entorno de trabajo, incluso si no se activó WORM durante su creación. Una vez esté habilitada, no se puede deshabilitar WORM.</block>
   <block id="613fbbb3f2dbf238c8527a537252e8ed" category="section-title">Compatibilidad con sistemas ASA R2 con modo privado</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">Ahora puede descubrir los sistemas NetApp ASA R2 al utilizar BlueXP  en modo privado. Esta asistencia está disponible a partir de la versión 3.9.46 del modo privado de BlueXP .</block>
@@ -716,7 +655,6 @@
   <block id="2b595e935d43f3d843783e855ec947b7" category="paragraph">El instalador sigue contactando \https://mysupport.NetApp.com.</block>
   <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="section-title">Gestión de identidades y acceso BlueXP</block>
   <block id="624278dc2f533755332cf0c1ebe752d5" category="paragraph">La página Conectores muestra sólo los Conectores disponibles actualmente. Ya no muestra los conectores que ha eliminado.</block>
-  <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
   <block id="497e698cad27d6346959de7394ab5df8" category="section-title">Lista de máquinas virtuales compatibles actualizadas para Azure para alinearse con las prácticas recomendadas</block>
   <block id="a295598082ec4c1c06fb5a3e2ad3e1d1" category="paragraph">Las familias de máquinas DS_v2 y Es_v3 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Azure. Estas familias solo serán retenidas y apoyadas en sistemas antiguos y existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles en Azure a partir de la versión 9.12.1. Le recomendamos que cambie a Es_v4 o a cualquier otra serie compatible con Cloud Volumes ONTAP 9.12.1 y posterior. Sin embargo, las máquinas de las series DS_v2 y Es_v3 estarán disponibles para nuevas implementaciones realizadas a través de la API.</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link">Configuraciones compatibles en Azure</block>
@@ -746,4 +684,44 @@
   <block id="e3f867c1e04dce86520c139a0ae60b18" category="section-title">12 de diciembre de 2024</block>
   <block id="39ca8580b0e6a065fa25faac2a2acc86" category="inline-link-macro">Aprenda a ver las recomendaciones de actualización de firmware</block>
   <block id="af79dd5dc56c84e383198dba47e6f6fe" category="paragraph">Ahora puede ver el firmware de almacenamiento, el firmware de SP/BMC y el paquete autónomo de ransomware (ARP) que se recomiendan para una actualización. <block ref="bb189956f648b21665d5198deffedcc8" category="inline-link-macro-rx"></block>.</block>
+  <block id="2b513ec32615ab736c1cab315db516f8" category="section-title">13 de enero de 2025</block>
+  <block id="19cb29a89a6fbf6d87da92950ea8482c" category="section-title">Conector 3.9.48</block>
+  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.</block>
+  <block id="4d83c70b301d09d322c3d604e361a689" category="paragraph">En este momento, la versión 3.9.48 está disponible para modo estándar y modo restringido.</block>
+  <block id="a8afa3393166930c13f7426758547bca" category="list-text">Ahora, la página Resources muestra los recursos no detectados. Los recursos no detectados son recursos de almacenamiento de los que BlueXP  conoce, pero no ha creado entornos de trabajo para. Por ejemplo, los recursos que se muestran en el asesor digital que aún no tienen entornos de trabajo se muestran en la página Recursos como recursos no detectados.</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="list-text">Los recursos de Amazon FSx for NetApp ONTAP no se muestran en la página de recursos de IAM porque no puedes asociarlos a un rol de IAM. Puede ver estos recursos en su respectivo lienzo o desde cargas de trabajo.</block>
+  <block id="441419ddc3a341f3081b481a3084eef7" category="section-title">Crear un caso de soporte para servicios de BlueXP  adicionales</block>
+  <block id="ac9424bee543a4a40d453b3ffa72ca64" category="paragraph">Después de registrar BlueXP  para recibir soporte, puede crear un caso de soporte directamente desde la consola basada en web de BlueXP . Al crear el caso, debe seleccionar el servicio al que está asociado el problema.</block>
+  <block id="c16acacf37243c052df936e1994e4488" category="paragraph">A partir de esta versión, ahora puede crear un caso de soporte y asociarlo con servicios adicionales de BlueXP :</block>
+  <block id="67ecb6c0a19888100e5352d06f886856" category="list-text">Protección contra ransomware de BlueXP</block>
+  <block id="6b8568e4d37788a668f2c72ae872b9a0" category="inline-link">Más información sobre la creación de un caso de soporte</block>
+  <block id="704c39cac41bd3edb3c4d1fc1b619590" category="paragraph"><block ref="8380621c8f80b9213ea8e8be1675d5a4" category="inline-link-rx"></block>.</block>
+  <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">06 de enero de 2025</block>
+  <block id="16e305f77c7a0272aceac8c95312d98a" category="section-title">NetApp lanza recursos adicionales de CloudFormation</block>
+  <block id="c043b3439543ebfc027a3c1fcb5613a5" category="paragraph">NetApp ahora proporciona recursos de CloudFormation que permiten a los clientes utilizar componentes avanzados de ONTAP que no están expuestos en la consola de AWS. CloudFormation es el mecanismo de infraestructura como código de AWS. Se podrán crear relaciones de replicación, recursos compartidos CIFS, políticas de exportación NFS, snapshots, etc.</block>
+  <block id="01d4e72c68c36e8905e55eeb7f8aff0c" category="inline-link-macro">Administre los sistemas de archivos de Amazon FSx para NetApp ONTAP con CloudFormation</block>
+  <block id="f883109f2802c104ac9ae2e21a56b762" category="paragraph"><block ref="f883109f2802c104ac9ae2e21a56b762" category="inline-link-macro-rx"></block></block>
+  <block id="944c1cc3564ebb8c58254a0340102350" category="section-title">Las funciones de red ahora son compatibles con BlueXP</block>
+  <block id="79d2f91b3755917d79acfd5be561d67b" category="paragraph">Al configurar un volumen en Azure NetApp Files desde BlueXP , ahora se pueden indicar las funciones de red. Se alinea con la funcionalidad disponible en la Azure NetApp Files nativa.</block>
+  <block id="c54232d574f50dfd33c3e6ddb7fab829" category="paragraph">Para compromisos anuales o a más largo plazo, NetApp recomienda que se ponga en contacto con su representante de NetApp antes de la fecha de fin de disponibilidad o de la fecha de vencimiento de la licencia, para garantizar que se cumplen los requisitos previos de la transición. Si no tiene un contrato a largo plazo para un nodo de Cloud Volumes ONTAP y lo ejecuta con una suscripción de pago por uso bajo demanda (PAYGO), es importante planificar la conversión antes de la fecha de EOS. Tanto para contratos a largo plazo como para suscripciones PAYGO, puede utilizar la herramienta de conversión de licencias de BlueXP  para una conversión sin problemas.</block>
+  <block id="4b546cad2ee01a6cbf9ccc96b97242b6" category="section-title">04 de diciembre de 2024</block>
+  <block id="998e01ff2383d2b9e06b55738a27346b" category="section-title">Widget AutoSupport</block>
+  <block id="526c3ba007bad7c7b6408ba4672f5f6e" category="paragraph">El widget AutoSupport se ha agregado a la pantalla del panel principal para alertar a los clientes sobre los problemas relacionados con el estado de AutoSupport.</block>
+  <block id="e6ecd439699f8fefa13e20f9536a72a6" category="section-title">Detectar comportamientos anómalos de usuarios con la seguridad de carga de trabajo de almacenamiento de Data Infrastructure Insights</block>
+  <block id="4b9b02f7da7210970cff1fcbe2d8369e" category="paragraph">Con esta versión, puedes utilizar Data Infrastructure Insights Storage Workload Security para detectar comportamientos anómalos de los usuarios en tus cargas de trabajo de almacenamiento. Esta función te ayuda a identificar posibles amenazas de seguridad y a bloquear usuarios potencialmente maliciosos para proteger tus datos.</block>
+  <block id="839e0e7efb1b67f6416081c6e82a4aa9" category="inline-link">Responder a una alerta de ransomware detectada</block>
+  <block id="51713ddd834a60df7d06db728cf08e05" category="paragraph">Para obtener más información, consulte<block ref="7a6c0b2db283aa3c348e6e1a2f1f32b0" category="inline-link-rx"></block> .</block>
+  <block id="f06819927bc06d4d2a9a3e3e868f76de" category="paragraph">Antes de usar la seguridad de la carga de trabajo de almacenamiento de información de la infraestructura de datos para detectar un comportamiento anómalo del usuario, debe configurar la opción mediante la opción *Configuración* de protección contra ransomware de BlueXP .</block>
+  <block id="ae65c0d044427130470e493bcfa5e9a3" category="section-title">Seleccione las cargas de trabajo que desea detectar y proteger</block>
+  <block id="df7afd566315c6467b9ae3e88d9f948d" category="paragraph">Con esta versión, ahora puede hacer lo siguiente:</block>
+  <block id="8865ff9ead0ee9de28506714448478d3" category="list-text">Dentro de cada conector, seleccione los entornos de trabajo donde desea detectar las cargas de trabajo. Esta función puede beneficiarse si desea proteger cargas de trabajo específicas en su entorno y no para otras.</block>
+  <block id="b26d0bf0b9d2f848756ba4fcb103860d" category="list-text">Durante la detección de cargas de trabajo, puede habilitar la detección automática de cargas de trabajo por conector. Esta función permite seleccionar las cargas de trabajo que se desean proteger.</block>
+  <block id="c6ac79f6ec82abd57b723ae67e39d12b" category="list-text">Detectar las cargas de trabajo recién creadas para los entornos de trabajo seleccionados anteriormente.</block>
+  <block id="bd03ede87c82adb65c788a5ae08c50b6" category="inline-link">Detectar cargas de trabajo</block>
+  <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">Consulte<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block>.</block>
+  <block id="37b8354fe553b0151888468751ea8eb0" category="section-title">05 de enero de 2025</block>
+  <block id="5baf4417d867f07ce7f16e7810f044d7" category="section-title">Soporte para cuentas de servicio en la fábrica de cargas de trabajo de BlueXP</block>
+  <block id="369af9c9eae8f9673850f588a7ed5272" category="paragraph">Las cuentas de servicio ahora se admiten en la fábrica de cargas de trabajo de BlueXP . Puede crear cuentas de servicio para actuar como usuarios de máquinas que automatizan las operaciones de infraestructura.</block>
+  <block id="f932d2619edea0dc69b40e9be53abdc4" category="inline-link-macro">Crear y administrar cuentas de servicio</block>
+  <block id="3d6080aa10267e8c67d5c76a2bc1a9f3" category="paragraph"><block ref="3d6080aa10267e8c67d5c76a2bc1a9f3" category="inline-link-macro-rx"></block></block>
 </blocks>
