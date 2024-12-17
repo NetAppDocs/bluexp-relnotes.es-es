@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
 summary: Conozca los cambios más recientes en los servicios en la nube que forman parte de la plataforma BlueXP. 
 ---
 = Cambios recientes en BlueXP
@@ -21,6 +21,47 @@ Conozca los cambios más recientes en los servicios en la nube que forman parte 
 == Funciones administrativas
 
 En esta sección se describen las nuevas funciones relacionadas con las funciones de administración de BlueXP: Cuentas, conectores, credenciales de proveedores de nube y mucho más.
+
+
+
+=== 16 de diciembre de 2024
+
+
+
+==== Nuevos puntos finales seguros para obtener imágenes de Connector
+
+Al instalar Connector, o cuando se produce una actualización automática, Connector contacta con los repositorios para descargar imágenes para la instalación o actualización. De forma predeterminada, el conector siempre ha contactado con los siguientes puntos finales:
+
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
+
+
+El primer punto final incluye un comodín porque no podemos proporcionar una ubicación definitiva. El proveedor de servicios gestiona el equilibrio de carga del repositorio, lo que significa que las descargas pueden producirse desde diferentes puntos finales.
+
+Para mayor seguridad, Connector ahora puede descargar imágenes de instalación y actualizaciones desde puntos finales dedicados:
+
+* \https://bluexpinfraprod.eastus2.data.azurecr.io
+* \https://bluexpinfraprod.azurecr.io
+
+
+Le recomendamos que comience a utilizar estos nuevos puntos finales eliminando los puntos finales existentes de las reglas de firewall y permitiendo los nuevos puntos finales.
+
+Estos nuevos puntos finales se admiten a partir de la versión 3.9.47 del conector. No hay compatibilidad con versiones anteriores del conector.
+
+Tenga en cuenta lo siguiente:
+
+* Los puntos finales existentes siguen soportados. Si no desea utilizar los nuevos puntos finales, no se requieren cambios.
+* El conector contacta primero con los puntos finales existentes. Si no se puede acceder a esos puntos finales, el conector contactará automáticamente con los nuevos puntos finales.
+* Los nuevos puntos finales no se admiten en los siguientes escenarios:
++
+** Si el conector está instalado en una región gubernamental.
+** Si usa el conector con backup y recuperación de datos de BlueXP  o protección contra ransomware de BlueXP .
+
+
++
+En ambos casos, puede seguir utilizando los puntos finales existentes.
+
+
 
 
 
@@ -84,26 +125,6 @@ Para obtener más información sobre el modo privado, incluido el modo de actual
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Descubre cómo empezar a utilizar BlueXP en modo privado"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Aprenda a actualizar el conector cuando use el modo privado"]
 
-
-
-
-=== 11 de noviembre de 2024
-
-
-
-==== Conector 3.9.46
-
-Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.
-
-En este momento, la versión 3.9.46 está disponible para modo estándar y modo restringido.
-
-
-
-==== ID de proyectos de IAM
-
-Ahora puede ver el ID de un proyecto desde la administración de acceso e identidad de BlueXP . Es posible que necesite usar el ID al realizar una llamada a la API.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-folders-projects.html#project-id["Aprenda a obtener el ID de un proyecto"].
 
 
 
@@ -357,6 +378,16 @@ Para obtener más información sobre cómo activarlo manualmente, consulte https
 
 
 
+=== 16 de diciembre de 2024
+
+
+
+==== Versión 1,38
+
+Esta versión de clasificación de BlueXP  incluye mejoras generales y correcciones de errores.
+
+
+
 === 4 de noviembre de 2024
 
 
@@ -394,19 +425,6 @@ Más información sobre https://docs.netapp.com/us-en/bluexp-classification/task
 
 .Rendimiento de escaneo mejorado
 Esta versión mejora el rendimiento de escaneo.
-
-
-
-=== 2 de septiembre de 2024
-
-
-
-==== Versión 1,35
-
-.Escanee datos StorageGRID
-La clasificación BlueXP  ahora puede escanear datos en StorageGRID.
-
-Para obtener más información, consulte link:task-scanning-storagegrid.html["Escanee datos StorageGRID"].
 
 
 
@@ -591,6 +609,16 @@ Actualizamos el servicio de copia y sincronización de BlueXP y el agente de dat
 
 
 
+=== 12 de diciembre de 2024
+
+
+
+==== Asesor de actualizaciones
+
+Ahora puede ver el firmware de almacenamiento, el firmware de SP/BMC y el paquete autónomo de ransomware (ARP) que se recomiendan para una actualización. link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["Aprenda a ver las recomendaciones de actualización de firmware"].
+
+
+
 === 23 de septiembre de 2024
 
 
@@ -608,16 +636,6 @@ La oferta de servicios NetApp SupportEdge Basic ahora incluye todas las funcione
 ==== Leídos
 
 El informe *7-Mode Upgrade Advisor Plans* ya no está disponible ya que los sistemas 7-Mode han llegado al final del soporte limitado. Para obtener más información, consulte link:https://mysupport.netapp.com/site/info/version-support["Compatibilidad con versiones de software"^]. Más información sobre link:https://docs.netapp.com/a/ontap/7-mode/8.2.1/Upgrade-And-Revert-Or-Downgrade-Guide-For-7-Mode.pdf["Actualizar los sistemas de almacenamiento Data ONTAP funcionando en 7-Mode"^].
-
-
-
-=== 04 de julio de 2024
-
-
-
-==== Panel de sostenibilidad
-
-Los indicadores ambientales que proporcionan información sobre el estado ambiental de sus sistemas de almacenamiento ahora proporcionan valores más precisos para el uso de energía proyectado, el uso directo de carbono y la emisión de calor basados en un modelo predictivo avanzado. Para obtener más información, consulte link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Información general del panel de sostenibilidad"].
 
 
 
