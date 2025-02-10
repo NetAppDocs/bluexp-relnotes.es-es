@@ -487,6 +487,21 @@ Para obtener más información sobre cómo activarlo manualmente, consulte https
 
 
 
+=== 10 de marzo de 2025
+
+
+
+==== Versión 1,41
+
+Esta versión de clasificación de BlueXP  incluye mejoras generales y correcciones de errores. También incluye:
+
+.Estado de adquisición
+La clasificación BlueXP  ahora realiza un seguimiento del progreso en tiempo real de las exploraciones de asignación y clasificación _initial_ en un volumen. Las barras progresivas separadas realizan un seguimiento de las exploraciones de mapeo y clasificación, presentando un porcentaje del total de archivos escaneados. También puede pasar el ratón sobre una barra de progreso para ver el número de archivos escaneados y el total de archivos. El seguimiento del estado de sus escaneos crea una visión más profunda del progreso del escaneo, lo que le permite planificar mejor sus escaneos y comprender la asignación de recursos.
+
+Para ver el estado de sus escaneos, vaya a **Configuración** en la clasificación BlueXP  y luego seleccione la **Configuración del entorno de trabajo**. El progreso se muestra en la línea para cada volumen.
+
+
+
 === 19 de febrero de 2025
 
 

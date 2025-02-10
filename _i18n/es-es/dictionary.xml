@@ -796,4 +796,10 @@
   <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="section-title">Cloud Volumes ONTAP 9.16.1 GA</block>
   <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">Ahora puede utilizar BlueXP  para poner en marcha y gestionar la versión de disponibilidad general de Cloud Volumes ONTAP 9.16.1 en Azure y Google Cloud. Sin embargo, esta versión no está disponible para la implementación y actualización en AWS.</block>
   <block id="e622e2ddfce6c06eca3078953e9e6186" category="section-title">Compatibilidad con la región Nueva Zelanda Norte en Azure</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 de marzo de 2025</block>
+  <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">Versión 1,41</block>
+  <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">Esta versión de clasificación de BlueXP  incluye mejoras generales y correcciones de errores. También incluye:</block>
+  <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">Estado de adquisición</block>
+  <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">La clasificación BlueXP  ahora realiza un seguimiento del progreso en tiempo real de las exploraciones de asignación y clasificación _initial_ en un volumen. Las barras progresivas separadas realizan un seguimiento de las exploraciones de mapeo y clasificación, presentando un porcentaje del total de archivos escaneados. También puede pasar el ratón sobre una barra de progreso para ver el número de archivos escaneados y el total de archivos. El seguimiento del estado de sus escaneos crea una visión más profunda del progreso del escaneo, lo que le permite planificar mejor sus escaneos y comprender la asignación de recursos.</block>
+  <block id="dea24de819351c63f66685576d21ee25" category="paragraph">Para ver el estado de sus escaneos, vaya a **Configuración** en la clasificación BlueXP  y luego seleccione la **Configuración del entorno de trabajo**. El progreso se muestra en la línea para cada volumen.</block>
 </blocks>
