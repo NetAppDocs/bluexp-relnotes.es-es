@@ -208,6 +208,18 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["Más informaci�
 
 
 
+=== 02 de marzo de 2025
+
+
+
+==== Eventos de CloudShell en Tracker
+
+Cada vez que utilice CloudShell para ejecutar operaciones de FSx para ONTAP desde cargas de trabajo de BlueXP , los eventos aparecen en Tracker.
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-monitor-operations.html["Aprende a supervisar y hacer un seguimiento de las operaciones de FSx para ONTAP en BlueXP"^]
+
+
+
 === 02 de febrero de 2025
 
 
@@ -253,22 +265,6 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Usa
 NetApp ahora proporciona recursos de CloudFormation que permiten a los clientes utilizar componentes avanzados de ONTAP que no están expuestos en la consola de AWS. CloudFormation es el mecanismo de infraestructura como código de AWS. Se podrán crear relaciones de replicación, recursos compartidos CIFS, políticas de exportación NFS, snapshots, etc.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html["Administre los sistemas de archivos de Amazon FSx para NetApp ONTAP con CloudFormation"]
-
-
-
-=== 11 de noviembre de 2024
-
-
-
-==== FSX para ONTAP se integra con el almacenamiento en la fábrica de cargas de trabajo de BlueXP
-
-FSX para tareas de gestión del sistema de archivos ONTAP como añadir volúmenes, ampliar la capacidad del sistema de archivos y gestionar las máquinas virtuales de almacenamiento ahora se gestionan en la fábrica de cargas de trabajo de BlueXP , un nuevo servicio que ofrece NetApp y Amazon FSx para NetApp ONTAP. Puede utilizar sus credenciales y permisos existentes igual que antes. La diferencia es que ahora puede hacer más desde la fábrica de cargas de trabajo de BlueXP  para gestionar sus sistemas de archivos. Cuando abres un entorno de trabajo de FSx para ONTAP desde el Canvas de BlueXP , pasarás directamente a la fábrica de cargas de trabajo de BlueXP .
-
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html#features["Obtén más información sobre las características de FSx para ONTAP en la fábrica de cargas de trabajo de BlueXP"^]
-
-Si está buscando la opción _advanced view_, que le permite administrar un sistema de archivos FSX for ONTAP con el Administrador del sistema de ONTAP, ahora puede encontrar esa opción en el lienzo de BlueXP  después de seleccionar el entorno de trabajo.
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-fsx-ontap/main/media/screenshot-system-manager.png["Una captura de pantalla del panel derecho en el lienzo de BlueXP  después de seleccionar un entorno de trabajo que muestra la opción Administrador del sistema."]
 
 
 
@@ -585,6 +581,18 @@ Esta versión de clasificación de BlueXP  incluye mejoras generales y correcci
 
 
 
+=== 03 de marzo de 2025
+
+
+
+==== La región Norte de Nueva Zelanda ahora es compatible con Azure
+
+La región del norte de Nueva Zelanda ahora es compatible con Azure para configuraciones de nodo único y de alta disponibilidad (HA) de Cloud Volumes ONTAP 9.12.1 GA y versiones posteriores. Tenga en cuenta que el tipo de instancia Lsv3 no está soportado en esta región.
+
+Para obtener una lista de todas las regiones admitidas, consulte la https://bluexp.netapp.com/cloud-volumes-global-regions["Mapa de regiones globales en Azure"^].
+
+
+
 === 18 de febrero de 2025
 
 
@@ -629,18 +637,6 @@ Ahora, puede experimentar la gestión simplificada de las licencias de Cloud Vol
 
 
 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestione licencias basadas en capacidad"^].
-
-
-
-=== 9 de diciembre de 2024
-
-
-
-==== Lista de máquinas virtuales compatibles actualizadas para Azure para alinearse con las prácticas recomendadas
-
-Las familias de máquinas DS_v2 y Es_v3 ya no están disponibles para su selección en BlueXP  al implementar nuevas instancias de Cloud Volumes ONTAP en Azure. Estas familias solo serán retenidas y apoyadas en sistemas antiguos y existentes. Las nuevas implementaciones de Cloud Volumes ONTAP solo son compatibles en Azure a partir de la versión 9.12.1. Le recomendamos que cambie a Es_v4 o a cualquier otra serie compatible con Cloud Volumes ONTAP 9.12.1 y posterior. Sin embargo, las máquinas de las series DS_v2 y Es_v3 estarán disponibles para nuevas implementaciones realizadas a través de la API.
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configuraciones compatibles en Azure"^]
 
 
 
