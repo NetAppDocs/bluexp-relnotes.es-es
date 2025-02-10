@@ -733,6 +733,36 @@ La oferta de servicios NetApp SupportEdge Basic ahora incluye todas las funcione
 
 
 
+=== 10 de febrero de 2025
+
+La cartera digital de BlueXP  se ha rediseñado para facilitar el uso y ahora proporciona gestión de licencias y suscripciones adicionales.
+
+
+
+==== Nuevo panel de información general
+
+La página de inicio de la cartera digital tiene un panel actualizado de tus licencias de NetApp y suscripciones de Marketplace, con la capacidad de profundizar en servicios específicos, tipos de licencias y acciones necesarias.
+
+
+
+==== Configurando suscripciones a credenciales
+
+Ahora, la cartera digital de BlueXP  le permite configurar sus suscripciones con las credenciales del proveedor. Normalmente, lo haces cuando te suscribes por primera vez a una suscripción del Marketplace o un contrato anual. El cambio anterior de las credenciales de la suscripción sólo se podía realizar en la página Credenciales.
+
+
+
+==== Asociación de suscripciones a organizaciones
+
+Ahora puede actualizar la organización a la que está asociada una suscripción directamente desde la cartera digital.
+
+
+
+==== Gestión de licencias de Cloud Volumes ONTAP
+
+Ahora administra las licencias de Cloud Volumes ONTAP a través de la página de inicio o la pestaña *Licencias de servicio de datos*. Utilice la pestaña *Suscripciones de Marketplace* para ver la información de su suscripción.
+
+
+
 === 5 de marzo de 2024
 
 
@@ -759,30 +789,6 @@ Hay disponibles varias mejoras en los informes de uso de Cloud Volumes ONTAP:
 * Los nombres de entornos de trabajo ahora se incluyen en los informes de uso de volúmenes y máquinas virtuales de almacenamiento.
 * El tipo de volumen _file_ ahora está etiquetado como _Primary (Read/Write)_.
 * El tipo de volumen _secondary_ ahora está etiquetado como _Secondary (DP)_.
-
-
-Para obtener más información sobre los informes de uso, consulte https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Descargar informes de uso"].
-
-
-
-=== 7 de mayo de 2023
-
-
-
-==== Ofertas privadas de Google Cloud
-
-La cartera digital de BlueXP ahora identifica las suscripciones a Google Cloud Marketplace que están asociadas a una oferta privada y muestra la fecha de finalización y la duración de la suscripción. Esta mejora le permite verificar que ha aceptado con éxito la oferta privada y validar sus términos.
-
-
-
-==== Desglose del uso de carga
-
-Ahora puede averiguar por qué se le cobra cuando está suscrito a licencias basadas en capacidad. Puede descargar los siguientes tipos de informes de uso desde la cartera digital de BlueXP. Los informes de uso proporcionan los detalles de capacidad de las suscripciones y cómo se le cobra por los recursos de sus suscripciones a Cloud Volumes ONTAP. Los informes descargables se pueden compartir fácilmente con otros.
-
-* Uso del paquete Cloud Volumes ONTAP
-* Uso de alto nivel
-* Uso de los equipos virtuales de almacenamiento
-* Uso de volúmenes
 
 
 Para obtener más información sobre los informes de uso, consulte https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Descargar informes de uso"].
