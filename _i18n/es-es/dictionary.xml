@@ -793,4 +793,19 @@
   <block id="0d4a9d16793bcc1fc3c4982137275a77" category="paragraph">Ahora puede eliminar suscripciones de la cartera digital si ha cancelado su suscripción.</block>
   <block id="86eb6e7f10c1d00078e563696c2882c7" category="section-title">Ver la capacidad consumida para las suscripciones de Marketplace</block>
   <block id="0a85a2f78dadf31d5b3bcc7353bae9d1" category="paragraph">Al visualizar las suscripciones PAYGO, ahora puede ver la capacidad consumida de la suscripción.</block>
+  <block id="ad84f24c65dd6930a049e0903256dc97" category="section-title">Simule un ataque y responda</block>
+  <block id="6cadf1d9d5289622136d042488809e73" category="paragraph">Con este lanzamiento, simule un ataque de ransomware para probar su respuesta a una alerta de ransomware. Esta función te ayuda a saber que estás preparado en caso de un ataque real de ransomware mediante la prueba de los procesos de notificación de alertas, respuesta y recuperación.</block>
+  <block id="50b24b085ac9888ffc4b0ba727107bd7" category="inline-link">Haz un simulacro de preparación para los ataques de ransomware</block>
+  <block id="9b1eb2dbe181e9f7b73db8a0785c0419" category="paragraph">Para obtener más información, consulte<block ref="83090590e567818593b829ba2ced1db1" category="inline-link-rx"></block> .</block>
+  <block id="d36ca1f9466b055dd6adb80de5cce7d4" category="section-title">Mejoras en el proceso de detección</block>
+  <block id="61541c0b99aec5f11fccef5bcb3fe5a1" category="paragraph">Esta versión incluye mejoras en los procesos selectivos de detección y redetección:</block>
+  <block id="cb3c0a83218c46d38ab0842ce49a7e6e" category="list-text">Con esta versión, puede detectar las cargas de trabajo recién creadas que se agregaron a los entornos de trabajo seleccionados anteriormente.</block>
+  <block id="6a4c9cc76f7f432efa274c3ff0dae3dd" category="list-text">También puede seleccionar entornos de trabajo _NEW_ en esta versión. Esta función le ayuda a proteger las nuevas cargas de trabajo añadidas a su entorno.</block>
+  <block id="3b7810e8427f006590b006af43d016ef" category="list-text">Si desea elegir todas las cargas de trabajo detectadas, puede hacerlo utilizando la opción *Seleccionar todo*.</block>
+  <block id="28573ff4f820730a3eeae9cdd51b54d4" category="list-text">Es posible realizar estos procesos de detección durante el proceso de detección inicial o dentro de la opción Configuración.</block>
+  <block id="33e99171183cf72ac66db77d8dd5792a" category="inline-link">Detectar las cargas de trabajo recién creadas para los entornos de trabajo seleccionados anteriormente</block>
+  <block id="16e3b92f9b1f5d1c29b18c748e6a228e" category="inline-link">Configure los fetaures con la opción Configuración</block>
+  <block id="98e6e30b63e5242616c686684a17c03b" category="paragraph">Para obtener más información, consulte<block ref="7d31e5b11cc548279f7c20a9569ec8fc" category="inline-link-rx"></block> y.<block ref="026d9da5e400c1054ac1084b0f63056d" category="inline-link-rx"></block></block>
+  <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">Se generan alertas cuando se detecta un cifrado alto</block>
+  <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">Con esta versión, puede ver alertas cuando se detecta un alto cifrado en sus cargas de trabajo incluso sin cambios de extensiones de archivos grandes. Esta función, que utiliza la IA de protección autónoma frente a ransomware (ARP) de ONTAP, le ayuda a identificar cargas de trabajo que están en riesgo de ataques de ransomware. Utilice esta función y descargue la lista completa de archivos afectados con o sin cambios de extensión.</block>
 </blocks>

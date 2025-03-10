@@ -1148,31 +1148,31 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
-==== ad84f24c65dd6930a049e0903256dc97
+==== Simule un ataque y responda
 
-6cadf1d9d5289622136d042488809e73
+Con este lanzamiento, simule un ataque de ransomware para probar su respuesta a una alerta de ransomware. Esta función te ayuda a saber que estás preparado en caso de un ataque real de ransomware mediante la prueba de los procesos de notificación de alertas, respuesta y recuperación.
 
-9b1eb2dbe181e9f7b73db8a0785c0419
-
-
-
-==== d36ca1f9466b055dd6adb80de5cce7d4
-
-61541c0b99aec5f11fccef5bcb3fe5a1
-
-* cb3c0a83218c46d38ab0842ce49a7e6e
-* 6a4c9cc76f7f432efa274c3ff0dae3dd
-* 3b7810e8427f006590b006af43d016ef
-* 28573ff4f820730a3eeae9cdd51b54d4
-
-
-98e6e30b63e5242616c686684a17c03b
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Haz un simulacro de preparación para los ataques de ransomware"] .
 
 
 
-==== d957d0c80017f235b131c557ae0876b1
+==== Mejoras en el proceso de detección
 
-8c8c1a747835015c86248b11a2097c02
+Esta versión incluye mejoras en los procesos selectivos de detección y redetección:
+
+* Con esta versión, puede detectar las cargas de trabajo recién creadas que se agregaron a los entornos de trabajo seleccionados anteriormente.
+* También puede seleccionar entornos de trabajo _NEW_ en esta versión. Esta función le ayuda a proteger las nuevas cargas de trabajo añadidas a su entorno.
+* Si desea elegir todas las cargas de trabajo detectadas, puede hacerlo utilizando la opción *Seleccionar todo*.
+* Es posible realizar estos procesos de detección durante el proceso de detección inicial o dentro de la opción Configuración.
+
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Detectar las cargas de trabajo recién creadas para los entornos de trabajo seleccionados anteriormente"] y. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configure los fetaures con la opción Configuración"]
+
+
+
+==== Se generan alertas cuando se detecta un cifrado alto
+
+Con esta versión, puede ver alertas cuando se detecta un alto cifrado en sus cargas de trabajo incluso sin cambios de extensiones de archivos grandes. Esta función, que utiliza la IA de protección autónoma frente a ransomware (ARP) de ONTAP, le ayuda a identificar cargas de trabajo que están en riesgo de ataques de ransomware. Utilice esta función y descargue la lista completa de archivos afectados con o sin cambios de extensión.
 
 Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Responder a una alerta de ransomware detectada"] .
 
