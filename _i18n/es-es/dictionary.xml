@@ -313,11 +313,9 @@
   <block id="7aea075f0d949c2526cea755a2dee13f" category="paragraph">Anteriormente, solo podía realizar una evaluación de sus activos e identificar si se recomienda una actualización tecnológica.</block>
   <block id="8006e6282233bdaa99ca3e9db65fc693" category="paragraph">Ahora la función forma parte de la opción Tech Refresh de la barra de navegación izquierda.</block>
   <block id="33a9c4b5f0c522c38ff9b1b46ebd1498" category="inline-link-macro">Evaluar una actualización tecnológica</block>
-  <block id="17c54e9ba828968f120b82b8cd07abfa" category="inline-link">Configuración de políticas de backup en objeto</block>
   <block id="4df3ea515a84d83efad2c0e3bc03c438" category="paragraph">El servicio de corrección de BlueXP se eliminó el 22 de abril de 2024.</block>
   <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">Ya no puede crear un volumen a partir de una plantilla. Esta acción se asoció con el servicio de corrección de BlueXP, que ya no está disponible.</block>
   <block id="0a9bbb6e81dd21b77886235f2ce33af9" category="paragraph">Conozca los cambios más recientes en los servicios en la nube que forman parte de la plataforma BlueXP. Para obtener un historial de versiones completo, vaya a <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> por cada servicio individual.</block>
-  <block id="5462103113dfca7582cf43f266db09a2" category="inline-link">requisitos del host</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novedades</block>
   <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">Notas de la versión por servicio</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs y comunidad</block>
@@ -335,15 +333,6 @@
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">Consulte<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>.</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">Obtén más información sobre cómo recuperarte de un ataque de ransomware</block>
   <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>.</block>
-  <block id="a429eb8c690c0a48131f4ae1267eafd1" category="paragraph">Con esta versión, ahora puede restaurar volúmenes que creó en ONTAP que tengan menos de 1 GB. El tamaño mínimo de volumen que se puede crear con ONTAP es 20 MB.</block>
-  <block id="f959c5a51fb8f2a9e9c0063bbb8adb63" category="paragraph">La función DataLock protege los archivos de copia de seguridad de ser modificados o eliminados durante un período de tiempo especificado. Esto es útil para proteger sus archivos contra ataques de ransomware.</block>
-  <block id="bebfb016f9defe9a78fff65f418f213b" category="paragraph">El servicio Roles Anywhere de Amazon Web Services (AWS) Identity and Access Management (IAM) le permite utilizar roles de IAM y credenciales a corto plazo para sus cargas de trabajo _outside_ de AWS para acceder a las API de AWS de forma segura, de la misma manera que utiliza roles de IAM para cargas de trabajo _on_ AWS. Cuando utiliza la infraestructura de claves privadas de IAM Roles Anywhere y los tokens de AWS, no necesita claves de acceso de AWS ni claves secretas a largo plazo. Esto le permite rotar las credenciales con mayor frecuencia, lo que mejora la seguridad.</block>
-  <block id="24c6cf6b2747b390a5d9eb672e1d54d4" category="paragraph">Con esta versión, el soporte para el servicio AWS IAM Roles Anywhere es una vista previa de la tecnología.</block>
-  <block id="ddc7fe4301c8a4aa6a14e1843c25f30b" category="inline-link">Backup y recuperación de BlueXP Lanzamiento de julio de 2024</block>
-  <block id="f1db3a8ee789ee9607754f5f8a9871b1" category="paragraph">Consulte<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>.</block>
-  <block id="cd4619af82dfe7627dc934e29e85a6e9" category="paragraph">Con esta versión, el soporte para la restauración de carpetas de FlexGroup es una vista previa de la tecnología.</block>
-  <block id="abbf2484b45da9fd7be677fe96c511eb" category="inline-link-macro">Restaurar carpetas y archivos mediante Examinar &amp;amp; Restaurar</block>
-  <block id="707304f314bfa71975e8ffb352535092" category="paragraph">Para obtener más información sobre cómo activarlo manualmente, consulte<block ref="7de2d0863d92330816fac8b7768edb68" category="inline-link-rx"></block>.</block>
   <block id="7043d4fb27c94bc9a206c106cef9d80c" category="paragraph">Le contamos cómo:</block>
   <block id="eff6d6d4d66ab65f33be5de8b62e16d3" category="list-text">En el menú superior, selecciona *Planes de replicación*.</block>
   <block id="2ae04d8f24d0c8f552b0d3857c0953b3" category="list-text">Seleccione un plan y seleccione el icono Acciones para mostrar el menú desplegable.</block>
@@ -363,8 +352,6 @@
   <block id="8e28797de414b72e6beab6ed5932133f" category="inline-link-macro">Actualizaciones de software de BlueXP</block>
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">Renovación tecnológica</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">Añadir capacidad</block>
-  <block id="f5d370ee9e029c4d62db915f308e04c0" category="paragraph">El conector BlueXP  versión 3.9.40 admite ciertas versiones de Red Hat Enterprise Linux versiones 8 y 9 para cualquier instalación manual del software Connector en un host RHEL 8 o 9, independientemente de la ubicación, además de los sistemas operativos mencionados en el<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block>. Estas versiones más recientes de RHEL requieren el motor Podman en lugar del motor Docker. Anteriormente, el backup y la recuperación de BlueXP  tenían dos limitaciones cuando se utilizaba el motor Podman. Estas limitaciones se han eliminado.</block>
-  <block id="6111aa812639d5e432842ceca200ea78" category="inline-link">Obtenga más información sobre la restauración de datos de ONTAP a partir de archivos de backup</block>
   <block id="0eb65976c0b0c5ffa90b07d4a062e509" category="paragraph">A continuación se muestran algunas consideraciones adicionales relativas a los protocolos iSCSI y FC:</block>
   <block id="d671bd2f503deef1e03581ce8d516507" category="list-text">La compatibilidad con FC es para los protocolos de interfaz de cliente, no para la replicación.</block>
   <block id="cf1967c6d778937fae37b9e43582b1b6" category="list-text">La recuperación ante desastres de BlueXP  solo admite una única LUN por volumen ONTAP. El volumen no debe tener varios LUN.</block>
@@ -376,9 +363,6 @@
   <block id="4f721f83f0a49dae4f329f77ae2221d5" category="list-text"><block ref="4f721f83f0a49dae4f329f77ae2221d5" category="inline-link-rx"></block></block>
   <block id="d0f2765e5de3103a5c432ec160dff29f" category="inline-link">Más información sobre las alertas de BlueXP</block>
   <block id="52db2fc7f4de1af0e1245bc3f891ce57" category="paragraph"><block ref="094e829cc75a913d98050fa15a3d0c12" category="inline-link-rx"></block>.</block>
-  <block id="84142ff06d4e9d4646fc2a3b18cc1d91" category="paragraph"><block ref="a21af64035213e0424a2bf24b7431646" category="inline-link-rx"></block>.</block>
-  <block id="2f080abae9949a746e32fbd78d3382f7" category="paragraph">Para obtener más información sobre DataLock y consejos sobre cómo mitigar los costes asociados, consulte<block ref="116b2987b0e6fcf4c15ff7c1a1a47ed3" category="inline-link-rx"></block> .</block>
-  <block id="b1b12c3c76c5dc414df3c68e8a811c2a" category="paragraph">Para obtener más información, consulte<block ref="ef40acf6b73cf65ed40d9b8f7f6be1c3" category="inline-link-rx"></block> .</block>
   <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="paragraph">La detección de sistemas ASA R2 no es compatible cuando se usa BlueXP  en el modo privado.</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">Obtenga más información sobre los modos de implementación de BlueXP</block>
   <block id="d3342e15149bfef7fd9289d7025e506e" category="list-text"><block ref="d3342e15149bfef7fd9289d7025e506e" category="inline-link-rx"></block></block>
@@ -550,17 +534,6 @@
   <block id="517624d736bd2a385ee8cda71584112f" category="section-title">Modos de protección SnapLock Compliance y SnapLock Enterprise</block>
   <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">Indización del proceso de búsqueda y restauración en la página de volúmenes</block>
   <block id="20d3b0b7cfe7a9f3dcfdb0faa9398efd" category="paragraph">Para poder utilizar Search &amp; Restore, debe habilitar "Indexing" en cada entorno de trabajo de origen desde el que desea restaurar datos de volumen. Esto permite que el catálogo indexado realice un seguimiento de los archivos de copia de seguridad de cada volumen. Ahora, la página Volúmenes muestra el estado de indexación:</block>
-  <block id="5fcc5d3ffc4bbbcf6d018ab4a9639205" category="section-title">27 de septiembre de 2024</block>
-  <block id="aa6a53998d98bae73a6913ff1c2eecbc" category="section-title">Compatibilidad con Podman en RHEL 8 o 9 con Browse and Restore</block>
-  <block id="c6bad3b272d5eeec569990b050d88123" category="paragraph">El backup y la recuperación de datos de BlueXP  ahora admite la restauración de archivos y carpetas en Red Hat Enterprise Linux (RHEL) versiones 8 y 9 mediante el uso del motor Podman. Esto se aplica al método de exploración y restauración de backup y recuperación de BlueXP .</block>
-  <block id="3abe4a789c1c33e285d9452cca8c493b" category="section-title">Una indexación más rápida por catálogos mejora las tareas de búsqueda y restauración</block>
-  <block id="9353e94049314c6236b51712848f2572" category="paragraph">Esta versión incluye un índice de catálogo mejorado que completa la indexación de línea base mucho más rápido. Una indización más rápida permite utilizar la función de búsqueda y restauración más rápidamente.</block>
-  <block id="ba874eb3ffbdba518b95ce26bc81a861" category="section-title">22 de julio de 2024</block>
-  <block id="9d5f0e2f1682000ac365243e21301823" category="section-title">Restaure volúmenes de menos de 1 GB</block>
-  <block id="ccbf8c45039ba817be81bbf5fa2a7521" category="section-title">Consejos sobre cómo mitigar los costes de DataLock</block>
-  <block id="79cfacda817c1e599649823ffa32c8d7" category="section-title">Integración de AWS IAM Roles Anywhere</block>
-  <block id="5ab4d79a28b46b39467c24096b99316f" category="section-title">Restauración de directorios o carpetas de FlexGroup ahora disponible</block>
-  <block id="a821e6c079044462f6ffc9a01ed28fc9" category="paragraph">Anteriormente, se podían restaurar los volúmenes de FlexVol, pero no era posible restaurar carpetas o directorios de FlexGroup. Con ONTAP 9.15.1 P2, puede restaurar carpetas de FlexGroup con la opción Examinar y restaurar.</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">22 de enero de 2025</block>
   <block id="0a401367ec8a2cd84bb197e6d12c99af" category="section-title">Versión 1,39</block>
   <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">Esta versión de clasificación de BlueXP  actualiza el proceso de exportación del informe de investigación de datos. Esta actualización de exportación es útil para realizar análisis adicionales de sus datos, crear visualizaciones adicionales de los datos o compartir los resultados de su investigación de datos con otros.</block>
@@ -801,7 +774,6 @@
   <block id="61541c0b99aec5f11fccef5bcb3fe5a1" category="paragraph">Esta versión incluye mejoras en los procesos selectivos de detección y redetección:</block>
   <block id="cb3c0a83218c46d38ab0842ce49a7e6e" category="list-text">Con esta versión, puede detectar las cargas de trabajo recién creadas que se agregaron a los entornos de trabajo seleccionados anteriormente.</block>
   <block id="6a4c9cc76f7f432efa274c3ff0dae3dd" category="list-text">También puede seleccionar entornos de trabajo _NEW_ en esta versión. Esta función le ayuda a proteger las nuevas cargas de trabajo añadidas a su entorno.</block>
-  <block id="3b7810e8427f006590b006af43d016ef" category="list-text">Si desea elegir todas las cargas de trabajo detectadas, puede hacerlo utilizando la opción *Seleccionar todo*.</block>
   <block id="28573ff4f820730a3eeae9cdd51b54d4" category="list-text">Es posible realizar estos procesos de detección durante el proceso de detección inicial o dentro de la opción Configuración.</block>
   <block id="33e99171183cf72ac66db77d8dd5792a" category="inline-link">Detectar las cargas de trabajo recién creadas para los entornos de trabajo seleccionados anteriormente</block>
   <block id="16e3b92f9b1f5d1c29b18c748e6a228e" category="inline-link">Configure los fetaures con la opción Configuración</block>
@@ -815,4 +787,17 @@
   <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">Estados Unidos Central</block>
   <block id="7a6df46ff8e25ac610f60f312512afa4" category="list-text">Gobierno de EE. UU. Virginia (Región gubernamental de los EE. UU. - Virginia)</block>
   <block id="91aba3afcaafb3ecbed8f358c30b8a7a" category="paragraph">Para obtener una lista de todas las regiones, consulte la<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
+  <block id="499d067ffbbd553e23809aa38aa67bfa" category="section-title">17 de marzo de 2025</block>
+  <block id="30ba4ee29fda0b7285b4297943459cf9" category="section-title">Exploración de instantáneas de SMB</block>
+  <block id="024bc4989e66777454fa98cbaf9a7d3e" category="paragraph">Esta actualización de copia de seguridad y recuperación de BlueXP  resolvió un problema que impedía que los clientes examinaran las instantáneas locales en un entorno SMB.</block>
+  <block id="151a83fcfdad3b420d256dbc19095068" category="section-title">Actualización del entorno de AWS GovCloud</block>
+  <block id="c4ff0af994997811a9867969c1b26bf3" category="paragraph">Esta actualización de copia de seguridad y recuperación de BlueXP  solucionó un problema que impedía que la interfaz de usuario se conectara a un entorno de AWS GovCloud debido a errores de certificado TLS. El problema se resolvió mediante el nombre de host del conector BlueXP  en lugar de la dirección IP.</block>
+  <block id="a758068ed72f0a6858316a7ff791b4ba" category="section-title">Límites de retención de política de backup</block>
+  <block id="7937af8bb9aecdab11a666bfc7946c61" category="paragraph">Anteriormente, la interfaz de usuario de backup y recuperación de BlueXP  limitaba los backups a 999 copias, mientras que la CLI permitía más. Ahora puede conectar hasta 4.000 volúmenes a una política de backup e incluir 1.018 volúmenes no adjuntos a una política de backup. Esta actualización incluye validaciones adicionales que evitan superar estos límites.</block>
+  <block id="d5479e738a91b3a64956ed9f9e81bc5a" category="section-title">Resincronización de cloud de SnapMirror</block>
+  <block id="06476618a5631fabf79c4d5ebe8b60b0" category="paragraph">Esta actualización garantiza que la resincronización de cloud de SnapMirror no se pueda iniciar desde el backup y la recuperación de BlueXP  para versiones de ONTAP no compatibles después de eliminar una relación de SnapMirror.</block>
+  <block id="322a339b221056f32120ffd18077d44d" category="section-title">Creación de máquinas virtuales de almacenamiento automatizada mediante las API en Azure</block>
+  <block id="aa1c2167957b1092da7e43e77867748c" category="paragraph">Ahora puede usar las API de BlueXP  para crear, cambiar el nombre y eliminar máquinas virtuales de almacenamiento que sirven datos adicionales para Cloud Volumes ONTAP en Azure. El uso de las API automatiza el proceso de creación de máquinas virtuales de almacenamiento, incluida la configuración de las interfaces de red necesarias, las LIF y una LIF de gestión, si necesita utilizar una máquina virtual de almacenamiento para realizar la gestión.</block>
+  <block id="65cc3fef2113d2e1d1f636ab8cb02386" category="inline-link">Cree máquinas virtuales de almacenamiento de servicios de datos para Cloud Volumes ONTAP en Azure</block>
+  <block id="5fc68a139fdd05790792b12eb853e84d" category="paragraph"><block ref="5fc68a139fdd05790792b12eb853e84d" category="inline-link-rx"></block></block>
 </blocks>
