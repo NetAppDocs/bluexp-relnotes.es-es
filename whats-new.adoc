@@ -24,6 +24,30 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
+=== 12 de mayo de 2025
+
+
+
+==== Conector 3.9.52
+
+Esta versión del conector BlueXP  incluye mejoras de seguridad menores y correcciones de errores, así como algunas actualizaciones adicionales.
+
+En este momento, la versión 3.9.52 está disponible para modo estándar y modo restringido.
+
+
+
+===== Compatibilidad con Docker 27 y Docker 28
+
+Docker 27 y Docker 28 ahora son compatibles con el conector.
+
+
+
+==== Administración de Keystone disponible en BlueXP
+
+La versión beta para NetApp Keystone en BlueXP  ha añadido acceso a la administración de Keystone. Puede acceder a la página de registro de la versión beta de NetApp Keystone desde la barra de navegación izquierda de BlueXP .
+
+
+
 === 14 de abril de 2025
 
 
@@ -77,30 +101,6 @@ Para obtener más información sobre el modo privado, incluido el modo de actual
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Descubre cómo empezar a utilizar BlueXP en modo privado"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Aprenda a actualizar el conector cuando use el modo privado"]
 
-
-
-
-=== 10 de marzo de 2025
-
-
-
-==== Conector 3.9.50
-
-Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.
-
-* La gestión de sistemas Cloud Volumes ONTAP ahora es compatible con conectores que tienen SELinux activado en el sistema operativo.
-+
-https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["Obtenga más información sobre SELinux"^]
-
-
-
-En este momento, la versión 3.9.50 está disponible para modo estándar y modo restringido.
-
-
-
-==== Versión beta de NetApp Keystone disponible en BlueXP
-
-NetApp Keystone pronto estará disponible a través de BlueXP  y ya se encontrará en fase beta. Puede acceder a la página de registro de la versión beta de NetApp Keystone desde la barra de navegación izquierda de BlueXP .
 
 
 
@@ -820,6 +820,62 @@ Para obtener más información sobre los informes de uso, consulte https://docs.
 
 
 == Recuperación tras siniestros
+
+
+
+=== 13 de mayo de 2025
+
+Versión 4.2.3
+
+
+
+==== Asignación de subred
+
+Con esta versión, puede gestionar las direcciones IP en caso de conmutación por error de una forma nueva mediante la asignación de subred, lo que permite añadir subredes para cada vCenter. Al hacerlo, debe definir el CIDR IPv4, la puerta de enlace predeterminada y el DNS para cada red virtual.
+
+Tras la conmutación por error, la recuperación ante desastres de BlueXP  determina la dirección IP adecuada de cada VNIC observando el CIDR proporcionado para la red virtual asignada y lo utiliza para derivar la nueva dirección IP.
+
+Por ejemplo:
+
+* NetworkA = 10,1.1.0/24
+* NetworkB = 192.168.1.0/24
+
+
+VM1 tiene una VNIC (10,1.1,50) que está conectada a NetworkA. NetworkA se asigna a NetworkB en la configuración del plan de replicación.
+
+Tras la conmutación por error, la recuperación ante desastres de BlueXP  sustituye la parte de red de la dirección IP original (10,1.1) y mantiene la dirección de host (.50) de la dirección IP original (10,1.1,50). Para VM1, la recuperación ante desastres de BlueXP  examina la configuración CIDR para NetworkB y utiliza la parte de red 192.168.1 de NetworkB mientras mantiene la parte de host (.50) para crear la nueva dirección IP para VM1. La nueva dirección IP se convierte en 192.168.1.50.
+
+En resumen, la dirección de host permanece igual, mientras que la dirección de red se sustituye por lo que esté configurado en la asignación de subred del sitio. Esto le permite gestionar la reasignación de direcciones IP en caso de fallo con mayor facilidad, especialmente si tiene cientos de redes y miles de máquinas virtuales que gestionar.
+
+Para obtener más información sobre cómo incluir la asignación de subred en los sitios, consulte https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html["Añada sitios de vCenter Server"] .
+
+
+
+==== Omitir la protección
+
+Ahora puede omitir la protección para que el servicio no cree automáticamente una relación de protección inversa después de una conmutación al respaldo del plan de replicación. Esto resulta útil si desea realizar operaciones adicionales en el sitio restaurado antes de volver a conectarlo en línea dentro de la recuperación ante desastres de BlueXP .
+
+Cuando inicia una conmutación al respaldo, de forma predeterminada el servicio crea automáticamente una relación de protección inversa para cada volumen del plan de replicación, si el sitio de origen original está en línea. Esto significa que el servicio crea una relación de SnapMirror desde el sitio de destino de vuelta al sitio de origen. El servicio también revierte automáticamente la relación de SnapMirror cuando inicia una conmutación de retorno tras recuperación.
+
+Al iniciar una conmutación por error, ahora puede elegir una opción de *Omitir protección*. Con esto, el servicio no invierte automáticamente la relación de SnapMirror. En su lugar, deja el volumen editable en ambos lados del plan de replicación.
+
+Después de que el sitio de origen original vuelva a estar en línea, puede establecer la protección inversa seleccionando *Proteger recursos* en el menú Acciones del plan de replicación. Esto intenta crear una relación de replicación inversa para cada volumen del plan. Puede ejecutar este trabajo varias veces hasta que se restaure la protección. Una vez restaurada la protección, puede iniciar una conmutación de retorno tras recuperación de la forma habitual.
+
+Para obtener más información sobre la protección contra omisiones, consulte https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/failover.html["Conmute al nodo de respaldo de las aplicaciones en un sitio remoto"] .
+
+
+
+==== SnapMirror programa actualizaciones en el plan de replicación
+
+La recuperación ante desastres de BlueXP  ahora admite el uso de soluciones de gestión de snapshots externas, como el planificador de políticas nativo de ONTAP SnapMirror o las integraciones de terceros con ONTAP. Si todos los almacenes de datos (volúmenes) del plan de replicación ya tienen una relación de SnapMirror que se gestiona en otros lugares, puede usar esos snapshots como puntos de recuperación en la recuperación ante desastres de BlueXP .
+
+Para configurarlo, en la sección Plan de replicación > Asignación de recursos, marque la casilla de verificación *Usar copias de seguridad administradas por plataforma y programas de retención* al configurar la asignación de almacenes de datos.
+
+Cuando se selecciona la opción, BlueXP  Disaster Recovery no configura una programación de backup. Sin embargo, todavía debe configurar un programa de retención porque es posible que aún se realicen instantáneas para operaciones de prueba, conmutación por error y conmutación de retorno tras recuperación.
+
+Una vez configurado, el servicio no toma ninguna instantánea programada regularmente, sino que depende de la entidad externa para tomar y actualizar esas instantáneas.
+
+Para obtener más información sobre el uso de soluciones instantáneas externas en el plan de replicación, consulte https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Cree un plan de replicación"] .
 
 
 
