@@ -274,6 +274,53 @@ Ya no puede crear un volumen a partir de una plantilla. Esta acción se asoció 
 
 
 
+=== 13 de mayo de 2025
+
+Esta versión de copia de seguridad y recuperación de BlueXP  incluye las siguientes actualizaciones.
+
+
+
+==== SnapMirror a Cloud Resincronizcar para migraciones de volúmenes
+
+La función de resincronización de SnapMirror a la nube optimiza la protección de datos y la continuidad durante las migraciones de volúmenes en entornos NetApp. Cuando se migra un volumen con la replicación lógica de SnapMirror (LRSE), desde una puesta en marcha de NetApp en las instalaciones a otra o a una solución basada en el cloud, como Cloud Volumes ONTAP o Cloud Volumes Service, SnapMirror a Cloud Resync garantiza que los backups existentes en el cloud permanecen intactos y operativos.
+
+Esta función elimina la necesidad de una operación de nueva base que requiere mucho tiempo y requiere muchos recursos, lo que permite que las operaciones de backup continúen tras la migración. Esta función es muy útil en escenarios de migración de cargas de trabajo, compatible tanto con FlexVols como con FlexGroups y está disponible a partir de la versión 9.16.1 de ONTAP.
+
+Al mantener la continuidad del backup entre entornos, SnapMirror a Cloud Resync mejora la eficiencia operativa y reduce la complejidad de la gestión de datos híbrida y multicloud.
+
+Para obtener información detallada sobre cómo realizar la operación de resincronización, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-migrate-volumes-snapmirror-cloud-resync.html["Migrar volúmenes mediante SnapMirror a la resincronización en el cloud"].
+
+
+
+==== Compatibilidad con el almacén de objetos MinIO de terceros (vista previa)
+
+El backup y la recuperación de datos de BlueXP  amplía ahora su compatibilidad con almacenes de objetos de terceros con un enfoque principal en MinIO. Esta nueva función de vista previa le permite aprovechar cualquier almacén de objetos compatible con S3 para satisfacer sus necesidades de backup y recuperación.
+
+Con esta versión de vista previa, esperamos garantizar una sólida integración con almacenes de objetos de terceros antes de que se implemente toda la funcionalidad. Le animamos a explorar esta nueva capacidad y proporcionar comentarios para ayudar a mejorar el servicio.
+
+
+IMPORTANT: Esta función no se debe utilizar en producción.
+
+*Limitaciones del modo de vista previa*
+
+Mientras esta función está en la vista previa, hay ciertas limitaciones:
+
+* Traiga su propio depósito (BYOB) no es compatible.
+* No se admite la activación de DataLock en la política.
+* No se admite la activación del modo Archivado en la política.
+* Solo se admiten entornos ONTAP en las instalaciones.
+* No se admite MetroCluster.
+* No se admiten las opciones para habilitar el cifrado a nivel de bloque.
+
+
+*Empezar*
+
+Para comenzar a utilizar esta función de vista previa, debe activar una marca en el conector BlueXP . A continuación, puede introducir los detalles de conexión de su almacén de objetos de terceros MinIO en el flujo de trabajo de protección seleccionando el almacén de objetos *Compatible con terceros* en la sección de copia de seguridad.
+
+Para obtener instrucciones sobre cómo activar las funciones de vista preliminar, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-preview-enable.html["Active las funciones de vista previa en las funciones de backup y recuperación de BlueXP"].
+
+
+
 === 16 de abril de 2025
 
 Esta versión de copia de seguridad y recuperación de BlueXP  incluye las siguientes actualizaciones.
@@ -1218,6 +1265,31 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 == Protección contra ransomware
+
+
+
+=== 13 de mayo de 2025
+
+
+
+==== Informes de entornos de trabajo no compatibles en la protección frente al ransomware de BlueXP
+
+Durante el flujo de trabajo de detección, la protección frente al ransomware de BlueXP  informa de más detalles al pasar el ratón por cargas de trabajo compatibles o incompatibles. Esto te ayudará a entender por qué algunas de tus cargas de trabajo o entornos de trabajo no forman parte de la consola ni se gestionan mediante un servicio de protección frente al ransomware. Actualmente, el servicio de protección contra ransomware de BlueXP  no es compatible con los siguientes entornos de trabajo.
+
+* Azure NetApp Files
+* Cloud Volumes Service
+* E-Series
+* Google Cloud Platform (GCP)
+* ONTAP 9.11.1 y versiones anteriores
+* Clústeres locales de ONTAP Direct que no están gestionados por un conector BlueXP
+* StorageGRID
+
+
+Puede ver los entornos de trabajo no compatibles durante la detección inicial y más tarde desde la opción *Detección de carga de trabajo* en la página Configuración. Hay muchas razones por las que el servicio no soporta un entorno de trabajo, por ejemplo, la versión de ONTAP en su entorno de trabajo podría estar por debajo de la versión requerida. Cuando pasa el ratón sobre un entorno de trabajo no admitido, una información sobre herramientas muestra el motivo.
+
+Puede descargar los resultados del proceso de detección después de la detección.
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Detecta cargas de trabajo en la protección frente al ransomware de BlueXP"] .
 
 
 
