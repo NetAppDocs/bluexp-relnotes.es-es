@@ -1274,20 +1274,11 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 ==== Informes de entornos de trabajo no compatibles en la protección frente al ransomware de BlueXP
 
-Durante el flujo de trabajo de detección, la protección frente al ransomware de BlueXP  informa de más detalles al pasar el ratón por cargas de trabajo compatibles o incompatibles. Esto te ayudará a entender por qué algunas de tus cargas de trabajo o entornos de trabajo no forman parte de la consola ni se gestionan mediante un servicio de protección frente al ransomware. Actualmente, el servicio de protección contra ransomware de BlueXP  no es compatible con los siguientes entornos de trabajo.
+Durante el flujo de trabajo de detección, la protección frente al ransomware de BlueXP  informa de más detalles al pasar el ratón por cargas de trabajo compatibles o incompatibles. Esto te ayudará a comprender por qué el servicio de protección frente a ransomware de BlueXP  no se detectan algunas de tus cargas de trabajo.
 
-* Azure NetApp Files
-* Cloud Volumes Service
-* E-Series
-* Google Cloud Platform (GCP)
-* ONTAP 9.11.1 y versiones anteriores
-* Clústeres locales de ONTAP Direct que no están gestionados por un conector BlueXP
-* StorageGRID
+Hay muchas razones por las que el servicio no soporta un entorno de trabajo, por ejemplo, la versión de ONTAP en su entorno de trabajo podría estar por debajo de la versión requerida. Cuando pasa el ratón sobre un entorno de trabajo no admitido, una información sobre herramientas muestra el motivo.
 
-
-Puede ver los entornos de trabajo no compatibles durante la detección inicial y más tarde desde la opción *Detección de carga de trabajo* en la página Configuración. Hay muchas razones por las que el servicio no soporta un entorno de trabajo, por ejemplo, la versión de ONTAP en su entorno de trabajo podría estar por debajo de la versión requerida. Cuando pasa el ratón sobre un entorno de trabajo no admitido, una información sobre herramientas muestra el motivo.
-
-Puede descargar los resultados del proceso de detección después de la detección.
+Es posible ver los entornos de trabajo no compatibles durante la detección inicial, donde también se pueden descargar los resultados. También puede ver los resultados de la detección desde la opción *Detección de carga de trabajo* en la página Configuración.
 
 Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Detecta cargas de trabajo en la protección frente al ransomware de BlueXP"] .
 
