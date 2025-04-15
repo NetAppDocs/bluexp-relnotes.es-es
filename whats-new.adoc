@@ -264,6 +264,59 @@ Ya no puede crear un volumen a partir de una plantilla. Esta acción se asoció 
 
 
 
+=== 16 de abril de 2025
+
+Esta versión de copia de seguridad y recuperación de BlueXP  incluye las siguientes actualizaciones.
+
+
+
+==== Consola de volumen mejorado (vista previa)
+
+Ahora, la consola de volúmenes se carga en menos de 10 segundos, lo que proporciona una interfaz mucho más rápida y eficiente. Esta versión de vista previa está disponible para seleccionar clientes, ofreciéndoles una vista previa de estas mejoras.
+
+
+
+==== Mejoras en la interfaz de usuario
+
+Esta versión mejora tu experiencia al simplificar la interfaz:
+
+* La eliminación de la columna Agregado de las tablas de volúmenes, junto con las columnas Política de Snapshot, Política de backup y Política de replicación de la tabla Volumen de la consola V2, da como resultado un diseño más sencillo.
+* La exclusión de los entornos de trabajo no activados de la lista desplegable hace que la interfaz esté menos desordenada, la navegación sea más eficiente y la carga sea más rápida.
+* Mientras la clasificación en la columna Etiquetas está desactivada, puede ver las etiquetas, garantizando que la información importante permanezca fácilmente accesible.
+* La eliminación de etiquetas en los iconos de protección contribuye a un aspecto más limpio y reduce el tiempo de carga.
+* Durante el proceso de activación del entorno de trabajo, un cuadro de diálogo muestra un icono de carga para proporcionar información hasta que se complete el proceso de detección, lo que mejora la transparencia y la confianza en las operaciones del sistema.
+
+
+
+
+==== Soporte para almacén de objetos Wasabi de terceros (Preview)
+
+El backup y la recuperación de BlueXP  ahora amplía su compatibilidad con almacenes de objetos de terceros con un enfoque principal en Wasabi. Esta nueva función de vista previa te permite aprovechar cualquier almacén de objetos compatible con S3 para satisfacer tus necesidades de backup y recuperación.
+
+
+
+===== Empezar con Wasabi
+
+Para comenzar a usar esta función, debe habilitar una marca en la interfaz de usuario de BlueXP . A continuación, puede introducir los detalles de conexión de su almacén de objetos de terceros e integrarlos en sus flujos de trabajo de backup y recuperación.
+
+
+
+===== Limitaciones del modo de vista previa
+
+Mientras esta función está en la vista preliminar, tenga en cuenta las siguientes limitaciones:
+
+* Traiga su propio depósito (BYOB) no es compatible.
+* No se admite la activación del bloqueo de datos en una política.
+* No se admite la activación del modo Archivado en una política.
+* Solo se admiten entornos ONTAP en las instalaciones.
+* No se admite MetroCluster.
+* No se admiten las opciones para habilitar el cifrado a nivel de bloque.
+
+
+Durante esta vista previa, le animamos a explorar esta nueva función y proporcionar comentarios sobre la integración con almacenes de objetos de terceros antes de que se implemente toda la funcionalidad.
+
+
+
 === 17 de marzo de 2025
 
 Esta versión de copia de seguridad y recuperación de BlueXP  incluye las siguientes actualizaciones.
@@ -344,34 +397,6 @@ Tenga en cuenta estas consideraciones relacionadas con la búsqueda global:
 
 * El nuevo índice no se realiza en instantáneas etiquetadas como hora.
 * La nueva función de indexación sólo funciona en instantáneas de FlexVols, y no en instantáneas de FlexGroups.
-
-
-
-
-=== 22 de noviembre de 2024
-
-Esta versión de copia de seguridad y recuperación de BlueXP  incluye las siguientes actualizaciones.
-
-
-
-==== Modos de protección SnapLock Compliance y SnapLock Enterprise
-
-Ahora, el backup y la recuperación de datos de BlueXP  puede realizar backups de volúmenes en las instalaciones tanto de FlexVol como de FlexGroup configurados mediante modos de protección SnapLock Compliance o SnapLock Enterprise. Los clústeres deben ejecutar ONTAP 9,14 o superior para esta compatibilidad. El backup de los volúmenes de FlexVol con el modo SnapLock Enterprise se admite desde la versión 9.11.1 de ONTAP. Las versiones anteriores de ONTAP no ofrecen compatibilidad para realizar backups de volúmenes de protección de SnapLock.
-
-Consulte la lista completa de los volúmenes compatibles en la https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Descubre el backup y la recuperación de BlueXP"].
-
-
-
-==== Indización del proceso de búsqueda y restauración en la página de volúmenes
-
-Para poder utilizar Search & Restore, debe habilitar "Indexing" en cada entorno de trabajo de origen desde el que desea restaurar datos de volumen. Esto permite que el catálogo indexado realice un seguimiento de los archivos de copia de seguridad de cada volumen. Ahora, la página Volúmenes muestra el estado de indexación:
-
-* Indexado: Los volúmenes se han indexado.
-* En curso
-* No indexado
-* Indización en pausa
-* Error
-* Deshabilitado
 
 
 
