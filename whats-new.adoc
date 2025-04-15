@@ -38,10 +38,9 @@ En este momento, la versión 3.9.51 está disponible para modo estándar y modo 
 
 ==== Gestión de acceso e identidades (IAM) de BlueXP
 
-* Los usuarios sin el administrador de la organización, la carpeta o el administrador del proyecto deben tener asignada una función de protección contra ransomware para tener acceso a la protección contra ransomware. Puede asignar al usuario uno de estos dos roles: Administrador de protección contra ransomware o visor de protección contra ransomware.
+* Los usuarios sin el administrador de la organización o la carpeta o el administrador del proyecto deben tener asignada una función de protección contra ransomware para tener acceso a la protección contra ransomware. Puede asignar al usuario uno de estos dos roles: Administrador de protección contra ransomware o visor de protección contra ransomware.
 * Los usuarios sin el administrador de la organización, la carpeta o el administrador del proyecto deben tener asignada una función de Keystone para tener acceso a Keystone. Se puede asignar a un usuario uno de estos dos roles: Administrador de Keystone o visor de Keystone.
-
-
++
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."^]
 
 * Si tiene la función de administrador de organización o de carpeta o de administrador de proyecto, ahora puede asociar una suscripción de Keystone a un proyecto de IAM. La asociación de una suscripción de Keystone con un proyecto de IAM le permite controlar el acceso a Keystone dentro de BlueXP .
@@ -716,6 +715,48 @@ Para obtener más información sobre los informes de uso, consulte https://docs.
 
 
 
+=== 16 de abril de 2025
+
+Versión 4,3
+
+
+
+==== Detección programada para máquinas virtuales
+
+La recuperación ante desastres de BlueXP  realiza la detección una vez cada 24 horas. Con esta versión, ahora puede personalizar el programa de detección para satisfacer sus necesidades y reducir el impacto en el rendimiento cuando lo necesite. Por ejemplo, si tiene una gran cantidad de máquinas virtuales, puede configurar la programación de detección para que se ejecute cada 48 horas. Si tiene una cantidad pequeña de máquinas virtuales, puede configurar la programación de detección para que se ejecute cada 12 horas.
+
+Si no wan programa la detección, puede deshabilitar la opción de detección programada y actualizar la detección manualmente en cualquier momento.
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html["Añada sitios de vCenter Server"] .
+
+
+
+==== Compatibilidad con almacenes de datos de grupo de recursos
+
+Antes, solo podía crear grupos de recursos por máquinas virtuales. Con esta versión, es posible crear un grupo de recursos por almacenes de datos. Cuando crea un plan de replicación y crea un grupo de recursos para ese plan, se mostrarán todas las máquinas virtuales de un almacén de datos. Esta característica resulta útil si tiene una gran cantidad de máquinas virtuales y desea agruparlas por almacén de datos.
+
+Es posible crear un grupo de recursos con un almacén de datos de las siguientes maneras:
+
+* Cuando se añade un grupo de recursos mediante almacenes de datos, se muestra una lista de almacenes de datos. Puede seleccionar uno o varios almacenes de datos para crear un grupo de recursos.
+* Cuando crea un plan de replicación y crea un grupo de recursos dentro del plan, puede ver las máquinas virtuales en los almacenes de datos.
+
+
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Cree un plan de replicación"] .
+
+
+
+==== Notificaciones de prueba gratuita o vencimiento de licencia
+
+Esta versión proporciona notificaciones de que la prueba gratuita caducará en 60 días para garantizar que tenga tiempo para obtener una licencia. Esta versión también proporciona notificaciones el día en que caduca la licencia.
+
+
+
+==== Notificación de actualizaciones de servicio
+
+Con esta versión, aparece un banner en la parte superior para indicar que los servicios se están actualizando y que el servicio se coloca en modo de mantenimiento. El banner aparece cuando el servicio se está actualizando y desaparece cuando se completa la actualización. Aunque puede seguir trabajando en la interfaz de usuario mientras la actualización está en curso, no puede enviar nuevos trabajos. Los trabajos programados se ejecutarán una vez finalizada la actualización y el servicio volverá al modo de producción.
+
+
+
 === 19 de febrero de 2025
 
 Versión 4,2
@@ -825,23 +866,6 @@ Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-di
 Ahora puede conciliar instantáneas que no estén sincronizadas entre el origen y el destino. Esto puede suceder si se eliminan las copias Snapshot en un destino fuera de la recuperación tras desastres de BlueXP . El servicio elimina la snapshot de origen automáticamente cada 24 horas. Sin embargo, puede realizar esto bajo demanda. Esta función le permite asegurarse de que las instantáneas sean coherentes en todos los sitios.
 
 Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gestionar planes de replicación"] .
-
-
-
-=== 20 de septiembre de 2024
-
-
-
-==== Compatibilidad con almacenes de datos VMFS de VMware desde las instalaciones hasta en las instalaciones
-
-Esta versión incluye compatibilidad con máquinas virtuales montadas en almacenes de datos del sistema de archivos de máquina virtual (VMFS) de VMware vSphere para iSCSI y FC protegidos en almacenamiento en las instalaciones. Anteriormente, el servicio ofrecía una _technology preview_ que admitía los almacenes de datos VMFS para iSCSI y FC.
-
-A continuación se muestran algunas consideraciones adicionales relativas a los protocolos iSCSI y FC:
-
-* La compatibilidad con FC es para los protocolos de interfaz de cliente, no para la replicación.
-* La recuperación ante desastres de BlueXP  solo admite una única LUN por volumen ONTAP. El volumen no debe tener varios LUN.
-* Para cualquier plan de replicación, el volumen ONTAP de destino debe utilizar los mismos protocolos que el volumen ONTAP de origen que aloja las máquinas virtuales protegidas. Por ejemplo, si el origen utiliza un protocolo FC, el destino debe utilizar también FC.
-
 
 
 
