@@ -464,8 +464,8 @@ Para obtener más información, consulte xref:task-custom-classification.adoc[Ag
 .Pestaña Búsquedas guardadas
 Se ha cambiado el nombre de la pestaña **Políticas** xref:task-using-policies.html[**Búsquedas guardadas**]. La funcionalidad es la misma.
 
-.Enviar eventos de análisis al registro de auditoría
-Los eventos de exploración de BlueXP  ahora se pueden enviar a la xref:task-audit-data-sense-actions.html[registro de auditoría]. La clasificación BlueXP  también admite el envío de eventos de clasificación (cuando se inicia una exploración y cuando termina) al link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Línea de tiempo de BlueXP"^]. El envío de eventos de exploración de clasificación a la línea de tiempo de BlueXP  sólo se admite para entornos de trabajo.
+.Enviar eventos de escaneo a la línea de tiempo de BlueXP 
+La clasificación BlueXP  ahora admite el envío de eventos de clasificación (cuando se inicia una exploración y cuando finaliza) al link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Línea de tiempo de BlueXP"^].
 
 .Actualizaciones de seguridad
 * El paquete Keras ha sido actualizado, mitigando vulnerabilidades (BDSA-2025-0107 y BDSA-2025-1984).

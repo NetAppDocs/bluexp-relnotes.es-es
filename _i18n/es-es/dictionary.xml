@@ -812,10 +812,7 @@
   <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">Pestaña Búsquedas guardadas</block>
   <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-xref-macro">**Búsquedas guardadas**</block>
   <block id="619964fa6c4dc175f106697cd53cd93b" category="paragraph">Se ha cambiado el nombre de la pestaña **Políticas** <block ref="57cf69bfb5ee6dec8716152c342ad94c" category="inline-xref-macro-rx"></block>. La funcionalidad es la misma.</block>
-  <block id="260ad9aa0619e900a957ec4498a7084d" category="paragraph-title">Enviar eventos de análisis al registro de auditoría</block>
   <block id="decaf26b476fc5aad56ba857036660b7" category="inline-link-macro">Línea de tiempo de BlueXP</block>
-  <block id="7d71019726dccc04ceb52b94f892b7f6" category="inline-xref-macro">registro de auditoría</block>
-  <block id="1c6653b6dfd13a16237efa3ea5c87e2a" category="paragraph">Los eventos de exploración de BlueXP  ahora se pueden enviar a la <block ref="e7616c9e5375866db0d455d96b016998" category="inline-xref-macro-rx"></block>. La clasificación BlueXP  también admite el envío de eventos de clasificación (cuando se inicia una exploración y cuando termina) al <block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>. El envío de eventos de exploración de clasificación a la línea de tiempo de BlueXP  sólo se admite para entornos de trabajo.</block>
   <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">Actualizaciones de seguridad</block>
   <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">El paquete Keras ha sido actualizado, mitigando vulnerabilidades (BDSA-2025-0107 y BDSA-2025-1984).</block>
   <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">La configuración de contenedores de Docker se ha actualizado. El contenedor ya no tiene acceso a las interfaces de red del host para crear paquetes de red raw. Al reducir el acceso innecesario, la actualización mitiga los posibles riesgos de seguridad.</block>
@@ -846,4 +843,6 @@
   <block id="b618f30aeca114d464120de119b19ced" category="paragraph">Consulte<block ref="5f37f8bd4230e4b629c60b7dc23a5850" category="inline-link-rx"></block>.</block>
   <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">Soporte autocompleto de CloudShell</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">Al utilizar CloudShell de fábrica de carga de trabajo de BlueXP , puede comenzar a escribir un comando y presionar la tecla TAB para ver las opciones disponibles. Si existen múltiples posibilidades, la CLI mostrará una lista de sugerencias. Esta función mejora la productividad al minimizar los errores y acelerar la ejecución de comandos.</block>
+  <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">Enviar eventos de escaneo a la línea de tiempo de BlueXP </block>
+  <block id="2fb6ac863fbf4be01901268bf08e147f" category="paragraph">La clasificación BlueXP  ahora admite el envío de eventos de clasificación (cuando se inicia una exploración y cuando finaliza) al <block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>.</block>
 </blocks>
