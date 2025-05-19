@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam, recovery' 
 summary: Conozca los cambios más recientes en los servicios en la nube que forman parte de la plataforma BlueXP. 
 ---
 = Cambios recientes en BlueXP
@@ -57,6 +57,12 @@ La versión beta para NetApp Keystone en BlueXP  ha añadido acceso a la admini
 Esta versión de BlueXP Connector incluye mejoras de seguridad y correcciones de errores menores.
 
 En este momento, la versión 3.9.51 está disponible para modo estándar y modo restringido.
+
+
+
+===== Ahora se admiten extremos seguros para las descargas de Connector para backup y recuperación y protección contra ransomware
+
+Si utiliza la protección de copia de seguridad y recuperación o Ransomware, ahora puede utilizar extremos seguros para las descargas de Connector. link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["Obtenga información sobre puntos finales seguros para descargas de Connector."^]
 
 
 
@@ -494,17 +500,17 @@ Tenga en cuenta estas consideraciones relacionadas con la búsqueda global:
 Esta versión de clasificación de BlueXP  incluye:
 
 .Priorice las secuencias de clasificación
-La clasificación BlueXP  ahora permite priorizar las secuencias de asignación y clasificación, además de las secuencias de sólo asignación, lo que permite seleccionar las secuencias que se realizan primero. Se admite la priorización de las exploraciones de asignación y clasificación durante y antes de que comiencen las exploraciones. Si decide priorizar una exploración mientras está en curso, se priorizan tanto las secuencias de asignación como las de clasificación.
+La clasificación BlueXP  permite priorizar las exploraciones de mapas y clasificaciones, además de las de sólo asignación, lo que permite seleccionar las exploraciones que se realizan primero. Se admite la priorización de las exploraciones de asignación y clasificación durante y antes de que comiencen las exploraciones. Si decide priorizar una exploración mientras está en curso, se priorizan tanto las secuencias de asignación como las de clasificación.
 
 Para obtener más información, consulte link:task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"].
 
 .Soporte para las categorías de datos de información de identificación personal canadiense (PII)
-Los escaneos de clasificación de BlueXP  ahora identifican las categorías de datos de PII canadienses para información bancaria, número de pasaporte, número de seguro social y número de licencia de conducir y número de tarjeta de salud para todas las provincias y territorios.
+Las exploraciones de clasificación BlueXP  identifican categorías de datos de PII canadienses. Estas categorías incluyen información bancaria, números de pasaporte, números de seguro social, números de licencia de conducir y números de tarjeta de salud para todas las provincias y territorios canadienses.
 
 Para obtener más información, consulte xref:reference-private-data-categories.adoc#types-of-personal-data[Categorías de datos personales].
 
 .Clasificación personalizada (vista previa)
-La clasificación BlueXP  ahora admite clasificaciones personalizadas para las exploraciones de mapas y clasificaciones. Con clasificaciones personalizadas, puede personalizar los escaneos BlueXP  para capturar datos específicos de su organización y garantizar el cumplimiento de las expresiones regulares. Esta función se encuentra actualmente en la vista preliminar.
+La clasificación BlueXP  admite clasificaciones personalizadas para las exploraciones de mapas y clasificaciones. Con clasificaciones personalizadas, puede personalizar los escaneos BlueXP  para capturar datos específicos de su organización mediante expresiones regulares. Esta función se encuentra actualmente en la vista preliminar.
 
 Para obtener más información, consulte xref:task-custom-classification.adoc[Agregar clasificaciones personalizadas].
 
@@ -512,7 +518,7 @@ Para obtener más información, consulte xref:task-custom-classification.adoc[Ag
 Se ha cambiado el nombre de la pestaña **Políticas** xref:task-using-policies.html[**Búsquedas guardadas**]. La funcionalidad es la misma.
 
 .Enviar eventos de escaneo a la línea de tiempo de BlueXP 
-La clasificación BlueXP  ahora admite el envío de eventos de clasificación (cuando se inicia una exploración y cuando finaliza) al link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Línea de tiempo de BlueXP"^].
+La clasificación BlueXP  admite el envío de eventos de clasificación (cuando se inicia una exploración y cuando finaliza) a la link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Línea de tiempo de BlueXP"^].
 
 .Actualizaciones de seguridad
 * El paquete Keras ha sido actualizado, mitigando vulnerabilidades (BDSA-2025-0107 y BDSA-2025-1984).
@@ -536,10 +542,10 @@ Se han solucionado los errores que provocaban el fallo de las exploraciones de S
 Esta versión de clasificación de BlueXP  incluye:
 
 .Análisis masivo para entornos de trabajo
-La clasificación BlueXP  ahora admite operaciones masivas para entornos de trabajo. Puede optar por activar la asignación de exploraciones, activar la asignación y clasificación de exploraciones, desactivar exploraciones o crear una configuración personalizada en los volúmenes del entorno de trabajo. Si se realiza una selección para un volumen individual, se anula la selección masiva. Para realizar una operación masiva, navegue a la página **Configuración** y realice su selección.
+La clasificación BlueXP  admite operaciones masivas para entornos de trabajo. Puede optar por activar la asignación de exploraciones, activar la asignación y clasificación de exploraciones, desactivar exploraciones o crear una configuración personalizada en los volúmenes del entorno de trabajo. Si se realiza una selección para un volumen individual, se anula la selección masiva. Para realizar una operación masiva, navegue a la página **Configuración** y realice su selección.
 
 .Descargue el informe de investigación localmente
-La clasificación BlueXP  ahora admite la capacidad de descargar informes de investigación de datos localmente para verlos en el explorador. Si selecciona la opción local, la investigación de datos solo está disponible en formato CSV y solo muestra las primeras 10.000 filas de datos.
+La clasificación BlueXP  permite descargar informes de investigación de datos localmente para verlos en el explorador. Si selecciona la opción local, la investigación de datos solo está disponible en formato CSV y solo muestra las primeras 10.000 filas de datos.
 
 Para obtener más información, consulte link:task-investigate-data.html#create-the-data-investigation-report["Investiga los datos almacenados en tu organización con la clasificación BlueXP"].
 
@@ -554,7 +560,7 @@ Para obtener más información, consulte link:task-investigate-data.html#create-
 Esta versión de clasificación de BlueXP  incluye mejoras generales y correcciones de errores. También incluye:
 
 .Estado de adquisición
-La clasificación BlueXP  ahora realiza un seguimiento del progreso en tiempo real de las exploraciones de asignación y clasificación _initial_ en un volumen. Las barras progresivas separadas realizan un seguimiento de las exploraciones de mapeo y clasificación, presentando un porcentaje del total de archivos escaneados. También puede pasar el ratón sobre una barra de progreso para ver el número de archivos escaneados y el total de archivos. El seguimiento del estado de sus escaneos crea una visión más profunda del progreso del escaneo, lo que le permite planificar mejor sus escaneos y comprender la asignación de recursos.
+La clasificación BlueXP  realiza un seguimiento del progreso en tiempo real de las exploraciones de asignación y clasificación _initial_ en un volumen. Las barras progresivas separadas realizan un seguimiento de las exploraciones de mapeo y clasificación, presentando un porcentaje del total de archivos escaneados. También puede pasar el ratón sobre una barra de progreso para ver el número de archivos escaneados y el total de archivos. El seguimiento del estado de sus escaneos crea una visión más profunda del progreso del escaneo, lo que le permite planificar mejor sus escaneos y comprender la asignación de recursos.
 
 Para ver el estado de sus escaneos, vaya a **Configuración** en la clasificación BlueXP  y luego seleccione la **Configuración del entorno de trabajo**. El progreso se muestra en la línea para cada volumen.
 
@@ -576,7 +582,7 @@ Los siguientes sistemas operativos requieren el uso del motor de contenedores Po
 .Priorice las exploraciones de sólo asignación
 Al realizar exploraciones de sólo asignación, puede priorizar las exploraciones más importantes. Esta función ayuda cuando tiene muchos entornos de trabajo y desea garantizar que las exploraciones de alta prioridad se completen primero.
 
-De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Gracias a la capacidad de dar prioridad a las exploraciones, ahora puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
+De forma predeterminada, las exploraciones se ponen en cola según el orden en el que se inician. Con la capacidad de priorizar las exploraciones, puede mover las exploraciones al frente de la cola. Se puede priorizar varias adquisiciones. La prioridad se designa en un orden de primero en entrar, primero en salir, lo que significa que la primera exploración que prioriza se mueve al frente de la cola; la segunda exploración que prioriza se convierte en la segunda en la cola, y así sucesivamente.
 
 La prioridad se concede una vez. Las nuevas exploraciones automáticas de los datos de asignación se producen en el orden predeterminado.
 
@@ -585,9 +591,9 @@ La priorización está limitada alink:concept-cloud-compliance.html["exploracion
 Para obtener más información, consulte link:task-managing-repo-scanning.html#prioritize-scans["Priorice las adquisiciones"].
 
 .Vuelva a intentar todas las adquisiciones
-La clasificación BlueXP  ahora admite la capacidad de reintentar por lotes todos los análisis fallidos.
+La clasificación BlueXP  admite la capacidad de reintentar por lotes todos los análisis fallidos.
 
-Ahora puede volver a intentar escaneos en una operación por lotes con la función **Reintentar todo**. Si las exploraciones de clasificación fallan debido a un problema temporal, como una interrupción de la red, puede volver a intentar todas las exploraciones al mismo tiempo con un botón en lugar de volver a intentarlo individualmente. Las secuencias se pueden volver a intentar tantas veces como sea necesario.
+Puede volver a intentar escaneos en una operación por lotes con la función **Reintentar todo**. Si las exploraciones de clasificación fallan debido a un problema temporal, como una interrupción de la red, puede volver a intentar todas las exploraciones al mismo tiempo con un botón en lugar de volver a intentarlo individualmente. Las secuencias se pueden volver a intentar tantas veces como sea necesario.
 
 Para volver a intentar todas las adquisiciones:
 
@@ -752,6 +758,28 @@ Actualizamos el servicio de copia y sincronización de BlueXP y el agente de dat
 
 
 
+=== 08 de mayo de 2025
+
+
+
+==== Widget de AutoSupport
+
+El widget AutoSupport se ha mejorado para incluir una ventana emergente que proporciona detalles sobre los sistemas que han dejado de enviar datos AutoSupport. Al habilitar AutoSupport se reducen los riesgos de tiempo de inactividad y se admite la gestión proactiva del estado del sistema.
+
+
+
+==== Informe de contratos de soporte
+
+El informe de contratos de soporte se ha mejorado para incluir el nuevo campo de indicador ASP/LSG. Este campo le permite filtrar e identificar los sistemas cubiertos por un partner de soporte autorizado, también conocido como certificado de servicios de ciclo de vida.
+
+
+
+==== Panel de sostenibilidad
+
+Ahora puede iniciar el panel de Sustainability utilizando el enlace incluido en la presentación de Sustainability.
+
+
+
 === 05 de marzo de 2025
 
 
@@ -771,16 +799,6 @@ Actualizamos el servicio de copia y sincronización de BlueXP y el agente de dat
 ==== Asesor de actualizaciones
 
 Ahora puede ver el firmware de almacenamiento, el firmware de SP/BMC y el paquete autónomo de ransomware (ARP) que se recomiendan para una actualización. link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["Aprenda a ver las recomendaciones de actualización de firmware"].
-
-
-
-=== 04 de diciembre de 2024
-
-
-
-==== Widget AutoSupport
-
-El widget AutoSupport se ha agregado a la pantalla del panel principal para alertar a los clientes sobre los problemas relacionados con el estado de AutoSupport.
 
 
 
