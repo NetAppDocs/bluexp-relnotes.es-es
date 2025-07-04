@@ -24,6 +24,31 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
+=== 21 de julio de 2025
+
+
+
+==== Compatibilidad con Google Cloud NetApp Volumes
+
+Ahora puedes ver Google Cloud NetApp Volumes en BlueXP. link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html/index.html["Obtenga más información sobre Google Cloud NetApp Volumes."]
+
+
+
+==== Gestión de acceso e identidades (IAM) de BlueXP
+
+
+
+===== Nuevo rol de acceso para Google Cloud NetApp Volumes
+
+BlueXP ahora admite el uso de un rol de acceso para el siguiente sistema de almacenamiento:
+
+* NetApp Volumes para Google Cloud
+
+
+link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["Obtenga más información sobre el uso de roles de acceso."]
+
+
+
 === 14 de julio de 2025
 
 
@@ -404,15 +429,15 @@ Para poder utilizar el método de búsqueda y restauración de datos, debe activ
 
 El catálogo indexado puede luego rastrear cada volumen y archivo de respaldo, haciendo que sus búsquedas sean rápidas y eficientes.
 
-Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-search-restore["Cómo restaurar los datos de ONTAP con la opción de  Restaurar"].
+Para obtener más información, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-restore.html["Habilitar indexación para búsqueda y restauración"].
 
 
 
 ==== Puntos de conexión de vínculo privado y puntos de conexión de servicio de Azure
 
-Normalmente, BlueXP Backup and Recovery establece un punto final privado con el proveedor de la nube para gestionar diversas tareas de protección. Esta versión incluye una configuración opcional que permite habilitar o deshabilitar la creación automática de un punto final privado por parte de BlueXP Backup and Recovery. Esto puede resultar útil si desea mayor control sobre el proceso de creación de puntos finales privados.
+Normalmente, la BlueXP backup and recovery establece un punto final privado con el proveedor de la nube para gestionar las tareas de protección. Esta versión incluye una configuración opcional que permite habilitar o deshabilitar la creación automática de un punto final privado por parte de BlueXP Backup and Recovery. Esto puede resultar útil si desea mayor control sobre el proceso de creación de puntos finales privados.
 
-Puede habilitar o deshabilitar esta opción al habilitar la protección o iniciar el proceso de restauración.
+Puede habilitar o deshabilitar esta opción cuando habilite la protección o inicie el proceso de restauración.
 
 Si deshabilita esta configuración, deberá crear manualmente el punto final privado para que la copia de seguridad y la recuperación de BlueXP funcionen correctamente. Sin una conectividad adecuada, es posible que no pueda realizar las tareas de copia de seguridad y recuperación correctamente.
 
@@ -428,7 +453,7 @@ La versión anterior introdujo compatibilidad con SnapMirror to Cloud Resync (SM
 
 Al crear archivos de copia de seguridad en el almacenamiento de objetos para un entorno de trabajo, BlueXP Backup and Recovery crea, de forma predeterminada, el contenedor (bucket o cuenta de almacenamiento) para los archivos de copia de seguridad en la cuenta de almacenamiento de objetos configurada. Anteriormente, podía anular esta configuración y especificar su propio contenedor para Amazon S3, Azure Blob Storage y Google Cloud Storage. Con esta versión, ahora puede usar su propio contenedor de almacenamiento de objetos de StorageGRID.
 
-Consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["Crea tu propio contenedor de almacenamiento de objetos"].
+Consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html["Crea tu propio contenedor de almacenamiento de objetos"].
 
 
 
@@ -446,7 +471,7 @@ Esta función elimina la necesidad de una operación de nueva base que requiere 
 
 Al mantener la continuidad del backup entre entornos, SnapMirror a Cloud Resync mejora la eficiencia operativa y reduce la complejidad de la gestión de datos híbrida y multicloud.
 
-Para obtener información detallada sobre cómo realizar la operación de resincronización, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-migrate-volumes-snapmirror-cloud-resync.html["Migrar volúmenes mediante SnapMirror a la resincronización en el cloud"].
+Para obtener información detallada sobre cómo realizar la operación de resincronización, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-migrate-resync.html["Migrar volúmenes mediante SnapMirror a la resincronización en el cloud"].
 
 
 
@@ -474,84 +499,6 @@ Mientras esta función está en la vista previa, hay ciertas limitaciones:
 *Empezar*
 
 Para comenzar a utilizar esta función de vista previa, debe activar una marca en el conector BlueXP . A continuación, puede introducir los detalles de conexión de su almacén de objetos de terceros MinIO en el flujo de trabajo de protección seleccionando el almacén de objetos *Compatible con terceros* en la sección de copia de seguridad.
-
-Para obtener instrucciones sobre cómo activar las funciones de vista preliminar, consulte https://docs.netapp.com/us-en/bluexp-backup-recovery/task-preview-enable.html["Active las funciones de vista previa en las funciones de backup y recuperación de BlueXP"].
-
-
-
-=== 16 de abril de 2025
-
-Esta versión de copia de seguridad y recuperación de BlueXP  incluye las siguientes actualizaciones.
-
-
-
-==== Mejoras en la interfaz de usuario
-
-Esta versión mejora tu experiencia al simplificar la interfaz:
-
-* La eliminación de la columna Agregado de las tablas de volúmenes, junto con las columnas Política de Snapshot, Política de backup y Política de replicación de la tabla Volumen de la consola V2, da como resultado un diseño más sencillo.
-* La exclusión de los entornos de trabajo no activados de la lista desplegable hace que la interfaz esté menos desordenada, la navegación sea más eficiente y la carga sea más rápida.
-* Mientras la clasificación en la columna Etiquetas está desactivada, puede ver las etiquetas, garantizando que la información importante permanezca fácilmente accesible.
-* La eliminación de etiquetas en los iconos de protección contribuye a un aspecto más limpio y reduce el tiempo de carga.
-* Durante el proceso de activación del entorno de trabajo, un cuadro de diálogo muestra un icono de carga para proporcionar información hasta que se complete el proceso de detección, lo que mejora la transparencia y la confianza en las operaciones del sistema.
-
-
-
-
-==== Consola de volumen mejorado (vista previa)
-
-Ahora, la consola de volúmenes se carga en menos de 10 segundos, lo que proporciona una interfaz mucho más rápida y eficiente. Esta versión de vista previa está disponible para seleccionar clientes, ofreciéndoles una vista previa de estas mejoras.
-
-
-
-==== Soporte para almacén de objetos Wasabi de terceros (Preview)
-
-El backup y la recuperación de BlueXP  ahora amplía su compatibilidad con almacenes de objetos de terceros con un enfoque principal en Wasabi. Esta nueva función de vista previa te permite aprovechar cualquier almacén de objetos compatible con S3 para satisfacer tus necesidades de backup y recuperación.
-
-
-
-===== Empezar con Wasabi
-
-Para empezar a utilizar almacenamiento de terceros como almacén de objetos, debe habilitar un indicador en Conector BlueXP . A continuación, puede introducir los detalles de conexión de su almacén de objetos de terceros e integrarlos en sus flujos de trabajo de backup y recuperación.
-
-.Pasos
-. SSH en su conector.
-. Acceda al contenedor del servidor cbs de backup y recuperación de BlueXP :
-+
-[listing]
-----
-docker exec -it cloudmanager_cbs sh
-----
-. Abra el `default.json` archivo dentro de la `config` carpeta a través de VIM o cualquier otro editor:
-+
-[listing]
-----
-vi default.json
-----
-. Modificar `allow-s3-compatible`: false a `allow-s3-compatible`: true.
-. Guarde los cambios.
-. Salga del contenedor.
-. Reinicie el contenedor del servidor cbs de copia de seguridad y recuperación de BlueXP .
-
-
-.Resultado
-Cuando haya vuelto a ENCENDER el contenedor, abra la interfaz de usuario de backup y recuperación de BlueXP . Al iniciar un backup o editar una estrategia de backup, verá que el nuevo proveedor «compatible con S3» aparece en la lista con otros proveedores de backup como AWS, Microsoft Azure, Google Cloud, StorageGRID y ONTAP S3.
-
-
-
-===== Limitaciones del modo de vista previa
-
-Mientras esta función está en la vista preliminar, tenga en cuenta las siguientes limitaciones:
-
-* Traiga su propio depósito (BYOB) no es compatible.
-* No se admite la activación del bloqueo de datos en una política.
-* No se admite la activación del modo Archivado en una política.
-* Solo se admiten entornos ONTAP en las instalaciones.
-* No se admite MetroCluster.
-* No se admiten las opciones para habilitar el cifrado a nivel de bloque.
-
-
-Durante esta vista previa, le animamos a explorar esta nueva función y proporcionar comentarios sobre la integración con almacenes de objetos de terceros antes de que se implemente toda la funcionalidad.
 
 
 
@@ -916,6 +863,24 @@ Actualizamos el servicio de copia y sincronización de BlueXP y el agente de dat
 
 
 
+=== 9 de julio de 2025
+
+
+
+==== Asesor de actualizaciones
+
+* Se ha incluido una opción de descarga multiformato para los planes del Asesor de Actualizaciones, lo que simplifica la planificación de actualizaciones de ONTAP y soluciona posibles obstáculos o advertencias. Ahora puede descargar los planes del Asesor de Actualizaciones en formato Excel, PDF y JSON.
+* En el formato Excel del plan Upgrade Advisor, se han realizado las siguientes mejoras:
++
+** Puede ver las comprobaciones previas realizadas en el clúster y marcar los resultados con indicadores como "Aprobado", "Fallido" u "Omitido". Esto garantiza que el clúster esté en óptimas condiciones para completar la actualización de ONTAP .
+** Puede ver las últimas actualizaciones de firmware recomendadas aplicables al clúster, junto con la versión enviada con la versión de destino de ONTAP .
+** Se ha incluido una nueva pestaña que ofrece comprobaciones de interoperabilidad para clústeres SAN. Ofrece una vista de las versiones del sistema operativo host compatibles con la versión de ONTAP de destino seleccionada.
+
+
+
+
+
+
 === 08 de mayo de 2025
 
 
@@ -947,16 +912,6 @@ Ahora puede iniciar el panel de Sustainability utilizando el enlace incluido en 
 * Con Disk Qualification Package (DQP), ahora puede actualizar automáticamente los controladores de disco y el firmware del dispositivo de almacenamiento según los criterios de estado y rendimiento predefinidos. Esto reduce los fallos potenciales y mejora la fiabilidad general del sistema.
 * Se ha introducido la base de datos de zona horaria (DB) para mantener automáticamente la alineación del sistema con las últimas definiciones de zona horaria. Esto garantiza que las operaciones dependientes del tiempo continúen sin problemas incluso cuando las reglas de zona horaria cambien.
 
-
-
-
-=== 12 de diciembre de 2024
-
-
-
-==== Asesor de actualizaciones
-
-Ahora puede ver el firmware de almacenamiento, el firmware de SP/BMC y el paquete autónomo de ransomware (ARP) que se recomiendan para una actualización. link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["Aprenda a ver las recomendaciones de actualización de firmware"].
 
 
 
