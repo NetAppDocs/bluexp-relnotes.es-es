@@ -24,6 +24,74 @@ En esta sección se describen las nuevas funciones relacionadas con las funcione
 
 
 
+=== 14 de julio de 2025
+
+
+
+==== Conector 3.9.54
+
+Esta versión del conector BlueXP incluye mejoras de seguridad, correcciones de errores y las siguientes características nuevas:
+
+* Compatibilidad con servidores proxy transparentes para conectores dedicados a respaldar los servicios de Cloud Volumes ONTAP . link:https://docs.netapp.com/us-en/bluexp/task-configuring-proxy.html["Obtenga más información sobre cómo configurar un proxy transparente."]
+* Capacidad de usar etiquetas de red para ayudar a enrutar el tráfico del conector cuando este se implementa en un entorno de Google Cloud.
+* Notificaciones adicionales dentro del producto para la monitorización del estado del conector, incluido el uso de CPU y RAM.
+
+
+En este momento, la versión 3.9.54 está disponible para el modo estándar y el modo restringido.
+
+
+
+==== Gestión de acceso e identidades (IAM) de BlueXP
+
+La gestión de identidad y acceso en BlueXP ahora ofrece las siguientes funciones:
+
+* Soporte para IAM en modo privado, lo que le permite administrar el acceso de los usuarios y los permisos para los servicios y aplicaciones de BlueXP .
+* Gestión optimizada de federaciones de identidad, que incluye una navegación más sencilla, opciones más claras para configurar conexiones federadas y una mejor visibilidad de las federaciones existentes.
+* Roles de acceso para BlueXP backup and recovery, BlueXP disaster recovery y administración de la federación.
+
+
+
+
+===== Compatibilidad con IAM en modo privado
+
+BlueXP ahora admite IAM en modo privado, lo que permite administrar el acceso y los permisos de los usuarios para los servicios y aplicaciones de BlueXP . Esta mejora permite a los clientes del modo privado aprovechar el control de acceso basado en roles (RBAC) para mejorar la seguridad y el cumplimiento normativo.
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#iam["Obtenga más información sobre IAM en BlueXP."]
+
+
+
+===== Gestión optimizada de federaciones de identidad
+
+BlueXP ahora ofrece una interfaz más intuitiva para gestionar la federación de identidades. Esto incluye una navegación más sencilla, opciones más claras para configurar conexiones federadas y una mejor visibilidad de las federaciones existentes.
+
+Al habilitar el inicio de sesión único (SSO) mediante la federación de identidades, los usuarios pueden iniciar sesión en BlueXP con sus credenciales corporativas. Esto mejora la seguridad, reduce el uso de contraseñas y simplifica la incorporación.
+
+Se le solicitará que importe las conexiones federadas existentes a la nueva interfaz para acceder a las nuevas funciones de administración. Esto le permite aprovechar las últimas mejoras sin tener que recrear sus conexiones federadas. link:https://docs.netapp.com/us-en/bluexp/task-federation-import.html["Obtenga más información sobre cómo importar su conexión federada existente a BlueXP."]
+
+Una gestión mejorada de la federación le permite:
+
+* Agregue más de un dominio verificado a una conexión federada, lo que le permitirá utilizar múltiples dominios con el mismo proveedor de identidad (IdP).
+* Deshabilite o elimine las conexiones federadas cuando sea necesario, lo que le otorgará control sobre el acceso y la seguridad de los usuarios.
+* Controle el acceso a la gestión de la federación con roles de IAM.
+
+
+link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html["Obtenga más información sobre la federación de identidad en BlueXP."]
+
+
+
+===== Nuevos roles de acceso para la BlueXP backup and recovery, la BlueXP disaster recovery y la administración de la federación
+
+BlueXP ahora admite el uso de roles de IAM para las siguientes funciones y servicios de datos:
+
+* Backup y recuperación de BlueXP
+* Recuperación ante desastres de BlueXP
+* Federación
+
+
+link:https://docs.netapp.com/us-en/bluexp/reference-iam-predefined-roles.html["Obtenga más información sobre el uso de roles de acceso."]
+
+
+
 === 9 de junio de 2025
 
 
@@ -62,7 +130,7 @@ link:https://docs.netapp.com/us-en/keystone-staas/index.html["Obtenga informaci�
 
 ===== Autenticación multifactor (MFA)
 
-Los usuarios no federados ahora pueden habilitar la autenticación multifactor (MFA) para sus cuentas de BlueXP, lo que mejora la seguridad. Los administradores de BlueXP pueden administrar la configuración de MFA para sus usuarios, restableciéndola o desactivándola según sea necesario. Esto solo es compatible en el modo estándar.
+Los usuarios no federados pueden habilitar la MFA en sus cuentas de BlueXP para mejorar la seguridad. Los administradores pueden gestionar la configuración de la MFA, incluyendo restablecerla o deshabilitarla para los usuarios según sea necesario. Esto solo es compatible en el modo estándar.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Obtenga información sobre cómo configurar la autenticación multifactor para usted."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Obtenga información sobre cómo administrar la autenticación multifactor para los usuarios."^]
 
@@ -102,83 +170,6 @@ Para obtener más información sobre el modo privado, incluido el modo de actual
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Aprende sobre el modo privado"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Descubre cómo empezar a utilizar BlueXP en modo privado"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Aprenda a actualizar el conector cuando use el modo privado"]
-
-
-
-
-=== 12 de mayo de 2025
-
-
-
-==== Conector 3.9.52
-
-Esta versión del conector BlueXP  incluye mejoras de seguridad menores y correcciones de errores, así como algunas actualizaciones adicionales.
-
-En este momento, la versión 3.9.52 está disponible para modo estándar y modo restringido.
-
-
-
-===== Compatibilidad con Docker 27 y Docker 28
-
-Docker 27 y Docker 28 ahora son compatibles con el conector.
-
-
-
-===== Cloud Volumes ONTAP
-
-Los nodos de Cloud Volumes ONTAP ya no se apagan cuando el Conector no cumple con las normas o permanece inactivo durante más de 14 días. Cloud Volumes ONTAP sigue enviando mensajes de gestión de eventos cuando pierde el acceso al Conector. Este cambio garantiza que Cloud Volumes ONTAP pueda seguir funcionando incluso si el Conector permanece inactivo durante un período prolongado. No modifica los requisitos de cumplimiento del Conector.
-
-
-
-==== Administración de Keystone disponible en BlueXP
-
-La versión beta para NetApp Keystone en BlueXP  ha añadido acceso a la administración de Keystone. Puede acceder a la página de registro de la versión beta de NetApp Keystone desde la barra de navegación izquierda de BlueXP .
-
-
-
-==== Gestión de acceso e identidades (IAM) de BlueXP
-
-
-
-===== Nuevos roles de gestión de almacenamiento
-
-Los roles de administrador de almacenamiento, especialista en estado del sistema y visualizador de almacenamiento están disponibles y se pueden asignar a los usuarios.
-
-Estos roles le permiten administrar quién en su organización puede descubrir y administrar recursos de almacenamiento, así como ver información sobre el estado del almacenamiento y realizar actualizaciones de software.
-
-Estos roles son compatibles para controlar el acceso a los siguientes recursos de almacenamiento:
-
-* Sistemas E-Series
-* Sistemas StorageGRID
-* Sistemas ONTAP en las instalaciones
-
-
-También puede utilizar estos roles para controlar el acceso a los siguientes servicios de BlueXP:
-
-* Actualizaciones de software
-* Asesor digital
-* Resiliencia operativa
-* Eficiencia económica
-* Sostenibilidad
-
-
-Se han añadido los siguientes roles:
-
-* *Administrador de almacenamiento*
-+
-Administrar el estado, la gobernanza y el descubrimiento del almacenamiento de los recursos de la organización. Este rol también puede realizar actualizaciones de software en los recursos de almacenamiento.
-
-* *Especialista en salud del sistema*
-+
-Administrar el estado y la gobernanza del almacenamiento de los recursos de la organización. Este rol también puede realizar actualizaciones de software en los recursos de almacenamiento. No puede modificar ni eliminar entornos de trabajo.
-
-* *Visor de almacenamiento*
-+
-Ver información sobre el estado del almacenamiento y datos de gobernanza.
-
-+
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso."^]
-
 
 
 
@@ -1726,6 +1717,16 @@ Más información sobre link:https://docs.netapp.com/us-en/bluexp-software-updat
 
 
 == StorageGRID
+
+
+
+=== 12 de mayo de 2025
+
+
+
+==== Se necesitan roles de acceso a BlueXP
+
+Ahora necesita uno de los siguientes roles de acceso para ver, descubrir o administrar StorageGRID en BlueXP: *Administrador de la organización*, *Administrador de carpeta o proyecto*, *Administrador de almacenamiento* o *Especialista en estado de almacenamiento*. link:https://docs.netapp.com/us-en/bluexp/reference-iam-predefined-roles.html["Obtenga más información sobre los roles de acceso de BlueXP."^]
 
 
 

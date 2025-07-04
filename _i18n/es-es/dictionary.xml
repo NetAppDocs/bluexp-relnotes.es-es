@@ -613,8 +613,6 @@
   <block id="906699741ebd9905a07af900abcfd438" category="paragraph">Ahora puede administrar<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block> el permiso desde la consola de fábrica de cargas de trabajo cuando agrega credenciales de cuenta de AWS adicionales o agrega una nueva capacidad de carga de trabajo, como la carga de trabajo de GenAI.</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 de abril de 2025</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Gestión de acceso e identidades (IAM) de BlueXP</block>
-  <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">Obtenga más información sobre los roles de acceso.</block>
-  <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
   <block id="b84cda7d6006e8abb6e6264e292b13c0" category="paragraph">Ahora puede administrar<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block> el permiso desde la consola de BlueXP  cuando agrega credenciales de cuenta de AWS adicionales o agrega una nueva capacidad de carga de trabajo, como la carga de trabajo de GenAI.</block>
   <block id="8ee0913e940253bb841c1a05228d81e5" category="paragraph"><block ref="8ee0913e940253bb841c1a05228d81e5" category="inline-link-macro-rx"></block></block>
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="section-title">Versión 1,42</block>
@@ -765,13 +763,6 @@
   <block id="74d516ef8dfa098bb4cd92313c403475" category="section-title">Soporte autocompleto de CloudShell</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">Al utilizar CloudShell de fábrica de carga de trabajo de BlueXP , puede comenzar a escribir un comando y presionar la tecla TAB para ver las opciones disponibles. Si existen múltiples posibilidades, la CLI mostrará una lista de sugerencias. Esta función mejora la productividad al minimizar los errores y acelerar la ejecución de comandos.</block>
   <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">Enviar eventos de escaneo a la línea de tiempo de BlueXP </block>
-  <block id="f4136fdf902ca32b4530c7a614c0ed71" category="section-title">Conector 3.9.52</block>
-  <block id="aa9f9a6b10a3fcd2209035620051306c" category="paragraph">Esta versión del conector BlueXP  incluye mejoras de seguridad menores y correcciones de errores, así como algunas actualizaciones adicionales.</block>
-  <block id="6f9b6bb76caa4f1e59bff34c9ae037fe" category="paragraph">En este momento, la versión 3.9.52 está disponible para modo estándar y modo restringido.</block>
-  <block id="66b821747bf772a5a92a60270143558a" category="section-title">Compatibilidad con Docker 27 y Docker 28</block>
-  <block id="01bd213c78b554183ce88619eeb02cce" category="paragraph">Docker 27 y Docker 28 ahora son compatibles con el conector.</block>
-  <block id="ab83fd01c3620a62252ab67adbc06a91" category="section-title">Administración de Keystone disponible en BlueXP</block>
-  <block id="4359bea5882e2896e306955792589a33" category="paragraph">La versión beta para NetApp Keystone en BlueXP  ha añadido acceso a la administración de Keystone. Puede acceder a la página de registro de la versión beta de NetApp Keystone desde la barra de navegación izquierda de BlueXP .</block>
   <block id="71df7d09aaee8e6796df0c3d10989fbd" category="section-title">13 de mayo de 2025</block>
   <block id="5a31c17caa12408e3b6093ed864c9821" category="paragraph">Versión 4.2.3</block>
   <block id="c362166d3b35c5afaa0ddfbe7e69494b" category="section-title">Asignación de subred</block>
@@ -855,7 +846,6 @@
   <block id="29e615c9125f030edfca48f5dd489a27" category="inline-link-macro">Obtenga información sobre la gestión de suscripciones de Keystone en BlueXP.</block>
   <block id="b449211baca42f6cd385865db145f827" category="paragraph"><block ref="b449211baca42f6cd385865db145f827" category="inline-link-macro-rx"></block></block>
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">Autenticación multifactor (MFA)</block>
-  <block id="079da054a19d880b356cedc5deeaf9e3" category="paragraph">Los usuarios no federados ahora pueden habilitar la autenticación multifactor (MFA) para sus cuentas de BlueXP, lo que mejora la seguridad. Los administradores de BlueXP pueden administrar la configuración de MFA para sus usuarios, restableciéndola o desactivándola según sea necesario. Esto solo es compatible en el modo estándar.</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">Obtenga información sobre cómo configurar la autenticación multifactor para usted.</block>
   <block id="8b6178443fc25355a974613e3d6951b4" category="inline-link-macro">Obtenga información sobre cómo administrar la autenticación multifactor para los usuarios.</block>
   <block id="432ca61a502f036a7c9fe7850d55f376" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="1104a8a08c217b6a8c157f716ea4a98c" category="inline-link-macro-rx"></block></block>
@@ -868,22 +858,6 @@
   <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">Ir a la <block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block> y consulte los cambios incluidos para las versiones 3.9.52 y 3.9.50.</block>
   <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">Ir a la <block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> y consulte los cambios incluidos en la versión de mayo de 2025.</block>
   <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">12 de mayo de 2025 (versión 1.43)</block>
-  <block id="1cb98a955a2cc6db0fd659024f067adb" category="paragraph">Los nodos de Cloud Volumes ONTAP ya no se apagan cuando el Conector no cumple con las normas o permanece inactivo durante más de 14 días. Cloud Volumes ONTAP sigue enviando mensajes de gestión de eventos cuando pierde el acceso al Conector. Este cambio garantiza que Cloud Volumes ONTAP pueda seguir funcionando incluso si el Conector permanece inactivo durante un período prolongado. No modifica los requisitos de cumplimiento del Conector.</block>
-  <block id="b2a4dd9da503b6b927d0278084e6ea56" category="section-title">Nuevos roles de gestión de almacenamiento</block>
-  <block id="bf593570fbef026982251facf0c215e1" category="paragraph">Los roles de administrador de almacenamiento, especialista en estado del sistema y visualizador de almacenamiento están disponibles y se pueden asignar a los usuarios.</block>
-  <block id="9e8f8caceb21ce13b88d4160e465e2a5" category="paragraph">Estos roles le permiten administrar quién en su organización puede descubrir y administrar recursos de almacenamiento, así como ver información sobre el estado del almacenamiento y realizar actualizaciones de software.</block>
-  <block id="1640c7bcb4a85ded2f136361a51dd52e" category="paragraph">Estos roles son compatibles para controlar el acceso a los siguientes recursos de almacenamiento:</block>
-  <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">Sistemas StorageGRID</block>
-  <block id="d0a39c85bb5fdaacac18ed6c4e5b511f" category="list-text">Sistemas ONTAP en las instalaciones</block>
-  <block id="b80ffca4d1f83e77193d4613c9044556" category="paragraph">También puede utilizar estos roles para controlar el acceso a los siguientes servicios de BlueXP:</block>
-  <block id="19bea5bec76c66ef8bd189aa23a4c860" category="list-text">Sostenibilidad</block>
-  <block id="a594a24eac9dea3cdb34c6d3c35b39a6" category="paragraph">Se han añadido los siguientes roles:</block>
-  <block id="98d63ffef525e1f04dd3ec407ff57b30" category="list-text">*Administrador de almacenamiento*</block>
-  <block id="f1aeec4f24299e314aab97d634337c25" category="paragraph">Administrar el estado, la gobernanza y el descubrimiento del almacenamiento de los recursos de la organización. Este rol también puede realizar actualizaciones de software en los recursos de almacenamiento.</block>
-  <block id="24bae3be890c130e5ac1c22d16f741bd" category="list-text">*Especialista en salud del sistema*</block>
-  <block id="3886b56eea2fe550b4e6b51dc07a1911" category="paragraph">Administrar el estado y la gobernanza del almacenamiento de los recursos de la organización. Este rol también puede realizar actualizaciones de software en los recursos de almacenamiento. No puede modificar ni eliminar entornos de trabajo.</block>
-  <block id="4172ddc56d4e9fa18f3ae18bdb0184b5" category="list-text">*Visor de almacenamiento*</block>
-  <block id="c4bd9bd2263d800e3d498cc0849de57f" category="paragraph">Ver información sobre el estado del almacenamiento y datos de gobernanza.</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">29 de junio de 2025</block>
   <block id="737f8adcd33c506f811980c79df8aa51" category="section-title">Actualización de credenciales</block>
   <block id="e7bb6404e9b51c8163ba1ed57cf3a336" category="paragraph">Después de configurar las credenciales y los permisos para su sistema de archivos de FSx for ONTAP, se le redirigirá a la página Credenciales de BlueXP. Desde esta página, puede cambiar el nombre o eliminar sus credenciales de FSx for ONTAP.</block>
@@ -987,4 +961,40 @@
   <block id="76490568879e4523bb6bd6d8263472a9" category="inline-link">Configurar las notificaciones de fábrica de la carga de trabajo de BlueXP</block>
   <block id="533a43c23a4d81612b2392465e022a51" category="paragraph"><block ref="533a43c23a4d81612b2392465e022a51" category="inline-link-rx"></block></block>
   <block id="0e42c2b565849349fc544a0196ef1b6a" category="section-title">10 de junio de 2025</block>
+  <block id="f2673d4a3fe0162a501d43f5168ae950" category="section-title">14 de julio de 2025</block>
+  <block id="f7b353257b71afef5402701e6c93dc8a" category="section-title">Conector 3.9.54</block>
+  <block id="98b6a9150dc84b6f02a11b49d3f18c05" category="paragraph">Esta versión del conector BlueXP incluye mejoras de seguridad, correcciones de errores y las siguientes características nuevas:</block>
+  <block id="0e0a4ccfeecf6ead97d3838c2dc57d40" category="inline-link-macro">Obtenga más información sobre cómo configurar un proxy transparente.</block>
+  <block id="313ef52bd65a76709d5fc69694074f0c" category="list-text">Compatibilidad con servidores proxy transparentes para conectores dedicados a respaldar los servicios de Cloud Volumes ONTAP . <block ref="139e9d43e4ebdf2d28d8a7ff0c85548a" category="inline-link-macro-rx"></block></block>
+  <block id="4439ae12e6cc703b73c18fa22032bcff" category="list-text">Capacidad de usar etiquetas de red para ayudar a enrutar el tráfico del conector cuando este se implementa en un entorno de Google Cloud.</block>
+  <block id="a72a5a23a9089a372f557a0032363d4e" category="list-text">Notificaciones adicionales dentro del producto para la monitorización del estado del conector, incluido el uso de CPU y RAM.</block>
+  <block id="86c10fecfc44ffe6d27d3e73e9158cad" category="paragraph">En este momento, la versión 3.9.54 está disponible para el modo estándar y el modo restringido.</block>
+  <block id="3c3f3f8da4e73401360151d23584f1ea" category="paragraph">La gestión de identidad y acceso en BlueXP ahora ofrece las siguientes funciones:</block>
+  <block id="ac7f0ef250a867a5ecb5c25482b98e18" category="list-text">Soporte para IAM en modo privado, lo que le permite administrar el acceso de los usuarios y los permisos para los servicios y aplicaciones de BlueXP .</block>
+  <block id="24d91e6aa8972e7e5bb12c6d94624a97" category="list-text">Gestión optimizada de federaciones de identidad, que incluye una navegación más sencilla, opciones más claras para configurar conexiones federadas y una mejor visibilidad de las federaciones existentes.</block>
+  <block id="db77c29257701c4d25faf6a7f5c4d6d5" category="list-text">Roles de acceso para BlueXP backup and recovery, BlueXP disaster recovery y administración de la federación.</block>
+  <block id="90d9add65845a3ac3f06a9c505d3ca8c" category="section-title">Compatibilidad con IAM en modo privado</block>
+  <block id="3f9f69d84e5d45c59f976ad54eb76e25" category="paragraph">BlueXP ahora admite IAM en modo privado, lo que permite administrar el acceso y los permisos de los usuarios para los servicios y aplicaciones de BlueXP . Esta mejora permite a los clientes del modo privado aprovechar el control de acceso basado en roles (RBAC) para mejorar la seguridad y el cumplimiento normativo.</block>
+  <block id="45420c71b7c178f6317117fccb2ff617" category="inline-link-macro">Obtenga más información sobre IAM en BlueXP.</block>
+  <block id="b1f1212b2b71340bea9d195625f740ec" category="paragraph"><block ref="b1f1212b2b71340bea9d195625f740ec" category="inline-link-macro-rx"></block></block>
+  <block id="1a63a8b8fcf7d631a5e1fa8067ab9b08" category="section-title">Gestión optimizada de federaciones de identidad</block>
+  <block id="a7cc903fc36eaee51a699d9d59b1496c" category="paragraph">BlueXP ahora ofrece una interfaz más intuitiva para gestionar la federación de identidades. Esto incluye una navegación más sencilla, opciones más claras para configurar conexiones federadas y una mejor visibilidad de las federaciones existentes.</block>
+  <block id="c06fd8d559af4ac97a50afd1857f0e4e" category="paragraph">Al habilitar el inicio de sesión único (SSO) mediante la federación de identidades, los usuarios pueden iniciar sesión en BlueXP con sus credenciales corporativas. Esto mejora la seguridad, reduce el uso de contraseñas y simplifica la incorporación.</block>
+  <block id="62532a5520311cce692e8abb3a619189" category="inline-link-macro">Obtenga más información sobre cómo importar su conexión federada existente a BlueXP.</block>
+  <block id="09de16a2da9f0884c7445f0a40b10aa4" category="paragraph">Se le solicitará que importe las conexiones federadas existentes a la nueva interfaz para acceder a las nuevas funciones de administración. Esto le permite aprovechar las últimas mejoras sin tener que recrear sus conexiones federadas. <block ref="172066467f700483f74d71d92d89ce7c" category="inline-link-macro-rx"></block></block>
+  <block id="35db97c0083a9f24d4de60744f2ae08c" category="paragraph">Una gestión mejorada de la federación le permite:</block>
+  <block id="c7cfa37b557dec5d42fe4ae1f33a84a9" category="list-text">Agregue más de un dominio verificado a una conexión federada, lo que le permitirá utilizar múltiples dominios con el mismo proveedor de identidad (IdP).</block>
+  <block id="b4a4e2a03df0b0c5b7847629f778c654" category="list-text">Deshabilite o elimine las conexiones federadas cuando sea necesario, lo que le otorgará control sobre el acceso y la seguridad de los usuarios.</block>
+  <block id="77f3e518793db250165393f568090955" category="list-text">Controle el acceso a la gestión de la federación con roles de IAM.</block>
+  <block id="ac784304eb7a6a12a493cf93b5cef5a9" category="inline-link-macro">Obtenga más información sobre la federación de identidad en BlueXP.</block>
+  <block id="7970bfbac6093d2cbee1b40bcff193c3" category="paragraph"><block ref="7970bfbac6093d2cbee1b40bcff193c3" category="inline-link-macro-rx"></block></block>
+  <block id="e16a950fa56f1c93596e628653af0177" category="section-title">Nuevos roles de acceso para la BlueXP backup and recovery, la BlueXP disaster recovery y la administración de la federación</block>
+  <block id="f4b57a3793a05b2b72338f8e9fcc9496" category="paragraph">BlueXP ahora admite el uso de roles de IAM para las siguientes funciones y servicios de datos:</block>
+  <block id="ede1cce9f240fed5ecc4264bd699cee1" category="list-text">Backup y recuperación de BlueXP</block>
+  <block id="43db2a9bc6b7310c67fd6873bb6ca7a4" category="list-text">Federación</block>
+  <block id="f52cf765b6d2324047bf70dbb3a134b2" category="inline-link-macro">Obtenga más información sobre el uso de roles de acceso.</block>
+  <block id="10bab6385b6290f87ce28199462adf76" category="paragraph"><block ref="10bab6385b6290f87ce28199462adf76" category="inline-link-macro-rx"></block></block>
+  <block id="f32aa7882dcd9a369e67d2808830a51e" category="paragraph">Los usuarios no federados pueden habilitar la MFA en sus cuentas de BlueXP para mejorar la seguridad. Los administradores pueden gestionar la configuración de la MFA, incluyendo restablecerla o deshabilitarla para los usuarios según sea necesario. Esto solo es compatible en el modo estándar.</block>
+  <block id="2bef154766331bbaacbab995f24ef0c2" category="section-title">Se necesitan roles de acceso a BlueXP</block>
+  <block id="44a4a7c03393e00f4aeee3bd72474eea" category="paragraph">Ahora necesita uno de los siguientes roles de acceso para ver, descubrir o administrar StorageGRID en BlueXP: *Administrador de la organización*, *Administrador de carpeta o proyecto*, *Administrador de almacenamiento* o *Especialista en estado de almacenamiento*. <block ref="b792d0fe33393ff1eec4387f959ddd2c" category="inline-link-macro-rx"></block></block>
 </blocks>
