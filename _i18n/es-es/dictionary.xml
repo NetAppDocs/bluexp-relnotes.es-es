@@ -516,9 +516,6 @@
   <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
   <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Aprenda a actualizar el conector cuando use el modo privado</block>
   <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
-  <block id="1b4189ae198caba09051ca2138497fc7" category="section-title">05 de marzo de 2025</block>
-  <block id="5542dbcb72159ed44fa6bf922b45c1e8" category="list-text">Con Disk Qualification Package (DQP), ahora puede actualizar automáticamente los controladores de disco y el firmware del dispositivo de almacenamiento según los criterios de estado y rendimiento predefinidos. Esto reduce los fallos potenciales y mejora la fiabilidad general del sistema.</block>
-  <block id="90dd6f07c096c3965dc62d991f80f7fd" category="list-text">Se ha introducido la base de datos de zona horaria (DB) para mantener automáticamente la alineación del sistema con las últimas definiciones de zona horaria. Esto garantiza que las operaciones dependientes del tiempo continúen sin problemas incluso cuando las reglas de zona horaria cambien.</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">30 de marzo de 2025</block>
   <block id="ef74d01649997b60252254da8a1573fd" category="section-title">CloudShell informa de respuestas de errores generadas por IA para comandos de la CLI de ONTAP</block>
   <block id="3450754e7ec63bd0a961376c9928752a" category="paragraph">Al usar CloudShell, cada vez que emita un comando de la CLI de ONTAP y se produce un error, puede obtener respuestas de error generadas por IA que incluyen una descripción del fallo, la causa del fallo y una resolución detallada.</block>
@@ -911,4 +908,14 @@
   <block id="c1682b4af830f8e1dcda8da16400f7e1" category="section-title">Ver datos de consumo a nivel de instancia</block>
   <block id="10d5879ffcf41a017554a80a63e4b46e" category="inline-link-macro">Visualiza el consumo de tus suscripciones de Keystone</block>
   <block id="d2c70766af411fb0e8a745645e1d2b86" category="paragraph">Puede ver el consumo actual y los datos históricos de cada instancia de nivel de servicio de rendimiento a través del panel de Keystone en BlueXP. Esta función está disponible para los niveles de servicio de rendimiento con múltiples instancias, siempre que tenga una suscripción a Keystone versión 3 (v3). Para obtener más información, consulte<block ref="500828148463e083954a63124cb9a7bb" category="inline-link-macro-rx"></block> .</block>
+  <block id="e8b6643d4bda95ae4c2dacb6a8e40cac" category="section-title">06 de agosto de 2025</block>
+  <block id="a30ce25654f610d7e9e47c6277028c38" category="section-title">Soporte para conmutadores con derechos</block>
+  <block id="d98c483ab007e03305ae5655fe6cbaf8" category="inline-link-macro">Aprenda a ver los interruptores con derecho a soporte</block>
+  <block id="e71b090a525e98d8d6e64f80e67acf6f" category="paragraph">Ahora puede ver información sobre los conmutadores SAN Fibre Channel de Brocade que tienen derecho a recibir soporte. Esto incluye detalles sobre el modelo del conmutador, el número de serie y el estado de soporte. <block ref="0ccb1381392c0ca51f280aad697adc46" category="inline-link-macro-rx"></block> .</block>
+  <block id="adc76ac62c705df3456206213de66002" category="section-title">Umbral para los datos de RSS AutoSupport</block>
+  <block id="3cdd6b50a4e4c3395ca5fea20c94ee5b" category="paragraph">El límite de envíos recientemente detenidos (RSS), en el widget AutoSupport , se ha ampliado de 48 horas (2 días) a 216 horas (9 días) antes de que un sistema sea marcado como RSS. Esto se hace para dar cabida a plataformas como StorageGRID que solo envían datos de AutoSupport semanales.</block>
+  <block id="bbe4dac655b49c7a3978eb5864452f05" category="section-title">Sección de API obsoleta en el catálogo de API de Digital Advisor</block>
+  <block id="4632607b0b76f87d36568a2df2c3a267" category="paragraph">Una nueva sección de API obsoleta está disponible en el catálogo de API de Digital Advisor . Se enumeran las API que están programadas para quedar obsoletas, junto con los cronogramas de obsolescencia y las API alternativas.</block>
+  <block id="9eadf268f4ef55df53b7403a020082b1" category="section-title">Pronóstico de capacidad V2 y obsolescencia de los módulos API de fin de soporte</block>
+  <block id="bd2055e6fb5a6ca7ecc6d9d52f394548" category="paragraph">Se prevé que los módulos API de pronóstico de capacidad V2 y fin de soporte queden obsoletos. Para acceder a las API obsoletas o conocer los plazos de desuso y las API alternativas, navegue a *Servicios de API -&gt; Explorar -&gt; API obsoletas*.</block>
 </blocks>

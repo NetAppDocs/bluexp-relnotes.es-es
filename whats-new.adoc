@@ -792,6 +792,34 @@ Actualizamos el servicio de copia y sincronización de BlueXP y el agente de dat
 
 
 
+=== 06 de agosto de 2025
+
+
+
+==== Soporte para conmutadores con derechos
+
+Ahora puede ver información sobre los conmutadores SAN Fibre Channel de Brocade que tienen derecho a recibir soporte. Esto incluye detalles sobre el modelo del conmutador, el número de serie y el estado de soporte. link:https://docs.netapp.com/us-en/active-iq/task_view_inventory_details.html["Aprenda a ver los interruptores con derecho a soporte"] .
+
+
+
+==== Umbral para los datos de RSS AutoSupport
+
+El límite de envíos recientemente detenidos (RSS), en el widget AutoSupport , se ha ampliado de 48 horas (2 días) a 216 horas (9 días) antes de que un sistema sea marcado como RSS. Esto se hace para dar cabida a plataformas como StorageGRID que solo envían datos de AutoSupport semanales.
+
+
+
+==== Sección de API obsoleta en el catálogo de API de Digital Advisor
+
+Una nueva sección de API obsoleta está disponible en el catálogo de API de Digital Advisor . Se enumeran las API que están programadas para quedar obsoletas, junto con los cronogramas de obsolescencia y las API alternativas.
+
+
+
+==== Pronóstico de capacidad V2 y obsolescencia de los módulos API de fin de soporte
+
+Se prevé que los módulos API de pronóstico de capacidad V2 y fin de soporte queden obsoletos. Para acceder a las API obsoletas o conocer los plazos de desuso y las API alternativas, navegue a *Servicios de API -> Explorar -> API obsoletas*.
+
+
+
 === 9 de julio de 2025
 
 
@@ -829,18 +857,6 @@ El informe de contratos de soporte se ha mejorado para incluir el nuevo campo de
 ==== Panel de sostenibilidad
 
 Ahora puede iniciar el panel de Sustainability utilizando el enlace incluido en la presentación de Sustainability.
-
-
-
-=== 05 de marzo de 2025
-
-
-
-==== Asesor de actualizaciones
-
-* Con Disk Qualification Package (DQP), ahora puede actualizar automáticamente los controladores de disco y el firmware del dispositivo de almacenamiento según los criterios de estado y rendimiento predefinidos. Esto reduce los fallos potenciales y mejora la fiabilidad general del sistema.
-* Se ha introducido la base de datos de zona horaria (DB) para mantener automáticamente la alineación del sistema con las últimas definiciones de zona horaria. Esto garantiza que las operaciones dependientes del tiempo continúen sin problemas incluso cuando las reglas de zona horaria cambien.
-
 
 
 
