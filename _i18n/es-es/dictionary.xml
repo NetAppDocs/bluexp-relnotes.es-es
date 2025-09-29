@@ -709,7 +709,6 @@
   <block id="45420c71b7c178f6317117fccb2ff617" category="inline-link-macro">Obtenga más información sobre IAM en BlueXP.</block>
   <block id="b1f1212b2b71340bea9d195625f740ec" category="paragraph"><block ref="b1f1212b2b71340bea9d195625f740ec" category="inline-link-macro-rx"></block></block>
   <block id="1a63a8b8fcf7d631a5e1fa8067ab9b08" category="section-title">Gestión optimizada de federaciones de identidad</block>
-  <block id="a7cc903fc36eaee51a699d9d59b1496c" category="paragraph">BlueXP ahora ofrece una interfaz más intuitiva para gestionar la federación de identidades. Esto incluye una navegación más sencilla, opciones más claras para configurar conexiones federadas y una mejor visibilidad de las federaciones existentes.</block>
   <block id="c06fd8d559af4ac97a50afd1857f0e4e" category="paragraph">Al habilitar el inicio de sesión único (SSO) mediante la federación de identidades, los usuarios pueden iniciar sesión en BlueXP con sus credenciales corporativas. Esto mejora la seguridad, reduce el uso de contraseñas y simplifica la incorporación.</block>
   <block id="62532a5520311cce692e8abb3a619189" category="inline-link-macro">Obtenga más información sobre cómo importar su conexión federada existente a BlueXP.</block>
   <block id="35db97c0083a9f24d4de60744f2ae08c" category="paragraph">Una gestión mejorada de la federación le permite:</block>
@@ -841,12 +840,6 @@
   <block id="6276222a738837860023343f423eb60c" category="list-text">Se ha incluido una nueva pestaña que ofrece comprobaciones de interoperabilidad para clústeres SAN. Ofrece una vista de las versiones del sistema operativo host compatibles con la versión de ONTAP de destino seleccionada.</block>
   <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
   <block id="6e23fbb0baad6a7a72bd41e60b71f566" category="admonition">Esta documentación sobre la protección de las cargas de trabajo de Microsoft SQL Server se ofrece como una versión preliminar de la tecnología. Con esta versión preliminar, NetApp se reserva el derecho de modificar los detalles, el contenido y el cronograma de la oferta antes de su disponibilidad general.</block>
-  <block id="98d06a8873f74ad318a67a8dee1dcd5f" category="section-title">25 de junio de 2025</block>
-  <block id="6bcfb67e751fc7a3d8dba22f37cbb570" category="section-title">Disponibilidad restringida de licencias BYOL para Cloud Volumes ONTAP</block>
-  <block id="94aa7f0bf110a253866678fe039b7133" category="paragraph">A partir del 25 de junio de 2025, NetApp ha restringido el modelo de licencias BYOL (traiga su propia licencia) para Cloud Volumes ONTAP. Esta restricción se aplica a todos los clientes e implementaciones de Cloud Volumes ONTAP en AWS, Azure y Google Cloud. Las únicas excepciones son los clientes del sector público estadounidense y las implementaciones en la región de China.</block>
-  <block id="7b775530465bfc8e5ecd3d0244e8847c" category="paragraph">El soporte y los servicios de NetApp continuarán hasta que su contrato BYOL expire, pero sus licencias vencidas no se renovarán ni extenderán. Cuando sus licencias BYOL expiren, deberá reemplazarlas por licencias basadas en capacidad adquiridas a través de sus suscripciones al marketplace de cloud. Un modelo de licencias basado en capacidad a través de marketplaces de hiperescaladores optimiza la experiencia de licenciamiento y ofrece mayores beneficios empresariales. Contacte con su equipo de cuentas de NetApp o con sus representantes de éxito del cliente para hablar sobre sus opciones de conversión.</block>
-  <block id="b902c393ae9091d227b03ac188f61f92" category="inline-link">CPC-00661: Cambios en la política BYOL de Cloud Volumes ONTAP</block>
-  <block id="37e719f908b04fc23a8be8447926a507" category="paragraph">Para obtener más información, consulte este comunicado al cliente: <block ref="4276341cf7737eb343f72d4388b5947d" category="inline-link-rx"></block> .</block>
   <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="section-title">28 de julio de 2025</block>
   <block id="5d8fc779baf0d068c296ee5013b2224f" category="section-title">Compatibilidad con cargas de trabajo de Kubernetes como vista previa</block>
   <block id="36442e954ef2484603f79c5f3abc842b" category="paragraph">Esta versión de BlueXP backup and recovery presenta soporte para descubrir y administrar cargas de trabajo de Kubernetes:</block>
@@ -969,7 +962,6 @@
   <block id="ee07da92eddb189dc56635b6831f1856" category="list-text">Visualiza tus volúmenes</block>
   <block id="f842a501bbdfa7f71ac344c36591a1b8" category="list-text">Elimina tu entorno de trabajo.</block>
   <block id="667b631b672b77239becd955ba1e71e7" category="paragraph">A partir del 11 de agosto de 2025, la licencia optimizada de Cloud Volumes ONTAP quedará obsoleta y ya no estará disponible para compra ni renovación en los mercados de Azure y Google Cloud para suscripciones de pago por uso (PAYGO). Si tiene un contrato anual existente con una licencia optimizada, puede continuar utilizando la licencia hasta el final de su contrato. Cuando caduque su licencia optimizada, podrá optar por licencias Cloud Volumes ONTAP Essentials o Professional en BlueXP.</block>
-  <block id="742f9b79f178d376f2ac9836103a6f86" category="section-title">12 de julio de 2025</block>
   <block id="3662750346c2942117b5e1492f2bdcd4" category="paragraph">Esta versión incluye mejoras generales.</block>
   <block id="0428e48e7f58929099e52febd0558232" category="section-title">25 de agosto de 2025</block>
   <block id="f7919ff057187672b74306b219aadaa0" category="section-title">Compatibilidad con la protección de cargas de trabajo de VMware en la versión preliminar</block>
@@ -982,4 +974,36 @@
   <block id="5ced283cbe92781b3a48240fd1fde5cd" category="paragraph">Habilitado por defecto:</block>
   <block id="234f6b906c6e6adf3ab5f1a4906d5366" category="list-text">Si es un cliente nuevo, la indexación de alto rendimiento está habilitada de forma predeterminada.</block>
   <block id="3b98c4910d4638f409d4421b51847611" category="list-text">Si es un cliente existente, puede habilitar la reindexación yendo a la sección Restaurar de la interfaz de usuario.</block>
+  <block id="307e5b33b6254865d4841916d3fe8eb1" category="paragraph">BlueXP ahora ofrece una interfaz más intuitiva para administrar la federación de identidad cuando se utiliza el modo estándar. Esto incluye una navegación más sencilla, opciones más claras para configurar conexiones federadas y una mejor visibilidad de las federaciones existentes.</block>
+  <block id="ba3c0cba3a3d15ce8426fc737476a59c" category="section-title">4 de septiembre de 2025</block>
+  <block id="186b3997de3027cf87a351ba0a1f9bf4" category="section-title">Cloud Volumes ONTAP 9.17.1 RC</block>
+  <block id="2a0942c706fe1023b055df5cfc6720d2" category="paragraph">Ahora puede usar BlueXP para implementar y administrar la versión candidata 1 de Cloud Volumes ONTAP 9.17.1 en Azure y Google Cloud. Sin embargo, esta versión no está disponible para implementación y actualización en AWS.</block>
+  <block id="1794b1ebac03efdd38e24eb28c47629a" category="inline-link-macro">Obtenga más información sobre esta versión de Cloud Volumes ONTAP</block>
+  <block id="e0a027f4bdcd16cda78c830ace94fc76" category="paragraph"><block ref="539cae97b36c04420caaf667f01300c8" category="inline-link-macro-rx"></block> .</block>
+  <block id="2f5c8ea43e93d972b7a25e5290de1a89" category="section-title">15 de septiembre de 2025</block>
+  <block id="7b79550b0f239051cee47679029d92d0" category="paragraph">Versión 4.3.5P3</block>
+  <block id="b9c1cdf7f87b0afdb4912dd1210368b2" category="section-title">Configuración de script para conmutación por error de prueba</block>
+  <block id="23b8df4f947d4876b62a4f35651dc9da" category="paragraph">Con esta versión, ahora puedes ejecutar scripts en las máquinas virtuales después de que se encienden durante el proceso de conmutación por error de prueba. Esto le permite probar y validar scripts. Por ejemplo, puede actualizar los montajes NFS para que apunten a un nuevo servidor de destino, lo que garantiza que las aplicaciones invitadas estén completamente en línea y que su proceso de recuperación pueda probarse de extremo a extremo.</block>
+  <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link-macro">Conmutar por error las aplicaciones a un sitio remoto</block>
+  <block id="c50483baf55d5fc84eb7cde2deb8dbbe" category="paragraph">Para obtener más información sobre el proceso de conmutación por error, consulte<block ref="971d0cd2e9d374816901b4e00433e2bb" category="inline-link-macro-rx"></block> .</block>
+  <block id="bf6db1e2a0fdc4928d739c9a62b174a9" category="section-title">Proceso de conmutación por error mejorado</block>
+  <block id="3409a7280b540ad3a82c8fa7bda31a54" category="paragraph">Durante la conmutación por error, el proceso de conmutación por recuperación ahora está deshabilitado hasta que se complete el descubrimiento. Esto garantiza que todas las configuraciones se identifiquen y contabilicen correctamente antes de iniciar una conmutación por error y reduce el riesgo de errores.</block>
+  <block id="4e76033871d8eb52e7a46330cc531bd8" category="inline-link-macro">Revertir aplicaciones a la fuente original</block>
+  <block id="61a1bcd67556c0aafb06a8820e6e7dce" category="paragraph">Para obtener más información sobre el proceso de conmutación por error, consulte<block ref="5386470d7b73cea41e5e361ec83bbd7a" category="inline-link-macro-rx"></block> .</block>
+  <block id="7438fabae28e88c43c70139fd85c992a" category="section-title">22 de septiembre de 2025</block>
+  <block id="e83b5a250e0912f549b3d3758e90e680" category="section-title">Adición de monitoreo de alertas</block>
+  <block id="eff9717b3e6b80befe3a05db7b3e6a1d" category="paragraph">El panel de Keystone en BlueXP ahora incluye una pestaña *Monitoreo* para administrar alertas y monitores en todas sus suscripciones. Esta nueva pestaña le permite:</block>
+  <block id="d540a0a7aa0f09414e542ffabc6300c6" category="list-text">Ver y resolver alertas activas, incluidas las alertas generadas por el sistema y definidas por el usuario sobre el uso de la capacidad y el vencimiento de la suscripción.</block>
+  <block id="64d4cc394badd0b54b5b74f5080233c6" category="list-text">Cree monitores de alerta para rastrear el uso de la capacidad y los eventos de vencimiento de suscripciones.</block>
+  <block id="fad96b4b3d3badf81c42f03f5e3e79f9" category="inline-link-macro">Ver y administrar alertas y monitores</block>
+  <block id="cdd57c5e351290faba63a64f9aeaaa00" category="paragraph">Para obtener más información, consulte<block ref="54a7920301641a95eb19ac46b9860916" category="inline-link-macro-rx"></block> .</block>
+  <block id="bcf269fdba28fb16246a22e167483e0c" category="section-title">Visualización optimizada de los niveles de servicio de rendimiento</block>
+  <block id="6e665113a95f128bda94a45125d034c0" category="inline-link-macro">Ver detalles sobre sus suscripciones a Keystone</block>
+  <block id="d5361f65bad1a0cefb26442a03e3f1a3" category="paragraph">Puede ver la información de los niveles de rendimiento del servicio, ahora movida de una pestaña separada a una vista expandible, dentro de la pestaña *Suscripciones*. Haga clic en la flecha hacia abajo junto a la columna *Fecha de vencimiento* para verlas para cada suscripción. Para obtener más información, consulte<block ref="c9175061cd37da451a004ee428397f08" category="inline-link-macro-rx"></block> .</block>
+  <block id="b8d454c9414aa4b52ad019b0311711b5" category="section-title">28 de agosto de 2025</block>
+  <block id="7e8fe67b005603b496012796735f2d36" category="section-title">Seguimiento de uso lógico mejorado con una nueva columna</block>
+  <block id="b79d3069a7b9ca9140a5c9b1bf2f8d81" category="paragraph">Se agrega una nueva columna, Huella total, para mejorar el seguimiento del consumo de Keystone para los volúmenes de FabricPool :</block>
+  <block id="729a65ff91860ad65935d125d788f643" category="list-text">* Panel de control de Keystone en BlueXP*: puede ver la columna *Huella total* en la pestaña *Volúmenes en clústeres* dentro de la pestaña *Activos*.</block>
+  <block id="61f4e69294ec080e5cb7bce32f2f8b99" category="list-text">* Digital Advisor*: Puede ver la columna * Huella total * en la pestaña * Detalles de volumen * dentro de la pestaña * Volúmenes y objetos *.</block>
+  <block id="610355e82f0e7cf01bdfa1df13985f3f" category="paragraph">Esta columna muestra la huella lógica total de los volúmenes que utilizan niveles de FabricPool , incluidos datos de los niveles de rendimiento y de los niveles fríos, para que pueda calcular con precisión el consumo de Keystone .</block>
 </blocks>
